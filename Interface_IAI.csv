@@ -1,0 +1,14 @@
+Reference;Qty;Value;Footprint;Fournisseur;Reference;PUHT;PTHT
+C1,C3;2;100nF;Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm;Farnell;1141777;1,17;1,17
+C2;1;10uF;Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm;Farnell;1457613;3,52;3,52
+J1;2;ADWIN_DIO32, SCON_FEEDBACK;TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-3-5.08_1x03_P5.08mm_Horizontal;Farnell;3041530;1,74;3,48
+J2;1;ALIM_5V;TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal;Farnell;3041529;1,2;1,2
+J3, J5, J4;3;SCON_PULSE, ADWIN_CO4T, SCON_FEEDBACK;TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-4-5.08_1x04_P5.08mm_Horizontal;Farnell;3041542;2,21;6,63
+R1,R2,R8,R9,R10;5;100;Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal;Farnell;9341099;0,39;0,39
+R3,R4;2;10k;Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal;Farnell;9341110;0,32;0,32
+R5,R6,R7;3;120;Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal;Farnell;9341218;0,22;0,22
+U1;2;AM26LS31CN;Package_DIP:DIP-16_W7.62mm_Socket;Farnell;3119090;1,87;3,74
+U2;2;AM26LS32ACN;Package_DIP:DIP-16_W7.62mm_Socket;Radiospare;443-299;2,04;4,08
+Support CI;2;;;Farnell;2839830;8,25;8,25
+;;;;;;;
+;;;;;;Total HT;33
