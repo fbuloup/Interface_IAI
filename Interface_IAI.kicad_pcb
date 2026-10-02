@@ -3590,7 +3590,7 @@
 		(property "Reference" "R3"
 			(at 6.21 2.3 0)
 			(layer "F.SilkS")
-			(uuid "be1a4841-90da-427f-9b52-8fedec9a3ff2")
+			(uuid "2989c707-12f5-4a05-b9c0-7cad73b0f3c9")
 			(effects
 				(font
 					(size 1 1)
@@ -3601,7 +3601,7 @@
 		(property "Value" "10k"
 			(at 6.56 2.25 0)
 			(layer "F.Fab")
-			(uuid "072a47a8-3f0b-43d7-8107-c1c0a7e8f26c")
+			(uuid "362bdbe6-39c4-4ac9-86a7-527b00d7dcce")
 			(effects
 				(font
 					(size 1 1)
@@ -3613,7 +3613,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "00fd12e8-5250-4700-9cea-1eb09330b896")
+			(uuid "eb391695-1f02-4aad-89a1-642982c5be74")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3624,7 +3624,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "1f561bcf-0138-4387-8e78-41f467a4271c")
+			(uuid "7f225791-50ff-4462-af7b-31454be3fc5f")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4028,7 +4028,7 @@
 		(property "Reference" "R1"
 			(at 1.32 -2.15 0)
 			(layer "F.SilkS")
-			(uuid "de93a912-9481-4778-9c76-dc030be7f280")
+			(uuid "facd0b97-e894-460e-9954-38e3a8564dda")
 			(effects
 				(font
 					(size 1 1)
@@ -4039,7 +4039,7 @@
 		(property "Value" "100"
 			(at 3.81 2.37 0)
 			(layer "F.Fab")
-			(uuid "c940a55a-c733-403a-8beb-f0574b4f0d6d")
+			(uuid "f33d60ba-2fc8-4ed7-a76b-041c144dc55b")
 			(effects
 				(font
 					(size 1 1)
@@ -4051,7 +4051,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "683154a7-3434-41af-9bad-a61f9654fabb")
+			(uuid "0fb9cf01-131e-4d86-bce8-400a745f1cc0")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4062,7 +4062,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "52f0dfd3-9c05-4ccd-b2a4-a56e15e8cb38")
+			(uuid "9664af42-a18b-4f69-93a5-f69ce07cf25a")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6033,8 +6033,8 @@
 		(layer "Edge.Cuts")
 		(uuid "1c6273cc-118c-477b-aa0c-310da74ef12f")
 	)
-	(gr_text "ISM - 01/10/2026"
-		(at 69.6 112.2 0)
+	(gr_text "ISM - 01/10/2026 - F. BULOUP"
+		(at 64.4 112.3 0)
 		(layer "F.SilkS")
 		(uuid "3966aba1-8a1a-43c7-b339-bec4b290edb3")
 		(effects
