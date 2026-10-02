@@ -1,6 +1,7 @@
 \beamer@sectionintoc {1}{Les différents éléments}{3}{0}{1}
-\beamer@subsectionintoc {1}{1}{Axe 0}{4}{0}{1}
-\beamer@subsectionintoc {1}{2}{Axe 1}{6}{0}{1}
-\beamer@sectionintoc {2}{Interface avec un ADWinPro}{8}{0}{2}
-\beamer@subsectionintoc {2}{1}{Généralités}{9}{0}{2}
-\beamer@subsectionintoc {2}{2}{Carte Pulse/feedback}{10}{0}{2}
+\beamer@subsectionintoc {1}{1}{Documentations}{4}{0}{1}
+\beamer@subsectionintoc {1}{2}{Axe 0}{5}{0}{1}
+\beamer@subsectionintoc {1}{3}{Axe 1}{7}{0}{1}
+\beamer@sectionintoc {2}{Interface avec un ADWinPro}{9}{0}{2}
+\beamer@subsectionintoc {2}{1}{Généralités}{10}{0}{2}
+\beamer@subsectionintoc {2}{2}{Carte Pulse/feedback}{11}{0}{2}

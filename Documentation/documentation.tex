@@ -81,13 +81,19 @@ captionpos=b
 }
 
 \section{Les différents éléments}
+\subsection{Documentations}
+\begin{frame}
+\centering
+	\textcolor{blue}{\textbf{\underline{\href{https://raw.githubusercontent.com/fbuloup/Interface_IAI/main/Documentation/RCS4-SLIDER(ME3769-1H).pdf}{Documentation actionneurs}}}}	
+	
+		\textcolor{blue}{\textbf{\underline{\href{https://raw.githubusercontent.com/fbuloup/Interface_IAI/main/Documentation/SCON-CB_CGB(ME0340-8A).pdf}{Documentation contrôleurs}}}}
+\end{frame}
 \subsection{Axe 0}
 \begin{frame}
 	\begin{block}{Actionneur : RCS4-SA7C-WA-200-24-200-T2-R03}
 		\begin{itemize}
 			\item Masse : 4.3kg
-			\item Codeur absolu sans batterie
-			\item 200 watts
+			\item Codeur absolu sans batterie - 200 watts
 			\item Pas de la vis à bille (Ball Screw Lead) : 24mm par tour moteur
 			\item Course totale : 200mm
 			\item Vitesse maximale : 1500mm/s
@@ -96,7 +102,8 @@ captionpos=b
 			\item Charge utile horizontale : 30kg - Charge utile verticale : 7kg
 		\end{itemize}
 	\end{block}
-$$Speed_{min}=\frac{BSL(mm)}{16384(pulses)}*1000(pulse/s)=\frac{24}{16384}=1.46mm/pulse$$
+$$accuracy=\frac{BSL(mm)}{16384(pulses)}=\frac{24}{16384}=1.46\mu m$$	
+$$Speed_{min}=\frac{BSL(mm)}{16384(pulses)}*1000(pulse/s)=\frac{24000}{16384}=1.46mm/pulse$$
 \end{frame}
 \begin{frame}
 	\begin{block}{Contrôleur : SCON-CB-200WAI-PN-2-2}
@@ -116,8 +123,7 @@ $$Speed_{min}=\frac{BSL(mm)}{16384(pulses)}*1000(pulse/s)=\frac{24}{16384}=1.46m
 	\begin{block}{Actionneur : RCS4-SA8C-WA-400-30-200-T2-S}
 		\begin{itemize}
 			\item Masse : 5.6kg
-			\item Codeur absolu sans batterie
-			\item 400 watts
+			\item Codeur absolu sans batterie - 400 watts
 			\item Pas de la vis à bille (Ball Screw Lead) : 30mm par tour moteur
 			\item Course totale : 200mm
 			\item Vitesse maximale : 1800mm/s
@@ -126,7 +132,8 @@ $$Speed_{min}=\frac{BSL(mm)}{16384(pulses)}*1000(pulse/s)=\frac{24}{16384}=1.46m
 			\item Charge utile horizontale : 30kg - Charge utile verticale : 12kg
 		\end{itemize}
 	\end{block}
-$$Speed_{min}=\frac{BSL(mm)}{16384(pulses)}*1000(pulse/s)=\frac{30}{16384}=1.83mm/pulse$$
+$$accuracy=\frac{BSL(mm)}{16384(pulses)}=\frac{30}{16384}=1.83\mu m$$	
+$$Speed_{min}=\frac{BSL(mm)}{16384(pulses)}*1000(pulse/s)=\frac{30000}{16384}=1.83mm/pulse$$
 \end{frame}
 \begin{frame}
 	\begin{block}{Contrôleur : SCON-CB-400WAI-PN-2-2}

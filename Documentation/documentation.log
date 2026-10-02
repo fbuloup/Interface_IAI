@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.9.2)  2 OCT 2026 11:41
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.9.2)  2 OCT 2026 12:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1173,13 +1173,13 @@ Package epstopdf Info: Source file: <images/by-nc-sa.eps>
 ted-to.pdf images/by-nc-sa.eps>
 (epstopdf)             \includegraphics on input line 71.
 Package epstopdf Info: Output file is already uptodate.
-<images/by-nc-sa-eps-converted-to.pdf, id=109, 97.36375pt x 34.1275pt>
+<images/by-nc-sa-eps-converted-to.pdf, id=115, 97.36375pt x 34.1275pt>
 File: images/by-nc-sa-eps-converted-to.pdf Graphic file (type pdf)
 <use images/by-nc-sa-eps-converted-to.pdf>
 Package pdftex.def Info: images/by-nc-sa-eps-converted-to.pdf  used on input li
 ne 71.
 (pdftex.def)             Requested size: 73.02261pt x 25.59554pt.
-<images/LogoAMU.png, id=110, 120.45pt x 52.195pt>
+<images/LogoAMU.png, id=116, 120.45pt x 52.195pt>
 File: images/LogoAMU.png Graphic file (type png)
 <use images/LogoAMU.png>
 Package pdftex.def Info: images/LogoAMU.png  used on input line 71.
@@ -1194,7 +1194,7 @@ Package epstopdf Info: Source file: <images/LogoCNRS.eps>
 ted-to.pdf images/LogoCNRS.eps>
 (epstopdf)             \includegraphics on input line 71.
 Package epstopdf Info: Output file is already uptodate.
-<images/LogoCNRS-eps-converted-to.pdf, id=112, 120.45pt x 120.45pt>
+<images/LogoCNRS-eps-converted-to.pdf, id=118, 120.45pt x 120.45pt>
 File: images/LogoCNRS-eps-converted-to.pdf Graphic file (type pdf)
 <use images/LogoCNRS-eps-converted-to.pdf>
 Package pdftex.def Info: images/LogoCNRS-eps-converted-to.pdf  used on input li
@@ -1210,7 +1210,7 @@ Package epstopdf Info: Source file: <images/LogoISM.eps>
 ed-to.pdf images/LogoISM.eps>
 (epstopdf)             \includegraphics on input line 71.
 Package epstopdf Info: Output file is already uptodate.
-<images/LogoISM-eps-converted-to.pdf, id=113, 803.0pt x 371.3875pt>
+<images/LogoISM-eps-converted-to.pdf, id=119, 803.0pt x 371.3875pt>
 File: images/LogoISM-eps-converted-to.pdf Graphic file (type pdf)
 <use images/LogoISM-eps-converted-to.pdf>
 Package pdftex.def Info: images/LogoISM-eps-converted-to.pdf  used on input lin
@@ -1227,109 +1227,108 @@ goISM-eps-converted-to.pdf>]
 ] (./documentation.toc) [3
 
 ]
-LaTeX Font Info:    Trying to load font information for OML+lmm on input line 1
-00.
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 9
+0.
 
 (c:/texlive/2026/texmf-dist/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
-100.
+90.
 
 (c:/texlive/2026/texmf-dist/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
-100.
+90.
 
 (c:/texlive/2026/texmf-dist/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 100.
+(Font)              <10.95> on input line 90.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 100.
+(Font)              <8> on input line 90.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 100.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 100
-.
+(Font)              <6> on input line 90.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 90.
+
 
 (c:/texlive/2026/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 100
-.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 90.
+
 
 (c:/texlive/2026/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for U+wasy on input line 10
-0.
+LaTeX Font Info:    Trying to load font information for U+wasy on input line 90
+.
 
 (c:/texlive/2026/texmf-dist/tex/latex/wasysym/uwasy.fd
 File: uwasy.fd 2020/01/19 v2.4 Wasy-2 symbol font definitions
 )
 LaTeX Font Info:    Font shape `OT1/lmss/m/it' in size <10.95> not available
-(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 100.
-
+(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 90.
 LaTeX Font Info:    Font shape `OT1/lmss/m/it' in size <8> not available
-(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 100.
-
+(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 90.
 LaTeX Font Info:    Font shape `OT1/lmss/m/it' in size <6> not available
-(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 100.
+(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 90.
+ [4
 
-
-Overfull \hbox (9.95218pt too wide) detected at line 100
+]
+Overfull \hbox (9.95218pt too wide) detected at line 107
 \OT1/lmss/m/sl/10.95 Speed[] \OT1/lmss/m/n/10.95 = [] \OMS/lmsy/m/n/10.95 ^^C \
 OT1/lmss/m/n/10.95 1000(\OT1/lmss/m/sl/10.95 pulse\OML/lmm/m/it/10.95 =\OT1/lms
 s/m/sl/10.95 s\OT1/lmss/m/n/10.95 ) = [] = 1\OML/lmm/m/it/10.95 :\OT1/lmss/m/n/
 10.95 46\OT1/lmss/m/sl/10.95 mm\OML/lmm/m/it/10.95 =\OT1/lmss/m/sl/10.95 pulse
  []
 
-[4
+[5
 
-{c:/texlive/2026/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{c:/texlive/2026/t
-exmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}] [5
+{c:/texlive/2026/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{c:/texlive/2026/t
+exmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}] [6
 
 ]
-Overfull \hbox (9.95218pt too wide) detected at line 130
+Overfull \hbox (9.95218pt too wide) detected at line 137
 \OT1/lmss/m/sl/10.95 Speed[] \OT1/lmss/m/n/10.95 = [] \OMS/lmsy/m/n/10.95 ^^C \
 OT1/lmss/m/n/10.95 1000(\OT1/lmss/m/sl/10.95 pulse\OML/lmm/m/it/10.95 =\OT1/lms
 s/m/sl/10.95 s\OT1/lmss/m/n/10.95 ) = [] = 1\OML/lmm/m/it/10.95 :\OT1/lmss/m/n/
 10.95 83\OT1/lmss/m/sl/10.95 mm\OML/lmm/m/it/10.95 =\OT1/lmss/m/sl/10.95 pulse
  []
 
-[6
+[7
 
-] [7
+] [8
 
-] (./documentation.toc) [8
+] (./documentation.toc) [9
 
-] [9
+] [10
 
 ]
-<images/pcb.png, id=494, 614.295pt x 685.8122pt>
+<images/pcb.png, id=556, 614.295pt x 685.8122pt>
 File: images/pcb.png Graphic file (type png)
 <use images/pcb.png>
-Package pdftex.def Info: images/pcb.png  used on input line 167.
+Package pdftex.def Info: images/pcb.png  used on input line 174.
 (pdftex.def)             Requested size: 202.71797pt x 226.31873pt.
- [10
-
- <./images/pcb.PNG>]
-<images/Interface_IAI_1.png, id=528, 1072.005pt x 699.61375pt>
-File: images/Interface_IAI_1.png Graphic file (type png)
-<use images/Interface_IAI_1.png>
-Package pdftex.def Info: images/Interface_IAI_1.png  used on input line 172.
-(pdftex.def)             Requested size: 300.15935pt x 195.89052pt.
  [11
 
- <./images/Interface_IAI_1.png>]
-<images/Interface_IAI_2.png, id=562, 1072.005pt x 699.61375pt>
-File: images/Interface_IAI_2.png Graphic file (type png)
-<use images/Interface_IAI_2.png>
-Package pdftex.def Info: images/Interface_IAI_2.png  used on input line 177.
+ <./images/pcb.PNG>]
+<images/Interface_IAI_1.png, id=592, 1072.005pt x 699.61375pt>
+File: images/Interface_IAI_1.png Graphic file (type png)
+<use images/Interface_IAI_1.png>
+Package pdftex.def Info: images/Interface_IAI_1.png  used on input line 179.
 (pdftex.def)             Requested size: 300.15935pt x 195.89052pt.
  [12
+
+ <./images/Interface_IAI_1.png>]
+<images/Interface_IAI_2.png, id=629, 1072.005pt x 699.61375pt>
+File: images/Interface_IAI_2.png Graphic file (type png)
+<use images/Interface_IAI_2.png>
+Package pdftex.def Info: images/Interface_IAI_2.png  used on input line 184.
+(pdftex.def)             Requested size: 300.15935pt x 195.89052pt.
+ [13
 
  <./images/Interface_IAI_2.png>]
 \tf@nav=\write6
@@ -1346,34 +1345,28 @@ Package pdftex.def Info: images/Interface_IAI_2.png  used on input line 177.
 LaTeX2e <2026-06-01>
 L3 programming layer <2026-08-10>
  ***********
-
-
-Package rerunfilecheck Warning: File `documentation.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `documentation.out':
-(rerunfilecheck)             Before: D6CA28D38D86F42429BB91D72106CF1A;802
-(rerunfilecheck)             After:  476C80331D02B4DEE91B3649BAC3A6FC;807.
+Package rerunfilecheck Info: File `documentation.out' has not changed.
+(rerunfilecheck)             Checksum: 790BF5D863C269C0F6F3F816B20C2C9B;935.
  ) 
 Here is how much of TeX's memory you used:
- 33227 strings out of 467098
- 674349 string characters out of 5412482
- 1263286 words of memory out of 5000000
- 61905 multiletter control sequences out of 15000+600000
- 654298 words of font info for 66 fonts, out of 8000000 for 9000
+ 33237 strings out of 467098
+ 674462 string characters out of 5412482
+ 1264286 words of memory out of 5000000
+ 61911 multiletter control sequences out of 15000+600000
+ 657013 words of font info for 67 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  128i,20n,123p,416b,787s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2026/texmf-dist/fonts/type1/public/lm/lmmi10.pfb><c:/texlive/2026
 /texmf-dist/fonts/type1/public/lm/lmss10.pfb><c:/texlive/2026/texmf-dist/fonts/
 type1/public/lm/lmss12.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/lm/lm
-ss8.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/lm/lmsso10.pfb><c:/texli
-ve/2026/texmf-dist/fonts/type1/public/lm/lmsso8.pfb><c:/texlive/2026/texmf-dist
-/fonts/type1/public/lm/lmsy10.pfb>
-Output written on documentation.pdf (12 pages, 607490 bytes).
+ss8.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb><c:/texl
+ive/2026/texmf-dist/fonts/type1/public/lm/lmsso10.pfb><c:/texlive/2026/texmf-di
+st/fonts/type1/public/lm/lmsso8.pfb><c:/texlive/2026/texmf-dist/fonts/type1/pub
+lic/lm/lmsy10.pfb>
+Output written on documentation.pdf (13 pages, 634025 bytes).
 PDF statistics:
- 626 PDF objects out of 1000 (max. 8388607)
- 332 compressed objects within 4 object streams
- 31 named destinations out of 1000 (max. 500000)
- 516 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 698 PDF objects out of 1000 (max. 8388607)
+ 373 compressed objects within 4 object streams
+ 34 named destinations out of 1000 (max. 500000)
+ 524 words of extra memory for PDF output out of 10000 (max. 10000000)
 
