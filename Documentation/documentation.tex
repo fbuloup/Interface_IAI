@@ -80,30 +80,222 @@ captionpos=b
     \end{frame}
 }
 
-\section{Les différents éléments}
-\subsection{Documentations}
+\section{Documentation}
 \begin{frame}
 \centering
 	\textcolor{blue}{\textbf{\underline{\href{https://raw.githubusercontent.com/fbuloup/Interface_IAI/main/Documentation/RCS4-SLIDER(ME3769-1H).pdf}{Documentation actionneurs}}}}	
 	
-		\textcolor{blue}{\textbf{\underline{\href{https://raw.githubusercontent.com/fbuloup/Interface_IAI/main/Documentation/SCON-CB_CGB(ME0340-8A).pdf}{Documentation contrôleurs}}}}
+	\textcolor{blue}{\textbf{\underline{\href{https://raw.githubusercontent.com/fbuloup/Interface_IAI/main/Documentation/SCON-CB_CGB(ME0340-8A).pdf}{Documentation contrôleurs}}}}
+
+	\textcolor{blue}{\textbf{\underline{\href{https://raw.githubusercontent.com/fbuloup/Interface_IAI/main/Documentation/RCM-101-MW_USB(ME0155-31A).pdf}{Documentation PC Software}}}}	
 \end{frame}
-\subsection{Axe 0}
+
+\section{Méthode de calcul "Vitesse et Fréquence"}
+\subsection{Résolution et UTD}
 \begin{frame}
+\begin{alertblock}{Résolution}
+\justifying
+Les codeurs optique ont 14 bits. On obtient donc $2^{14}$ impulsions par tour moteur. Un tour moteur fait avancer l'actuateur du pas de la vis à bille (BSL en mm/tour). On obtient alors $\frac{BSL}{2^{14}}$ mm par impulsion. C'est le plus petit mouvement réalisable : c'est la résolution.
+\begin{align*}
+resolution = \frac{BSL}{2^{14}}
+\end{align*}
+\end{alertblock}
+
+\begin{alertblock}{Distance unitaire parcourue}
+\justifying
+On peut d'autre-part fixer notre propre résolution (celle que l'on souhaite avoir) exprimée également en mm par impulsion : Unit Travel Distance (UTD). Bien sûr UTD ne peut être plus petit que la Résolution de base ! 
+\begin{align*}
+UTD \geq resolution
+\end{align*}
+\end{alertblock}
+\end{frame}
+
+\subsection{Rapport de réduction}
+\begin{frame}
+\begin{alertblock}{Rapport de réduction}
+\justifying
+Le rapport de ces deux quantités donne un nombre sans dimension qui exprime le rapport de réduction entre le nombre d'impulsions réelles et le nombre d'impulsions résultant du choix de notre résolution : 
+\begin{align*}
+\frac{UTD}{resolution} = \frac{UTD}{\frac{BSL}{2^{14}}} = N
+\end{align*}
+\end{alertblock}
+\begin{alertblock}{CNUM et DNUM}
+\justifying
+Ce rapport de réduction $N$ est pris en compte dans le contrôleur sous la forme de deux paramètres : $CNUM$ et $CDEN$ (paramètres 65 et 66) : 
+$$
+N=\frac{CNUM}{CDEN}=\frac{2^{14}}{BSL}*UTD
+$$
+\end{alertblock}
+\end{frame}
+
+\subsection{Vitesses minimale et maximale absolues}
+\begin{frame}
+\begin{alertblock}{Vitesse minimale absolue}
+\justifying
+La vitesse minimale absolue (mm/s) est définie de la façon suivante (page 1-11 doc. actionneurs, la résolution étant en mm/pulse) :
+$$
+V_{min} = resolution*1000(pulse/s)
+$$
+Ce qui signifie que la fréquence de la commande par impulsion ne peut être inférieur à 1000Hz lorsque l'on travaille avec la résolution de l'appareil. Il ne faudra jamais aller en dessous de cette valeur.
+\end{alertblock}
+
+\begin{alertblock}{Vitesse maximale absolue}
+\justifying
+Elle est donnée dans la documentation des actionneurs.
+\end{alertblock}
+\end{frame}
+
+
+\subsection{Fréquences minimale et maximale absolues}
+\begin{frame}
+\begin{alertblock}{Fréquences min et max absolues}
+\justifying
+Avec la vitesse maximale absolue (mm/s), on peut connaitre l'intervalle de variation de la fréquence de commande par impulsions :
+\begin{align*}
+F_{min} &= \frac{V_{min}}{UTD} \\
+F_{max} &= \frac{V_{max}}{UTD}
+\end{align*}
+\end{alertblock}
+\end{frame}
+
+\subsection{Vitesse obtenue et fréquence de commande}
+\begin{frame}
+\begin{alertblock}{Vitesse obtenue $v$}
+\justifying
+La vitesse (mm/s) obtenue dépend alors notre UTD (mm/pulse) et de la fréquence des impulsions de commande (Hz) :
+$$
+v = UTD*f
+$$
+Avec : 
+$$
+V_{min} \leq v_{min} \leq v \leq v_{max} \leq V_{max}
+$$
+$v_{min}$  et $v_{max}$ étant les vitesses min et max que l'on se fixe.
+\end{alertblock}
+\begin{alertblock}{Fréquence de commande $f$}
+\justifying
+Elle doit vérifier :
+$$
+F_{min} \leq f_{min} \leq f \leq f_{max} \leq F_{max}
+$$
+
+$f_{min}$  et $f_{max}$ étant les fréquences min et max que l'on se fixe.
+\end{alertblock}
+\end{frame}
+
+\subsection{Mouvement fluide}
+\begin{frame}
+\justifying
+\textbf{\textcolor{red}{Pour que le mouvement soit fluide, il faut que l'UTD soit suffisamment petit mais également que la fréquence de commande soit suffisamment grande afin que la mise à jour de la position soit assez fréquente.}}
+\end{frame}
+
+\section{Caractéristique des actionneurs}
+\subsection{Axe 0 - Celui du dessous}
+\begin{frame}
+\centering
+\textcolor{blue}{\textbf{\underline{\href{https://raw.githubusercontent.com/fbuloup/Interface_IAI/main/Documentation/RCS4-SLIDER(ME3769-1H).pdf\#page=37}{Ref.}}}}	
+	\begin{block}{Actionneur : RCS4-SA8C-WA-400-30-200-T2-S}
+		\begin{itemize}
+			\item Masse : 5.6kg - Codeur absolu sans batterie - 400 watts
+			\item Pas de la vis à bille (Ball Screw Lead) : 30mm par tour moteur
+			\item Course totale (Stroke Length) : 200mm
+			\item Vitesse maximale absolue ($V_{max}$) : 1800mm/s
+			\item Force nominale en continu : 226N
+			\item Codeur : 16384 impulsions par tour moteur
+			\item Charge utile horizontale : 30kg - Charge utile verticale : 12kg
+		\end{itemize}
+	\end{block}
+$$resolution=\frac{BSL(mm)}{16384(pulses)}=\frac{30}{16384}=1.83\mu m$$	
+$$V_{min}=\frac{BSL(mm)}{16384(pulses)}*1000(pulse/s)=\frac{30000}{16384}=1.83mm/s$$
+\end{frame}
+
+\begin{frame}
+	\begin{block}{Contrôleur : SCON-CB-400WAI-PN-2-2}
+		\begin{itemize}
+			\item Type standard, 400 watts
+			\item Codeur absolu/incrémental sans batterie
+			\item Type PNP : type source de courant
+			\item PIO de type PNP
+			\item Commande par positionnement
+			\item Commande par impulsions différentielles
+		\end{itemize}
+	\end{block}
+\end{frame}
+
+\begin{frame}
+\begin{alertblock}{Grandeurs absolues}
+$V_{max} = 1800mm/s$ et $V_{min} = 1.83mm/s$
+\end{alertblock}
+
+\begin{exampleblock}{Exemple de calcul I}
+Si on se fixe $UTD = resolution$, $v_{max} = 1500mm/s$ et $v_{min} = 2mm/s$. Alors
+$F_{max} = 983.606kHz$ et $F_{min} = 1000Hz$,
+$f_{max} = 819.672kHz$ et $f_{min} = 1093Hz$
+\end{exampleblock}
+
+\begin{exampleblock}{Exemple de calcul II}
+Si on se fixe $UTD = 0.5mm$, $v_{max} = 120mm/s$ et $v_{min} = 5mm/s$. Alors $F_{max} = 3600Hz$ et $F_{min} = 3.66Hz$, $f_{max} = 240Hz$ et $f_{min} = 10Hz$
+\end{exampleblock}
+\end{frame}
+
+\subsection{Axe 0 - Celui du dessous - Mouvement fluide}
+\begin{frame}
+\justifying
+\textbf{\textcolor{red}{
+En mode train d'impulsions, chaque impulsion déplace la consigne de position du SCON d'un bloc de $0.5 mm$. À $5 mm/s$, soit $10 Hz$, l'actionneur reçoit une nouvelle consigne toutes les $100 ms$ : il parcourt rapidement $0.5 mm$, s'arrête, attend l'impulsion suivante, et ainsi de suite. Le mouvement sera donc saccadé, alors même que $5 mm/s$ est au-dessus de la vitesse minimale de $1,83mm/s$.}}
+\vspace{0.5cm}
+
+\textbf{\textcolor{red}{
+Il est alors préférable de raisonner à partir d'une fréquence min assez grande. Prenons $f_{min} = 500Hz$. On obtient avec $v_{min}=5mm/s$, $UTD=10\mu m$ et avec $v_{max}=120mm/s$, $f_{max}=12kHz$. $12kHz$ devrait être réalisable avec un ADwin. Si on rencontre des difficultés, il sera préférable de diminuer $v_{max}$ plutôt que d'augmenter $UTD$.}}
+\end{frame}
+
+\subsection{Axe 0 - Celui du dessous - Calcul de N, CNUM et CDEN}
+\begin{frame}
+\justifying
+Avec l'exemple II on obtiendrait :
+\begin{align*}
+N = \frac{CNUM}{CDEN} &= \frac{2^{14}}{BSL}*UTD = \frac{16384}{3000} = \frac{2048}{375} \\
+CNUM &= 2048 \quad CDEN = 375
+\end{align*}
+\begin{alertblock}{Vérifications à faire !}
+$$
+2^{27} \geq \frac{SL}{BSL} * 2^{14} * \frac{CDEN}{CNUM}\quad (1)?
+$$
+$$
+2^{31} \geq \frac{SL}{BSL} * 2^{14} * CNUM\quad (2)?
+$$
+$$
+2^{31} \geq \frac{SL}{BSL} * 2^{14} * CDEN\quad (3)?
+$$
+Pas sûr pour les (2) et (3) : seulement si la version du firmware est plus ancienne que la V0005 !
+\end{alertblock}
+\end{frame}
+
+\begin{frame}
+\justifying
+Pour vérifier la version du firmware, avec RC PC Software, une fois connecté au contrôleur, chercher la commande d'informations de version du contrôleur, dans le menu Help > Version Information. Elle affiche les versions des différents logiciels internes (CPU principal, etc.). C'est la version du contrôleur qui compte ici. Le manuel ME0155 du logiciel indique l'emplacement exact de cette commande.
+
+\centering \textcolor{blue}{\textbf{\underline{\href{https://raw.githubusercontent.com/fbuloup/Interface_IAI/main/Documentation/RCM-101-MW_USB(ME0155-31A).pdf\#page=203}{Documentation PC Software}}}}	
+\end{frame}
+
+
+\subsection{Axe 1 - Celui du dessus}
+\begin{frame}
+\centering
+\textcolor{blue}{\textbf{\underline{\href{https://raw.githubusercontent.com/fbuloup/Interface_IAI/main/Documentation/RCS4-SLIDER(ME3769-1H).pdf\#page=34}{Ref.}}}}	
 	\begin{block}{Actionneur : RCS4-SA7C-WA-200-24-200-T2-R03}
 		\begin{itemize}
-			\item Masse : 4.3kg
-			\item Codeur absolu sans batterie - 200 watts
+			\item Masse : 4.3kg - Codeur absolu sans batterie - 200 watts
 			\item Pas de la vis à bille (Ball Screw Lead) : 24mm par tour moteur
-			\item Course totale : 200mm
-			\item Vitesse maximale : 1500mm/s
+			\item Course totale (Stroke Length) : 200mm
+			\item Vitesse maximale absolue ($V_{max}$) : 1500mm/s
 			\item Force nominale en continu : 142N
 			\item Codeur : 16384 impulsions par tour moteur
 			\item Charge utile horizontale : 30kg - Charge utile verticale : 7kg
 		\end{itemize}
 	\end{block}
-$$accuracy=\frac{BSL(mm)}{16384(pulses)}=\frac{24}{16384}=1.46\mu m$$	
-$$Speed_{min}=\frac{BSL(mm)}{16384(pulses)}*1000(pulse/s)=\frac{24000}{16384}=1.46mm/pulse$$
+$$resolution=\frac{BSL(mm)}{16384(pulses)}=\frac{24}{16384}=1.46\mu m$$	
+$$V_{min}=\frac{BSL(mm)}{16384(pulses)}*1000(pulse/s)=\frac{24000}{16384}=1.46mm/s$$
 \end{frame}
 \begin{frame}
 	\begin{block}{Contrôleur : SCON-CB-200WAI-PN-2-2}
@@ -118,35 +310,62 @@ $$Speed_{min}=\frac{BSL(mm)}{16384(pulses)}*1000(pulse/s)=\frac{24000}{16384}=1.
 	\end{block}
 \end{frame}
 
-\subsection{Axe 1}
 \begin{frame}
-	\begin{block}{Actionneur : RCS4-SA8C-WA-400-30-200-T2-S}
-		\begin{itemize}
-			\item Masse : 5.6kg
-			\item Codeur absolu sans batterie - 400 watts
-			\item Pas de la vis à bille (Ball Screw Lead) : 30mm par tour moteur
-			\item Course totale : 200mm
-			\item Vitesse maximale : 1800mm/s
-			\item Force nominale en continu : 226N
-			\item Codeur : 16384 impulsions par tour moteur
-			\item Charge utile horizontale : 30kg - Charge utile verticale : 12kg
-		\end{itemize}
-	\end{block}
-$$accuracy=\frac{BSL(mm)}{16384(pulses)}=\frac{30}{16384}=1.83\mu m$$	
-$$Speed_{min}=\frac{BSL(mm)}{16384(pulses)}*1000(pulse/s)=\frac{30000}{16384}=1.83mm/pulse$$
+\begin{alertblock}{Grandeurs absolues}
+$V_{max} = 1500mm/s$ et $V_{min} = 1.46mm/s$
+\end{alertblock}
+
+\begin{exampleblock}{Exemple de calcul I}
+Si on se fixe $UTD = resolution$, $v_{max} = 1300mm/s$ et $v_{min} = 2mm/s$. Alors
+$F_{max} = 1027.397kHz$ et $F_{min} = 1000Hz$,
+$f_{max} = 890.41kHz$ et $f_{min} = 1.369kHz$
+\end{exampleblock}
+
+\begin{exampleblock}{Exemple de calcul II}
+Si on se fixe $UTD = 0.5mm$, $v_{max} = 120mm/s$ et $v_{min} = 5mm/s$. Alors $F_{max} = 3000Hz$ et $F_{min} = 2.92Hz$, $f_{max} = 240Hz$ et $f_{min} = 10Hz$
+\end{exampleblock}
 \end{frame}
+
+\subsection{Axe 1 - Celui du dessus - Mouvement fluide}
 \begin{frame}
-	\begin{block}{Contrôleur : SCON-CB-400WAI-PN-2-2}
-		\begin{itemize}
-			\item Type standard, 400 watts
-			\item Codeur absolu/incrémental sans batterie
-			\item Type PNP : type source de courant
-			\item PIO de type PNP
-			\item Commande par positionnement
-			\item Commande par impulsions différentielles
-		\end{itemize}
-	\end{block}
+\justifying
+\textbf{\textcolor{red}{
+En mode train d'impulsions, chaque impulsion déplace la consigne de position du SCON d'un bloc de $0.5 mm$. À $5 mm/s$, soit $10 Hz$, l'actionneur reçoit une nouvelle consigne toutes les $100 ms$ : il parcourt rapidement $0.5 mm$, s'arrête, attend l'impulsion suivante, et ainsi de suite. Le mouvement sera donc saccadé, alors même que $5 mm/s$ est au-dessus de la vitesse minimale de $1,46mm/s$.}}
+\vspace{0.5cm}
+
+\textbf{\textcolor{red}{
+Il est alors préférable de raisonner à partir d'une fréquence min assez grande. Prenons $f_{min} = 500Hz$. On obtient avec $v_{min}=5mm/s$, $UTD=10\mu m$ et avec $v_{max}=120mm/s$, $f_{max}=12kHz$. $12kHz$ devrait être réalisable avec un ADwin. Si on rencontre des difficultés, il sera préférable de diminuer $v_{max}$ plutôt que d'augmenter $UTD$.}}
 \end{frame}
+
+\subsection{Axe 1 - Celui du dessus - Calcul de N, CNUM et CDEN}
+\begin{frame}
+\justifying
+Avec l'exemple II on obtiendrait :
+\begin{align*}
+N = \frac{CNUM}{CDEN} &= \frac{2^{14}}{BSL}*UTD = \frac{16384}{2400} = \frac{512}{75} \\
+CNUM &= 512 \quad CDEN = 75
+\end{align*}
+\begin{alertblock}{Vérifications à faire !}
+$$
+2^{27} \geq \frac{SL}{BSL} * 2^{14} * \frac{CDEN}{CNUM}\quad (1)?
+$$
+$$
+2^{31} \geq \frac{SL}{BSL} * 2^{14} * CNUM\quad (2)?
+$$
+$$
+2^{31} \geq \frac{SL}{BSL} * 2^{14} * CDEN\quad (3)?
+$$
+Pas sûr pour les (2) et (3) : seulement si la version du firmware est plus ancienne que la V0005 !
+\end{alertblock}
+\end{frame}
+
+\begin{frame}
+\justifying
+Pour vérifier la version du firmware, avec RC PC Software, une fois connecté au contrôleur, chercher la commande d'informations de version du contrôleur, dans le menu Help > Version Information. Elle affiche les versions des différents logiciels internes (CPU principal, etc.). C'est la version du contrôleur qui compte ici. Le manuel ME0155 du logiciel indique l'emplacement exact de cette commande.
+
+\centering \textcolor{blue}{\textbf{\underline{\href{https://raw.githubusercontent.com/fbuloup/Interface_IAI/main/Documentation/RCM-101-MW_USB(ME0155-31A).pdf\#page=203}{Documentation PC Software}}}}	
+\end{frame}
+
 
 \section{Interface avec un ADWinPro}
 \subsection{Généralités}
