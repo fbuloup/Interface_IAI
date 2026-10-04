@@ -213,7 +213,8 @@
         0.0,
         0.6,
         0.8,
-        1.0
+        1.0,
+        4.0
       ],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
@@ -557,6 +558,10 @@
       {
         "netclass": "Alimentation",
         "pattern": "GND"
+      },
+      {
+        "netclass": "Alimentation",
+        "pattern": "+24V"
       }
     ]
   },
@@ -713,7 +718,7 @@
         "uuid": "98e49efd-2a8c-420b-a13d-240710123d54"
       }
     ],
-    "used_designators": "",
+    "used_designators": "#PWR1,#PWR3,#PWR6-8,#PWR14-16,#PWR26-55,D1-2,C4-6,PS1,J1-13,#FLG3,R11-22,U1,U3-5,H1-4",
     "variants": []
   },
   "sheets": [
