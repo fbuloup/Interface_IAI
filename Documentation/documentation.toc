@@ -8,11 +8,12 @@
 \beamer@subsectionintoc {2}{6}{Mouvement fluide}{11}{0}{2}
 \beamer@sectionintoc {3}{Caractéristique des actionneurs}{12}{0}{3}
 \beamer@subsectionintoc {3}{1}{Axe 0 - Celui du dessous}{13}{0}{3}
-\beamer@subsectionintoc {3}{2}{Axe 0 - Celui du dessous - Mouvement fluide}{16}{0}{3}
-\beamer@subsectionintoc {3}{3}{Axe 0 - Celui du dessous - Calcul de N, CNUM et CDEN}{17}{0}{3}
-\beamer@subsectionintoc {3}{4}{Axe 1 - Celui du dessus}{19}{0}{3}
-\beamer@subsectionintoc {3}{5}{Axe 1 - Celui du dessus - Mouvement fluide}{22}{0}{3}
-\beamer@subsectionintoc {3}{6}{Axe 1 - Celui du dessus - Calcul de N, CNUM et CDEN}{23}{0}{3}
-\beamer@sectionintoc {4}{Interface avec un ADWinPro}{25}{0}{4}
-\beamer@subsectionintoc {4}{1}{Généralités}{26}{0}{4}
-\beamer@subsectionintoc {4}{2}{Carte Pulse/feedback}{27}{0}{4}
+\beamer@subsectionintoc {3}{2}{Axe 0 - Celui du dessous - Mouvement fluide}{17}{0}{3}
+\beamer@subsectionintoc {3}{3}{Axe 0 - Celui du dessous - Calcul de N, CNUM et CDEN}{18}{0}{3}
+\beamer@subsectionintoc {3}{4}{Axe 1 - Celui du dessus}{20}{0}{3}
+\beamer@subsectionintoc {3}{5}{Axe 1 - Celui du dessus - Mouvement fluide}{23}{0}{3}
+\beamer@subsectionintoc {3}{6}{Axe 1 - Celui du dessus - Calcul de N, CNUM et CDEN}{24}{0}{3}
+\beamer@sectionintoc {4}{Interface avec un ADWinPro}{26}{0}{4}
+\beamer@subsectionintoc {4}{1}{Généralités}{27}{0}{4}
+\beamer@subsectionintoc {4}{2}{Aperçu du routage PCB}{28}{0}{4}
+\beamer@subsectionintoc {4}{3}{Aperçus 3D PCB}{29}{0}{4}

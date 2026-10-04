@@ -95,7 +95,7 @@ captionpos=b
 \begin{frame}
 \begin{alertblock}{Résolution}
 \justifying
-Les codeurs optique ont 14 bits. On obtient donc $2^{14}$ impulsions par tour moteur. Un tour moteur fait avancer l'actuateur du pas de la vis à bille (BSL en mm/tour). On obtient alors $\frac{BSL}{2^{14}}$ mm par impulsion. C'est le plus petit mouvement réalisable : c'est la résolution.
+Les codeurs optique ont 14 bits. On obtient donc $2^{14}$ impulsions par tour moteur. Un tour moteur fait avancer l'actionneur du pas de la vis à bille (BSL en mm/tour). On obtient alors $\frac{BSL}{2^{14}}$ mm par impulsion. C'est le plus petit mouvement réalisable : c'est la résolution.
 \begin{align*}
 resolution = \frac{BSL}{2^{14}}
 \end{align*}
@@ -121,7 +121,7 @@ Le rapport de ces deux quantités donne un nombre sans dimension qui exprime le 
 \end{alertblock}
 \begin{alertblock}{CNUM et DNUM}
 \justifying
-Ce rapport de réduction $N$ est pris en compte dans le contrôleur sous la forme de deux paramètres : $CNUM$ et $CDEN$ (paramètres 65 et 66) : 
+Ce rapport de réduction $N$ est pris en compte dans les contrôleurs sous la forme de deux paramètres : $CNUM$ et $CDEN$ (paramètres 65 et 66) : 
 $$
 N=\frac{CNUM}{CDEN}=\frac{2^{14}}{BSL}*UTD
 $$
@@ -132,7 +132,7 @@ $$
 \begin{frame}
 \begin{alertblock}{Vitesse minimale absolue}
 \justifying
-La vitesse minimale absolue (mm/s) est définie de la façon suivante (page 1-11 doc. actionneurs, la résolution étant en mm/pulse) :
+La vitesse minimale absolue (mm/s) est définie de la façon suivante (\textcolor{blue}{\textbf{\underline{\href{https://raw.githubusercontent.com/fbuloup/Interface_IAI/main/Documentation/RCS4-SLIDER(ME3769-1H).pdf\#page=34}{voir ici}}}}, la résolution étant en mm/pulse) :
 $$
 V_{min} = resolution*1000(pulse/s)
 $$
@@ -150,7 +150,7 @@ Elle est donnée dans la documentation des actionneurs.
 \begin{frame}
 \begin{alertblock}{Fréquences min et max absolues}
 \justifying
-Avec la vitesse maximale absolue (mm/s), on peut connaitre l'intervalle de variation de la fréquence de commande par impulsions :
+Avec la vitesse maximale absolue (mm/s), on peut connaitre l'intervalle de variation absolue de la fréquence de commande par impulsions :
 \begin{align*}
 F_{min} &= \frac{V_{min}}{UTD} \\
 F_{max} &= \frac{V_{max}}{UTD}
@@ -186,7 +186,7 @@ $f_{min}$  et $f_{max}$ étant les fréquences min et max que l'on se fixe.
 \subsection{Mouvement fluide}
 \begin{frame}
 \justifying
-\textbf{\textcolor{red}{Pour que le mouvement soit fluide, il faut que l'UTD soit suffisamment petit mais également que la fréquence de commande soit suffisamment grande afin que la mise à jour de la position soit assez fréquente.}}
+\textbf{\textcolor{red}{Pour que le mouvement soit fluide, il faut que l'UTD soit suffisamment petit mais également que la fréquence de commande soit suffisamment grande afin que la mise à jour de la position soit assez fréquente. C'est un compromis à trouver.}}
 \end{frame}
 
 \section{Caractéristique des actionneurs}
@@ -210,15 +210,39 @@ $$V_{min}=\frac{BSL(mm)}{16384(pulses)}*1000(pulse/s)=\frac{30000}{16384}=1.83mm
 \end{frame}
 
 \begin{frame}
+\centering
 	\begin{block}{Contrôleur : SCON-CB-400WAI-PN-2-2}
 		\begin{itemize}
 			\item Type standard, 400 watts
 			\item Codeur absolu/incrémental sans batterie
 			\item Type PNP : type source de courant
 			\item PIO de type PNP
-			\item Commande par positionnement
-			\item Commande par impulsions différentielles
-		\end{itemize}
+			\item Commande par positionnement ou impulsions différentielles
+			\item Les entrées PIO doivent être positionnées au moins 6ms pour prise en compte (commandes reçues de l'ADwin)
+			\item CSTP doit être positionnée au moins 16 
+ms		\end{itemize}
+	\end{block}
+\end{frame}
+\begin{frame}
+\centering
+\textcolor{blue}{\textbf{\underline{\href{https://raw.githubusercontent.com/fbuloup/Interface_IAI/main/Documentation/SCON-CB_CGB(ME0340-8A).pdf\#page=243}{Ref.}}}}
+	
+
+	\begin{block}{Signaux PIO utiles en mode impulsions - Sorties ADWin}
+	\begin{itemize}
+		\item SON, pour activer le moteur
+		\item RES, pour acquitter une alarme sans intervention manuelle
+		\item HOME : faire origine depuis ADwin (cod. abs. sans batterie)
+		\item CSTP : arrêt forcé, en plus de l'arrêt d'urgence câblé.
+	\end{itemize}
+	\end{block}
+	\begin{block}{Signaux PIO utiles en mode impulsions - Entrées ADWin}
+	\begin{itemize}
+		\item SV : servo prêt ? Avant d'envoyer des impulsions
+		\item INP : pour savoir si l'actionneur a rejoint la consigne
+		\item HEND : pour savoir si l'origine est faite
+		\item ALM : arrêt de l'envoi d'impulsions si défaut.
+	\end{itemize}
 	\end{block}
 \end{frame}
 
@@ -370,36 +394,33 @@ Pour vérifier la version du firmware, avec RC PC Software, une fois connecté a
 \section{Interface avec un ADWinPro}
 \subsection{Généralités}
 \begin{frame}
-	\begin{block}{Pulse et feedback}
+	\begin{block}{Pulse, feedback et PIO}
 		\begin{itemize}
+			\item Une carte pour adapter les signaux SCON<->ADWin
 			\item Commande par impulsion et non par positionnement
-			\item Une carte par paire contrôleur/actionneur
 			\item La commande sera faite avec des sorties DIO32 de l'ADwin
-			\item La lecture du feedback sera faite avec une carte CO4-T
-		\end{itemize}
-	\end{block}
-	\begin{block}{PIO}
-		\begin{itemize}
-			\item Le type PNP impose aussi une adaptation
-			\item Une carte par paire contrôleur/actionneur
+			\item Les états des signaux PIO seront lus/positionnés avec des entrées/sorties DIO32 de l'ADwin
+			\item La lecture du feedback sera faite avec une carte CO4-T de l'ADwin
+			\item Une carte par paire contrôleur/actionneur (par axe)
 		\end{itemize}
 	\end{block}
 \end{frame}
 
-\subsection{Carte Pulse/feedback}
+\subsection{Aperçu du routage PCB}
 \begin{frame}
 	\centering
-	\includegraphics[scale=0.33]{images/pcb.png}
+	\includegraphics[scale=0.3]{images/pcb.png}
+\end{frame}
+
+\subsection{Aperçus 3D PCB}
+\begin{frame}
+	\centering
+	\includegraphics[scale=0.185]{images/Interface_IAI_1.png}
 \end{frame}
 
 \begin{frame}
 	\centering
-	\includegraphics[scale=0.28]{images/Interface_IAI_1.png}
-\end{frame}
-
-\begin{frame}
-	\centering
-	\includegraphics[scale=0.28]{images/Interface_IAI_2.png}
+	\includegraphics[scale=0.185]{images/Interface_IAI_2.png}
 \end{frame}
 
 \end{document}

@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.4) (preloaded format=xelatex 2025.12.9)  3 OCT 2026 12:39
+This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.4) (preloaded format=xelatex 2025.12.9)  4 OCT 2026 11:25
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1323,7 +1323,11 @@ LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <6> not available
 ]
 (documentation.toc) [5
 
-] [6
+]
+Overfull \vbox (3.99744pt too high) detected at line 111
+ []
+
+[6
 
 ] [7
 
@@ -1353,13 +1357,13 @@ Overfull \vbox (2.2675pt too high) detected at line 210
 
 ] [18
 
+] [19
+
 ]
-Overfull \vbox (2.2675pt too high) detected at line 299
+Overfull \vbox (2.2675pt too high) detected at line 323
  []
 
-[19
-
-] [20
+[20
 
 ] [21
 
@@ -1369,24 +1373,36 @@ Overfull \vbox (2.2675pt too high) detected at line 299
 
 ] [24
 
-] (documentation.toc) [25
+] [25
 
-] [26
+] (documentation.toc) [26
+
+] [27
 
 ]
 File: images/pcb.png Graphic file (type bmp)
 <images/pcb.png>
- [27
+ [28
 
 ]
 File: images/Interface_IAI_1.png Graphic file (type bmp)
 <images/Interface_IAI_1.png>
- [28
+
+Overfull \hbox (3.7423pt too wide) in paragraph at lines 419--419
+ [][] 
+ []
+
+[29
 
 ]
 File: images/Interface_IAI_2.png Graphic file (type bmp)
 <images/Interface_IAI_2.png>
- [29
+
+Overfull \hbox (3.7423pt too wide) in paragraph at lines 424--424
+ [][] 
+ []
+
+[30
 
 ]
 \tf@nav=\write6
@@ -1398,22 +1414,21 @@ File: images/Interface_IAI_2.png Graphic file (type bmp)
 \tf@snm=\write8
 \openout8 = `documentation.snm'.
 
-
-(documentation.aux)
+ (documentation.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2025-11-06>
  ***********
 Package rerunfilecheck Info: File `documentation.out' has not changed.
-(rerunfilecheck)             Checksum: DC972AED49FB08061638866CD8BE8923;3991.
+(rerunfilecheck)             Checksum: 0D5295154553B2DC9FFB1DC18A9DF5AE;4143.
  ) 
 Here is how much of TeX's memory you used:
- 34847 strings out of 402986
- 738488 string characters out of 5450366
+ 34863 strings out of 402986
+ 739060 string characters out of 5450366
  1398428 words of memory out of 5000000
- 62925 multiletter control sequences out of 15000+600000
+ 62941 multiletter control sequences out of 15000+600000
  640446 words of font info for 74 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  128i,20n,123p,455b,787s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on documentation.pdf (29 pages).
+Output written on documentation.pdf (30 pages).
