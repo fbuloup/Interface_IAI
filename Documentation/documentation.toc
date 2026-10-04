@@ -15,5 +15,9 @@
 \beamer@subsectionintoc {3}{6}{Axe 1 - Celui du dessus - Calcul de N, CNUM et CDEN}{24}{0}{3}
 \beamer@sectionintoc {4}{Interface avec un ADWinPro}{26}{0}{4}
 \beamer@subsectionintoc {4}{1}{Généralités}{27}{0}{4}
-\beamer@subsectionintoc {4}{2}{Aperçu du routage PCB}{28}{0}{4}
-\beamer@subsectionintoc {4}{3}{Aperçus 3D PCB}{29}{0}{4}
+\beamer@subsectionintoc {4}{2}{Aperçus du routage PCB}{28}{0}{4}
+\beamer@subsectionintoc {4}{3}{Boîtier}{31}{0}{4}
+\beamer@subsectionintoc {4}{4}{Connecteurs}{32}{0}{4}
+\beamer@subsectionintoc {4}{5}{Brochages}{33}{0}{4}
+\beamer@subsectionintoc {4}{6}{Câblage (pour mémo !)}{37}{0}{4}
+\beamer@subsectionintoc {4}{7}{Devis}{38}{0}{4}

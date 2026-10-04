@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.4) (preloaded format=xelatex 2025.12.9)  4 OCT 2026 14:54
+This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.4) (preloaded format=xelatex 2025.12.9)  4 OCT 2026 20:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1104,7 +1104,27 @@ Package: wasysym 2020/01/19 v2.4 Wasy-2 symbol support package
 LaTeX Font Info:    Overwriting symbol font `wasy' in version `bold'
 (Font)                  U/wasy/m/n --> U/wasy/b/n on input line 93.
 )
-\c@exampleBlockCounter=\count394
+(C:\Users\Buloup\Applications\MiKTeX\tex/latex/booktabs\booktabs.sty
+Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
+\heavyrulewidth=\dimen334
+\lightrulewidth=\dimen335
+\cmidrulewidth=\dimen336
+\belowrulesep=\dimen337
+\belowbottomsep=\dimen338
+\aboverulesep=\dimen339
+\abovetopsep=\dimen340
+\cmidrulesep=\dimen341
+\cmidrulekern=\dimen342
+\defaultaddspace=\dimen343
+\@cmidla=\count394
+\@cmidlb=\count395
+\@aboverulesep=\dimen344
+\@belowrulesep=\dimen345
+\@thisruleclass=\count396
+\@lastruleclass=\count397
+\@thisrulewidth=\dimen346
+)
+\c@exampleBlockCounter=\count398
 
 (C:\Users\Buloup\Applications\MiKTeX\tex/latex/listings\lstlang1.sty
 File: lstlang1.sty 2025/11/14 1.11b listings language file
@@ -1112,26 +1132,26 @@ File: lstlang1.sty 2025/11/14 1.11b listings language file
 (documentation.aux)
 \openout1 = `documentation.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: xetex
@@ -1167,57 +1187,57 @@ LaTeX Font Info:    ... okay on input line 59.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: Link coloring OFF on input line 59.
+Package hyperref Info: Link coloring OFF on input line 62.
 (documentation.out) (documentation.out)
 \@outlinefile=\write5
 \openout5 = `documentation.out'.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/lmr/m/n --> OT1/cmss/m/n on input line 59.
+(Font)                  OT1/lmr/m/n --> OT1/cmss/m/n on input line 62.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/lmr/bx/n --> OT1/cmss/b/n on input line 59.
+(Font)                  OT1/lmr/bx/n --> OT1/cmss/b/n on input line 62.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmss/m/n --> OT1/lmss/m/n on input line 59.
+(Font)                  OT1/cmss/m/n --> OT1/lmss/m/n on input line 62.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmss/b/n --> OT1/lmss/b/n on input line 59.
+(Font)                  OT1/cmss/b/n --> OT1/lmss/b/n on input line 62.
 \symnumbers=\mathgroup7
 \sympureletters=\mathgroup8
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/lmss/m/n --> TU/lmr/m/n on input line 59.
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 59.
+(Font)                  OT1/lmss/m/n --> TU/lmr/m/n on input line 62.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 62.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/lmr/bx/n --> TU/lmss/b/n on input line 59.
+(Font)                  OT1/lmr/bx/n --> TU/lmss/b/n on input line 62.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/lmr/bx/n --> TU/lmss/b/n on input line 59.
-LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 59.
+(Font)                  OT1/lmr/bx/n --> TU/lmss/b/n on input line 62.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 62.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/lmss/m/n --> TU/lmss/m/n on input line 59.
+(Font)                  OT1/lmss/m/n --> TU/lmss/m/n on input line 62.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/lmss/bx/n --> TU/lmss/m/n on input line 59.
-LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 59.
+(Font)                  OT1/lmss/bx/n --> TU/lmss/m/n on input line 62.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 62.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/lmr/m/it --> TU/lmss/m/it on input line 59.
+(Font)                  OT1/lmr/m/it --> TU/lmss/m/it on input line 62.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/lmr/bx/it --> TU/lmss/m/it on input line 59.
-LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 59.
+(Font)                  OT1/lmr/bx/it --> TU/lmss/m/it on input line 62.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 62.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/lmtt/m/n --> TU/lmtt/m/n on input line 59.
+(Font)                  OT1/lmtt/m/n --> TU/lmtt/m/n on input line 62.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/lmtt/m/n --> TU/lmtt/m/n on input line 59.
+(Font)                  OT1/lmtt/m/n --> TU/lmtt/m/n on input line 62.
 LaTeX Font Info:    Overwriting symbol font `numbers' in version `bold'
-(Font)                  TU/lmss/m/n --> TU/lmss/b/n on input line 59.
+(Font)                  TU/lmss/m/n --> TU/lmss/b/n on input line 62.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  TU/lmss/m/it --> TU/lmss/b/it on input line 59.
+(Font)                  TU/lmss/m/it --> TU/lmss/b/it on input line 62.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
-(Font)                  OT1/lmss/b/n --> TU/lmr/b/n on input line 59.
+(Font)                  OT1/lmss/b/n --> TU/lmr/b/n on input line 62.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  TU/lmss/b/n --> TU/lmss/b/n on input line 59.
+(Font)                  TU/lmss/b/n --> TU/lmss/b/n on input line 62.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  TU/lmss/m/n --> TU/lmss/b/n on input line 59.
+(Font)                  TU/lmss/m/n --> TU/lmss/b/n on input line 62.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  TU/lmss/m/it --> TU/lmss/b/it on input line 59.
+(Font)                  TU/lmss/m/it --> TU/lmss/b/it on input line 62.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  TU/lmtt/m/n --> TU/lmtt/b/n on input line 59.
+(Font)                  TU/lmtt/m/n --> TU/lmtt/b/n on input line 62.
 
 (C:\Users\Buloup\Applications\MiKTeX\tex/latex/translator\translator-basic-dict
 ionary-English.dict
@@ -1246,7 +1266,7 @@ Dictionary: translator-theorem-dictionary, Language: English
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
-\c@lstlisting=\count395
+\c@lstlisting=\count399
  (documentation.nav)
 File: images/by-nc-sa.eps Graphic file (type eps)
 <images/by-nc-sa.eps>
@@ -1265,66 +1285,66 @@ File: images/LogoISM.eps Graphic file (type eps)
 
 ]
 LaTeX Font Info:    Trying to load font information for OT1+lmss on input line 
-91.
+94.
 
 (C:\Users\Buloup\Applications\MiKTeX\tex/latex/lm\ot1lmss.fd
 File: ot1lmss.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OML+lmm on input line 9
-1.
+4.
 
 (C:\Users\Buloup\Applications\MiKTeX\tex/latex/lm\omllmm.fd
 File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
-91.
+94.
 
 (C:\Users\Buloup\Applications\MiKTeX\tex/latex/lm\omslmsy.fd
 File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
-91.
+94.
 
 (C:\Users\Buloup\Applications\MiKTeX\tex/latex/lm\omxlmex.fd
 File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 91.
+(Font)              <10.95> on input line 94.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 91.
+(Font)              <8> on input line 94.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 91.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 91.
+(Font)              <6> on input line 94.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 94.
 
 
 (C:\Users\Buloup\Applications\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 91.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 94.
 
 
 (C:\Users\Buloup\Applications\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for U+wasy on input line 91
+LaTeX Font Info:    Trying to load font information for U+wasy on input line 94
 .
 
 (C:\Users\Buloup\Applications\MiKTeX\tex/latex/wasysym\uwasy.fd
 File: uwasy.fd 2020/01/19 v2.4 Wasy-2 symbol font definitions
 )
 LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <10.95> not available
-(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 91.
+(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 94.
 LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <8> not available
-(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 91.
+(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 94.
 LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <6> not available
-(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 91.
+(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 94.
  [4
 
 ]
 (documentation.toc) [5
 
 ]
-Overfull \vbox (3.99744pt too high) detected at line 111
+Overfull \vbox (3.99744pt too high) detected at line 114
  []
 
 [6
@@ -1342,7 +1362,7 @@ Overfull \vbox (3.99744pt too high) detected at line 111
 ] (documentation.toc) [12
 
 ]
-Overfull \vbox (2.2675pt too high) detected at line 210
+Overfull \vbox (2.2675pt too high) detected at line 213
  []
 
 [13
@@ -1360,7 +1380,7 @@ Overfull \vbox (2.2675pt too high) detected at line 210
 ] [19
 
 ]
-Overfull \vbox (2.2675pt too high) detected at line 323
+Overfull \vbox (2.2675pt too high) detected at line 326
  []
 
 [20
@@ -1388,7 +1408,7 @@ File: images/pcb.png Graphic file (type bmp)
 File: images/Interface_IAI_1.png Graphic file (type bmp)
 <images/Interface_IAI_1.png>
 
-Overfull \hbox (3.7423pt too wide) in paragraph at lines 419--419
+Overfull \hbox (3.7423pt too wide) in paragraph at lines 423--423
  [][] 
  []
 
@@ -1398,11 +1418,44 @@ Overfull \hbox (3.7423pt too wide) in paragraph at lines 419--419
 File: images/Interface_IAI_2.png Graphic file (type bmp)
 <images/Interface_IAI_2.png>
 
-Overfull \hbox (3.7423pt too wide) in paragraph at lines 424--424
+Overfull \hbox (3.7423pt too wide) in paragraph at lines 428--428
  [][] 
  []
 
 [30
+
+]
+File: images/Boitier.png Graphic file (type bmp)
+<images/Boitier.png>
+ [31
+
+]
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <9> on input line 479.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <5> on input line 479.
+LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <9> not available
+(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 479.
+LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <5> not available
+(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 479.
+
+Overfull \hbox (21.2582pt too wide) in paragraph at lines 479--479
+ [] 
+ []
+
+[32
+
+] [33
+
+] [34
+
+] [35
+
+] [36
+
+] [37
+
+] [38
 
 ]
 \tf@nav=\write6
@@ -1420,15 +1473,15 @@ LaTeX2e <2025-11-01>
 L3 programming layer <2025-11-06>
  ***********
 Package rerunfilecheck Info: File `documentation.out' has not changed.
-(rerunfilecheck)             Checksum: 0D5295154553B2DC9FFB1DC18A9DF5AE;4143.
+(rerunfilecheck)             Checksum: A2CBACB15B4215B306A80876DC15D2CD;4594.
  ) 
 Here is how much of TeX's memory you used:
- 34863 strings out of 402986
- 739060 string characters out of 5450366
- 1398428 words of memory out of 5000000
- 62941 multiletter control sequences out of 15000+600000
- 640446 words of font info for 74 fonts, out of 8000000 for 9000
+ 35058 strings out of 402986
+ 742562 string characters out of 5450366
+ 1403175 words of memory out of 5000000
+ 63115 multiletter control sequences out of 15000+600000
+ 648518 words of font info for 92 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  128i,20n,123p,455b,787s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on documentation.pdf (30 pages).
+Output written on documentation.pdf (38 pages).

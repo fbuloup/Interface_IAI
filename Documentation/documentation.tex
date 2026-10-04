@@ -12,6 +12,9 @@
 \usepackage{color}
 \usepackage{gitdags}
 \usepackage{fontawesome, wasysym}
+\usepackage{booktabs}
+
+
 %\captionsetup[figure]{labelformat=empty}
 
 \setbeamertemplate{navigation symbols}{} 
@@ -406,13 +409,14 @@ Pour vérifier la version du firmware, avec RC PC Software, une fois connecté a
 	\end{block}
 \end{frame}
 
-\subsection{Aperçu du routage PCB}
+\subsection{Aperçus du routage PCB}
 \begin{frame}
 	\centering
 	\includegraphics[scale=0.3]{images/pcb.png}
+\textbf{\textcolor{red}{
+La carte sera élargie pour l'insérer dans un boitier Hammond}}	
 \end{frame}
 
-\subsection{Aperçus 3D PCB}
 \begin{frame}
 	\centering
 	\includegraphics[scale=0.185]{images/Interface_IAI_1.png}
@@ -421,6 +425,178 @@ Pour vérifier la version du firmware, avec RC PC Software, une fois connecté a
 \begin{frame}
 	\centering
 	\includegraphics[scale=0.185]{images/Interface_IAI_2.png}
+\end{frame}
+
+\subsection{Boîtier}
+\begin{frame}
+
+\centering 
+	\includegraphics[scale=0.2]{images/Boitier.png}
+	
+	\textcolor{blue}{\textbf{\underline{\href{https://www.hammfg.com/fr/electronics/small-case/extruded/1455}{Boîtier Hammond de type extrudé}}}}	
+	
+\begin{block}{Hammond 1455N1601 : 160 × 103 × 53 mm}
+	\begin{itemize}
+		\item Longueur : avec 160 mm pour une carte de 120 mm, il reste environ 20 mm de chaque côté pour l'arrière des connecteurs et le câblage jusqu'aux borniers.
+		\item Hauteur : 53 mm permettent deux rangées de connecteurs sur une même face.
+		\item Métal : il fait office de blindage pour la carte.
+	\end{itemize}
+\end{block}	
+	
+	
+\end{frame}
+
+
+
+\subsection{Connecteurs}
+\begin{frame}
+
+
+\begin{table}[htbp]
+  \centering
+  \footnotesize
+  \caption{Connecteurs en faces du boîtier}
+  \label{tab:connecteurs}
+  \begin{tabular}{llll}
+    \toprule
+    \textbf{Repère} & \textbf{Rôle} & \textbf{Type} & \textbf{Relié aux borniers} \\
+    \midrule
+    X1 & ADwin DIO-32              & DA-15 femelle      & J1      \\
+    X2 & ADwin CO4-T               & DE-9 femelle       & J5      \\
+    X3 & SCON PULSE + feedback     & DA-15 mâle         & J3 + J4 \\
+    X4 & SCON PIO                  & DA-15 femelle      & J6      \\
+    X5 & Entrée 24\,V              & Jack d'alimentation & J2     \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+\begin{block}{Répartition sur le boîtier}
+	\begin{itemize}
+		\item Face avant : X1 et X2, côté ADwin
+		\item Face arrière : X3, X4 et X5, côté SCON et alimentation
+	\end{itemize}
+\end{block}
+\end{frame}
+
+\subsection{Brochages}
+\begin{frame}
+\begin{table}[htbp]
+  \centering
+  \footnotesize
+  \caption{Brochage de X3 -- SCON PULSE + feedback (DA-15 mâle)}
+  \label{tab:brochage-x3}
+  \footnotesize
+  \begin{tabular}{lcc}
+    \toprule
+    \textbf{Paire} & \textbf{Broche +} & \textbf{Broche $-$} \\
+    \midrule
+    PULSE   & 1 & 9  \\
+    SIGN    & 2 & 10 \\
+    Phase A & 3 & 11 \\
+    Phase B & 4 & 12 \\
+    Phase Z & 5 & 13 \\
+    \midrule
+    GND     & \multicolumn{2}{c}{8 et 15} \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+\centering
+\textbf{\textcolor{red}{Torsader les deux fils de chaque paire}}
+
+\textbf{\textcolor{red}{PULSE+ et PULSE−, etc.}}
+
+\end{frame}
+
+\begin{frame}
+\begin{table}[htbp]
+  \centering
+  \caption{Brochage de X4 -- SCON PIO (DA-15 femelle)}
+  \label{tab:brochage-x4}
+  \footnotesize
+  \begin{tabular}{cl}
+    \toprule
+    \textbf{Broche} & \textbf{Signal} \\
+    \midrule
+    1       & +24\,V \\
+    9       & 0\,V \\
+    2       & SON \\
+    3       & RES \\
+    4       & HOME \\
+    5       & CSTP \\
+    10      & SV \\
+    11      & INP \\
+    12      & HEND \\
+    13      & *ALM \\
+    14, 15  & 0\,V supplémentaires \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+\end{frame}
+
+\begin{frame}
+\begin{table}[htbp]
+  \centering
+  \caption{Brochage de X1 -- ADwin DIO-32 (DA-15 femelle)}
+  \label{tab:brochage-x1}
+  \footnotesize
+  \begin{tabular}{cl}
+    \toprule
+    \textbf{Broche} & \textbf{Signal} \\
+    \midrule
+    1          & PULSE \\
+    2          & SIGN \\
+    3          & SON \\
+    4          & RES \\
+    5          & HOME \\
+    6          & CSTP \\
+    7          & SV \\
+    8          & INP \\
+    9          & HEND \\
+    10         & ALM \\
+    11 à 15    & GND \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+\end{frame}
+
+\begin{frame}
+\begin{table}[htbp]
+  \centering
+  \caption{Brochage de X2 -- ADwin CO4-T (DE-9 femelle)}
+  \label{tab:brochage-x2}
+  \footnotesize
+  \begin{tabular}{cl}
+    \toprule
+    \textbf{Broche} & \textbf{Signal} \\
+    \midrule
+    1          & A \\
+    2          & B \\
+    3          & Z \\
+    5          & GND \\
+    4, 6 à 9   & non utilisées \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+\end{frame}
+
+\subsection{Câblage (pour mémo !)}
+\begin{frame}
+\begin{itemize}
+\justifying
+  \item \textbf{Liaisons D-Sub $\rightarrow$ borniers} : du fil souple, soudé sur les cosses des D-Sub et serré dans les borniers Phoenix. Garder des longueurs d'environ 10 à 15cm.
+  \item \textbf{Paires différentielles} : torsader les deux fils de chaque paire.
+  \item \textbf{Masse et blindage} : les boîtiers métalliques des D-Sub, vissés sur la face, relient le blindage des câbles au boîtier. Relier le boîtier à la terre par une vis et une cosse. Côté SCON et ADwin, laisser le blindage des câbles non raccordé : c'est la règle du blindage d'un seul côté, appliquée ici côté boîtier.
+  \item \textbf{Contact électrique} : gratter l'anodisation autour des trous des D-Sub et du point de terre pour assurer le contact.
+  \item \textbf{Isolation de la masse électronique} : ne pas relier la masse électronique (GND) au boîtier. La carte, glissée dans les rainures, ne présente aucun cuivre sur ses bords.
+\end{itemize}
+\end{frame}
+
+
+
+\subsection{Devis}
+\begin{frame}
+
 \end{frame}
 
 \end{document}

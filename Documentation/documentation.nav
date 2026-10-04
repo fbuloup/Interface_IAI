@@ -91,17 +91,41 @@
 \headcommand {\slideentry {4}{1}{1}{27/27}{Généralités}{0}}
 \headcommand {\beamer@framepages {27}{27}}
 \headcommand {\beamer@subsectionpages {27}{27}}
-\headcommand {\beamer@subsectionentry {0}{4}{2}{28}{Aperçu du routage PCB}}
-\headcommand {\slideentry {4}{2}{1}{28/28}{Aperçu du routage PCB}{0}}
+\headcommand {\beamer@subsectionentry {0}{4}{2}{28}{Aperçus du routage PCB}}
+\headcommand {\slideentry {4}{2}{1}{28/28}{Aperçus du routage PCB}{0}}
 \headcommand {\beamer@framepages {28}{28}}
-\headcommand {\beamer@subsectionpages {28}{28}}
-\headcommand {\beamer@subsectionentry {0}{4}{3}{29}{Aperçus 3D PCB}}
-\headcommand {\slideentry {4}{3}{1}{29/29}{Aperçus 3D PCB}{0}}
+\headcommand {\slideentry {4}{2}{2}{29/29}{Aperçus du routage PCB}{0}}
 \headcommand {\beamer@framepages {29}{29}}
-\headcommand {\slideentry {4}{3}{2}{30/30}{Aperçus 3D PCB}{0}}
+\headcommand {\slideentry {4}{2}{3}{30/30}{Aperçus du routage PCB}{0}}
 \headcommand {\beamer@framepages {30}{30}}
-\headcommand {\beamer@partpages {1}{30}}
-\headcommand {\beamer@subsectionpages {29}{30}}
-\headcommand {\beamer@sectionpages {26}{30}}
-\headcommand {\beamer@documentpages {30}}
-\headcommand {\gdef \inserttotalframenumber {30}}
+\headcommand {\beamer@subsectionpages {28}{30}}
+\headcommand {\beamer@subsectionentry {0}{4}{3}{31}{Boîtier}}
+\headcommand {\slideentry {4}{3}{1}{31/31}{Boîtier}{0}}
+\headcommand {\beamer@framepages {31}{31}}
+\headcommand {\beamer@subsectionpages {31}{31}}
+\headcommand {\beamer@subsectionentry {0}{4}{4}{32}{Connecteurs}}
+\headcommand {\slideentry {4}{4}{1}{32/32}{Connecteurs}{0}}
+\headcommand {\beamer@framepages {32}{32}}
+\headcommand {\beamer@subsectionpages {32}{32}}
+\headcommand {\beamer@subsectionentry {0}{4}{5}{33}{Brochages}}
+\headcommand {\slideentry {4}{5}{1}{33/33}{Brochages}{0}}
+\headcommand {\beamer@framepages {33}{33}}
+\headcommand {\slideentry {4}{5}{2}{34/34}{Brochages}{0}}
+\headcommand {\beamer@framepages {34}{34}}
+\headcommand {\slideentry {4}{5}{3}{35/35}{Brochages}{0}}
+\headcommand {\beamer@framepages {35}{35}}
+\headcommand {\slideentry {4}{5}{4}{36/36}{Brochages}{0}}
+\headcommand {\beamer@framepages {36}{36}}
+\headcommand {\beamer@subsectionpages {33}{36}}
+\headcommand {\beamer@subsectionentry {0}{4}{6}{37}{Câblage (pour mémo !)}}
+\headcommand {\slideentry {4}{6}{1}{37/37}{Câblage (pour mémo !)}{0}}
+\headcommand {\beamer@framepages {37}{37}}
+\headcommand {\beamer@subsectionpages {37}{37}}
+\headcommand {\beamer@subsectionentry {0}{4}{7}{38}{Devis}}
+\headcommand {\slideentry {4}{7}{1}{38/38}{Devis}{0}}
+\headcommand {\beamer@framepages {38}{38}}
+\headcommand {\beamer@partpages {1}{38}}
+\headcommand {\beamer@subsectionpages {38}{38}}
+\headcommand {\beamer@sectionpages {26}{38}}
+\headcommand {\beamer@documentpages {38}}
+\headcommand {\gdef \inserttotalframenumber {38}}
