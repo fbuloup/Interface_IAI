@@ -20,4 +20,4 @@
 \beamer@subsectionintoc {4}{4}{Connecteurs}{32}{0}{4}
 \beamer@subsectionintoc {4}{5}{Brochages}{33}{0}{4}
 \beamer@subsectionintoc {4}{6}{Câblage (pour mémo !)}{37}{0}{4}
-\beamer@subsectionintoc {4}{7}{Devis}{38}{0}{4}
+\beamer@subsectionintoc {4}{7}{Ordre de prix et devis}{38}{0}{4}

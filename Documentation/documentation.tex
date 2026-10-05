@@ -303,6 +303,16 @@ Pas sûr pour les (2) et (3) : seulement si la version du firmware est plus anci
 Pour vérifier la version du firmware, avec RC PC Software, une fois connecté au contrôleur, chercher la commande d'informations de version du contrôleur, dans le menu Help > Version Information. Elle affiche les versions des différents logiciels internes (CPU principal, etc.). C'est la version du contrôleur qui compte ici. Le manuel ME0155 du logiciel indique l'emplacement exact de cette commande.
 
 \centering \textcolor{blue}{\textbf{\underline{\href{https://raw.githubusercontent.com/fbuloup/Interface_IAI/main/Documentation/RCM-101-MW_USB(ME0155-31A).pdf\#page=203}{Documentation PC Software}}}}	
+\vspace{0.75cm}
+
+\centering 
+Dans cette fenêtre, il existe deux numéros de version :
+\begin{itemize}
+	\item Controller Version : ? $\rightarrow$ ?
+	\item Controller Core Version : ? $\rightarrow$ ?
+\end{itemize}
+\textcolor{red}{\textbf{Je ne sais pas quelle version choisir ! A vérifier !}}	
+
 \end{frame}
 
 
@@ -391,6 +401,16 @@ Pas sûr pour les (2) et (3) : seulement si la version du firmware est plus anci
 Pour vérifier la version du firmware, avec RC PC Software, une fois connecté au contrôleur, chercher la commande d'informations de version du contrôleur, dans le menu Help > Version Information. Elle affiche les versions des différents logiciels internes (CPU principal, etc.). C'est la version du contrôleur qui compte ici. Le manuel ME0155 du logiciel indique l'emplacement exact de cette commande.
 
 \centering \textcolor{blue}{\textbf{\underline{\href{https://raw.githubusercontent.com/fbuloup/Interface_IAI/main/Documentation/RCM-101-MW_USB(ME0155-31A).pdf\#page=203}{Documentation PC Software}}}}	
+\vspace{0.75cm}
+
+\centering 
+Dans cette fenêtre, il existe deux numéros de version :
+\begin{itemize}
+	\item Controller Version : AA090019h $\rightarrow$ V0019
+	\item Controller Core Version : AA840003h $\rightarrow$ V0003
+\end{itemize}
+\textcolor{red}{\textbf{Je ne sais pas quelle version choisir ! A vérifier !}}	
+
 \end{frame}
 
 
@@ -503,7 +523,7 @@ La carte sera élargie pour l'insérer dans un boitier Hammond}}
 \centering
 \textbf{\textcolor{red}{Torsader les deux fils de chaque paire}}
 
-\textbf{\textcolor{red}{PULSE+ et PULSE−, etc.}}
+\textbf{\textcolor{red}{PULSE+ et PULSE-, etc.}}
 
 \end{frame}
 
@@ -594,9 +614,27 @@ La carte sera élargie pour l'insérer dans un boitier Hammond}}
 
 
 
-\subsection{Devis}
+\subsection{Ordre de prix et devis}
 \begin{frame}
-
+\begin{table}[htbp]
+  \centering
+  \caption{Ordres de prix par poste}
+  \label{tab:brochage-x2}
+  \footnotesize
+  \begin{tabular}{cl}
+    \toprule
+    \textbf{Poste} & \textbf{Prix approximatif HT} \\
+    \midrule
+    Carte chez eurocircuits          & 90 \\
+    Composants pour circuit imprimé  & 40 \\
+    Boitier          & 84 \\
+    \midrule
+    Total HT          & 214 \\
+    \midrule
+    Grand total HT (2 axes)   & 428 \\
+    \bottomrule
+  \end{tabular}
+\end{table}
 \end{frame}
 
 \end{document}
