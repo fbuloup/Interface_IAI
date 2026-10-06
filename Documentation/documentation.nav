@@ -124,16 +124,28 @@
 \headcommand {\beamer@subsectionentry {0}{4}{7}{38}{Ordre de prix et devis}}
 \headcommand {\slideentry {4}{7}{1}{38/38}{Ordre de prix et devis}{0}}
 \headcommand {\beamer@framepages {38}{38}}
-\headcommand {\slideentry {4}{7}{2}{39/39}{Ordre de prix et devis}{0}}
+\headcommand {\beamer@subsectionpages {38}{38}}
+\headcommand {\beamer@subsectionentry {0}{4}{8}{39}{Coffret mural}}
+\headcommand {\slideentry {4}{8}{1}{39/39}{Coffret mural}{0}}
 \headcommand {\beamer@framepages {39}{39}}
-\headcommand {\slideentry {4}{7}{3}{40/40}{Ordre de prix et devis}{0}}
+\headcommand {\slideentry {4}{8}{2}{40/40}{Coffret mural}{0}}
 \headcommand {\beamer@framepages {40}{40}}
-\headcommand {\slideentry {4}{7}{4}{41/41}{Ordre de prix et devis}{0}}
+\headcommand {\slideentry {4}{8}{3}{41/41}{Coffret mural}{0}}
 \headcommand {\beamer@framepages {41}{41}}
-\headcommand {\slideentry {4}{7}{5}{42/42}{Ordre de prix et devis}{0}}
+\headcommand {\beamer@subsectionpages {39}{41}}
+\headcommand {\beamer@subsectionentry {0}{4}{9}{42}{Schéma d'implantation dans le coffret}}
+\headcommand {\slideentry {4}{9}{1}{42/42}{Schéma d'implantation dans le coffret}{0}}
 \headcommand {\beamer@framepages {42}{42}}
-\headcommand {\beamer@partpages {1}{42}}
-\headcommand {\beamer@subsectionpages {38}{42}}
-\headcommand {\beamer@sectionpages {26}{42}}
-\headcommand {\beamer@documentpages {42}}
-\headcommand {\gdef \inserttotalframenumber {42}}
+\headcommand {\beamer@subsectionpages {42}{42}}
+\headcommand {\beamer@subsectionentry {0}{4}{10}{43}{Câblage (pour mémo !)}}
+\headcommand {\slideentry {4}{10}{1}{43/43}{Câblage (pour mémo !)}{0}}
+\headcommand {\beamer@framepages {43}{43}}
+\headcommand {\slideentry {4}{10}{2}{44/44}{Câblage (pour mémo !)}{0}}
+\headcommand {\beamer@framepages {44}{44}}
+\headcommand {\slideentry {4}{10}{3}{45/45}{Câblage (pour mémo !)}{0}}
+\headcommand {\beamer@framepages {45}{45}}
+\headcommand {\beamer@partpages {1}{45}}
+\headcommand {\beamer@subsectionpages {43}{45}}
+\headcommand {\beamer@sectionpages {26}{45}}
+\headcommand {\beamer@documentpages {45}}
+\headcommand {\gdef \inserttotalframenumber {45}}

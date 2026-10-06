@@ -642,54 +642,150 @@ La carte sera élargie pour l'insérer dans un boitier Hammond}}
 \textcolor{blue}{\textbf{\underline{\href{https://raw.githubusercontent.com/fbuloup/Interface_IAI/main/Interface_IAI.xlsx}{Fichier Excel prix}}}}	
 \end{frame}
 
-
+\subsection{Coffret mural}
 \begin{frame}
-\begin{itemize}
-\item Un disjoncteurs différentiels 30mA 40A type C RS 238-3297
-	\item axe 0 :
-	\item disjoncteur : (920 VA+2760 VA)/230V = 16A
-	\item 16*1.2 = 19.2 - 16*1.4=22.4
-	\item disjoncteur 20A RS 175-3725
-	\item Filtre EMI RS 292-818
-	\item axe 1	:
-	\item disjoncteur : (420 VA+1263 VA)/230V = 7.32A
-	\item 7.32*1.2 = 8.8 - 7.32*1.4=10.25
-	\item disjoncteur 10A RS 175-3723
-	\item Filtre EMI RS 708-4272
-	\item Les deux axes : 
-	\item Noyau ferrite X 8 RS 916-4336
-\end{itemize}
-\end{frame}
-
-\begin{frame}
-\begin{itemize}
-	\item Alimentation 24V DC	:
-	\item Sur Rail DIN RS 145-7868
-	\item disjoncteur 6A RS 175-3722
-\end{itemize}
-\end{frame}
-
-\begin{frame}
-\begin{itemize}
-	\item Boitier ABS RS 775-532
-	\item Rail DIN RS 200-6731 (à couper)
-	\item Goulotte RS 879-3713
-	\item Presse etoupe RS 669-4660 : Ø 4 à 9 mm
-	\item Presse etoupe RS 669-4664 : Ø 6 à 12 mm
-	\item Presse etoupe RS 214-1065 : Ø 8 à 12 mm
-	\item Presse etoupe RS 669-4673 : Ø 10 à 14 mm
-	\item 3 presse étoupes :
-	\item Câble arrivée alimentation 230V
-	\item 2 câbles départs vers ADWin (DIO32 et CO4-T)
-	\item Les 2 câbles départs vers actionneurs sont sans presse étoupe
-\end{itemize}
-\end{frame}
-
-\begin{frame}
-\begin{figure}[htbp]
 	\centering
-	\includegraphics[scale=0.095]{images/implantation_coffret.png}\caption{Schéma d'implantation dans le boitier}
-\end{figure}
+	\includegraphics[scale=0.3]{images/CoffretMural.png}
+\begin{block}{Coffret mural}
+	\begin{itemize}
+		\item Coffret mural (RS 775-5322)
+		\item Rail DIN à couper (RS 200-6731)
+		\item Goulotte (RS 879-3713)
+	\end{itemize}
+\end{block}
+\end{frame}
+
+\begin{frame}
+\begin{block}{Coffret mural - Presses étoupes à déterminer}
+	\begin{itemize}
+		\item Presse étoupe RS 669-4660 : Ø 4 à 9 mm
+		\item Presse étoupe RS 669-4664 : Ø 6 à 12 mm
+		\item Presse étoupe RS 214-1065 : Ø 8 à 12 mm
+		\item Presse étoupe RS 669-4673 : Ø 10 à 14 mm
+		\item 1 presse étoupes : Câble arrivée alimentation 230V
+		\item 2 presses étoupes : câbles vers ADWin (DIO32 et CO4-T)
+		\item Les 2x2 câbles SCON $\leftrightarrow$ RCS4 sont sans presse étoupe
+	\end{itemize}
+\end{block}
+\end{frame}
+
+\begin{frame}
+\begin{block}{Protection globale}
+\begin{itemize}
+	\item Un disjoncteur différentiel 30mA, 40A, type C (RS 238-3297)
+\end{itemize}
+\end{block}
+\begin{block}{Alimentation 24V et sa protection}
+\begin{itemize}
+	\item Alimentation sur Rail DIN (RS 145-7868)
+	\item Disjoncteur 6A (RS 175-3722)
+\end{itemize}
+\end{block}
+\begin{block}{Protection des contrôleurs (\textcolor{white}{\textbf{\underline{\href{https://raw.githubusercontent.com/fbuloup/Interface_IAI/main/Documentation/SCON-CB_CGB(ME0340-8A).pdf\#page=45}{Ref.}}}})}
+\begin{itemize}
+	\item axe 0 : (920+2760)VA $\rightarrow$ disjoncteur 20A (RS 175-3725)
+	\item axe 1	: (420+1263)VA $\rightarrow$ disjoncteur 10A (RS 175-3723)
+\end{itemize}
+\end{block}
+\begin{block}{Limitation du bruit}
+\begin{itemize}
+	\item axe 0 : Filtre EMI (RS 292-818)
+	\item axe 1	: Filtre EMI (RS 708-4272)
+	\item Huit noyaux de ferrite à placer \textcolor{blue}{\textbf{\underline{\href{https://raw.githubusercontent.com/fbuloup/Interface_IAI/main/Documentation/SCON-CB_CGB(ME0340-8A).pdf\#page=127}{ici}}}} et \textcolor{blue}{\textbf{\underline{\href{https://raw.githubusercontent.com/fbuloup/Interface_IAI/main/Documentation/SCON-CB_CGB(ME0340-8A).pdf\#page=134}{ici}}}}  (RS 916-4336) 
+\end{itemize}
+\end{block}
+\end{frame}
+
+\subsection{Schéma d'implantation dans le coffret}
+\begin{frame}
+	\centering
+	\includegraphics[scale=0.1125]{images/implantation_coffret.png}
+\end{frame}
+
+\subsection{Câblage (pour mémo !)}
+\begin{frame}
+\begin{itemize}
+\justifying
+  \item \textbf{Liaisons SCON $\leftrightarrow$ Carte PCB} : Utiliser les deux câbles fournis (PULSE + FEEDBACK et PIO) pour chaque axe. Garder des longueurs d'environ 10 à 15cm. Visser dans les borniers côté carte PCB.
+  \item \textbf{Liaisons Carte PCB $\leftrightarrow$ ADWin} : Utiliser des câbles blindés avec des connecteur DA-37 pour les DIO et les CO4-T. Visser dans les borniers côté carte PCB. Ces câbles qui partent vers l'ADWin auront leurs tresses reliées à la terre du coffret. Ces tresses ne devront pas être reliées côté ADWin (règle du blindage d'un seul côté, éviter les boucles de masse). L'inverse est possible.
+  \item Utiliser les goulottes pour passer les câbles dans le coffret et des presses étoupes pour passer en dehors si possible !
+  \item \textbf{Immunité au bruit} : ne pas relier la masse électronique des PCB (GND) à la terre du coffret et croiser les câbles signaux et de puissance à la perpendiculaire
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\begin{table}[htbp]
+  \centering
+  \caption{Brochage côté ADWin DIO-32 (DA-37 mâle ou femelle ?)}
+  \label{tab:brochage-x1}
+  \footnotesize
+  \begin{tabular}[t]{cl}
+    \toprule
+    \textbf{Broche} & \textbf{Signal} \\
+    \midrule
+    19 & PULSE0 \\
+    37 & SIGN0 \\
+    18 & SON0 \\
+    36 & RES0 \\
+    17 & HOME0 \\
+    35 & CSTP0 \\
+    16 & libre \\
+    34 & libre \\
+    15 & SV0 \\
+    33 & INP0 \\
+    14 & HEND0 \\
+    32 & ALM0 \\
+    \bottomrule
+  \end{tabular}
+  \qquad
+  \begin{tabular}[t]{cl}
+    \toprule
+    \textbf{Broche} & \textbf{Signal} \\
+    \midrule
+    13 & SV1 \\
+    31 & INP1 \\
+    12 & HEND1 \\
+    30 & ALM1 \\
+    11 & PULSE1 \\
+    29 & SIGN1 \\
+    10 & SON1 \\
+    28 & RES1 \\
+    9  & HOME1 \\
+    27 & CSTP1 \\ 
+    ...			&...\\
+    3  & GND \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+\end{frame}
+
+\begin{frame}
+\begin{table}[htbp]
+  \centering
+  \caption{Brochage côté ADWin CO4-T (DA-37 mâle ou femelle ?)}
+  \label{tab:brochage-x2}
+  \footnotesize
+  \begin{tabular}{cl}
+    \toprule
+    \textbf{Broche} & \textbf{Signal} \\
+    \midrule
+    19          & Z0 \\
+    37          & N.C. \\
+    18          & N.C. \\
+    36          & A0 \\
+    17          & B0 \\
+    ...			&...\\
+    15          & Z1 \\
+    33          & N.C. \\
+    14          & N.C. \\
+    32          & A1 \\
+    13          & B1 \\
+    ...			&...\\
+    3   & GND \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
 \end{frame}
 
 \end{document}
