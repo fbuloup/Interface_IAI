@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.4) (preloaded format=xelatex 2025.12.9)  6 OCT 2026 18:22
+This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.4) (preloaded format=xelatex 2025.12.9)  7 OCT 2026 23:12
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1289,71 +1289,71 @@ File: images/LogoISM.eps Graphic file (type eps)
 
 ]
 LaTeX Font Info:    Trying to load font information for OT1+lmss on input line 
-94.
+97.
 
 (C:\Users\Buloup\Applications\MiKTeX\tex/latex/lm\ot1lmss.fd
 File: ot1lmss.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OML+lmm on input line 9
-4.
+7.
 
 (C:\Users\Buloup\Applications\MiKTeX\tex/latex/lm\omllmm.fd
 File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
-94.
+97.
 
 (C:\Users\Buloup\Applications\MiKTeX\tex/latex/lm\omslmsy.fd
 File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
-94.
+97.
 
 (C:\Users\Buloup\Applications\MiKTeX\tex/latex/lm\omxlmex.fd
 File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 94.
+(Font)              <10.95> on input line 97.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 94.
+(Font)              <8> on input line 97.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 94.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 94.
+(Font)              <6> on input line 97.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 97.
 
 
 (C:\Users\Buloup\Applications\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 94.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 97.
 
 
 (C:\Users\Buloup\Applications\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for U+wasy on input line 94
+LaTeX Font Info:    Trying to load font information for U+wasy on input line 97
 .
 
 (C:\Users\Buloup\Applications\MiKTeX\tex/latex/wasysym\uwasy.fd
 File: uwasy.fd 2020/01/19 v2.4 Wasy-2 symbol font definitions
 )
 LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <10.95> not available
-(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 94.
+(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 97.
 LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <8> not available
-(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 94.
+(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 97.
 LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <6> not available
-(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 94.
+(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 97.
  [4
 
 ]
 (documentation.toc) [5
 
+] [6
+
 ]
-Overfull \vbox (3.99744pt too high) detected at line 114
+Overfull \vbox (5.22383pt too high) detected at line 126
  []
 
-[6
-
-] [7
+[7
 
 ] [8
 
@@ -1363,13 +1363,9 @@ Overfull \vbox (3.99744pt too high) detected at line 114
 
 ] [11
 
-] (documentation.toc) [12
+] [12
 
-]
-Overfull \vbox (2.2675pt too high) detected at line 213
- []
-
-[13
+] (documentation.toc) [13
 
 ] [14
 
@@ -1379,15 +1375,12 @@ Overfull \vbox (2.2675pt too high) detected at line 213
 
 ] [17
 
-] [18
+]
+[18
 
 ] [19
 
-]
-Overfull \vbox (2.2675pt too high) detected at line 336
- []
-
-[20
+] [20
 
 ] [21
 
@@ -1399,104 +1392,105 @@ Overfull \vbox (2.2675pt too high) detected at line 336
 
 ] [25
 
-] (documentation.toc) [26
+] [26
 
 ] [27
+
+] (documentation.toc) [28
+
+]
+[29
 
 ]
 File: images/Alimentation.png Graphic file (type bmp)
 <images/Alimentation.png>
- [28
+ [30
 
 ]
 File: images/pulse.png Graphic file (type bmp)
 <images/pulse.png>
-
-Overfull \hbox (3.44249pt too wide) in paragraph at lines 446--446
- [][] 
- []
-
-[29
+ [31
 
 ]
 File: images/feedback.png Graphic file (type bmp)
 <images/feedback.png>
- [30
+ [32
 
 ]
 File: images/PIO.png Graphic file (type bmp)
 <images/PIO.png>
- [31
+ [33
 
 ]
 File: images/pcb.png Graphic file (type bmp)
 <images/pcb.png>
- [32
+ [34
 
 ]
 File: images/Interface_IAI_1.png Graphic file (type bmp)
 <images/Interface_IAI_1.png>
 
-Overfull \hbox (3.7423pt too wide) in paragraph at lines 471--471
+Overfull \hbox (3.7423pt too wide) in paragraph at lines 538--538
  [][] 
  []
 
-[33
+[35
 
 ]
 File: images/Interface_IAI_2.png Graphic file (type bmp)
 <images/Interface_IAI_2.png>
 
-Overfull \hbox (3.7423pt too wide) in paragraph at lines 476--476
+Overfull \hbox (3.7423pt too wide) in paragraph at lines 543--543
  [][] 
  []
 
-[34
+[36
 
 ]
 File: images/CoffretMural.png Graphic file (type bmp)
 <images/CoffretMural.png>
- [35
+ [37
 
-] [36
-
-]
-Overfull \vbox (2.70059pt too high) detected at line 530
- []
-
-[37
+] [38
 
 ]
-File: images/implantation_coffret.png Graphic file (type bmp)
-<images/implantation_coffret.png>
-
-Overfull \vbox (9.67006pt too high) detected at line 536
- []
-
-[38
-
-]
-Overfull \hbox (1.78485pt too wide) in paragraph at lines 547--547
-\TU/lmss/m/n/10.95 tresses ne devront pas être reliées côté ADWin (règle du bli
-ndage
+Overfull \vbox (2.70059pt too high) detected at line 597
  []
 
 [39
 
 ]
+File: images/implantation_coffret.png Graphic file (type bmp)
+<images/implantation_coffret.png>
+
+Overfull \vbox (9.67006pt too high) detected at line 603
+ []
+
+[40
+
+]
+Overfull \hbox (1.78485pt too wide) in paragraph at lines 614--614
+\TU/lmss/m/n/10.95 tresses ne devront pas être reliées côté ADWin (règle du bli
+ndage
+ []
+
+[41
+
+]
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9> on input line 593.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 593.
-LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <9> not available
-(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 593.
+(Font)              <5> on input line 685.
 LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <5> not available
-(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 593.
- [40
+(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 685.
+ [42
 
-] [41
+]
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <9> on input line 716.
+LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <9> not available
+(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 716.
+ [43
 
-] [42
+] [44
 
 ]
 \tf@nav=\write6
@@ -1518,15 +1512,15 @@ L3 programming layer <2025-11-06>
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `documentation.out' has not changed.
-(rerunfilecheck)             Checksum: 22F10FB70942B370C67B5759145AFB29;5021.
+(rerunfilecheck)             Checksum: 392D6B3933A77FACD8AAC6E347627A6B;5097.
  ) 
 Here is how much of TeX's memory you used:
- 35144 strings out of 402986
- 745344 string characters out of 5450366
- 1408175 words of memory out of 5000000
- 63196 multiletter control sequences out of 15000+600000
- 648518 words of font info for 92 fonts, out of 8000000 for 9000
+ 35164 strings out of 402986
+ 745969 string characters out of 5450366
+ 1409175 words of memory out of 5000000
+ 63215 multiletter control sequences out of 15000+600000
+ 648526 words of font info for 93 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  128i,20n,123p,455b,787s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on documentation.pdf (42 pages).
+Output written on documentation.pdf (44 pages).

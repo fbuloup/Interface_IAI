@@ -91,9 +91,21 @@ captionpos=b
 	\textcolor{blue}{\textbf{\underline{\href{https://raw.githubusercontent.com/fbuloup/Interface_IAI/main/Documentation/SCON-CB_CGB(ME0340-8A).pdf}{Documentation contrôleurs}}}}
 
 	\textcolor{blue}{\textbf{\underline{\href{https://raw.githubusercontent.com/fbuloup/Interface_IAI/main/Documentation/RCM-101-MW_USB(ME0155-31A).pdf}{Documentation PC Software}}}}	
+\vspace{1cm}
+  
+ \textcolor{blue}{\textbf{\underline{\href{https://raw.githubusercontent.com/fbuloup/Interface_IAI/main/Documentation/ProI-HW_eng.pdf}{Documentation ADWinPro I}}}}	
 \end{frame}
 
-\section{Méthode de calcul "Vitesse et Fréquence"}
+\section{Principe de la commande}
+\subsection{Commande par impulsions}
+\begin{frame}
+\justifying
+Le mode de commande par impulsion est celui que l'on utilisera. L'autre mode, appelé commande par positionnement, présuppose de connaitre les positions à l'avance, ce qui est impossible dans notre cas. Le mode par impulsions est décrit
+	\textcolor{blue}{\textbf{\underline{\href{https://raw.githubusercontent.com/fbuloup/Interface_IAI/main/Documentation/SCON-CB_CGB(ME0340-8A).pdf\#page=253}{ici}}}}. Chaque impulsion fait bouger le moteur d'une quantité appelée \textbf{Unit Travel Distance (UTD)}. La fréquence des impulsions règle la vitesse du mouvement. De ce point de vue, on peut dire que la commande est effectuée en vitesse.
+Le réglage des différents paramètres pour configurer ce mode peut être trouvé en suivant ce 
+\textcolor{blue}{\textbf{\underline{\href{https://raw.githubusercontent.com/fbuloup/Interface_IAI/main/Documentation/SCON-CB_CGB(ME0340-8A).pdf\#page=257}{lien}}}} : réglage du rapport de réduction électronique, du type et de la polarité du train d'impulsions.
+\end{frame}
+
 \subsection{Résolution et UTD}
 \begin{frame}
 \begin{alertblock}{Résolution}
@@ -104,9 +116,9 @@ resolution = \frac{BSL}{2^{14}}
 \end{align*}
 \end{alertblock}
 
-\begin{alertblock}{Distance unitaire parcourue}
+\begin{alertblock}{Distance unitaire parcourue (UTD)}
 \justifying
-On peut d'autre-part fixer notre propre résolution (celle que l'on souhaite avoir) exprimée également en mm par impulsion : Unit Travel Distance (UTD). Bien sûr UTD ne peut être plus petit que la Résolution de base ! 
+On peut d'autre-part fixer notre propre résolution (celle que l'on souhaite avoir) exprimée également en mm par impulsion : Unit Travel Distance (UTD). Bien sûr UTD ne peut être plus petit que la résolution ! 
 \begin{align*}
 UTD \geq resolution
 \end{align*}
@@ -133,16 +145,16 @@ $$
 
 \subsection{Vitesses minimale et maximale absolues}
 \begin{frame}
-\begin{alertblock}{Vitesse minimale absolue}
+\begin{alertblock}{Vitesse minimale absolue : $V_{min}$}
 \justifying
 La vitesse minimale absolue (mm/s) est définie de la façon suivante (\textcolor{blue}{\textbf{\underline{\href{https://raw.githubusercontent.com/fbuloup/Interface_IAI/main/Documentation/RCS4-SLIDER(ME3769-1H).pdf\#page=34}{voir ici}}}}, la résolution étant en mm/pulse) :
 $$
 V_{min} = resolution*1000(pulse/s)
 $$
-Ce qui signifie que la fréquence de la commande par impulsion ne peut être inférieur à 1000Hz lorsque l'on travaille avec la résolution de l'appareil. Il ne faudra jamais aller en dessous de cette valeur.
+Ce qui signifie que la fréquence de la commande par impulsion ne peut être inférieur à 1000Hz lorsque l'on travaille avec la résolution de l'appareil.
 \end{alertblock}
 
-\begin{alertblock}{Vitesse maximale absolue}
+\begin{alertblock}{Vitesse maximale absolue : $V_{max}$}
 \justifying
 Elle est donnée dans la documentation des actionneurs.
 \end{alertblock}
@@ -153,7 +165,7 @@ Elle est donnée dans la documentation des actionneurs.
 \begin{frame}
 \begin{alertblock}{Fréquences min et max absolues}
 \justifying
-Avec la vitesse maximale absolue (mm/s), on peut connaitre l'intervalle de variation absolue de la fréquence de commande par impulsions :
+Avec ces vitesses absolues (mm/s), on peut connaitre l'intervalle de variation absolue de la fréquence de commande par impulsions :
 \begin{align*}
 F_{min} &= \frac{V_{min}}{UTD} \\
 F_{max} &= \frac{V_{max}}{UTD}
@@ -192,12 +204,11 @@ $f_{min}$  et $f_{max}$ étant les fréquences min et max que l'on se fixe.
 \textbf{\textcolor{red}{Pour que le mouvement soit fluide, il faut que l'UTD soit suffisamment petit mais également que la fréquence de commande soit suffisamment grande afin que la mise à jour de la position soit assez fréquente. C'est un compromis à trouver.}}
 \end{frame}
 
-\section{Caractéristique des actionneurs}
+\section{Caractéristique des deux axes}
 \subsection{Axe 0 - Celui du dessous}
 \begin{frame}
-\centering
-\textcolor{blue}{\textbf{\underline{\href{https://raw.githubusercontent.com/fbuloup/Interface_IAI/main/Documentation/RCS4-SLIDER(ME3769-1H).pdf\#page=37}{Ref.}}}}	
-	\begin{block}{Actionneur : RCS4-SA8C-WA-400-30-200-T2-S}
+
+	\begin{block}{Actionneur : RCS4-SA8C-WA-400-30-200-T2-S (\textcolor{white}{\textbf{\underline{\href{https://raw.githubusercontent.com/fbuloup/Interface_IAI/main/Documentation/RCS4-SLIDER(ME3769-1H).pdf\#page=37}{Ref.}}}})}
 		\begin{itemize}
 			\item Masse : 5.6kg - Codeur absolu sans batterie - 400 watts
 			\item Pas de la vis à bille (Ball Screw Lead) : 30mm par tour moteur
@@ -284,7 +295,7 @@ Avec l'exemple II on obtiendrait :
 N = \frac{CNUM}{CDEN} &= \frac{2^{14}}{BSL}*UTD = \frac{16384}{3000} = \frac{2048}{375} \\
 CNUM &= 2048 \quad CDEN = 375
 \end{align*}
-\begin{alertblock}{Vérifications à faire !}
+\begin{alertblock}{Vérifications à faire ! (\textcolor{white}{\textbf{\underline{\href{https://raw.githubusercontent.com/fbuloup/Interface_IAI/main/Documentation/SCON-CB_CGB(ME0340-8A).pdf\#page=258}{Ref.}}}})}
 $$
 2^{27} \geq \frac{SL}{BSL} * 2^{14} * \frac{CDEN}{CNUM}\quad (1)?
 $$
@@ -296,6 +307,7 @@ $$
 $$
 Pas sûr pour les (2) et (3) : seulement si la version du firmware est plus ancienne que la V0005 !
 \end{alertblock}
+
 \end{frame}
 
 \begin{frame}
@@ -303,7 +315,7 @@ Pas sûr pour les (2) et (3) : seulement si la version du firmware est plus anci
 Pour vérifier la version du firmware, avec RC PC Software, une fois connecté au contrôleur, chercher la commande d'informations de version du contrôleur, dans le menu Help $\leftrightarrow$ Version Information. Elle affiche les versions des différents logiciels internes (CPU principal, etc.). C'est la version du contrôleur qui compte ici. Le manuel ME0155 du logiciel indique l'emplacement exact de cette commande.
 
 \centering \textcolor{blue}{\textbf{\underline{\href{https://raw.githubusercontent.com/fbuloup/Interface_IAI/main/Documentation/RCM-101-MW_USB(ME0155-31A).pdf\#page=203}{Documentation PC Software}}}}	
-\vspace{0.75cm}
+\vspace{0.25cm}
 
 \centering 
 Dans cette fenêtre, il existe deux numéros de version :
@@ -311,16 +323,17 @@ Dans cette fenêtre, il existe deux numéros de version :
 	\item Controller Version : ? $\rightarrow$ ?
 	\item Controller Core Version : ? $\rightarrow$ ?
 \end{itemize}
-\textcolor{red}{\textbf{Je ne sais pas quelle version choisir ! A vérifier !}}	
+\textcolor{red}{\textbf{Je ne sais pas quelle version choisir ! A vérifier !}}
 
+\justifying	
+Le réglage des différents paramètres pour configurer la commande peut être trouvé en suivant ce 
+\textcolor{blue}{\textbf{\underline{\href{https://raw.githubusercontent.com/fbuloup/Interface_IAI/main/Documentation/SCON-CB_CGB(ME0340-8A).pdf\#page=257}{lien}}}} : réglage du rapport de réduction électronique, du type et de la polarité du train d'impulsions.
 \end{frame}
 
 
 \subsection{Axe 1 - Celui du dessus}
 \begin{frame}
-\centering
-\textcolor{blue}{\textbf{\underline{\href{https://raw.githubusercontent.com/fbuloup/Interface_IAI/main/Documentation/RCS4-SLIDER(ME3769-1H).pdf\#page=34}{Ref.}}}}	
-	\begin{block}{Actionneur : RCS4-SA7C-WA-200-24-200-T2-R03}
+	\begin{block}{Actionneur : RCS4-SA7C-WA-200-24-200-T2-R03 (\textcolor{white}{\textbf{\underline{\href{https://raw.githubusercontent.com/fbuloup/Interface_IAI/main/Documentation/RCS4-SLIDER(ME3769-1H).pdf\#page=34}{Ref.}}}})}
 		\begin{itemize}
 			\item Masse : 4.3kg - Codeur absolu sans batterie - 200 watts
 			\item Pas de la vis à bille (Ball Screw Lead) : 24mm par tour moteur
@@ -344,6 +357,29 @@ $$V_{min}=\frac{BSL(mm)}{16384(pulses)}*1000(pulse/s)=\frac{24000}{16384}=1.46mm
 			\item Commande par positionnement
 			\item Commande par impulsions différentielles
 		\end{itemize}
+	\end{block}
+\end{frame}
+
+\begin{frame}
+\centering
+\textcolor{blue}{\textbf{\underline{\href{https://raw.githubusercontent.com/fbuloup/Interface_IAI/main/Documentation/SCON-CB_CGB(ME0340-8A).pdf\#page=243}{Ref.}}}}
+	
+
+	\begin{block}{Signaux PIO utiles en mode impulsions - Sorties ADWin}
+	\begin{itemize}
+		\item SON, pour activer le moteur
+		\item RES, pour acquitter une alarme sans intervention manuelle
+		\item HOME : faire origine depuis ADwin (cod. abs. sans batterie)
+		\item CSTP : arrêt forcé, en plus de l'arrêt d'urgence câblé.
+	\end{itemize}
+	\end{block}
+	\begin{block}{Signaux PIO utiles en mode impulsions - Entrées ADWin}
+	\begin{itemize}
+		\item SV : servo prêt ? Avant d'envoyer des impulsions
+		\item INP : pour savoir si l'actionneur a rejoint la consigne
+		\item HEND : pour savoir si l'origine est faite
+		\item ALM : arrêt de l'envoi d'impulsions si défaut.
+	\end{itemize}
 	\end{block}
 \end{frame}
 
@@ -382,7 +418,7 @@ Avec l'exemple II on obtiendrait :
 N = \frac{CNUM}{CDEN} &= \frac{2^{14}}{BSL}*UTD = \frac{16384}{2400} = \frac{512}{75} \\
 CNUM &= 512 \quad CDEN = 75
 \end{align*}
-\begin{alertblock}{Vérifications à faire !}
+\begin{alertblock}{Vérifications à faire ! (\textcolor{white}{\textbf{\underline{\href{https://raw.githubusercontent.com/fbuloup/Interface_IAI/main/Documentation/SCON-CB_CGB(ME0340-8A).pdf\#page=258}{Ref.}}}})}
 $$
 2^{27} \geq \frac{SL}{BSL} * 2^{14} * \frac{CDEN}{CNUM}\quad (1)?
 $$
@@ -401,7 +437,7 @@ Pas sûr pour les (2) et (3) : seulement si la version du firmware est plus anci
 Pour vérifier la version du firmware, avec RC PC Software, une fois connecté au contrôleur, chercher la commande d'informations de version du contrôleur, dans le menu Help $\rightarrow$ Version Information. Elle affiche les versions des différents logiciels internes (CPU principal, etc.). C'est la version du contrôleur qui compte ici. Le manuel ME0155 du logiciel indique l'emplacement exact de cette commande.
 
 \centering \textcolor{blue}{\textbf{\underline{\href{https://raw.githubusercontent.com/fbuloup/Interface_IAI/main/Documentation/RCM-101-MW_USB(ME0155-31A).pdf\#page=203}{Documentation PC Software}}}}	
-\vspace{0.75cm}
+\vspace{0.25cm}
 
 \centering 
 Dans cette fenêtre, il existe deux numéros de version :
@@ -411,6 +447,9 @@ Dans cette fenêtre, il existe deux numéros de version :
 \end{itemize}
 \textcolor{red}{\textbf{Je ne sais pas quelle version choisir ! A vérifier !}}	
 
+\justifying	
+Le réglage des différents paramètres pour configurer la commande peut être trouvé en suivant ce 
+\textcolor{blue}{\textbf{\underline{\href{https://raw.githubusercontent.com/fbuloup/Interface_IAI/main/Documentation/SCON-CB_CGB(ME0340-8A).pdf\#page=257}{lien}}}} : réglage du rapport de réduction électronique, du type et de la polarité du train d'impulsions.
 \end{frame}
 
 
@@ -418,6 +457,7 @@ Dans cette fenêtre, il existe deux numéros de version :
 \subsection{Généralités}
 \begin{frame}
 	\begin{block}{Pulse, feedback et PIO}
+	\justifying
 		\begin{itemize}
 			\item Une carte pour adapter les signaux SCON $\leftrightarrow$ ADWin
 			\item Commande par impulsion et non par positionnement
@@ -432,37 +472,64 @@ Dans cette fenêtre, il existe deux numéros de version :
 \subsection{Schémas et principe de l'interface}
 \begin{frame}
 \begin{block}{Alimentation}
-
+\begin{itemize}
+	\item Alimentation 24V externe
+	\item Diode Schottky de protection contre l'inversion de polarité
+	\item Régulateur 5V à découpage
+	\item Diodes témoins 5V et 24V
+	\item Fusible réarmable
+\end{itemize}
 \end{block}
 	\centering
-	\includegraphics[scale=0.4]{images/Alimentation.png}
+	\includegraphics[scale=0.35]{images/Alimentation.png}
 \end{frame}
 \begin{frame}
 \begin{block}{Pulse}
+\begin{itemize}
 
+	\justifying
+		\item Signaux TTL PP et NP convertis en signaux différentiels \textcolor{blue}{\textbf{\underline{\href{https://raw.githubusercontent.com/fbuloup/Interface_IAI/main/Documentation/SCON-CB_CGB(ME0340-8A).pdf\#page=50}{4V}}}}
+	\item Résistances de limitation de courant et de pull down
+	\item Principe de la commande
+\textcolor{blue}{\textbf{\underline{\href{https://raw.githubusercontent.com/fbuloup/Interface_IAI/main/Documentation/SCON-CB_CGB(ME0340-8A).pdf\#page=253}{ici}}}}		
+	
+	
+\end{itemize}
 \end{block}
 	\centering
-	\includegraphics[scale=0.35]{images/pulse.png}
+	\includegraphics[scale=0.3]{images/pulse.png}
+	
 \end{frame}
 \begin{frame}
 \begin{block}{Feedback}
-
+\begin{itemize}
+\item Signaux de retour de position du moteur
+\item Résistances de limitation vers entrées ADWin
+\item Résistances de terminaison côté sortie SCON
+\item Principe de la commande
+\textcolor{blue}{\textbf{\underline{\href{https://raw.githubusercontent.com/fbuloup/Interface_IAI/main/Documentation/SCON-CB_CGB(ME0340-8A).pdf\#page=260}{ici}}}}
+\end{itemize}
 \end{block}
 	\centering
 	\includegraphics[scale=0.325]{images/feedback.png}
 \end{frame}
 \begin{frame}
 \begin{block}{PIO}
-
+\begin{itemize}
+\item Adaptation niveaux TTL vers niveaux 24V
+\item Adaptation niveaux 24V vers niveaux TTL par pont diviseur
+\item Résistance de pull down pour stabilité
+\item Réserve de 4 signaux : 2 entrées et 2 sorties 
+\end{itemize}
 \end{block}
 	\centering
-	\includegraphics[scale=0.275]{images/PIO.png}
+	\includegraphics[scale=0.35]{images/PIO.png}
 \end{frame}
 
 \subsection{Aperçus du routage PCB}
 \begin{frame}
 	\centering
-	\includegraphics[scale=0.3]{images/pcb.png}
+	\includegraphics[scale=0.55, angle=90]{images/pcb.png}
 \end{frame}
 
 \begin{frame}
@@ -551,46 +618,72 @@ Dans cette fenêtre, il existe deux numéros de version :
   \centering
   \caption{Brochage côté ADWin DIO-32 (DA-37 mâle ou femelle ?)}
   \label{tab:brochage-x1}
-  \footnotesize
+  \tiny
+  \setlength{\tabcolsep}{2pt}
   \begin{tabular}[t]{cl}
     \toprule
     \textbf{Broche} & \textbf{Signal} \\
     \midrule
-    19 & PULSE0 \\
-    37 & SIGN0 \\
-    18 & SON0 \\
-    36 & RES0 \\
-    17 & HOME0 \\
-    35 & CSTP0 \\
-    16 & libre \\
-    34 & libre \\
-    15 & SV0 \\
-    33 & INP0 \\
-    14 & HEND0 \\
-    32 & ALM0 \\
+    19 & PP0 (out) \\
+    37 & NP0 (out)\\
+    18 & SON0 (out)\\
+    36 & RES0 (out)\\
+    17 & HOME0 (out)\\
+    35 & CSTP0 (out)\\
+    16 & DIO\_OUT00 (out)\\
+    34 & DIO\_OUT01 (out)\\
+    15 & SV0 (in)\\
+    33 & INP0 (in)\\
+    14 & HEND0 (in)\\
+    32 & ALM0 (in)\\
+    13 & DIO\_IN00 (in)\\
+    31 & DIO\_IN01 (in)\\
     \bottomrule
   \end{tabular}
-  \qquad
+  \hspace{1mm}
   \begin{tabular}[t]{cl}
     \toprule
     \textbf{Broche} & \textbf{Signal} \\
     \midrule
-    13 & SV1 \\
-    31 & INP1 \\
-    12 & HEND1 \\
-    30 & ALM1 \\
-    11 & PULSE1 \\
-    29 & SIGN1 \\
-    10 & SON1 \\
-    28 & RES1 \\
-    9  & HOME1 \\
-    27 & CSTP1 \\ 
+    12 & SV1 (in) \\
+    30 & INP1 (in)\\
+    11 & HEND1 (in)\\
+    29 & ALM1 (in)\\
+    10 & DIO\_IN10 (in)\\
+    28 & DIO\_IN11 (in)\\
+    ...			&...\\
+
+    7 & PP1 (out) \\
+    25 & NP1 (out)\\
+    6 & SON1 (out)\\
+    24 & RES1 (out)\\
+    5  & HOME1 (out)\\
+    23 & CSTP1 (out)\\ 
+    4 & DIO\_OUT10 (out)\\
+    \bottomrule
+  \end{tabular}
+  \hspace{1mm}
+  \begin{tabular}[t]{cl}
+  \toprule
+    \textbf{Broche} & \textbf{Signal} \\
+    \midrule
+  22 & DIO\_OUT11 (out)\\
     ...			&...\\
     3  & GND \\
     \bottomrule
   \end{tabular}
 \end{table}
+\centering
+\textcolor{blue}{\textbf{\underline{\href{https://raw.githubusercontent.com/fbuloup/Interface_IAI/main/Documentation/ProI-HW_eng.pdf\#page=89}{Voir ici pour le brochage}}}}	
+\begin{itemize}
+\tiny
+\item DIO\_OUT00 et DIO\_OUT01 : sorties supplémentaires en attente pour l'axe 0 (entrées SCON)
+\item DIO\_OUT10 et DIO\_OUT11 : sorties supplémentaires en attente pour l'axe 1 (entrées SCON)
+\item DIO\_IN00 et DIO\_IN01 : entrées supplémentaires en attente pour l'axe 0 (sorties SCON)
+\item DIO\_IN10 et DIO\_IN11 : entrées supplémentaires en attente pour l'axe 1 (sorties SCON)
+\end{itemize}
 \end{frame}
+
 
 \begin{frame}
 \begin{table}[htbp]
@@ -618,7 +711,8 @@ Dans cette fenêtre, il existe deux numéros de version :
     \bottomrule
   \end{tabular}
 \end{table}
-
+\centering
+\textcolor{blue}{\textbf{\underline{\href{https://raw.githubusercontent.com/fbuloup/Interface_IAI/main/Documentation/ProI-HW_eng.pdf\#page=121}{Voir ici pour le brochage}}}}
 \end{frame}
 
 \subsection{Ordre de prix et devis}
