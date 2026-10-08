@@ -545,54 +545,36 @@ Le réglage des différents paramètres pour configurer la commande peut être t
 \subsection{Coffret mural}
 \begin{frame}
 	\centering
-	\includegraphics[scale=0.3]{images/CoffretMural.png}
-\begin{block}{Coffret mural}
+	\includegraphics[scale=0.4]{images/CoffretMural.png}
+	
+	Avec plaque de châssis (terre) et de presse-étoupes
+\end{frame}
+
+\begin{frame}
+\begin{block}{Les différents éléments}
 	\begin{itemize}
-		\item Coffret mural (RS 775-5322)
-		\item Rail DIN à couper (RS 200-6731)
-		\item Goulotte (RS 879-3713)
+		\item Différentiel de protection globale
+		\item Disjoncteurs de protection des contrôleurs
+		\item Alimentation 24V et sa protection
+		\item Filtres EMI et ferrites pour limiter le bruit
+		\item Rail DIN pour recevoir les modules
+		\item Presse-étoupes pour sortir du coffret
+		\item Câblage en goulotte
 	\end{itemize}
 \end{block}
 \end{frame}
 
 \begin{frame}
-\begin{block}{Coffret mural - Presses étoupes à déterminer}
+\begin{block}{Presse-étoupes à déterminer}
 	\begin{itemize}
 		\item Presse étoupe RS 669-4660 : Ø 4 à 9 mm
 		\item Presse étoupe RS 669-4664 : Ø 6 à 12 mm
 		\item Presse étoupe RS 214-1065 : Ø 8 à 12 mm
 		\item Presse étoupe RS 669-4673 : Ø 10 à 14 mm
 		\item 1 presse étoupes : Câble arrivée alimentation 230V
-		\item 2 presses étoupes : câbles vers ADWin (DIO32 et CO4-T)
+		\item 2 presse-étoupes : câbles vers ADWin (DIO32 et CO4-T)
 		\item Les 2x2 câbles SCON $\leftrightarrow$ RCS4 sont sans presse étoupe
 	\end{itemize}
-\end{block}
-\end{frame}
-
-\begin{frame}
-\begin{block}{Protection globale}
-\begin{itemize}
-	\item Un disjoncteur différentiel 30mA, 40A, type C (RS 238-3297)
-\end{itemize}
-\end{block}
-\begin{block}{Alimentation 24V et sa protection}
-\begin{itemize}
-	\item Alimentation sur Rail DIN (RS 145-7868)
-	\item Disjoncteur 6A (RS 175-3722)
-\end{itemize}
-\end{block}
-\begin{block}{Protection des contrôleurs (\textcolor{white}{\textbf{\underline{\href{https://raw.githubusercontent.com/fbuloup/Interface_IAI/main/Documentation/SCON-CB_CGB(ME0340-8A).pdf\#page=45}{Ref.}}}})}
-\begin{itemize}
-	\item axe 0 : (920+2760)VA $\rightarrow$ disjoncteur 20A (RS 175-3725)
-	\item axe 1	: (420+1263)VA $\rightarrow$ disjoncteur 10A (RS 175-3723)
-\end{itemize}
-\end{block}
-\begin{block}{Limitation du bruit}
-\begin{itemize}
-	\item axe 0 : Filtre EMI (RS 292-818)
-	\item axe 1	: Filtre EMI (RS 708-4272)
-	\item Huit noyaux de ferrite à placer \textcolor{blue}{\textbf{\underline{\href{https://raw.githubusercontent.com/fbuloup/Interface_IAI/main/Documentation/SCON-CB_CGB(ME0340-8A).pdf\#page=127}{ici}}}} et \textcolor{blue}{\textbf{\underline{\href{https://raw.githubusercontent.com/fbuloup/Interface_IAI/main/Documentation/SCON-CB_CGB(ME0340-8A).pdf\#page=134}{ici}}}}  (RS 916-4336) 
-\end{itemize}
 \end{block}
 \end{frame}
 
@@ -677,10 +659,10 @@ Le réglage des différents paramètres pour configurer la commande peut être t
 \textcolor{blue}{\textbf{\underline{\href{https://raw.githubusercontent.com/fbuloup/Interface_IAI/main/Documentation/ProI-HW_eng.pdf\#page=89}{Voir ici pour le brochage}}}}	
 \begin{itemize}
 \tiny
-\item DIO\_OUT00 et DIO\_OUT01 : sorties supplémentaires en attente pour l'axe 0 (entrées SCON)
-\item DIO\_OUT10 et DIO\_OUT11 : sorties supplémentaires en attente pour l'axe 1 (entrées SCON)
-\item DIO\_IN00 et DIO\_IN01 : entrées supplémentaires en attente pour l'axe 0 (sorties SCON)
-\item DIO\_IN10 et DIO\_IN11 : entrées supplémentaires en attente pour l'axe 1 (sorties SCON)
+\item DIO\_OUT00 et DIO\_OUT01 : sorties de réserve en attente pour l'axe 0 (entrées SCON)
+\item DIO\_OUT10 et DIO\_OUT11 : sorties de réserve en attente pour l'axe 1 (entrées SCON)
+\item DIO\_IN00 et DIO\_IN01 : entrées de réserve en attente pour l'axe 0 (sorties SCON)
+\item DIO\_IN10 et DIO\_IN11 : entrées de réserve en attente pour l'axe 1 (sorties SCON)
 \end{itemize}
 \end{frame}
 
@@ -719,20 +701,18 @@ Le réglage des différents paramètres pour configurer la commande peut être t
 \begin{frame}
 \begin{table}[htbp]
   \centering
-  \caption{Ordres de prix par poste}
+  \caption{Ordres de prix pour les deux postes}
   \label{tab:brochage-x2}
   \footnotesize
   \begin{tabular}{cl}
     \toprule
     \textbf{Poste} & \textbf{Prix approximatif HT} \\
     \midrule
-    Carte chez eurocircuits          & 90 \\
-    Composants pour circuit imprimé  & 40 \\
-    Boitier          & 84 \\
+    Carte chez eurocircuits          & 180 \\
+    Composants pour circuit imprimé  & 95 \\
+    Coffret mural          & 1310 \\
     \midrule
-    Total HT          & 214 \\
-    \midrule
-    Grand total HT (2 axes)   & 428 \\
+    Total HT          & 1580 \\
     \bottomrule
   \end{tabular}
 \end{table}
@@ -744,12 +724,13 @@ Le réglage des différents paramètres pour configurer la commande peut être t
 \end{frame}
 
 \begin{frame}
-\begin{block}{Etape}
+\begin{block}{Étapes suivantes - Propositions}
 \begin{itemize}
 \item Achat des composants électronique
 \item Câblage sur platine d'essai pour tests
 \item Corrections carte PCB
-\item Achat Carte PCB et Coffrets de protection 
+\item Achat carte PCB et Coffret mural
+\item Développement partie commande des axes
 \end{itemize}
 \end{block}
 \end{frame}

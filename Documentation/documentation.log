@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.4) (preloaded format=xelatex 2025.12.9)  7 OCT 2026 23:30
+This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.4) (preloaded format=xelatex 2025.12.9)  8 OCT 2026 07:30
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1453,23 +1453,19 @@ File: images/CoffretMural.png Graphic file (type bmp)
 
 ] [38
 
-]
-Overfull \vbox (2.70059pt too high) detected at line 597
- []
-
-[39
+] [39
 
 ]
 File: images/implantation_coffret.png Graphic file (type bmp)
 <images/implantation_coffret.png>
 
-Overfull \vbox (9.67006pt too high) detected at line 603
+Overfull \vbox (9.67006pt too high) detected at line 585
  []
 
 [40
 
 ]
-Overfull \hbox (1.78485pt too wide) in paragraph at lines 614--614
+Overfull \hbox (1.78485pt too wide) in paragraph at lines 596--596
 \TU/lmss/m/n/10.95 tresses ne devront pas être reliées côté ADWin (règle du bli
 ndage
  []
@@ -1478,16 +1474,16 @@ ndage
 
 ]
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 685.
+(Font)              <5> on input line 667.
 LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <5> not available
-(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 685.
+(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 667.
  [42
 
 ]
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9> on input line 716.
+(Font)              <9> on input line 698.
 LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <9> not available
-(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 716.
+(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 698.
  [43
 
 ] [44
@@ -1517,10 +1513,10 @@ Package rerunfilecheck Info: File `documentation.out' has not changed.
 (rerunfilecheck)             Checksum: 392D6B3933A77FACD8AAC6E347627A6B;5097.
  ) 
 Here is how much of TeX's memory you used:
- 35170 strings out of 402986
- 746234 string characters out of 5450366
- 1409219 words of memory out of 5000000
- 63221 multiletter control sequences out of 15000+600000
+ 35148 strings out of 402986
+ 745204 string characters out of 5450366
+ 1407218 words of memory out of 5000000
+ 63199 multiletter control sequences out of 15000+600000
  648526 words of font info for 93 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  128i,20n,123p,455b,787s stack positions out of 10000i,1000n,20000p,200000b,200000s
