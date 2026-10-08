@@ -106,6 +106,11 @@ Le réglage des différents paramètres pour configurer ce mode peut être trouv
 \textcolor{blue}{\textbf{\underline{\href{https://raw.githubusercontent.com/fbuloup/Interface_IAI/main/Documentation/SCON-CB_CGB(ME0340-8A).pdf\#page=257}{lien}}}} : réglage du rapport de réduction électronique, du type et de la polarité du train d'impulsions.
 \end{frame}
 
+\begin{frame}
+\justifying
+Pour fonctionner en mode impulsion, l'interrupteur 1 (SW1) en façade du contrôleur doit être positionné sur ON et le paramètre numéro 25 qui défini le type de PIO (PIO pattern) doit être à 1 (contrôleur sans batterie et de  type absolu). L'interrupteur 2 (SW2) en façade ne doit jamais être bougé (toujours sur OFF). Il est alors possible de définir une position de référence quelconque différente du "Home". Elle est défini par le paramètre No. 167. Après l'activation du servo, on utilise l'entrée PIO  RSTR et la sortie PIO REND indique son atteinte. 
+\end{frame}
+
 \subsection{Résolution et UTD}
 \begin{frame}
 \begin{alertblock}{Résolution}
