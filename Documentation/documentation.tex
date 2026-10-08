@@ -553,27 +553,17 @@ Le réglage des différents paramètres pour configurer la commande peut être t
 \begin{frame}
 \begin{block}{Les différents éléments}
 	\begin{itemize}
-		\item Différentiel de protection globale
-		\item Disjoncteurs de protection des contrôleurs
-		\item Alimentation 24V et sa protection
-		\item Filtres EMI et ferrites pour limiter le bruit
-		\item Rail DIN pour recevoir les modules
-		\item Presse-étoupes pour sortir du coffret
-		\item Câblage en goulotte
-	\end{itemize}
-\end{block}
-\end{frame}
-
-\begin{frame}
-\begin{block}{Presse-étoupes à déterminer}
-	\begin{itemize}
-		\item Presse étoupe RS 669-4660 : Ø 4 à 9 mm
-		\item Presse étoupe RS 669-4664 : Ø 6 à 12 mm
-		\item Presse étoupe RS 214-1065 : Ø 8 à 12 mm
-		\item Presse étoupe RS 669-4673 : Ø 10 à 14 mm
-		\item 1 presse étoupes : Câble arrivée alimentation 230V
+		\item 1 différentiel de protection globale
+		\item 2 disjoncteurs de protection des contrôleurs
+		\item 1 alimentation 24V
+		\item 1 disjoncteur de protection alimentation 24V
+		\item 2 filtres EMI et 8 noyaux de ferrites pour limiter le bruit
+		\item 2 rail DIN pour recevoir les modules
+		\item 7 presse-étoupes Ø 4 à 9 mm pour sortir du coffret
+		\item 1 presse-étoupe : câble arrivée alimentation 230V
 		\item 2 presse-étoupes : câbles vers ADWin (DIO32 et CO4-T)
-		\item Les 2x2 câbles SCON $\leftrightarrow$ RCS4 sont sans presse étoupe
+		\item 4 presse-étoupes : câbles SCON $\leftrightarrow$ RCS4
+		\item Câblage en goulotte
 	\end{itemize}
 \end{block}
 \end{frame}
@@ -588,9 +578,9 @@ Le réglage des différents paramètres pour configurer la commande peut être t
 \begin{frame}
 \begin{itemize}
 \justifying
-  \item \textbf{Liaisons SCON $\leftrightarrow$ Carte PCB} : Utiliser les deux câbles fournis (PULSE + FEEDBACK et PIO) pour chaque axe. Garder des longueurs d'environ 10 à 15cm. Visser dans les borniers côté carte PCB.
-  \item \textbf{Liaisons Carte PCB $\leftrightarrow$ ADWin} : Utiliser des câbles blindés avec des connecteur DA-37 pour les DIO et les CO4-T. Visser dans les borniers côté carte PCB. Ces câbles qui partent vers l'ADWin auront leurs tresses reliées à la terre du coffret. Ces tresses ne devront pas être reliées côté ADWin (règle du blindage d'un seul côté, éviter les boucles de masse). L'inverse est possible.
-  \item Utiliser les goulottes pour passer les câbles dans le coffret et des presses étoupes pour passer en dehors si possible !
+  \item \textbf{Liaisons SCON $\leftrightarrow$ Carte PCB} : utiliser les deux câbles fournis (PULSE + FEEDBACK et PIO) pour chaque axe. Garder des longueurs d'environ 10 à 15cm. Visser dans les borniers côté carte PCB.
+  \item \textbf{Liaisons Carte PCB $\leftrightarrow$ ADWin} : utiliser des câbles blindés avec des connecteurs DA-37 mâles pour les DIO et les CO4-T. Visser dans les borniers côté carte PCB. Ces câbles qui partent vers l'ADWin auront leurs tresses reliées à la terre du coffret. Ces tresses ne devront pas être reliées côté ADWin (règle du blindage d'un seul côté, éviter les boucles de masse). L'inverse est possible.
+  \item Utiliser les goulottes pour passer les câbles dans le coffret et des presse-étoupes pour passer en dehors si possible !
   \item \textbf{Immunité au bruit} : ne pas relier la masse électronique des PCB (GND) à la terre du coffret et croiser les câbles signaux et de puissance à la perpendiculaire
 \end{itemize}
 \end{frame}
@@ -598,7 +588,7 @@ Le réglage des différents paramètres pour configurer la commande peut être t
 \begin{frame}
 \begin{table}[htbp]
   \centering
-  \caption{Brochage côté ADWin DIO-32 (DA-37 mâle ou femelle ?)}
+  \caption{Brochage côté ADWin DIO-32 (DA-37 femelle)}
   \label{tab:brochage-x1}
   \tiny
   \setlength{\tabcolsep}{2pt}
@@ -659,10 +649,10 @@ Le réglage des différents paramètres pour configurer la commande peut être t
 \textcolor{blue}{\textbf{\underline{\href{https://raw.githubusercontent.com/fbuloup/Interface_IAI/main/Documentation/ProI-HW_eng.pdf\#page=89}{Voir ici pour le brochage}}}}	
 \begin{itemize}
 \tiny
-\item DIO\_OUT00 et DIO\_OUT01 : sorties de réserve en attente pour l'axe 0 (entrées SCON)
-\item DIO\_OUT10 et DIO\_OUT11 : sorties de réserve en attente pour l'axe 1 (entrées SCON)
-\item DIO\_IN00 et DIO\_IN01 : entrées de réserve en attente pour l'axe 0 (sorties SCON)
-\item DIO\_IN10 et DIO\_IN11 : entrées de réserve en attente pour l'axe 1 (sorties SCON)
+\item DIO\_OUT00 et DIO\_OUT01 : sorties de réserve pour l'axe 0 (entrées SCON)
+\item DIO\_OUT10 et DIO\_OUT11 : sorties de réserve pour l'axe 1 (entrées SCON)
+\item DIO\_IN00 et DIO\_IN01 : entrées de réserve pour l'axe 0 (sorties SCON)
+\item DIO\_IN10 et DIO\_IN11 : entrées de réserve pour l'axe 1 (sorties SCON)
 \end{itemize}
 \end{frame}
 
@@ -670,7 +660,7 @@ Le réglage des différents paramètres pour configurer la commande peut être t
 \begin{frame}
 \begin{table}[htbp]
   \centering
-  \caption{Brochage côté ADWin CO4-T (DA-37 mâle ou femelle ?)}
+  \caption{Brochage côté ADWin CO4-T (DA-37 femelle)}
   \label{tab:brochage-x2}
   \footnotesize
   \begin{tabular}{cl}
@@ -701,7 +691,7 @@ Le réglage des différents paramètres pour configurer la commande peut être t
 \begin{frame}
 \begin{table}[htbp]
   \centering
-  \caption{Ordres de prix pour les deux postes}
+  \caption{Ordres de prix pour les deux axes}
   \label{tab:brochage-x2}
   \footnotesize
   \begin{tabular}{cl}

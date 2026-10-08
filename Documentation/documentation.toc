@@ -19,6 +19,6 @@
 \beamer@subsectionintoc {4}{2}{Schémas et principe de l'interface}{30}{0}{4}
 \beamer@subsectionintoc {4}{3}{Aperçus du routage PCB}{34}{0}{4}
 \beamer@subsectionintoc {4}{4}{Coffret mural}{37}{0}{4}
-\beamer@subsectionintoc {4}{5}{Implantation schématique dans le coffret}{40}{0}{4}
-\beamer@subsectionintoc {4}{6}{Câblage (pour mémo !)}{41}{0}{4}
-\beamer@subsectionintoc {4}{7}{Ordre de prix et devis}{44}{0}{4}
+\beamer@subsectionintoc {4}{5}{Implantation schématique dans le coffret}{39}{0}{4}
+\beamer@subsectionintoc {4}{6}{Câblage (pour mémo !)}{40}{0}{4}
+\beamer@subsectionintoc {4}{7}{Ordre de prix et devis}{43}{0}{4}

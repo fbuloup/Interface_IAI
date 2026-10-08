@@ -120,28 +120,26 @@
 \headcommand {\beamer@framepages {37}{37}}
 \headcommand {\slideentry {4}{4}{2}{38/38}{Coffret mural}{0}}
 \headcommand {\beamer@framepages {38}{38}}
-\headcommand {\slideentry {4}{4}{3}{39/39}{Coffret mural}{0}}
+\headcommand {\beamer@subsectionpages {37}{38}}
+\headcommand {\beamer@subsectionentry {0}{4}{5}{39}{Implantation schématique dans le coffret}}
+\headcommand {\slideentry {4}{5}{1}{39/39}{Implantation schématique dans le coffret}{0}}
 \headcommand {\beamer@framepages {39}{39}}
-\headcommand {\beamer@subsectionpages {37}{39}}
-\headcommand {\beamer@subsectionentry {0}{4}{5}{40}{Implantation schématique dans le coffret}}
-\headcommand {\slideentry {4}{5}{1}{40/40}{Implantation schématique dans le coffret}{0}}
+\headcommand {\beamer@subsectionpages {39}{39}}
+\headcommand {\beamer@subsectionentry {0}{4}{6}{40}{Câblage (pour mémo !)}}
+\headcommand {\slideentry {4}{6}{1}{40/40}{Câblage (pour mémo !)}{0}}
 \headcommand {\beamer@framepages {40}{40}}
-\headcommand {\beamer@subsectionpages {40}{40}}
-\headcommand {\beamer@subsectionentry {0}{4}{6}{41}{Câblage (pour mémo !)}}
-\headcommand {\slideentry {4}{6}{1}{41/41}{Câblage (pour mémo !)}{0}}
+\headcommand {\slideentry {4}{6}{2}{41/41}{Câblage (pour mémo !)}{0}}
 \headcommand {\beamer@framepages {41}{41}}
-\headcommand {\slideentry {4}{6}{2}{42/42}{Câblage (pour mémo !)}{0}}
+\headcommand {\slideentry {4}{6}{3}{42/42}{Câblage (pour mémo !)}{0}}
 \headcommand {\beamer@framepages {42}{42}}
-\headcommand {\slideentry {4}{6}{3}{43/43}{Câblage (pour mémo !)}{0}}
+\headcommand {\beamer@subsectionpages {40}{42}}
+\headcommand {\beamer@subsectionentry {0}{4}{7}{43}{Ordre de prix et devis}}
+\headcommand {\slideentry {4}{7}{1}{43/43}{Ordre de prix et devis}{0}}
 \headcommand {\beamer@framepages {43}{43}}
-\headcommand {\beamer@subsectionpages {41}{43}}
-\headcommand {\beamer@subsectionentry {0}{4}{7}{44}{Ordre de prix et devis}}
-\headcommand {\slideentry {4}{7}{1}{44/44}{Ordre de prix et devis}{0}}
+\headcommand {\slideentry {4}{7}{2}{44/44}{Ordre de prix et devis}{0}}
 \headcommand {\beamer@framepages {44}{44}}
-\headcommand {\slideentry {4}{7}{2}{45/45}{Ordre de prix et devis}{0}}
-\headcommand {\beamer@framepages {45}{45}}
-\headcommand {\beamer@partpages {1}{45}}
-\headcommand {\beamer@subsectionpages {44}{45}}
-\headcommand {\beamer@sectionpages {28}{45}}
-\headcommand {\beamer@documentpages {45}}
-\headcommand {\gdef \inserttotalframenumber {45}}
+\headcommand {\beamer@partpages {1}{44}}
+\headcommand {\beamer@subsectionpages {43}{44}}
+\headcommand {\beamer@sectionpages {28}{44}}
+\headcommand {\beamer@documentpages {44}}
+\headcommand {\gdef \inserttotalframenumber {44}}
