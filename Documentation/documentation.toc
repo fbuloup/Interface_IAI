@@ -1,24 +1,24 @@
 \beamer@sectionintoc {1}{Documentation}{3}{0}{1}
 \beamer@sectionintoc {2}{Principe de la commande}{5}{0}{2}
 \beamer@subsectionintoc {2}{1}{Commande par impulsions}{6}{0}{2}
-\beamer@subsectionintoc {2}{2}{Résolution et UTD}{8}{0}{2}
-\beamer@subsectionintoc {2}{3}{Rapport de réduction}{9}{0}{2}
-\beamer@subsectionintoc {2}{4}{Vitesses minimale et maximale absolues}{10}{0}{2}
-\beamer@subsectionintoc {2}{5}{Fréquences minimale et maximale absolues}{11}{0}{2}
-\beamer@subsectionintoc {2}{6}{Vitesse obtenue et fréquence de commande}{12}{0}{2}
-\beamer@subsectionintoc {2}{7}{Mouvement fluide}{13}{0}{2}
-\beamer@sectionintoc {3}{Caractéristique des deux axes}{14}{0}{3}
-\beamer@subsectionintoc {3}{1}{Axe 0 - Celui du dessous}{15}{0}{3}
-\beamer@subsectionintoc {3}{2}{Axe 0 - Celui du dessous - Mouvement fluide}{19}{0}{3}
-\beamer@subsectionintoc {3}{3}{Axe 0 - Celui du dessous - Calcul de N, CNUM et CDEN}{20}{0}{3}
-\beamer@subsectionintoc {3}{4}{Axe 1 - Celui du dessus}{22}{0}{3}
-\beamer@subsectionintoc {3}{5}{Axe 1 - Celui du dessus - Mouvement fluide}{26}{0}{3}
-\beamer@subsectionintoc {3}{6}{Axe 1 - Celui du dessus - Calcul de N, CNUM et CDEN}{27}{0}{3}
-\beamer@sectionintoc {4}{Interface avec un ADWinPro}{29}{0}{4}
-\beamer@subsectionintoc {4}{1}{Généralités}{30}{0}{4}
-\beamer@subsectionintoc {4}{2}{Schémas et principe de l'interface}{31}{0}{4}
-\beamer@subsectionintoc {4}{3}{Aperçus du routage PCB}{35}{0}{4}
-\beamer@subsectionintoc {4}{4}{Coffret mural}{38}{0}{4}
-\beamer@subsectionintoc {4}{5}{Implantation schématique dans le coffret}{40}{0}{4}
-\beamer@subsectionintoc {4}{6}{Câblage (pour mémo !)}{41}{0}{4}
-\beamer@subsectionintoc {4}{7}{Ordre de prix et devis}{44}{0}{4}
+\beamer@subsectionintoc {2}{2}{Résolution et UTD}{7}{0}{2}
+\beamer@subsectionintoc {2}{3}{Rapport de réduction}{8}{0}{2}
+\beamer@subsectionintoc {2}{4}{Vitesses minimale et maximale absolues}{9}{0}{2}
+\beamer@subsectionintoc {2}{5}{Fréquences minimale et maximale absolues}{10}{0}{2}
+\beamer@subsectionintoc {2}{6}{Vitesse obtenue et fréquence de commande}{11}{0}{2}
+\beamer@subsectionintoc {2}{7}{Mouvement fluide}{12}{0}{2}
+\beamer@sectionintoc {3}{Caractéristique des deux axes}{13}{0}{3}
+\beamer@subsectionintoc {3}{1}{Axe 0 - Celui du dessous}{14}{0}{3}
+\beamer@subsectionintoc {3}{2}{Axe 0 - Celui du dessous - Mouvement fluide}{21}{0}{3}
+\beamer@subsectionintoc {3}{3}{Axe 0 - Celui du dessous - Calcul de N, CNUM et CDEN}{22}{0}{3}
+\beamer@subsectionintoc {3}{4}{Axe 1 - Celui du dessus}{24}{0}{3}
+\beamer@subsectionintoc {3}{5}{Axe 1 - Celui du dessus - Mouvement fluide}{31}{0}{3}
+\beamer@subsectionintoc {3}{6}{Axe 1 - Celui du dessus - Calcul de N, CNUM et CDEN}{32}{0}{3}
+\beamer@sectionintoc {4}{Interface avec un ADWinPro}{34}{0}{4}
+\beamer@subsectionintoc {4}{1}{Généralités}{35}{0}{4}
+\beamer@subsectionintoc {4}{2}{Schémas et principe de l'interface}{36}{0}{4}
+\beamer@subsectionintoc {4}{3}{Aperçus du routage PCB}{40}{0}{4}
+\beamer@subsectionintoc {4}{4}{Coffret mural}{43}{0}{4}
+\beamer@subsectionintoc {4}{5}{Implantation schématique dans le coffret}{45}{0}{4}
+\beamer@subsectionintoc {4}{6}{Câblage (pour mémo !)}{46}{0}{4}
+\beamer@subsectionintoc {4}{7}{Ordre de prix et devis}{49}{0}{4}

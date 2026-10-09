@@ -18,130 +18,140 @@
 \headcommand {\beamer@subsectionentry {0}{2}{1}{6}{Commande par impulsions}}
 \headcommand {\slideentry {2}{1}{1}{6/6}{Commande par impulsions}{0}}
 \headcommand {\beamer@framepages {6}{6}}
-\headcommand {\slideentry {2}{1}{2}{7/7}{Commande par impulsions}{0}}
+\headcommand {\beamer@subsectionpages {6}{6}}
+\headcommand {\beamer@subsectionentry {0}{2}{2}{7}{Résolution et UTD}}
+\headcommand {\slideentry {2}{2}{1}{7/7}{Résolution et UTD}{0}}
 \headcommand {\beamer@framepages {7}{7}}
-\headcommand {\beamer@subsectionpages {6}{7}}
-\headcommand {\beamer@subsectionentry {0}{2}{2}{8}{Résolution et UTD}}
-\headcommand {\slideentry {2}{2}{1}{8/8}{Résolution et UTD}{0}}
+\headcommand {\beamer@subsectionpages {7}{7}}
+\headcommand {\beamer@subsectionentry {0}{2}{3}{8}{Rapport de réduction}}
+\headcommand {\slideentry {2}{3}{1}{8/8}{Rapport de réduction}{0}}
 \headcommand {\beamer@framepages {8}{8}}
 \headcommand {\beamer@subsectionpages {8}{8}}
-\headcommand {\beamer@subsectionentry {0}{2}{3}{9}{Rapport de réduction}}
-\headcommand {\slideentry {2}{3}{1}{9/9}{Rapport de réduction}{0}}
+\headcommand {\beamer@subsectionentry {0}{2}{4}{9}{Vitesses minimale et maximale absolues}}
+\headcommand {\slideentry {2}{4}{1}{9/9}{Vitesses minimale et maximale absolues}{0}}
 \headcommand {\beamer@framepages {9}{9}}
 \headcommand {\beamer@subsectionpages {9}{9}}
-\headcommand {\beamer@subsectionentry {0}{2}{4}{10}{Vitesses minimale et maximale absolues}}
-\headcommand {\slideentry {2}{4}{1}{10/10}{Vitesses minimale et maximale absolues}{0}}
+\headcommand {\beamer@subsectionentry {0}{2}{5}{10}{Fréquences minimale et maximale absolues}}
+\headcommand {\slideentry {2}{5}{1}{10/10}{Fréquences minimale et maximale absolues}{0}}
 \headcommand {\beamer@framepages {10}{10}}
 \headcommand {\beamer@subsectionpages {10}{10}}
-\headcommand {\beamer@subsectionentry {0}{2}{5}{11}{Fréquences minimale et maximale absolues}}
-\headcommand {\slideentry {2}{5}{1}{11/11}{Fréquences minimale et maximale absolues}{0}}
+\headcommand {\beamer@subsectionentry {0}{2}{6}{11}{Vitesse obtenue et fréquence de commande}}
+\headcommand {\slideentry {2}{6}{1}{11/11}{Vitesse obtenue et fréquence de commande}{0}}
 \headcommand {\beamer@framepages {11}{11}}
 \headcommand {\beamer@subsectionpages {11}{11}}
-\headcommand {\beamer@subsectionentry {0}{2}{6}{12}{Vitesse obtenue et fréquence de commande}}
-\headcommand {\slideentry {2}{6}{1}{12/12}{Vitesse obtenue et fréquence de commande}{0}}
+\headcommand {\beamer@subsectionentry {0}{2}{7}{12}{Mouvement fluide}}
+\headcommand {\slideentry {2}{7}{1}{12/12}{Mouvement fluide}{0}}
 \headcommand {\beamer@framepages {12}{12}}
+\headcommand {\beamer@sectionpages {5}{12}}
 \headcommand {\beamer@subsectionpages {12}{12}}
-\headcommand {\beamer@subsectionentry {0}{2}{7}{13}{Mouvement fluide}}
-\headcommand {\slideentry {2}{7}{1}{13/13}{Mouvement fluide}{0}}
+\headcommand {\sectionentry {3}{Caractéristique des deux axes}{13}{Caractéristique des deux axes}{0}}
+\headcommand {\slideentry {3}{0}{1}{13/13}{}{0}}
 \headcommand {\beamer@framepages {13}{13}}
-\headcommand {\beamer@sectionpages {5}{13}}
 \headcommand {\beamer@subsectionpages {13}{13}}
-\headcommand {\sectionentry {3}{Caractéristique des deux axes}{14}{Caractéristique des deux axes}{0}}
-\headcommand {\slideentry {3}{0}{1}{14/14}{}{0}}
+\headcommand {\beamer@subsectionentry {0}{3}{1}{14}{Axe 0 - Celui du dessous}}
+\headcommand {\slideentry {3}{1}{1}{14/14}{Axe 0 - Celui du dessous}{0}}
 \headcommand {\beamer@framepages {14}{14}}
-\headcommand {\beamer@subsectionpages {14}{14}}
-\headcommand {\beamer@subsectionentry {0}{3}{1}{15}{Axe 0 - Celui du dessous}}
-\headcommand {\slideentry {3}{1}{1}{15/15}{Axe 0 - Celui du dessous}{0}}
+\headcommand {\slideentry {3}{1}{2}{15/15}{Axe 0 - Celui du dessous}{0}}
 \headcommand {\beamer@framepages {15}{15}}
-\headcommand {\slideentry {3}{1}{2}{16/16}{Axe 0 - Celui du dessous}{0}}
+\headcommand {\slideentry {3}{1}{3}{16/16}{Axe 0 - Celui du dessous}{0}}
 \headcommand {\beamer@framepages {16}{16}}
-\headcommand {\slideentry {3}{1}{3}{17/17}{Axe 0 - Celui du dessous}{0}}
+\headcommand {\slideentry {3}{1}{4}{17/17}{Axe 0 - Celui du dessous}{0}}
 \headcommand {\beamer@framepages {17}{17}}
-\headcommand {\slideentry {3}{1}{4}{18/18}{Axe 0 - Celui du dessous}{0}}
+\headcommand {\slideentry {3}{1}{5}{18/18}{Axe 0 - Celui du dessous}{0}}
 \headcommand {\beamer@framepages {18}{18}}
-\headcommand {\beamer@subsectionpages {15}{18}}
-\headcommand {\beamer@subsectionentry {0}{3}{2}{19}{Axe 0 - Celui du dessous - Mouvement fluide}}
-\headcommand {\slideentry {3}{2}{1}{19/19}{Axe 0 - Celui du dessous - Mouvement fluide}{0}}
+\headcommand {\slideentry {3}{1}{6}{19/19}{Axe 0 - Celui du dessous}{0}}
 \headcommand {\beamer@framepages {19}{19}}
-\headcommand {\beamer@subsectionpages {19}{19}}
-\headcommand {\beamer@subsectionentry {0}{3}{3}{20}{Axe 0 - Celui du dessous - Calcul de N, CNUM et CDEN}}
-\headcommand {\slideentry {3}{3}{1}{20/20}{Axe 0 - Celui du dessous - Calcul de N, CNUM et CDEN}{0}}
+\headcommand {\slideentry {3}{1}{7}{20/20}{Axe 0 - Celui du dessous}{0}}
 \headcommand {\beamer@framepages {20}{20}}
-\headcommand {\slideentry {3}{3}{2}{21/21}{Axe 0 - Celui du dessous - Calcul de N, CNUM et CDEN}{0}}
+\headcommand {\beamer@subsectionpages {14}{20}}
+\headcommand {\beamer@subsectionentry {0}{3}{2}{21}{Axe 0 - Celui du dessous - Mouvement fluide}}
+\headcommand {\slideentry {3}{2}{1}{21/21}{Axe 0 - Celui du dessous - Mouvement fluide}{0}}
 \headcommand {\beamer@framepages {21}{21}}
-\headcommand {\beamer@subsectionpages {20}{21}}
-\headcommand {\beamer@subsectionentry {0}{3}{4}{22}{Axe 1 - Celui du dessus}}
-\headcommand {\slideentry {3}{4}{1}{22/22}{Axe 1 - Celui du dessus}{0}}
+\headcommand {\beamer@subsectionpages {21}{21}}
+\headcommand {\beamer@subsectionentry {0}{3}{3}{22}{Axe 0 - Celui du dessous - Calcul de N, CNUM et CDEN}}
+\headcommand {\slideentry {3}{3}{1}{22/22}{Axe 0 - Celui du dessous - Calcul de N, CNUM et CDEN}{0}}
 \headcommand {\beamer@framepages {22}{22}}
-\headcommand {\slideentry {3}{4}{2}{23/23}{Axe 1 - Celui du dessus}{0}}
+\headcommand {\slideentry {3}{3}{2}{23/23}{Axe 0 - Celui du dessous - Calcul de N, CNUM et CDEN}{0}}
 \headcommand {\beamer@framepages {23}{23}}
-\headcommand {\slideentry {3}{4}{3}{24/24}{Axe 1 - Celui du dessus}{0}}
+\headcommand {\beamer@subsectionpages {22}{23}}
+\headcommand {\beamer@subsectionentry {0}{3}{4}{24}{Axe 1 - Celui du dessus}}
+\headcommand {\slideentry {3}{4}{1}{24/24}{Axe 1 - Celui du dessus}{0}}
 \headcommand {\beamer@framepages {24}{24}}
-\headcommand {\slideentry {3}{4}{4}{25/25}{Axe 1 - Celui du dessus}{0}}
+\headcommand {\slideentry {3}{4}{2}{25/25}{Axe 1 - Celui du dessus}{0}}
 \headcommand {\beamer@framepages {25}{25}}
-\headcommand {\beamer@subsectionpages {22}{25}}
-\headcommand {\beamer@subsectionentry {0}{3}{5}{26}{Axe 1 - Celui du dessus - Mouvement fluide}}
-\headcommand {\slideentry {3}{5}{1}{26/26}{Axe 1 - Celui du dessus - Mouvement fluide}{0}}
+\headcommand {\slideentry {3}{4}{3}{26/26}{Axe 1 - Celui du dessus}{0}}
 \headcommand {\beamer@framepages {26}{26}}
-\headcommand {\beamer@subsectionpages {26}{26}}
-\headcommand {\beamer@subsectionentry {0}{3}{6}{27}{Axe 1 - Celui du dessus - Calcul de N, CNUM et CDEN}}
-\headcommand {\slideentry {3}{6}{1}{27/27}{Axe 1 - Celui du dessus - Calcul de N, CNUM et CDEN}{0}}
+\headcommand {\slideentry {3}{4}{4}{27/27}{Axe 1 - Celui du dessus}{0}}
 \headcommand {\beamer@framepages {27}{27}}
-\headcommand {\slideentry {3}{6}{2}{28/28}{Axe 1 - Celui du dessus - Calcul de N, CNUM et CDEN}{0}}
+\headcommand {\slideentry {3}{4}{5}{28/28}{Axe 1 - Celui du dessus}{0}}
 \headcommand {\beamer@framepages {28}{28}}
-\headcommand {\beamer@sectionpages {14}{28}}
-\headcommand {\beamer@subsectionpages {27}{28}}
-\headcommand {\sectionentry {4}{Interface avec un ADWinPro}{29}{Interface avec un ADWinPro}{0}}
-\headcommand {\slideentry {4}{0}{1}{29/29}{}{0}}
+\headcommand {\slideentry {3}{4}{6}{29/29}{Axe 1 - Celui du dessus}{0}}
 \headcommand {\beamer@framepages {29}{29}}
-\headcommand {\beamer@subsectionpages {29}{29}}
-\headcommand {\beamer@subsectionentry {0}{4}{1}{30}{Généralités}}
-\headcommand {\slideentry {4}{1}{1}{30/30}{Généralités}{0}}
+\headcommand {\slideentry {3}{4}{7}{30/30}{Axe 1 - Celui du dessus}{0}}
 \headcommand {\beamer@framepages {30}{30}}
-\headcommand {\beamer@subsectionpages {30}{30}}
-\headcommand {\beamer@subsectionentry {0}{4}{2}{31}{Schémas et principe de l'interface}}
-\headcommand {\slideentry {4}{2}{1}{31/31}{Schémas et principe de l'interface}{0}}
+\headcommand {\beamer@subsectionpages {24}{30}}
+\headcommand {\beamer@subsectionentry {0}{3}{5}{31}{Axe 1 - Celui du dessus - Mouvement fluide}}
+\headcommand {\slideentry {3}{5}{1}{31/31}{Axe 1 - Celui du dessus - Mouvement fluide}{0}}
 \headcommand {\beamer@framepages {31}{31}}
-\headcommand {\slideentry {4}{2}{2}{32/32}{Schémas et principe de l'interface}{0}}
+\headcommand {\beamer@subsectionpages {31}{31}}
+\headcommand {\beamer@subsectionentry {0}{3}{6}{32}{Axe 1 - Celui du dessus - Calcul de N, CNUM et CDEN}}
+\headcommand {\slideentry {3}{6}{1}{32/32}{Axe 1 - Celui du dessus - Calcul de N, CNUM et CDEN}{0}}
 \headcommand {\beamer@framepages {32}{32}}
-\headcommand {\slideentry {4}{2}{3}{33/33}{Schémas et principe de l'interface}{0}}
+\headcommand {\slideentry {3}{6}{2}{33/33}{Axe 1 - Celui du dessus - Calcul de N, CNUM et CDEN}{0}}
 \headcommand {\beamer@framepages {33}{33}}
-\headcommand {\slideentry {4}{2}{4}{34/34}{Schémas et principe de l'interface}{0}}
+\headcommand {\beamer@sectionpages {13}{33}}
+\headcommand {\beamer@subsectionpages {32}{33}}
+\headcommand {\sectionentry {4}{Interface avec un ADWinPro}{34}{Interface avec un ADWinPro}{0}}
+\headcommand {\slideentry {4}{0}{1}{34/34}{}{0}}
 \headcommand {\beamer@framepages {34}{34}}
-\headcommand {\beamer@subsectionpages {31}{34}}
-\headcommand {\beamer@subsectionentry {0}{4}{3}{35}{Aperçus du routage PCB}}
-\headcommand {\slideentry {4}{3}{1}{35/35}{Aperçus du routage PCB}{0}}
+\headcommand {\beamer@subsectionpages {34}{34}}
+\headcommand {\beamer@subsectionentry {0}{4}{1}{35}{Généralités}}
+\headcommand {\slideentry {4}{1}{1}{35/35}{Généralités}{0}}
 \headcommand {\beamer@framepages {35}{35}}
-\headcommand {\slideentry {4}{3}{2}{36/36}{Aperçus du routage PCB}{0}}
+\headcommand {\beamer@subsectionpages {35}{35}}
+\headcommand {\beamer@subsectionentry {0}{4}{2}{36}{Schémas et principe de l'interface}}
+\headcommand {\slideentry {4}{2}{1}{36/36}{Schémas et principe de l'interface}{0}}
 \headcommand {\beamer@framepages {36}{36}}
-\headcommand {\slideentry {4}{3}{3}{37/37}{Aperçus du routage PCB}{0}}
+\headcommand {\slideentry {4}{2}{2}{37/37}{Schémas et principe de l'interface}{0}}
 \headcommand {\beamer@framepages {37}{37}}
-\headcommand {\beamer@subsectionpages {35}{37}}
-\headcommand {\beamer@subsectionentry {0}{4}{4}{38}{Coffret mural}}
-\headcommand {\slideentry {4}{4}{1}{38/38}{Coffret mural}{0}}
+\headcommand {\slideentry {4}{2}{3}{38/38}{Schémas et principe de l'interface}{0}}
 \headcommand {\beamer@framepages {38}{38}}
-\headcommand {\slideentry {4}{4}{2}{39/39}{Coffret mural}{0}}
+\headcommand {\slideentry {4}{2}{4}{39/39}{Schémas et principe de l'interface}{0}}
 \headcommand {\beamer@framepages {39}{39}}
-\headcommand {\beamer@subsectionpages {38}{39}}
-\headcommand {\beamer@subsectionentry {0}{4}{5}{40}{Implantation schématique dans le coffret}}
-\headcommand {\slideentry {4}{5}{1}{40/40}{Implantation schématique dans le coffret}{0}}
+\headcommand {\beamer@subsectionpages {36}{39}}
+\headcommand {\beamer@subsectionentry {0}{4}{3}{40}{Aperçus du routage PCB}}
+\headcommand {\slideentry {4}{3}{1}{40/40}{Aperçus du routage PCB}{0}}
 \headcommand {\beamer@framepages {40}{40}}
-\headcommand {\beamer@subsectionpages {40}{40}}
-\headcommand {\beamer@subsectionentry {0}{4}{6}{41}{Câblage (pour mémo !)}}
-\headcommand {\slideentry {4}{6}{1}{41/41}{Câblage (pour mémo !)}{0}}
+\headcommand {\slideentry {4}{3}{2}{41/41}{Aperçus du routage PCB}{0}}
 \headcommand {\beamer@framepages {41}{41}}
-\headcommand {\slideentry {4}{6}{2}{42/42}{Câblage (pour mémo !)}{0}}
+\headcommand {\slideentry {4}{3}{3}{42/42}{Aperçus du routage PCB}{0}}
 \headcommand {\beamer@framepages {42}{42}}
-\headcommand {\slideentry {4}{6}{3}{43/43}{Câblage (pour mémo !)}{0}}
+\headcommand {\beamer@subsectionpages {40}{42}}
+\headcommand {\beamer@subsectionentry {0}{4}{4}{43}{Coffret mural}}
+\headcommand {\slideentry {4}{4}{1}{43/43}{Coffret mural}{0}}
 \headcommand {\beamer@framepages {43}{43}}
-\headcommand {\beamer@subsectionpages {41}{43}}
-\headcommand {\beamer@subsectionentry {0}{4}{7}{44}{Ordre de prix et devis}}
-\headcommand {\slideentry {4}{7}{1}{44/44}{Ordre de prix et devis}{0}}
+\headcommand {\slideentry {4}{4}{2}{44/44}{Coffret mural}{0}}
 \headcommand {\beamer@framepages {44}{44}}
-\headcommand {\slideentry {4}{7}{2}{45/45}{Ordre de prix et devis}{0}}
+\headcommand {\beamer@subsectionpages {43}{44}}
+\headcommand {\beamer@subsectionentry {0}{4}{5}{45}{Implantation schématique dans le coffret}}
+\headcommand {\slideentry {4}{5}{1}{45/45}{Implantation schématique dans le coffret}{0}}
 \headcommand {\beamer@framepages {45}{45}}
-\headcommand {\beamer@partpages {1}{45}}
-\headcommand {\beamer@subsectionpages {44}{45}}
-\headcommand {\beamer@sectionpages {29}{45}}
-\headcommand {\beamer@documentpages {45}}
-\headcommand {\gdef \inserttotalframenumber {45}}
+\headcommand {\beamer@subsectionpages {45}{45}}
+\headcommand {\beamer@subsectionentry {0}{4}{6}{46}{Câblage (pour mémo !)}}
+\headcommand {\slideentry {4}{6}{1}{46/46}{Câblage (pour mémo !)}{0}}
+\headcommand {\beamer@framepages {46}{46}}
+\headcommand {\slideentry {4}{6}{2}{47/47}{Câblage (pour mémo !)}{0}}
+\headcommand {\beamer@framepages {47}{47}}
+\headcommand {\slideentry {4}{6}{3}{48/48}{Câblage (pour mémo !)}{0}}
+\headcommand {\beamer@framepages {48}{48}}
+\headcommand {\beamer@subsectionpages {46}{48}}
+\headcommand {\beamer@subsectionentry {0}{4}{7}{49}{Ordre de prix et devis}}
+\headcommand {\slideentry {4}{7}{1}{49/49}{Ordre de prix et devis}{0}}
+\headcommand {\beamer@framepages {49}{49}}
+\headcommand {\slideentry {4}{7}{2}{50/50}{Ordre de prix et devis}{0}}
+\headcommand {\beamer@framepages {50}{50}}
+\headcommand {\beamer@partpages {1}{50}}
+\headcommand {\beamer@subsectionpages {49}{50}}
+\headcommand {\beamer@sectionpages {34}{50}}
+\headcommand {\beamer@documentpages {50}}
+\headcommand {\gdef \inserttotalframenumber {50}}

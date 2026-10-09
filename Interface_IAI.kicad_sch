@@ -7940,7 +7940,7 @@
 		)
 		(uuid "066c7e0a-b1df-4a36-8e87-b2498bd02129")
 	)
-	(label "DIO_IN1"
+	(label "DIO_EMGS"
 		(at 144.78 204.47 180)
 		(effects
 			(font
@@ -7970,7 +7970,7 @@
 		)
 		(uuid "08a8c136-4310-4a46-b168-5ea18deeca57")
 	)
-	(label "SCON_IN0"
+	(label "SCON_RSTR"
 		(at 101.6 181.61 0)
 		(effects
 			(font
@@ -8050,7 +8050,7 @@
 		)
 		(uuid "1d55746f-2c0c-4682-8735-26f2bb6796f6")
 	)
-	(label "SCON_IN0"
+	(label "SCON_RSTR"
 		(at 181.61 175.26 180)
 		(effects
 			(font
@@ -8140,7 +8140,7 @@
 		)
 		(uuid "2fb4a3fa-c549-40eb-9526-b71855cd7e6d")
 	)
-	(label "DIO_OUT1"
+	(label "DIO_OUT"
 		(at 35.56 148.59 180)
 		(effects
 			(font
@@ -8200,7 +8200,7 @@
 		)
 		(uuid "4b8cdcac-8d04-4d44-a733-3cc80a453a30")
 	)
-	(label "DIO_OUT0"
+	(label "RSTR"
 		(at 31.75 93.98 0)
 		(effects
 			(font
@@ -8240,7 +8240,7 @@
 		)
 		(uuid "51854157-2af2-4401-b4d6-d189d70fec1d")
 	)
-	(label "DIO_IN1"
+	(label "DIO_EMGS"
 		(at 31.75 106.68 0)
 		(effects
 			(font
@@ -8310,7 +8310,7 @@
 		)
 		(uuid "77ad5aa8-8e23-4657-b238-da76dba20e87")
 	)
-	(label "SCON_OUT1"
+	(label "SCON_EMGS"
 		(at 181.61 187.96 180)
 		(effects
 			(font
@@ -8320,7 +8320,7 @@
 		)
 		(uuid "790a3d3f-db01-40c6-84b0-2f71406ad229")
 	)
-	(label "DIO_OUT0"
+	(label "RSTR"
 		(at 81.28 181.61 180)
 		(effects
 			(font
@@ -8360,7 +8360,7 @@
 		)
 		(uuid "7dc8747d-8c0f-4461-bd53-bec3caf3fc2d")
 	)
-	(label "DIO_OUT1"
+	(label "DIO_OUT"
 		(at 81.28 184.15 180)
 		(effects
 			(font
@@ -8380,7 +8380,7 @@
 		)
 		(uuid "802fdade-4591-47fd-9f72-d4e824955c14")
 	)
-	(label "SCON_IN1"
+	(label "SCON_IN"
 		(at 101.6 184.15 0)
 		(effects
 			(font
@@ -8400,7 +8400,7 @@
 		)
 		(uuid "82823cce-d474-4d26-baf8-e23b6342425c")
 	)
-	(label "DIO_OUT1"
+	(label "DIO_OUT"
 		(at 31.75 91.44 0)
 		(effects
 			(font
@@ -8410,7 +8410,7 @@
 		)
 		(uuid "8595fd51-53cf-4d28-a7aa-abf7d82b9b24")
 	)
-	(label "SCON_OUT0"
+	(label "SCON_REN"
 		(at 181.61 190.5 180)
 		(effects
 			(font
@@ -8430,7 +8430,7 @@
 		)
 		(uuid "8745f0e9-26d1-471b-ad00-b127b5b629c7")
 	)
-	(label "SCON_IN1"
+	(label "SCON_IN"
 		(at 181.61 172.72 180)
 		(effects
 			(font
@@ -8480,7 +8480,7 @@
 		)
 		(uuid "8b3ec9c9-d595-4e7c-b72c-343a609ea2e5")
 	)
-	(label "DIO_OUT0"
+	(label "RSTR"
 		(at 25.4 148.59 180)
 		(effects
 			(font
@@ -8640,7 +8640,7 @@
 		)
 		(uuid "b876c35d-9e27-4d5e-bd6a-ad91e25c98d7")
 	)
-	(label "SCON_OUT1"
+	(label "SCON_EMGS"
 		(at 152.4 204.47 0)
 		(effects
 			(font
@@ -8730,7 +8730,7 @@
 		)
 		(uuid "c8d6ca6a-3aef-4a65-b689-8ff98ca29db4")
 	)
-	(label "SCON_OUT0"
+	(label "SCON_REN"
 		(at 124.46 204.47 0)
 		(effects
 			(font
@@ -8740,7 +8740,7 @@
 		)
 		(uuid "cbb5c693-b0d6-43d1-8b5f-7d23892ea877")
 	)
-	(label "DIO_IN0"
+	(label "DIO_REN"
 		(at 116.84 204.47 180)
 		(effects
 			(font
@@ -8850,7 +8850,7 @@
 		)
 		(uuid "ea9f0973-99d1-4940-a4dd-cbdc5a4726fd")
 	)
-	(label "DIO_IN0"
+	(label "DIO_REN"
 		(at 31.75 109.22 0)
 		(effects
 			(font

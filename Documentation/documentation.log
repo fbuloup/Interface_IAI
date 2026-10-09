@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.4) (preloaded format=xelatex 2025.12.9)  8 OCT 2026 21:05
+This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.4) (preloaded format=xelatex 2025.12.9)  9 OCT 2026 09:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1349,13 +1349,13 @@ LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <6> not available
 
 ] [6
 
-] [7
-
 ]
-Overfull \vbox (5.22383pt too high) detected at line 131
+Overfull \vbox (5.22383pt too high) detected at line 126
  []
 
-[8
+[7
+
+] [8
 
 ] [9
 
@@ -1365,9 +1365,9 @@ Overfull \vbox (5.22383pt too high) detected at line 131
 
 ] [12
 
-] [13
+] (documentation.toc) [13
 
-] (documentation.toc) [14
+] [14
 
 ] [15
 
@@ -1375,10 +1375,10 @@ Overfull \vbox (5.22383pt too high) detected at line 131
 
 ] [17
 
-] [18
-
 ]
-[19
+[18
+
+] [19
 
 ] [20
 
@@ -1398,91 +1398,111 @@ Overfull \vbox (5.22383pt too high) detected at line 131
 
 ] [28
 
-] (documentation.toc) [29
+] [29
+
+] [30
+
+] [31
+
+] [32
 
 ]
-[30
+[33
+
+] (documentation.toc) [34
+
+] [35
 
 ]
 File: images/Alimentation.png Graphic file (type bmp)
 <images/Alimentation.png>
- [31
+ [36
 
 ]
 File: images/pulse.png Graphic file (type bmp)
 <images/pulse.png>
- [32
 
-]
-File: images/feedback.png Graphic file (type bmp)
-<images/feedback.png>
- [33
-
-]
-File: images/PIO.png Graphic file (type bmp)
-<images/PIO.png>
- [34
-
-]
-File: images/pcb.png Graphic file (type bmp)
-<images/pcb.png>
- [35
-
-]
-File: images/Interface_IAI_1.png Graphic file (type bmp)
-<images/Interface_IAI_1.png>
-
-Overfull \hbox (3.7423pt too wide) in paragraph at lines 544--544
- [][] 
- []
-
-[36
-
-]
-File: images/Interface_IAI_2.png Graphic file (type bmp)
-<images/Interface_IAI_2.png>
-
-Overfull \hbox (3.7423pt too wide) in paragraph at lines 549--549
+Overfull \hbox (0.30852pt too wide) in paragraph at lines 583--583
  [][] 
  []
 
 [37
 
 ]
-File: images/CoffretMural.png Graphic file (type bmp)
-<images/CoffretMural.png>
+File: images/feedback.png Graphic file (type bmp)
+<images/feedback.png>
  [38
 
-] [39
+]
+File: images/PIO.png Graphic file (type bmp)
+<images/PIO.png>
+
+Overfull \hbox (4.17488pt too wide) in paragraph at lines 608--608
+ [][] 
+ []
+
+[39
+
+]
+File: images/pcb.png Graphic file (type bmp)
+<images/pcb.png>
+ [40
+
+]
+File: images/Interface_IAI_1.png Graphic file (type bmp)
+<images/Interface_IAI_1.png>
+
+Overfull \hbox (3.7423pt too wide) in paragraph at lines 619--619
+ [][] 
+ []
+
+[41
+
+]
+File: images/Interface_IAI_2.png Graphic file (type bmp)
+<images/Interface_IAI_2.png>
+
+Overfull \hbox (3.7423pt too wide) in paragraph at lines 624--624
+ [][] 
+ []
+
+[42
+
+]
+File: images/CoffretMural.png Graphic file (type bmp)
+<images/CoffretMural.png>
+ [43
+
+] [44
 
 ]
 File: images/implantation_coffret.png Graphic file (type bmp)
 <images/implantation_coffret.png>
 
-Overfull \vbox (9.67006pt too high) detected at line 581
+Overfull \vbox (9.67006pt too high) detected at line 656
  []
 
-[40
+[45
 
-] [41
+] [46
 
 ]
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 663.
+(Font)              <5> on input line 738.
 LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <5> not available
-(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 663.
- [42
+(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 738.
+ [47
 
 ]
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9> on input line 694.
+(Font)              <9> on input line 769.
 LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <9> not available
-(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 694.
- [43
+(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 769.
+ [48
 
-] [44
+] [49
 
-] [45
+] [50
 
 ]
 \tf@nav=\write6
@@ -1504,15 +1524,15 @@ L3 programming layer <2025-11-06>
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `documentation.out' has not changed.
-(rerunfilecheck)             Checksum: FEA96D7B64E0902F52A70BDA796F370E;5098.
+(rerunfilecheck)             Checksum: 9B68D72962EEF916ACE2C343D53ED4D6;5097.
  ) 
 Here is how much of TeX's memory you used:
- 35142 strings out of 402986
- 744933 string characters out of 5450366
- 1407219 words of memory out of 5000000
- 63193 multiletter control sequences out of 15000+600000
+ 35170 strings out of 402986
+ 745800 string characters out of 5450366
+ 1409219 words of memory out of 5000000
+ 63221 multiletter control sequences out of 15000+600000
  648526 words of font info for 93 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 128i,20n,123p,576b,787s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 128i,20n,123p,569b,787s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on documentation.pdf (45 pages).
+Output written on documentation.pdf (50 pages).
