@@ -1,9 +1,9 @@
 clear variables; clc; close all;
 
 % Initialize input parameters
-fmin = 4000;
-vmin = 600;
-vmax = 800;
+fmin = 100;
+vmin = 45;
+vmax = 1200;
 
 % Compute resulting parameters
 UTD = vmin/fmin;
@@ -31,29 +31,29 @@ for n = 1:N
     time(n) = (n-1)*dt;
     % Finger position simulation
     % 1. Sinus
-    % pF(n) = 100*sin(2*pi*0.5*time(n)) + 2*(rand - 0.5);
+    pF(n) = 10*sin(2*pi*0.25*time(n)) + 0*(rand - 0.5);
     % 2. Step
-    pF(n) = 0;
-    if(time(n) > 1)
-        pF(n) = 100;
-    end
+    % pF(n) = 0;
+    % if(time(n) > 1)
+    %     pF(n) = 100;
+    % end
+    pF(n) =pF(n)+ 0*(rand - 0.5);
     % Current motor position
     pM(n) = currentPM;
     % Compute error position
     delta = pF(n) - currentPM;
     % Frequencies lookup table
-    if(abs(delta) < deltaMax)
+    if(abs(delta) < UTD/2.0)
+        % If error is less than half UTD, no need to move
+        F(n) = 0;
+    elseif(abs(delta) <= deltaMax)
         F(n) = (fmax - fmin) /deltaMax * abs(delta) + fmin;
     else
         F(n) = fmax;
     end
-    % Compute signs signal et current time
+    % Compute signs signal at current time
     signs(n) = sign(delta);
-    % If error is less than half UTD, no need to move
-    if(abs(delta) < UTD/2.0)
-        F(n) = 0;
-        signs(n) = 0;
-    else
+    if(F(n) > 0)
         if(time(n) - lastToggleTime >= 1/F(n))
             % If last toggle time is farther than current period,
             % record current time an move one UTD
@@ -72,7 +72,33 @@ for n = 1:N
 end
 
 % Plots
-plot(time, pM, time, pF);
+% Motor and finger positions
+plot(time, pM, 'LineWidth', 2.5)
+hold on
+plot(time, pF, 'or');
 xlabel 'time (s)';
 ylabel 'Amplitude (mm)'
 legend 'Motor position' 'Finger position';
+
+% Frequency of Pulses signal
+figure
+scatter(time, F);
+xlabel 'time (s)';
+ylabel 'Frequency (Hz)'
+
+% Pulses and signs signals
+figure
+subplot(2,1,1)
+plot(time, pulses);
+xlabel 'time (s)';
+ylabel 'Pulses'
+subplot(2,1,2)
+plot(time, signs);
+xlabel 'time (s)';
+ylabel 'Signs'
+
+% Speed
+figure
+plot(time, F*UTD);
+xlabel 'time (s)';
+ylabel 'Speed (mm/s)'

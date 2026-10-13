@@ -120,10 +120,10 @@ Pour fonctionner en mode impulsion, l'interrupteur 1 (SW1) en façade du contrô
 \textcolor{blue}{\textbf{\underline{\href{https://raw.githubusercontent.com/fbuloup/Interface_IAI/main/Documentation/SCON-CB_CGB(ME0340-8A).pdf\#page=243}{Ref.}}}}
 \end{frame}
 
-\subsection{Signaux PIO}
+\subsection{Signaux PIO accessibles en mode impulsions}
 \begin{frame}
 \centering
-	\begin{block}{Signaux PIO utiles en mode impulsions - Sorties ADWin}
+	\begin{block}{Signaux PIO utilisés - Sorties ADWin}
 	\begin{itemize}
 		\item SON, pour activer le moteur
 		\item RES, pour acquitter une alarme sans intervention manuelle
@@ -132,7 +132,7 @@ Pour fonctionner en mode impulsion, l'interrupteur 1 (SW1) en façade du contrô
 		\item RSTR : Reference STaRt
 	\end{itemize}
 	\end{block}
-	\begin{block}{Signaux PIO utiles en mode impulsions - Entrées ADWin}
+	\begin{block}{Signaux PIO utilisés - Entrées ADWin}
 	\begin{itemize}
 		\item SV : servo prêt ? Avant d'envoyer des impulsions
 		\item INP : pour savoir si l'actionneur a rejoint la consigne
@@ -145,14 +145,14 @@ Pour fonctionner en mode impulsion, l'interrupteur 1 (SW1) en façade du contrô
 \end{frame}
 
 \begin{frame}
-	\begin{block}{Signaux PIO inutilisés en mode impulsions - Entrées SCON}
+	\begin{block}{Signaux PIO inutilisés - Sorties ADWin}
 	\begin{itemize}
 \justifying
 		\item RMOD : Il permet de basculer entre AUTO et MANU depuis le PIO, quand le commutateur du contrôleur est en position AUTO.
 		\item DCLR : efface le compteur de déviation. Utile lors d'opération de poussées qui décalent les positions de consigne et réelle.
 	\end{itemize}
 	\end{block}
-	\begin{block}{Signaux PIO inutilisés en mode impulsions - Sorties SCON}
+	\begin{block}{Signaux PIO inutilisés - Entrées ADWin}
 	\begin{itemize}
 	\justifying
 		\item PWR : câblé sur la LED en face avant du contrôleur
@@ -161,7 +161,7 @@ Pour fonctionner en mode impulsion, l'interrupteur 1 (SW1) en façade du contrô
 	\end{block}
 \end{frame}
 \begin{frame}
-\begin{block}{Signaux PIO inutilisés en mode impulsions - Sorties SCON}
+\begin{block}{Signaux PIO inutilisés - Entrées ADWin}
 
 \justifying
 	\begin{itemize}
@@ -189,6 +189,15 @@ On peut d'autre-part fixer notre propre résolution (celle que l'on souhaite avo
 UTD \geq resolution
 \end{align*}
 \end{alertblock}
+\end{frame}
+
+\begin{frame}
+\centering
+! Remarque !
+\vspace{1cm}
+
+\justifying
+Sur cette \textcolor{blue}{\textbf{\underline{\href{https://raw.githubusercontent.com/fbuloup/Interface_IAI/main/Documentation/SCON-CB_CGB(ME0340-8A).pdf\#page=257}{page}}}} il est mentionné le terme de "Actuator Lead Length" dans la formule générale. Nos actionneurs RC4 sont des modèles à moteurs dans l'axe, couplés directement à la vis. Donc "Actuator Lead Length" et "Ball Screw Lead" sont équivalents.
 \end{frame}
 
 \subsection{Rapport de réduction}
@@ -768,13 +777,35 @@ Le réglage des différents paramètres pour configurer la commande peut être t
 
 \section{Simulation}
 \subsection{Loi de commande}
+
+\begin{frame}
+
+	\centering
+	\includegraphics[scale=0.5]{images/IAI_Models/SA7C_sur_SA8C_repere.png}
+\end{frame}
+
+\begin{frame}
+\justifying
+Le repère (O,x,y) de l'OptiTrack devrait correspondre aux axes moteurs. Les positions des moteurs sont récupérées par le feedback. On calcule à tout instant les différences entre les positions moteurs et les positions du marqueur en x et y :
+\begin{equation*}
+\left\{
+\begin{aligned}
+\delta_x &= marker_x - motor_x\\
+\delta_y &= marker_y - motor_y
+\end{aligned}\right.
+\end{equation*}
+
+Puis, à partir de ces différences, on peut calculer la fréquence à envoyer à chacun des axes selon la fonction présentée dans le graphe ci-après. On pourrait tout à fait envisager d'autres lois. 
+
+\end{frame}
+
 \begin{frame}
 \begin{tikzpicture}
 \begin{axis}[
     width=11cm,
     height=7cm,
-    xlabel={$\delta (mm)$},
-    ylabel={$F(\delta) (Hz)$},
+    xlabel={$\lvert\delta\rvert - mm$},
+    ylabel={$F(\lvert\delta\rvert) - Hz$},
     xmin=0, xmax=10,
     ymin=0, ymax=12000,
     axis lines=left,
@@ -794,24 +825,24 @@ Le réglage des différents paramètres pour configurer la commande peut être t
  
 % Zone 1 : 0 <= delta < epsilon  ->  F = 0
 \addplot[green!50!black, domain=0:\eps, samples=2] {0};
-\addlegendentry{$0 \leq \delta < \varepsilon$ : $F=0$}
+\addlegendentry{$0 \leq \lvert\delta\rvert < \varepsilon$ : $F=0$}
  
 % Zone 2 : epsilon <= delta < deltaMax  ->  F = (fmax-fmin)/deltaMax * delta + fmin
 \addplot[blue, domain=\eps:\deltaMax, samples=2] {\pente * x + \fmin};
-\addlegendentry{$\varepsilon \leq \delta < \delta_{\max}$ : $F=\frac{f_{\max}-f_{\min}}{\delta_{\max}}\,\delta+f_{\min}$}
+\addlegendentry{$\varepsilon \leq \lvert\delta\rvert \leq \delta_{\max}$ : $F=\frac{f_{\max}-f_{\min}}{\delta_{\max}}\,\lvert\delta\rvert+f_{\min}$}
  
 % Zone 3 : delta >= deltaMax  ->  F = fmax
 \addplot[red, domain=\deltaMax:10, samples=2] {\fmax};
-\addlegendentry{$\delta \geq \delta_{\max}$ : $F=f_{\max}$}
+\addlegendentry{$\delta > \delta_{\max}$ : $F=f_{\max}$}
  
 % Saut en delta = epsilon (trait pointillé)
 \draw[dashed, gray] (axis cs:\eps,0) -- (axis cs:\eps,\feps);
  
 % Points : plein = valeur prise, creux = valeur non atteinte
-\addplot[only marks, mark=*, mark size=2pt, black]
-    coordinates {(0,0) (\eps,\feps) (\deltaMax,\fmax)};
-\addplot[only marks, mark=*, mark size=2pt, fill=white, draw=black]
-    coordinates {(\eps,0)};
+%\addplot[only marks, mark=*, mark size=2pt, black]
+%    coordinates {(0,0) (\eps,\feps) (\deltaMax,\fmax)};
+%\addplot[only marks, mark=*, mark size=2pt, fill=white, draw=black]
+%    coordinates {(\eps,0)};
  
 % Pointillés vers les axes
 \draw[dashed, gray] (axis cs:0,\fmax) -- (axis cs:\deltaMax,\fmax)
@@ -819,13 +850,20 @@ Le réglage des différents paramètres pour configurer la commande peut être t
  
 % Annotations
 \node[anchor=south west, font=\small] at (axis cs:0.4,\feps-1100) {$F(\varepsilon)=f_{\min}$};
-\node[anchor=south west, font=\small] at (axis cs:0.1,\fmax) {$F(\delta_{\max})=f_{\max}$};;
+\node[anchor=south west, font=\small] at (axis cs:0.1,\fmax) {$F(\delta_{\max})=f_{\max}$};
 \node[anchor=north west, font=\small] at (axis cs:\eps,-300) {};
  
 \end{axis}
 \end{tikzpicture}
-
+\centering
+On peut prendre $\epsilon = \frac{UTD}{2}$.
 \end{frame}
+
+\begin{frame}
+\centering
+Une simulation est faite dans ce \textcolor{blue}{\textbf{\underline{\href{https://raw.githubusercontent.com/fbuloup/Interface_IAI/main/Simulation/oneAxisSimulation.m}{fichier}}}} Matlab.
+\end{frame}
+
 
 
 \end{document}
