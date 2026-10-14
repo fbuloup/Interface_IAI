@@ -1,0 +1,13 @@
+﻿"Symbol";"Value";"Unit";
+"TraceParts.PartNumber";"10-21052014-116925";"";
+"REFERENCE";"FN2090B-10-06";"";
+"rs_stock_number";"7084272";"";
+"TraceParts.PartTitle";"Schaffner FN2090 Series 10A 250 V ac 0 → 400Hz Flange Mount RFI Filter, with Tab Terminals";"";
+"SUPPLIER_NAME";"RS Components";"";
+"Buy_Now";"https://uk.rs-online.com/web/p/products/7084272?cm_mmc=en-ds-_-mcad-_-traceparts-_-7084272'";"";
+"SUPPLIER";"Schaffner";"";
+"DESIGN";"Schaffner FN2090 Series 10A 250 V ac 0 → 400Hz Flange Mount RFI Filter, with Tab Terminals";"";
+"TraceParts.InstanceId";"10-21052014-116925B1KRXXLXS6MLFZPCEFX8MUI46";"";
+"TRACEPARTS";"TRACEPARTS";"";
+"TraceParts.PartLanguage";"en";"";
+"TraceParts.PartVersion";"1.0.5";"";

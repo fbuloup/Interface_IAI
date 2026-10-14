@@ -1,0 +1,13 @@
+﻿"Symbol";"Value";"Unit";
+"TraceParts.PartNumber";"90-30092021-052400";"";
+"REFERENCE";"R9PFC606";"";
+"rs_stock_number";"1753722";"";
+"TraceParts.PartTitle";"Schneider Electric 1 Pole Type C Residual Current Circuit Breaker, 6A Resi9 XP DM";"";
+"SUPPLIER_NAME";"RS Components";"";
+"Buy_Now";"https://uk.rs-online.com/web/p/products/1753722?cm_mmc=en-ds-_-mcad-_-traceparts-_-1753722";"";
+"SUPPLIER";"Schneider Electric";"";
+"DESIGN";"Schneider Electric 1 Pole Type C Residual Current Circuit Breaker, 6A Resi9 XP DM";"";
+"TraceParts.InstanceId";"90-30092021-0524003BP2ODNIIWOHOZM47QWMH4TUT";"";
+"TRACEPARTS";"TRACEPARTS";"";
+"TraceParts.PartLanguage";"en";"";
+"TraceParts.PartVersion";"1.0.2";"";

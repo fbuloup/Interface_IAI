@@ -22,7 +22,7 @@
 \beamer@subsectionintoc {4}{3}{Aperçus du routage PCB}{38}{0}{4}
 \beamer@subsectionintoc {4}{4}{Coffret mural}{41}{0}{4}
 \beamer@subsectionintoc {4}{5}{Implantation schématique dans le coffret}{43}{0}{4}
-\beamer@subsectionintoc {4}{6}{Câblage (pour mémo !)}{44}{0}{4}
-\beamer@subsectionintoc {4}{7}{Ordre de prix et devis}{47}{0}{4}
-\beamer@sectionintoc {5}{Simulation}{49}{0}{5}
-\beamer@subsectionintoc {5}{1}{Loi de commande}{50}{0}{5}
+\beamer@subsectionintoc {4}{6}{Câblage (pour mémo !)}{45}{0}{4}
+\beamer@subsectionintoc {4}{7}{Ordre de prix et devis}{48}{0}{4}
+\beamer@sectionintoc {5}{Simulation}{50}{0}{5}
+\beamer@subsectionintoc {5}{1}{Loi de commande}{51}{0}{5}

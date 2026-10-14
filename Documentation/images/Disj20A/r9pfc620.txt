@@ -1,0 +1,13 @@
+﻿"Symbol";"Value";"Unit";
+"TraceParts.PartNumber";"90-30092021-052426";"";
+"REFERENCE";"R9PFC620";"";
+"rs_stock_number";"1753725";"";
+"TraceParts.PartTitle";"Schneider Electric Resi9 MCB Mini Circuit Breaker 1P 20 A 3000 A Curve C";"";
+"SUPPLIER_NAME";"RS Components";"";
+"Buy_Now";"https://uk.rs-online.com/web/p/products/1753725?cm_mmc=en-ds-_-mcad-_-traceparts-_-1753725";"";
+"SUPPLIER";"Schneider Electric";"";
+"DESIGN";"Schneider Electric Resi9 MCB Mini Circuit Breaker 1P 20 A 3000 A Curve C";"";
+"TraceParts.InstanceId";"90-30092021-05242682TVB4P5VCJE85Q7XZ45V2Z4U";"";
+"TRACEPARTS";"TRACEPARTS";"";
+"TraceParts.PartLanguage";"en";"";
+"TraceParts.PartVersion";"1.0.2";"";

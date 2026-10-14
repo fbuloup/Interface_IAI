@@ -601,10 +601,11 @@ Le réglage des différents paramètres pour configurer la commande peut être t
 		\item 2 filtres EMI et 8 noyaux de ferrites pour limiter le bruit
 		\item 2 rail DIN pour recevoir les modules
 		\item 7 presse-étoupes Ø 4 à 9 mm pour sortir du coffret
-		\item 1 presse-étoupe : câble arrivée alimentation 230V
+		\item 1 presse-étoupe : arrêt d'urgence
 		\item 2 presse-étoupes : câbles vers ADWin (DIO32 et CO4-T)
 		\item 4 presse-étoupes : câbles SCON $\leftrightarrow$ RCS4
 		\item Câblage en goulotte
+		\item Connecteur CEI en panneau 
 	\end{itemize}
 \end{block}
 \end{frame}
@@ -612,7 +613,14 @@ Le réglage des différents paramètres pour configurer la commande peut être t
 \subsection{Implantation schématique dans le coffret}
 \begin{frame}
 	\centering
-	\includegraphics[scale=0.1125]{images/implantation_coffret.png}
+	\includegraphics[scale=0.175]{images/implantationCoffret.png}
+\end{frame}
+
+\begin{frame}
+	\centering
+	\includegraphics[scale=0.3]{images/implantationEtoupes.png}
+\centering
+Plaque presse-étoupes
 \end{frame}
 
 \subsection{Câblage (pour mémo !)}
@@ -861,7 +869,7 @@ On peut prendre $\epsilon = \frac{UTD}{2}$.
 
 \begin{frame}
 \centering
-Une simulation est faite dans ce \textcolor{blue}{\textbf{\underline{\href{https://raw.githubusercontent.com/fbuloup/Interface_IAI/main/Simulation/oneAxisSimulation.m}{fichier}}}} Matlab.
+Une simulation peut être faite en utilisant ce \textcolor{blue}{\textbf{\underline{\href{https://raw.githubusercontent.com/fbuloup/Interface_IAI/main/Simulation/oneAxisSimulation.m}{code}}}} Matlab.
 \end{frame}
 
 

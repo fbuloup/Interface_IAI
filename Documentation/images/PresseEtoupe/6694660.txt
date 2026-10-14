@@ -1,0 +1,16 @@
+﻿"Symbol";"Value";"Unit";
+"SUPPLIER_NAME";"RS Components";"";
+"TraceParts.PartVersion";"1.0.0";"";
+"SUPPLIER";"RS PRO";"";
+"TraceParts.PartStatus";"Published";"";
+"TraceParts.PartNumber";"90-08032024-082117";"";
+"TraceParts.PartLanguage";"en";"";
+"DESIGN";"IP68 Black Nylon Gland, M20, 4-9mm";"";
+"TraceParts.InstanceId";"90-08032024-0821172N3XX9WWY2MK673V115V3T3RA";"";
+"TraceParts.PartTitle";"IP68 Black Nylon Gland, M20, 4-9mm";"";
+"url";"https://uk.rs-online.com/web/p/cable-glands/6694660//?cm_mmc=aff-_-uk-_-traceparts-_-6694660";"";
+"REFERENCE";"6694660";"";
+"TRACEPARTS";"TRACEPARTS";"";
+"TraceParts.PartStatusId";"";"";
+"rs_stock_number";"6694660";"";
+"TraceParts.ClassPath";"RS_COMPONENTS:90-08032024-082117";"";

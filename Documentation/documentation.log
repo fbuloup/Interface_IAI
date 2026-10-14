@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.4) (preloaded format=xelatex 2025.12.9)  13 OCT 2026 21:32
+This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.4) (preloaded format=xelatex 2025.12.9)  14 OCT 2026 13:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1603,55 +1603,57 @@ File: images/CoffretMural.png Graphic file (type bmp)
 ] [42
 
 ]
-File: images/implantation_coffret.png Graphic file (type bmp)
-<images/implantation_coffret.png>
+File: images/implantationCoffret.png Graphic file (type bmp)
+<images/implantationCoffret.png>
+ [43
 
-Overfull \vbox (9.67006pt too high) detected at line 616
- []
+]
+File: images/implantationEtoupes.png Graphic file (type bmp)
+<images/implantationEtoupes.png>
+ [44
 
-[43
-
-] [44
+] [45
 
 ]
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 698.
+(Font)              <5> on input line 706.
 LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <5> not available
-(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 698.
- [45
-
-]
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9> on input line 729.
-LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <9> not available
-(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 729.
+(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 706.
  [46
 
-] [47
+]
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <9> on input line 737.
+LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <9> not available
+(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 737.
+ [47
 
 ] [48
 
-] (documentation.toc) [49
+] [49
+
+] (documentation.toc) [50
 
 ]
 File: images/IAI_Models/SA7C_sur_SA8C_repere.png Graphic file (type bmp)
 <images/IAI_Models/SA7C_sur_SA8C_repere.png>
- [50
 
-] [51
+[51
+
+] [52
 
 ]
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 860.
+(Font)              <10> on input line 868.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 860.
+(Font)              <7> on input line 868.
 LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <10> not available
-(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 860.
+(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 868.
 LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <7> not available
-(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 860.
- [52
+(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 868.
+ [53
 
-] [53
+] [54
 
 ]
 \tf@nav=\write6
@@ -1663,8 +1665,7 @@ LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <7> not available
 \tf@snm=\write8
 \openout8 = `documentation.snm'.
 
-
-(documentation.aux)
+ (documentation.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2025-11-06>
@@ -1674,15 +1675,15 @@ L3 programming layer <2025-11-06>
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `documentation.out' has not changed.
-(rerunfilecheck)             Checksum: B20E890BB3497209F40951141684ABF6;5721.
+(rerunfilecheck)             Checksum: 0D18875E522796A016F8ADD3060C1488;5721.
  ) 
 Here is how much of TeX's memory you used:
- 45655 strings out of 402986
- 1095881 string characters out of 5450366
- 1844811 words of memory out of 5000000
- 73566 multiletter control sequences out of 15000+600000
+ 45666 strings out of 402986
+ 1096201 string characters out of 5450366
+ 1845811 words of memory out of 5000000
+ 73576 multiletter control sequences out of 15000+600000
  656579 words of font info for 108 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  128i,20n,123p,736b,2210s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on documentation.pdf (53 pages).
+Output written on documentation.pdf (54 pages).
