@@ -103,6 +103,10 @@ captionpos=b
 \section{Principe de la commande}
 \subsection{Commande par impulsions}
 \begin{frame}
+\centering
+\textcolor{blue}{\textbf{\underline{\href{https://raw.githubusercontent.com/fbuloup/Interface_IAI/main/Documentation/SCON-CB_CGB(ME0340-8A).pdf\#page=242}{Ref.}}}}
+\vspace{0.5cm}
+
 \justifying
 Le mode de commande par impulsion est celui que l'on utilisera. L'autre mode, appelé commande par positionnement, présuppose de connaitre les positions à l'avance, ce qui est impossible dans notre cas. Le mode par impulsions est décrit
 	\textcolor{blue}{\textbf{\underline{\href{https://raw.githubusercontent.com/fbuloup/Interface_IAI/main/Documentation/SCON-CB_CGB(ME0340-8A).pdf\#page=253}{ici}}}}. Chaque impulsion fait bouger le moteur d'une quantité appelée \textbf{Unit Travel Distance (UTD)}. La fréquence des impulsions règle la vitesse du mouvement. De ce point de vue, on peut dire que la commande est effectuée en vitesse.
@@ -284,7 +288,7 @@ $f_{min}$  et $f_{max}$ étant les fréquences min et max que l'on se fixe.
 
 \justifying	
 Le réglage des différents paramètres pour configurer le feedback peut être trouvé en suivant ce 
-\textcolor{blue}{\textbf{\underline{\href{https://raw.githubusercontent.com/fbuloup/Interface_IAI/main/Documentation/SCON-CB_CGB(ME0340-8A).pdf\#page=260}{lien}}}} : réglage du rapport de réduction électronique, du type et de la polarité du train d'impulsions.
+\textcolor{blue}{\textbf{\underline{\href{https://raw.githubusercontent.com/fbuloup/Interface_IAI/main/Documentation/SCON-CB_CGB(ME0340-8A).pdf\#page=260}{lien}}}} : réglage du rapport de réduction électronique, du type et de la polarité du train d'impulsions. Il semble qu'une partie de ce réglage ne soit pas obligatoire : si le paramètre No 114 est laissé à zéro (paramètres de feedback non applicable, non utilisé), ce sont les paramètres No 65 et 66 qui s'appliquent (ceux de la commande par impulsions). Au contraire, si le paramètre No 114 est passé à un, il faut alors régler les paramètres No 115 et 116 pour définir un rapport de réduction différent de la commande.
 
 \end{frame}
 
@@ -359,7 +363,7 @@ Avec l'exemple II on obtiendrait :
 N = \frac{CNUM}{CDEN} &= \frac{2^{14}}{BSL}*UTD = \frac{16384}{3000} = \frac{2048}{375} \\
 CNUM &= 2048 \quad CDEN = 375
 \end{align*}
-\begin{alertblock}{Vérifications à faire ! (\textcolor{white}{\textbf{\underline{\href{https://raw.githubusercontent.com/fbuloup/Interface_IAI/main/Documentation/SCON-CB_CGB(ME0340-8A).pdf\#page=258}{Ref.}}}})}
+\begin{alertblock}{Vérification à faire ! (\textcolor{white}{\textbf{\underline{\href{https://raw.githubusercontent.com/fbuloup/Interface_IAI/main/Documentation/SCON-CB_CGB(ME0340-8A).pdf\#page=258}{Ref.}}}})}
 $$
 2^{27} \geq \frac{SL}{BSL} * 2^{14} * \frac{CDEN}{CNUM}\quad (1)?
 $$
@@ -369,7 +373,7 @@ $$
 $$
 2^{31} \geq \frac{SL}{BSL} * 2^{14} * CDEN\quad (3)?
 $$
-Pas sûr pour les (2) et (3) : seulement si la version du firmware est plus ancienne que la V0005 !
+Les vérifications (2) et (3) ne sont pas à faire car la version du contrôleur est V0019.
 \end{alertblock}
 
 \end{frame}
@@ -459,7 +463,7 @@ Avec l'exemple II on obtiendrait :
 N = \frac{CNUM}{CDEN} &= \frac{2^{14}}{BSL}*UTD = \frac{16384}{2400} = \frac{512}{75} \\
 CNUM &= 512 \quad CDEN = 75
 \end{align*}
-\begin{alertblock}{Vérifications à faire ! (\textcolor{white}{\textbf{\underline{\href{https://raw.githubusercontent.com/fbuloup/Interface_IAI/main/Documentation/SCON-CB_CGB(ME0340-8A).pdf\#page=258}{Ref.}}}})}
+\begin{alertblock}{Vérification à faire ! (\textcolor{white}{\textbf{\underline{\href{https://raw.githubusercontent.com/fbuloup/Interface_IAI/main/Documentation/SCON-CB_CGB(ME0340-8A).pdf\#page=258}{Ref.}}}})}
 $$
 2^{27} \geq \frac{SL}{BSL} * 2^{14} * \frac{CDEN}{CNUM}\quad (1)?
 $$
@@ -469,7 +473,7 @@ $$
 $$
 2^{31} \geq \frac{SL}{BSL} * 2^{14} * CDEN\quad (3)?
 $$
-Pas sûr pour les (2) et (3) : seulement si la version du firmware est plus ancienne que la V0005 !
+Les vérifications (2) et (3) ne sont pas à faire car la version du contrôleur est V0019.
 \end{alertblock}
 \end{frame}
 

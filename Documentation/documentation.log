@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.9.2)  15 OCT 2026 10:27
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.9.2)  15 OCT 2026 11:46
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1424,7 +1424,7 @@ LaTeX Font Info:    Font shape `OT1/lmss/m/it' in size <6> not available
 ] [8
 
 ]
-Overfull \vbox (1.25027pt too high) detected at line 162
+Overfull \vbox (1.25027pt too high) detected at line 166
  []
 
 [9
@@ -1432,7 +1432,7 @@ Overfull \vbox (1.25027pt too high) detected at line 162
 ] [10
 
 ]
-Overfull \vbox (4.76988pt too high) detected at line 192
+Overfull \vbox (4.76988pt too high) detected at line 196
  []
 
 [11
@@ -1485,106 +1485,106 @@ Overfull \vbox (4.76988pt too high) detected at line 192
 ] [33
 
 ]
-<images/Alimentation.png, id=4864, 863.6265pt x 228.25275pt>
+<images/Alimentation.png, id=4865, 863.6265pt x 228.25275pt>
 File: images/Alimentation.png Graphic file (type png)
 <use images/Alimentation.png>
-Package pdftex.def Info: images/Alimentation.png  used on input line 526.
+Package pdftex.def Info: images/Alimentation.png  used on input line 530.
 (pdftex.def)             Requested size: 302.2738pt x 79.88965pt.
  [34
 
  <./images/Alimentation.PNG>]
-<images/pulse.png, id=5007, 634.16925pt x 284.262pt>
+<images/pulse.png, id=5008, 634.16925pt x 284.262pt>
 File: images/pulse.png Graphic file (type png)
 <use images/pulse.png>
-Package pdftex.def Info: images/pulse.png  used on input line 543.
+Package pdftex.def Info: images/pulse.png  used on input line 547.
 (pdftex.def)             Requested size: 307.57172pt x 137.8669pt.
 
-Overfull \hbox (0.28185pt too wide) in paragraph at lines 543--543
+Overfull \hbox (0.28185pt too wide) in paragraph at lines 547--547
  [][] 
  []
 
 [35
 
  <./images/Pulse.PNG>]
-<images/feedback.png, id=5149, 931.0785pt x 385.44pt>
+<images/feedback.png, id=5150, 931.0785pt x 385.44pt>
 File: images/feedback.png Graphic file (type png)
 <use images/feedback.png>
-Package pdftex.def Info: images/feedback.png  used on input line 556.
+Package pdftex.def Info: images/feedback.png  used on input line 560.
 (pdftex.def)             Requested size: 302.59692pt x 125.26651pt.
  [36
 
  <./images/feedback.PNG>]
-<images/PIO.png, id=5287, 830.50275pt x 324.61275pt>
+<images/PIO.png, id=5288, 830.50275pt x 324.61275pt>
 File: images/PIO.png Graphic file (type png)
 <use images/PIO.png>
-Package pdftex.def Info: images/PIO.png  used on input line 568.
+Package pdftex.def Info: images/PIO.png  used on input line 572.
 (pdftex.def)             Requested size: 311.43776pt x 121.72948pt.
 
-Overfull \hbox (4.14789pt too wide) in paragraph at lines 568--568
+Overfull \hbox (4.14789pt too wide) in paragraph at lines 572--572
  [][] 
  []
 
 [37
 
  <./images/PIO.PNG>]
-<images/pcb.png, id=5416, 305.943pt x 539.01375pt>
+<images/pcb.png, id=5417, 305.943pt x 539.01375pt>
 File: images/pcb.png Graphic file (type png)
 <use images/pcb.png>
-Package pdftex.def Info: images/pcb.png  used on input line 574.
+Package pdftex.def Info: images/pcb.png  used on input line 578.
 (pdftex.def)             Requested size: 168.26915pt x 296.45847pt.
  [38
 
  <./images/pcb.PNG>]
-<images/Interface_IAI_1.png, id=5545, 1681.28125pt x 1025.8325pt>
+<images/Interface_IAI_1.png, id=5546, 1681.28125pt x 1025.8325pt>
 File: images/Interface_IAI_1.png Graphic file (type png)
 <use images/Interface_IAI_1.png>
-Package pdftex.def Info: images/Interface_IAI_1.png  used on input line 579.
+Package pdftex.def Info: images/Interface_IAI_1.png  used on input line 583.
 (pdftex.def)             Requested size: 311.03217pt x 189.77605pt.
 
-Overfull \hbox (3.7423pt too wide) in paragraph at lines 579--579
+Overfull \hbox (3.7423pt too wide) in paragraph at lines 583--583
  [][] 
  []
 
 [39
 
  <./images/Interface_IAI_1.png>]
-<images/Interface_IAI_2.png, id=5674, 1681.28125pt x 1025.8325pt>
+<images/Interface_IAI_2.png, id=5675, 1681.28125pt x 1025.8325pt>
 File: images/Interface_IAI_2.png Graphic file (type png)
 <use images/Interface_IAI_2.png>
-Package pdftex.def Info: images/Interface_IAI_2.png  used on input line 584.
+Package pdftex.def Info: images/Interface_IAI_2.png  used on input line 588.
 (pdftex.def)             Requested size: 311.03217pt x 189.77605pt.
 
-Overfull \hbox (3.7423pt too wide) in paragraph at lines 584--584
+Overfull \hbox (3.7423pt too wide) in paragraph at lines 588--588
  [][] 
  []
 
 [40
 
  <./images/Interface_IAI_2.png>]
-<images/CoffretMural.png, id=5802, 552.0625pt x 499.8675pt>
+<images/CoffretMural.png, id=5803, 552.0625pt x 499.8675pt>
 File: images/CoffretMural.png Graphic file (type png)
 <use images/CoffretMural.png>
-Package pdftex.def Info: images/CoffretMural.png  used on input line 592.
+Package pdftex.def Info: images/CoffretMural.png  used on input line 596.
 (pdftex.def)             Requested size: 220.82108pt x 199.94345pt.
  [41
 
  <./images/CoffretMural.png>] [42
 
 ]
-<images/implantationCoffret.png, id=6070, 995.97093pt x 1322.69156pt>
+<images/implantationCoffret.png, id=6071, 995.97093pt x 1322.69156pt>
 File: images/implantationCoffret.png Graphic file (type png)
 <use images/implantationCoffret.png>
-Package pdftex.def Info: images/implantationCoffret.png  used on input line 617
+Package pdftex.def Info: images/implantationCoffret.png  used on input line 621
 .
 (pdftex.def)             Requested size: 174.29752pt x 231.47449pt.
 
 [43
 
  <./images/ImplantationCoffret.png>]
-<images/implantationEtoupes.png, id=6199, 953.06062pt x 270.25969pt>
+<images/implantationEtoupes.png, id=6200, 953.06062pt x 270.25969pt>
 File: images/implantationEtoupes.png Graphic file (type png)
 <use images/implantationEtoupes.png>
-Package pdftex.def Info: images/implantationEtoupes.png  used on input line 624
+Package pdftex.def Info: images/implantationEtoupes.png  used on input line 628
 .
 (pdftex.def)             Requested size: 285.9204pt x 81.07852pt.
  [44
@@ -1595,14 +1595,14 @@ Package pdftex.def Info: images/implantationEtoupes.png  used on input line 624
 
 ]
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9> on input line 737.
+(Font)              <9> on input line 741.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 737.
+(Font)              <5> on input line 741.
 LaTeX Font Info:    Font shape `OT1/lmss/m/it' in size <9> not available
-(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 737.
+(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 741.
 
 LaTeX Font Info:    Font shape `OT1/lmss/m/it' in size <5> not available
-(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 737.
+(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 741.
 
  [47
 
@@ -1611,18 +1611,18 @@ pdfTeX warning (ext4): destination with the same identifier (name{tab:brochage-
 x2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.763 \end{frame}
+l.767 \end{frame}
                   [48
 
 ] (./documentation.toc) [49
 
 ]
-<images/IAI_Models/SA7C_sur_SA8C_repere.png, id=6969, 447.92343pt x 413.29407pt
+<images/IAI_Models/SA7C_sur_SA8C_repere.png, id=6970, 447.92343pt x 413.29407pt
 >
 File: images/IAI_Models/SA7C_sur_SA8C_repere.png Graphic file (type png)
 <use images/IAI_Models/SA7C_sur_SA8C_repere.png>
 Package pdftex.def Info: images/IAI_Models/SA7C_sur_SA8C_repere.png  used on in
-put line 783.
+put line 787.
 (pdftex.def)             Requested size: 223.96117pt x 206.64651pt.
  [50
 
@@ -1630,14 +1630,14 @@ put line 783.
 
 {c:/texlive/2026/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}]
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 858.
+(Font)              <10> on input line 862.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 858.
+(Font)              <7> on input line 862.
 LaTeX Font Info:    Font shape `OT1/lmss/m/it' in size <10> not available
-(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 858.
+(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 862.
 
 LaTeX Font Info:    Font shape `OT1/lmss/m/it' in size <7> not available
-(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 858.
+(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 862.
 
  [52
 
@@ -1672,7 +1672,7 @@ Package rerunfilecheck Info: File `documentation.out' has not changed.
 Here is how much of TeX's memory you used:
  44383 strings out of 467098
  1041793 string characters out of 5412482
- 1737598 words of memory out of 5000000
+ 1738598 words of memory out of 5000000
  72787 multiletter control sequences out of 15000+600000
  689526 words of font info for 97 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1688,10 +1688,10 @@ texlive/2026/texmf-dist/fonts/type1/public/lm/lmsso10.pfb><c:/texlive/2026/texm
 f-dist/fonts/type1/public/lm/lmsso8.pfb><c:/texlive/2026/texmf-dist/fonts/type1
 /public/lm/lmsy10.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/lm/lmsy6.p
 fb><c:/texlive/2026/texmf-dist/fonts/type1/public/lm/lmsy8.pfb>
-Output written on documentation.pdf (55 pages, 1820649 bytes).
+Output written on documentation.pdf (55 pages, 1821328 bytes).
 PDF statistics:
- 7783 PDF objects out of 8907 (max. 8388607)
- 3993 compressed objects within 40 object streams
+ 7784 PDF objects out of 8907 (max. 8388607)
+ 3994 compressed objects within 40 object streams
  142 named destinations out of 1000 (max. 500000)
  1694 words of extra memory for PDF output out of 10000 (max. 10000000)
 
