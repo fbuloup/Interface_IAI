@@ -87,6 +87,13 @@ captionpos=b
     \end{frame}
 }
 
+
+\section{Résumé}
+\begin{frame}
+\justifying
+Le projet vise à faire suivre en temps réel un marqueur OptiTrack par une table X-Y motorisée. Celle-ci est formée de deux vérins IAI RCS4 montés en croix et pilotés par un ADwin Pro. À chaque instant, l’ADwin compare la position du marqueur à celle des moteurs, puis en déduit pour chaque axe une fréquence d’impulsions. La commande se fait par trains d’impulsions et non par consignes de position, car la trajectoire n’est pas connue à l’avance. Chaque impulsion avance le vérin d’un pas fixe et la fréquence règle la vitesse. La loi de commande comporte une zone morte, une zone linéaire et une saturation. Elle a été simulée sous Matlab. Ce document détaille surtout l’électronique. Une carte par axe adapte les signaux entre les contrôleurs IAI et l’ADwin. Les impulsions et les signaux de commande passent par la carte DIO32, le retour de position par la carte de comptage CO4-T. L’ensemble est logé dans un coffret mural.
+\end{frame}
+
 \section{Documentation}
 \begin{frame}
 \centering
