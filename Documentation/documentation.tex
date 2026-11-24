@@ -314,8 +314,8 @@ Le réglage des différents paramètres pour configurer le feedback peut être t
 			\item Charge utile horizontale : 30kg - Charge utile verticale : 12kg
 		\end{itemize}
 	\end{block}
-$$resolution=\frac{BSL(mm)}{16384(pulses)}=\frac{30}{16384}=1.83\mu m$$	
-$$V_{min}=\frac{BSL(mm)}{16384(pulses)}*1000(pulse/s)=\frac{30000}{16384}=1.83mm/s$$
+$$resolution=\frac{BSL(mm)}{16384(pulses)}=\frac{30}{16384}\approx 1.83105\mu m$$	
+$$V_{min}=\frac{BSL(mm)}{16384(pulses)}*1000(pulse/s)=\frac{30000}{16384}\approx 1.83105mm/s$$
 \end{frame}
 
 \begin{frame}
@@ -337,17 +337,17 @@ ms		\end{itemize}
 
 \begin{frame}
 \begin{alertblock}{Grandeurs absolues}
-$V_{max} = 1800mm/s$ et $V_{min} = 1.83mm/s$
+$V_{max} = 1800mm/s$ et $V_{min} \approx 1.83105mm/s$
 \end{alertblock}
 
 \begin{exampleblock}{Exemple de calcul I}
 Si on se fixe $UTD = resolution$, $v_{max} = 1500mm/s$ et $v_{min} = 2mm/s$. Alors
-$F_{max} = 983.606kHz$ et $F_{min} = 1000Hz$,
-$f_{max} = 819.672kHz$ et $f_{min} = 1093Hz$
+$F_{max} = 983.040kHz$ et $F_{min} = 1kHz$,
+$f_{max} = 819.200kHz$ et $f_{min} = 1092.266Hz$
 \end{exampleblock}
 
 \begin{exampleblock}{Exemple de calcul II}
-Si on se fixe $UTD = 0.5mm$, $v_{max} = 120mm/s$ et $v_{min} = 5mm/s$. Alors $F_{max} = 3600Hz$ et $F_{min} = 3.66Hz$, $f_{max} = 240Hz$ et $f_{min} = 10Hz$
+Si on se fixe $UTD = 0.5mm$, $v_{max} = 120mm/s$ et $v_{min} = 5mm/s$. Alors $F_{max} = 3600Hz$ et $F_{min} \approx 3.6621Hz$, $f_{max} = 240Hz$ et $f_{min} = 10Hz$
 \end{exampleblock}
 \end{frame}
 
@@ -365,9 +365,9 @@ Il est alors préférable de raisonner à partir d'une fréquence min assez gran
 \subsection{Axe 0 - Celui du dessous - Calcul de N, CNUM et CDEN}
 \begin{frame}
 \justifying
-Avec l'exemple II on obtiendrait :
+Avec ces dernières valeurs on obtiendrait :
 \begin{align*}
-N = \frac{CNUM}{CDEN} &= \frac{2^{14}}{BSL}*UTD = \frac{16384}{3000} = \frac{2048}{375} \\
+N = \frac{CNUM}{CDEN} = \frac{2^{14}}{BSL}*UTD &= \frac{2^{14}}{30}*0.01 = \frac{16384}{3000} = \frac{2048}{375} \\
 CNUM &= 2048 \quad CDEN = 375
 \end{align*}
 \begin{alertblock}{Vérification à faire ! (\textcolor{white}{\textbf{\underline{\href{https://raw.githubusercontent.com/fbuloup/Interface_IAI/main/Documentation/SCON-CB_CGB(ME0340-8A).pdf\#page=258}{Ref.}}}})}
@@ -419,8 +419,8 @@ Le réglage des différents paramètres pour configurer la commande peut être t
 			\item Charge utile horizontale : 30kg - Charge utile verticale : 7kg
 		\end{itemize}
 	\end{block}
-$$resolution=\frac{BSL(mm)}{16384(pulses)}=\frac{24}{16384}=1.46\mu m$$	
-$$V_{min}=\frac{BSL(mm)}{16384(pulses)}*1000(pulse/s)=\frac{24000}{16384}=1.46mm/s$$
+$$resolution=\frac{BSL(mm)}{16384(pulses)}=\frac{24}{16384} \approx 1.46484\mu m$$	
+$$V_{min}=\frac{BSL(mm)}{16384(pulses)}*1000(pulse/s)=\frac{24000}{16384} \approx 1.46484mm/s$$
 \end{frame}
 \begin{frame}
 	\begin{block}{Contrôleur : SCON-CB-200WAI-PN-2-2}
@@ -437,17 +437,17 @@ $$V_{min}=\frac{BSL(mm)}{16384(pulses)}*1000(pulse/s)=\frac{24000}{16384}=1.46mm
 
 \begin{frame}
 \begin{alertblock}{Grandeurs absolues}
-$V_{max} = 1500mm/s$ et $V_{min} = 1.46mm/s$
+$V_{max} = 1500mm/s$ et $V_{min} \approx 1.46484mm/s$
 \end{alertblock}
 
 \begin{exampleblock}{Exemple de calcul I}
 Si on se fixe $UTD = resolution$, $v_{max} = 1300mm/s$ et $v_{min} = 2mm/s$. Alors
-$F_{max} = 1027.397kHz$ et $F_{min} = 1000Hz$,
-$f_{max} = 890.41kHz$ et $f_{min} = 1.369kHz$
+$F_{max} = 1.024MHz$ et $F_{min} = 1000Hz$,
+$f_{max} \approx 887.466kHz$ et $f_{min} \approx 1.365kHz$
 \end{exampleblock}
 
 \begin{exampleblock}{Exemple de calcul II}
-Si on se fixe $UTD = 0.5mm$, $v_{max} = 120mm/s$ et $v_{min} = 5mm/s$. Alors $F_{max} = 3000Hz$ et $F_{min} = 2.92Hz$, $f_{max} = 240Hz$ et $f_{min} = 10Hz$
+Si on se fixe $UTD = 0.5mm$, $v_{max} = 120mm/s$ et $v_{min} = 5mm/s$. Alors $F_{max} = 3000Hz$ et $F_{min} \approx 2.9297Hz$, $f_{max} = 240Hz$ et $f_{min} = 10Hz$
 \end{exampleblock}
 \end{frame}
 
@@ -465,7 +465,7 @@ Il est alors préférable de raisonner à partir d'une fréquence min assez gran
 \subsection{Axe 1 - Celui du dessus - Calcul de N, CNUM et CDEN}
 \begin{frame}
 \justifying
-Avec l'exemple II on obtiendrait :
+Avec ces dernières valeurs on obtiendrait :
 \begin{align*}
 N = \frac{CNUM}{CDEN} &= \frac{2^{14}}{BSL}*UTD = \frac{16384}{2400} = \frac{512}{75} \\
 CNUM &= 512 \quad CDEN = 75
