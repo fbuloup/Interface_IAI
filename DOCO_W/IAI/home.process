@@ -1,0 +1,506 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<fr.univamu.ism.docometre.dacqsystems.adwin.ADWinProcess id="1">
+  <properties id="2">
+    <entry>
+      <string>ADWinProcessProperties.DATA_LOSS</string>
+      <string>false</string>
+    </entry>
+    <entry>
+      <string>ADWinProcessProperties.DURATION</string>
+      <string>Duration not specified</string>
+    </entry>
+    <entry>
+      <string>ADWinProcessProperties.EVENTS_DIARY</string>
+      <string>mer. 25 nov. 2026
+</string>
+    </entry>
+    <entry>
+      <string>ADWinProcessProperties.PROCESS_NUMBER</string>
+      <string>1</string>
+    </entry>
+    <entry>
+      <string>ADWinProcessProperties.EVENTS_DIARY_FILE_NAME</string>
+      <string>diary.txt</string>
+    </entry>
+  </properties>
+  <script id="3">
+    <initializeBlocks id="4">
+      <script reference="3"/>
+      <scriptSegmentType>INITIALIZE</scriptSegmentType>
+      <blocks id="5">
+        <fr.univamu.ism.docometre.dacqsystems.functions.ExpressionFunction id="6">
+          <x>200</x>
+          <y>349</y>
+          <width>150</width>
+          <height>30</height>
+          <activated>true</activated>
+          <script reference="3"/>
+          <nextBlocks id="7">
+            <fr.univamu.ism.docometre.dacqsystems.functions.DigitalWaitFunction id="8">
+              <x>217</x>
+              <y>444</y>
+              <width>150</width>
+              <height>30</height>
+              <activated>true</activated>
+              <script reference="3"/>
+              <nextBlocks id="9">
+                <null/>
+                <null/>
+              </nextBlocks>
+              <previousBlocks id="10">
+                <fr.univamu.ism.docometre.dacqsystems.functions.ExpressionFunction reference="6"/>
+              </previousBlocks>
+              <previousBlocksIsLastBlockInDoBlock id="11">
+                <boolean>false</boolean>
+              </previousBlocksIsLastBlockInDoBlock>
+              <className>fr.univamu.ism.docometre.dacqsystems.functions.DigitalWaitFunction</className>
+              <properties id="12">
+                <entry>
+                  <string>channelValue</string>
+                  <string>1</string>
+                </entry>
+                <entry>
+                  <string>channelName</string>
+                  <string>DIO_SV</string>
+                </entry>
+                <entry>
+                  <string>commentKey</string>
+                  <string>Attente digitale</string>
+                </entry>
+              </properties>
+              <channelName>DIO_SV</channelName>
+              <channelValue>1</channelValue>
+            </fr.univamu.ism.docometre.dacqsystems.functions.DigitalWaitFunction>
+            <null/>
+          </nextBlocks>
+          <previousBlocks id="13">
+            <fr.univamu.ism.docometre.dacqsystems.functions.DigitalOutputFunction id="14">
+              <x>205</x>
+              <y>275</y>
+              <width>150</width>
+              <height>30</height>
+              <activated>true</activated>
+              <script reference="3"/>
+              <nextBlocks id="15">
+                <fr.univamu.ism.docometre.dacqsystems.functions.ExpressionFunction reference="6"/>
+                <null/>
+              </nextBlocks>
+              <previousBlocks id="16">
+                <fr.univamu.ism.docometre.dacqsystems.functions.DigitalOutputFunction id="17">
+                  <x>204</x>
+                  <y>221</y>
+                  <width>150</width>
+                  <height>30</height>
+                  <activated>true</activated>
+                  <script reference="3"/>
+                  <nextBlocks id="18">
+                    <fr.univamu.ism.docometre.dacqsystems.functions.DigitalOutputFunction reference="14"/>
+                    <null/>
+                  </nextBlocks>
+                  <previousBlocks id="19"/>
+                  <previousBlocksIsLastBlockInDoBlock id="20"/>
+                  <className>fr.univamu.ism.docometre.dacqsystems.functions.DigitalOutputFunction</className>
+                  <properties id="21">
+                    <entry>
+                      <string>channelValue</string>
+                      <string>1</string>
+                    </entry>
+                    <entry>
+                      <string>channelName</string>
+                      <string>DIO_SON</string>
+                    </entry>
+                    <entry>
+                      <string>commentKey</string>
+                      <string>Générer une sortie digitale</string>
+                    </entry>
+                  </properties>
+                </fr.univamu.ism.docometre.dacqsystems.functions.DigitalOutputFunction>
+              </previousBlocks>
+              <previousBlocksIsLastBlockInDoBlock id="22">
+                <boolean>false</boolean>
+              </previousBlocksIsLastBlockInDoBlock>
+              <className>fr.univamu.ism.docometre.dacqsystems.functions.DigitalOutputFunction</className>
+              <properties id="23">
+                <entry>
+                  <string>channelValue</string>
+                  <string>1</string>
+                </entry>
+                <entry>
+                  <string>channelName</string>
+                  <string>DIO_NP</string>
+                </entry>
+                <entry>
+                  <string>commentKey</string>
+                  <string>Générer une sortie digitale</string>
+                </entry>
+              </properties>
+              <channelName>DIO_SON</channelName>
+              <channelValue>1</channelValue>
+            </fr.univamu.ism.docometre.dacqsystems.functions.DigitalOutputFunction>
+          </previousBlocks>
+          <previousBlocksIsLastBlockInDoBlock id="24">
+            <boolean>false</boolean>
+          </previousBlocksIsLastBlockInDoBlock>
+          <className>fr.univamu.ism.docometre.dacqsystems.functions.ExpressionFunction</className>
+          <properties id="25">
+            <entry>
+              <string>commentKey</string>
+              <string>Calculer une ou des expressions</string>
+            </entry>
+            <entry>
+              <string>expression</string>
+              <string>DIO_RES = 0
+DIO_HOME = 0
+DIO_CSTP = 0
+DIO_RSTR = 0</string>
+            </entry>
+          </properties>
+        </fr.univamu.ism.docometre.dacqsystems.functions.ExpressionFunction>
+        <fr.univamu.ism.docometre.dacqsystems.functions.DigitalWaitFunction reference="8"/>
+        <fr.univamu.ism.docometre.dacqsystems.functions.DigitalOutputFunction reference="17"/>
+        <fr.univamu.ism.docometre.dacqsystems.functions.DigitalOutputFunction reference="14"/>
+      </blocks>
+    </initializeBlocks>
+    <loopBlocks id="26">
+      <script reference="3"/>
+      <scriptSegmentType>LOOP</scriptSegmentType>
+      <blocks id="27">
+        <fr.univamu.ism.docometre.dacqsystems.functions.MedianFilterFunction id="28">
+          <x>92</x>
+          <y>64</y>
+          <width>150</width>
+          <height>30</height>
+          <activated>true</activated>
+          <script reference="3"/>
+          <nextBlocks id="29">
+            <fr.univamu.ism.process.IfBlock id="30">
+              <name>Nouveau block conditionnel</name>
+              <x>165</x>
+              <y>111</y>
+              <width>150</width>
+              <height>30</height>
+              <activated>true</activated>
+              <script reference="3"/>
+              <nextBlocks id="31">
+                <fr.univamu.ism.process.IfBlock id="32">
+                  <name>Nouveau block conditionnel</name>
+                  <x>234</x>
+                  <y>191</y>
+                  <width>150</width>
+                  <height>30</height>
+                  <activated>true</activated>
+                  <script reference="3"/>
+                  <nextBlocks id="33">
+                    <fr.univamu.ism.process.IfBlock id="34">
+                      <name>Nouveau block conditionnel</name>
+                      <x>402</x>
+                      <y>243</y>
+                      <width>150</width>
+                      <height>30</height>
+                      <activated>true</activated>
+                      <script reference="3"/>
+                      <nextBlocks id="35">
+                        <fr.univamu.ism.docometre.dacqsystems.functions.ExpressionFunction id="36">
+                          <x>470</x>
+                          <y>318</y>
+                          <width>150</width>
+                          <height>30</height>
+                          <activated>true</activated>
+                          <script reference="3"/>
+                          <nextBlocks id="37">
+                            <fr.univamu.ism.process.IfBlock id="38">
+                              <name>Nouveau block conditionnel</name>
+                              <x>275</x>
+                              <y>435</y>
+                              <width>150</width>
+                              <height>30</height>
+                              <activated>true</activated>
+                              <script reference="3"/>
+                              <nextBlocks id="39">
+                                <fr.univamu.ism.docometre.dacqsystems.functions.TerminateProcessFunction id="40">
+                                  <x>353</x>
+                                  <y>495</y>
+                                  <width>150</width>
+                                  <height>30</height>
+                                  <activated>true</activated>
+                                  <script reference="3"/>
+                                  <nextBlocks id="41">
+                                    <null/>
+                                    <null/>
+                                  </nextBlocks>
+                                  <previousBlocks id="42">
+                                    <fr.univamu.ism.process.IfBlock reference="38"/>
+                                  </previousBlocks>
+                                  <previousBlocksIsLastBlockInDoBlock id="43">
+                                    <boolean>false</boolean>
+                                  </previousBlocksIsLastBlockInDoBlock>
+                                  <className>fr.univamu.ism.docometre.dacqsystems.functions.TerminateProcessFunction</className>
+                                  <properties id="44">
+                                    <entry>
+                                      <string>leftOperandKey</string>
+                                      <string>(time - time_HEND_isOne)</string>
+                                    </entry>
+                                    <entry>
+                                      <string>rightOperandKey</string>
+                                      <string>0.1</string>
+                                    </entry>
+                                    <entry>
+                                      <string>operatorKey</string>
+                                      <string> &gt;= </string>
+                                    </entry>
+                                    <entry>
+                                      <string>commentKey</string>
+                                      <string>Arrêter le processus</string>
+                                    </entry>
+                                  </properties>
+                                </fr.univamu.ism.docometre.dacqsystems.functions.TerminateProcessFunction>
+                                <null/>
+                              </nextBlocks>
+                              <previousBlocks id="45">
+                                <fr.univamu.ism.docometre.dacqsystems.functions.ExpressionFunction reference="36"/>
+                                <fr.univamu.ism.process.IfBlock reference="32"/>
+                                <fr.univamu.ism.process.IfBlock reference="34"/>
+                              </previousBlocks>
+                              <previousBlocksIsLastBlockInDoBlock id="46">
+                                <boolean>false</boolean>
+                                <boolean>false</boolean>
+                                <boolean>false</boolean>
+                              </previousBlocksIsLastBlockInDoBlock>
+                              <leftOperand>time_HEND_isOne</leftOperand>
+                              <operator>IS_GREATER_THAN</operator>
+                              <rightOperand>0</rightOperand>
+                            </fr.univamu.ism.process.IfBlock>
+                            <null/>
+                          </nextBlocks>
+                          <previousBlocks id="47">
+                            <fr.univamu.ism.process.IfBlock reference="34"/>
+                          </previousBlocks>
+                          <previousBlocksIsLastBlockInDoBlock id="48">
+                            <boolean>false</boolean>
+                          </previousBlocksIsLastBlockInDoBlock>
+                          <className>fr.univamu.ism.docometre.dacqsystems.functions.ExpressionFunction</className>
+                          <properties id="49">
+                            <entry>
+                              <string>commentKey</string>
+                              <string>Calculer une ou des expressions</string>
+                            </entry>
+                            <entry>
+                              <string>expression</string>
+                              <string>time_HEND_isOne = time</string>
+                            </entry>
+                          </properties>
+                        </fr.univamu.ism.docometre.dacqsystems.functions.ExpressionFunction>
+                        <fr.univamu.ism.process.IfBlock reference="38"/>
+                      </nextBlocks>
+                      <previousBlocks id="50">
+                        <fr.univamu.ism.process.IfBlock reference="32"/>
+                      </previousBlocks>
+                      <previousBlocksIsLastBlockInDoBlock id="51">
+                        <boolean>false</boolean>
+                      </previousBlocksIsLastBlockInDoBlock>
+                      <leftOperand>time_HEND_isOne</leftOperand>
+                      <operator>IS_EQUAL_TO</operator>
+                      <rightOperand>0</rightOperand>
+                    </fr.univamu.ism.process.IfBlock>
+                    <fr.univamu.ism.process.IfBlock reference="38"/>
+                  </nextBlocks>
+                  <previousBlocks id="52">
+                    <fr.univamu.ism.process.IfBlock reference="30"/>
+                  </previousBlocks>
+                  <previousBlocksIsLastBlockInDoBlock id="53">
+                    <boolean>false</boolean>
+                  </previousBlocksIsLastBlockInDoBlock>
+                  <leftOperand>medianDIO_HEND</leftOperand>
+                  <operator>IS_EQUAL_TO</operator>
+                  <rightOperand>1</rightOperand>
+                </fr.univamu.ism.process.IfBlock>
+                <null/>
+              </nextBlocks>
+              <previousBlocks id="54">
+                <fr.univamu.ism.docometre.dacqsystems.functions.MedianFilterFunction reference="28"/>
+              </previousBlocks>
+              <previousBlocksIsLastBlockInDoBlock id="55">
+                <boolean>false</boolean>
+              </previousBlocksIsLastBlockInDoBlock>
+              <leftOperand>time</leftOperand>
+              <operator>IS_GREATER_THAN</operator>
+              <rightOperand>0.1</rightOperand>
+            </fr.univamu.ism.process.IfBlock>
+            <null/>
+          </nextBlocks>
+          <previousBlocks id="56">
+            <fr.univamu.ism.docometre.dacqsystems.functions.ExpressionFunction id="57">
+              <x>98</x>
+              <y>8</y>
+              <width>150</width>
+              <height>30</height>
+              <activated>true</activated>
+              <script reference="3"/>
+              <nextBlocks id="58">
+                <fr.univamu.ism.docometre.dacqsystems.functions.MedianFilterFunction reference="28"/>
+                <null/>
+              </nextBlocks>
+              <previousBlocks id="59"/>
+              <previousBlocksIsLastBlockInDoBlock id="60"/>
+              <className>fr.univamu.ism.docometre.dacqsystems.functions.ExpressionFunction</className>
+              <properties id="61">
+                <entry>
+                  <string>commentKey</string>
+                  <string>Calculer une ou des expressions</string>
+                </entry>
+                <entry>
+                  <string>expression</string>
+                  <string>DIO_HOME = 1</string>
+                </entry>
+              </properties>
+            </fr.univamu.ism.docometre.dacqsystems.functions.ExpressionFunction>
+          </previousBlocks>
+          <previousBlocksIsLastBlockInDoBlock id="62">
+            <boolean>false</boolean>
+          </previousBlocksIsLastBlockInDoBlock>
+          <className>fr.univamu.ism.docometre.dacqsystems.functions.MedianFilterFunction</className>
+          <properties id="63">
+            <entry>
+              <string>sampleFrequencyRatio</string>
+              <string>24</string>
+            </entry>
+            <entry>
+              <string>outputChannelName</string>
+              <string>medianDIO_HEND</string>
+            </entry>
+            <entry>
+              <string>inputChannelName</string>
+              <string>DIO_HEND</string>
+            </entry>
+            <entry>
+              <string>commentKey</string>
+              <string>Filtre médian</string>
+            </entry>
+            <entry>
+              <string>historySize</string>
+              <string>3</string>
+            </entry>
+          </properties>
+        </fr.univamu.ism.docometre.dacqsystems.functions.MedianFilterFunction>
+        <fr.univamu.ism.docometre.dacqsystems.functions.ExpressionFunction reference="57"/>
+        <fr.univamu.ism.process.IfBlock reference="30"/>
+        <fr.univamu.ism.process.IfBlock reference="34"/>
+        <fr.univamu.ism.docometre.dacqsystems.functions.ExpressionFunction reference="36"/>
+        <fr.univamu.ism.docometre.dacqsystems.functions.TerminateProcessFunction reference="40"/>
+        <fr.univamu.ism.process.IfBlock reference="38"/>
+        <fr.univamu.ism.process.IfBlock reference="32"/>
+      </blocks>
+    </loopBlocks>
+    <finalizeBlocks id="64">
+      <script reference="3"/>
+      <scriptSegmentType>FINALIZE</scriptSegmentType>
+      <blocks id="65">
+        <fr.univamu.ism.docometre.dacqsystems.functions.DigitalOutputFunction id="66">
+          <x>271</x>
+          <y>267</y>
+          <width>150</width>
+          <height>30</height>
+          <activated>true</activated>
+          <script reference="3"/>
+          <nextBlocks id="67">
+            <fr.univamu.ism.docometre.dacqsystems.functions.DigitalOutputFunction id="68">
+              <x>225</x>
+              <y>348</y>
+              <width>150</width>
+              <height>30</height>
+              <activated>true</activated>
+              <script reference="3"/>
+              <nextBlocks id="69">
+                <fr.univamu.ism.docometre.dacqsystems.functions.DigitalOutputFunction id="70">
+                  <x>200</x>
+                  <y>420</y>
+                  <width>150</width>
+                  <height>30</height>
+                  <activated>true</activated>
+                  <script reference="3"/>
+                  <nextBlocks id="71">
+                    <null/>
+                    <null/>
+                  </nextBlocks>
+                  <previousBlocks id="72">
+                    <fr.univamu.ism.docometre.dacqsystems.functions.DigitalOutputFunction reference="68"/>
+                  </previousBlocks>
+                  <previousBlocksIsLastBlockInDoBlock id="73">
+                    <boolean>false</boolean>
+                  </previousBlocksIsLastBlockInDoBlock>
+                  <className>fr.univamu.ism.docometre.dacqsystems.functions.DigitalOutputFunction</className>
+                  <properties id="74">
+                    <entry>
+                      <string>channelValue</string>
+                      <string>0</string>
+                    </entry>
+                    <entry>
+                      <string>channelName</string>
+                      <string>DIO_HOME</string>
+                    </entry>
+                    <entry>
+                      <string>commentKey</string>
+                      <string>Générer une sortie digitale</string>
+                    </entry>
+                  </properties>
+                  <channelName>DIO_HOME</channelName>
+                  <channelValue>0</channelValue>
+                </fr.univamu.ism.docometre.dacqsystems.functions.DigitalOutputFunction>
+                <null/>
+              </nextBlocks>
+              <previousBlocks id="75">
+                <fr.univamu.ism.docometre.dacqsystems.functions.DigitalOutputFunction reference="66"/>
+              </previousBlocks>
+              <previousBlocksIsLastBlockInDoBlock id="76">
+                <boolean>false</boolean>
+              </previousBlocksIsLastBlockInDoBlock>
+              <className>fr.univamu.ism.docometre.dacqsystems.functions.DigitalOutputFunction</className>
+              <properties id="77">
+                <entry>
+                  <string>channelValue</string>
+                  <string>0</string>
+                </entry>
+                <entry>
+                  <string>channelName</string>
+                  <string>DIO_NP</string>
+                </entry>
+                <entry>
+                  <string>commentKey</string>
+                  <string>Générer une sortie digitale</string>
+                </entry>
+              </properties>
+              <channelName>DIO_NP</channelName>
+              <channelValue>0</channelValue>
+            </fr.univamu.ism.docometre.dacqsystems.functions.DigitalOutputFunction>
+            <null/>
+          </nextBlocks>
+          <previousBlocks id="78"/>
+          <previousBlocksIsLastBlockInDoBlock id="79"/>
+          <className>fr.univamu.ism.docometre.dacqsystems.functions.DigitalOutputFunction</className>
+          <properties id="80">
+            <entry>
+              <string>channelValue</string>
+              <string>0</string>
+            </entry>
+            <entry>
+              <string>channelName</string>
+              <string>DIO_SON</string>
+            </entry>
+            <entry>
+              <string>commentKey</string>
+              <string>Générer une sortie digitale</string>
+            </entry>
+          </properties>
+          <channelName>DIO_SON</channelName>
+          <channelValue>0</channelValue>
+        </fr.univamu.ism.docometre.dacqsystems.functions.DigitalOutputFunction>
+        <fr.univamu.ism.docometre.dacqsystems.functions.DigitalOutputFunction reference="68"/>
+        <fr.univamu.ism.docometre.dacqsystems.functions.DigitalOutputFunction reference="70"/>
+      </blocks>
+    </finalizeBlocks>
+    <globalLibraries id="81"/>
+    <globalConstants id="82"/>
+    <globalSubroutines id="83"/>
+  </script>
+  <deletionDecision>true</deletionDecision>
+</fr.univamu.ism.docometre.dacqsystems.adwin.ADWinProcess>

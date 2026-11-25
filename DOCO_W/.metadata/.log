@@ -1,0 +1,3158 @@
+!SESSION 2026-11-23 10:00:42.132 -----------------------------------------------
+eclipse.buildId=4.35v20250228-0140 - 2025-03
+java.version=21.0.6
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=fr_FR
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY DocometreApplication - 10:02:07.061 1 0 2026-11-23 10:02:07.063
+!MESSAGE Répertoire de travail : C:\Users\buloup\Documents\GIT\Interface_IAI\DOCO_W
+
+!ENTRY ApplicationWorkbenchWindowAdvisor - 10:02:07.074 1 0 2026-11-23 10:02:07.074
+!MESSAGE Locale : fr_FR
+
+!ENTRY ApplicationWorkbenchWindowAdvisor - 10:02:07.075 1 0 2026-11-23 10:02:07.075
+!MESSAGE Répertoire d'exécution : C:\Users\buloup\Desktop\Docometre
+
+!ENTRY org.eclipse.ui 2 2 2026-11-23 10:02:10.261
+!MESSAGE Invalid preference category path: org.eclipse.debug.ui.ConsolePreferencePage (bundle: org.eclipse.ui.console, page: org.eclipse.ui.internal.console.ansi.preferences.AnsiConsolePreferencePage)
+
+!ENTRY org.eclipse.ui 2 2 2026-11-23 10:02:10.262
+!MESSAGE Invalid preference category path: org.eclipse.ui.preferencePages.Workbench (bundle: org.eclipse.equinox.security.ui, page: org.eclipse.equinox.security.ui.category)
+
+!ENTRY ApplicationWorkbenchAdvisor - 10:02:10.262 1 0 2026-11-23 10:02:10.263
+!MESSAGE This is first launch
+
+!ENTRY Error 4 0 2026-11-23 10:13:56.650
+!MESSAGE de.adwin.driver.ADwinCommunicationError: Timeout error on writing to the ADwin System - Error 1 occured after loading operating system C:\ADwin\adwin9.btl.
+Stack trace :
+de.adwin.driver.ADwinDirectDevice.bootArray(ADwinDirectDevice.java:4499)
+de.adwin.driver.ADwinDirectDevice.bootFile(ADwinDirectDevice.java:4243)
+de.adwin.driver.ADwinDevice.Boot(ADwinDevice.java:2235)
+fr.univamu.ism.docometre.dacqsystems.adwin.BootDelegate.bootAndSign(BootDelegate.java:80)
+fr.univamu.ism.docometre.dacqsystems.adwin.BootDelegate.boot(BootDelegate.java:124)
+fr.univamu.ism.docometre.dacqsystems.adwin.calibration.ADWinTimerTask.<init>(ADWinTimerTask.java:76)
+fr.univamu.ism.docometre.dacqsystems.adwin.calibration.ADWinCalibration.runCalibrationTask(ADWinCalibration.java:128)
+fr.univamu.ism.docometre.calibration.CalibrationFactory.runCalibrationProcess(CalibrationFactory.java:85)
+fr.univamu.ism.docometre.calibration.AbstractCalibrateMonitorDialog.startCalibrationProcess(AbstractCalibrateMonitorDialog.java:229)
+fr.univamu.ism.docometre.calibration.AbstractCalibrateMonitorDialog$4.widgetSelected(AbstractCalibrateMonitorDialog.java:240)
+org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:286)
+org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:91)
+org.eclipse.swt.widgets.Display.sendEvent(Display.java:4321)
+org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1208)
+org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4119)
+org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3707)
+org.eclipse.jface.window.Window.runEventLoop(Window.java:823)
+org.eclipse.jface.window.Window.open(Window.java:799)
+fr.univamu.ism.docometre.dacqsystems.adwin.ui.dacqconfigurationeditor.ADwinDACQGeneralConfigurationPage$CalibrateMonitorAction.run(ADwinDACQGeneralConfigurationPage.java:168)
+org.eclipse.jface.action.Action.runWithEvent(Action.java:474)
+org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:581)
+org.eclipse.jface.action.ActionContributionItem.lambda$5(ActionContributionItem.java:454)
+org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:91)
+org.eclipse.swt.widgets.Display.sendEvent(Display.java:4321)
+org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1208)
+org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4119)
+org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3707)
+org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1151)
+org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
+org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
+org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:668)
+org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:576)
+org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+fr.univamu.ism.docometre.DocometreApplication.start(DocometreApplication.java:222)
+org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:149)
+org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:115)
+org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:467)
+org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:298)
+java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+java.base/java.lang.reflect.Method.invoke(Method.java:580)
+org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:670)
+org.eclipse.equinox.launcher.Main.basicRun(Main.java:607)
+org.eclipse.equinox.launcher.Main.run(Main.java:1492)
+
+
+!ENTRY ADWinProcess - 14:42:18.163 1 0 2026-11-23 14:42:18.163
+!MESSAGE 
+
+!ENTRY ADWinProcess - 14:42:18.164 1 0 2026-11-23 14:42:18.164
+!MESSAGE C:\Users\buloup\Desktop\Docometre>"C:\ADwin\ADbasic\ADbasicCompiler.exe" /M "C:\Users\buloup\Documents\GIT\Interface_IAI\DOCO_W\\IAI\BinSource\proc.BAS" /A"C:\Users\buloup\Documents\GIT\Interface_IAI\DOCO_W\\IAI\BinSource\proc" /SGII /P11  2>proc.err 
+
+!ENTRY ADWinProcess - 14:42:18.332 1 0 2026-11-23 14:42:18.333
+!MESSAGE ADbasicCompiler Version 5.00.56 11.12.2024
+
+!ENTRY ADWinProcess - 14:42:18.333 1 0 2026-11-23 14:42:18.333
+!MESSAGE 0%
+
+!ENTRY ADWinProcess - 14:42:18.395 1 0 2026-11-23 14:42:18.395
+!MESSAGE 9%
+
+!ENTRY ADWinProcess - 14:42:18.433 1 0 2026-11-23 14:42:18.433
+!MESSAGE 35%
+
+!ENTRY ADWinProcess - 14:42:18.455 1 0 2026-11-23 14:42:18.455
+!MESSAGE 42%
+
+!ENTRY ADWinProcess - 14:42:18.471 1 0 2026-11-23 14:42:18.471
+!MESSAGE 45%
+
+!ENTRY ADWinProcess - 14:42:18.475 1 0 2026-11-23 14:42:18.475
+!MESSAGE 92%
+
+!ENTRY ADWinProcess - 14:42:18.503 1 0 2026-11-23 14:42:18.504
+!MESSAGE 96%
+
+!ENTRY ADWinProcess - 14:42:18.511 1 0 2026-11-23 14:42:18.511
+!MESSAGE Process compiled. Codesize: 5104 Workspacesize: 448 Stacksize: 112 Byte 
+
+!ENTRY ADWinProcess - 14:42:18.517 1 0 2026-11-23 14:42:18.517
+!MESSAGE Version courante des librairies : 1.0.0.202611221618
+
+!ENTRY ADWinProcess - 14:42:18.518 1 0 2026-11-23 14:42:18.518
+!MESSAGE Version des librairies utilisée par la configuration d'acquisition : 1.0.0.202611221618
+
+!ENTRY CompileProcessAction - 14:42:18.521 1 0 2026-11-23 14:42:18.521
+!MESSAGE La compilation du processus "proc" a réussi
+
+!ENTRY ADWinProcess - 14:42:53.508 1 0 2026-11-23 14:42:53.508
+!MESSAGE 
+
+!ENTRY ADWinProcess - 14:42:53.508 1 0 2026-11-23 14:42:53.509
+!MESSAGE C:\Users\buloup\Desktop\Docometre>"C:\ADwin\ADbasic\ADbasicCompiler.exe" /M "C:\Users\buloup\Documents\GIT\Interface_IAI\DOCO_W\\IAI\BinSource\proc.BAS" /A"C:\Users\buloup\Documents\GIT\Interface_IAI\DOCO_W\\IAI\BinSource\proc" /SGII /P11  2>proc.err 
+
+!ENTRY ADWinProcess - 14:42:53.521 1 0 2026-11-23 14:42:53.521
+!MESSAGE ADbasicCompiler Version 5.00.56 11.12.2024
+
+!ENTRY ADWinProcess - 14:42:53.522 1 0 2026-11-23 14:42:53.522
+!MESSAGE 0%
+
+!ENTRY ADWinProcess - 14:42:53.553 1 0 2026-11-23 14:42:53.553
+!MESSAGE 9%
+
+!ENTRY ADWinProcess - 14:42:53.591 1 0 2026-11-23 14:42:53.591
+!MESSAGE 35%
+
+!ENTRY ADWinProcess - 14:42:53.595 1 0 2026-11-23 14:42:53.596
+!MESSAGE 42%
+
+!ENTRY ADWinProcess - 14:42:53.606 1 0 2026-11-23 14:42:53.606
+!MESSAGE 45%
+
+!ENTRY ADWinProcess - 14:42:53.610 1 0 2026-11-23 14:42:53.610
+!MESSAGE 92%
+
+!ENTRY ADWinProcess - 14:42:53.637 1 0 2026-11-23 14:42:53.637
+!MESSAGE 96%
+
+!ENTRY ADWinProcess - 14:42:53.639 1 0 2026-11-23 14:42:53.639
+!MESSAGE Process compiled. Codesize: 5104 Workspacesize: 448 Stacksize: 112 Byte 
+
+!ENTRY ADWinProcess - 14:42:53.644 1 0 2026-11-23 14:42:53.644
+!MESSAGE Version courante des librairies : 1.0.0.202611221618
+
+!ENTRY ADWinProcess - 14:42:53.644 1 0 2026-11-23 14:42:53.645
+!MESSAGE Version des librairies utilisée par la configuration d'acquisition : 1.0.0.202611221618
+
+!ENTRY CompileProcessAction - 14:42:53.647 1 0 2026-11-23 14:42:53.647
+!MESSAGE La compilation du processus "proc" a réussi
+
+!ENTRY Chart1DRenderer - 14:43:09.494 1 0 2026-11-23 14:43:09.494
+!MESSAGE OpenGL : NVIDIA GeForce RTX 3070/PCIe/SSE2 (NVIDIA Corporation) - 4.6 (Compat profile, arb, compat[ES2, ES3, ES31, ES32], FBO, hardware) - 4.6.0 NVIDIA 610.60 - swap interval 0
+
+!ENTRY Error 4 0 2026-11-23 14:44:58.603
+!MESSAGE java.lang.IllegalArgumentException: A static curve must have at least two samples.
+Stack trace :
+fr.univamu.ism.docometre.chartxyz.CurveData.durationOf(CurveData.java:112)
+fr.univamu.ism.docometre.chartxyz.Curve1DData.<init>(Curve1DData.java:43)
+fr.univamu.ism.docometre.chartxyz.editors.GLDataEditor.loadData(GLDataEditor.java:309)
+fr.univamu.ism.docometre.chartxyz.editors.GLDataEditor.init(GLDataEditor.java:87)
+org.eclipse.ui.internal.EditorReference.initialize(EditorReference.java:353)
+org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.create(CompatibilityPart.java:344)
+java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+java.base/java.lang.reflect.Method.invoke(Method.java:580)
+org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:56)
+org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:977)
+org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:939)
+org.eclipse.e4.core.internal.di.InjectorImpl.internalInject(InjectorImpl.java:139)
+org.eclipse.e4.core.internal.di.InjectorImpl.internalMake(InjectorImpl.java:386)
+org.eclipse.e4.core.internal.di.InjectorImpl.make(InjectorImpl.java:312)
+org.eclipse.e4.core.contexts.ContextInjectionFactory.make(ContextInjectionFactory.java:203)
+org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.createFromBundle(ReflectionContributionFactory.java:90)
+org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.doCreate(ReflectionContributionFactory.java:59)
+org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.create(ReflectionContributionFactory.java:42)
+org.eclipse.ui.internal.WorkbenchContributionFactory.create(WorkbenchContributionFactory.java:46)
+org.eclipse.e4.ui.workbench.renderers.swt.ContributedPartRenderer.createWidget(ContributedPartRenderer.java:134)
+org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createWidget(PartRenderingEngine.java:991)
+org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:658)
+org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:762)
+org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:727)
+org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:711)
+org.eclipse.e4.ui.internal.workbench.PartServiceImpl.lambda$0(PartServiceImpl.java:105)
+org.eclipse.e4.ui.services.internal.events.UIEventHandler.lambda$0(UIEventHandler.java:38)
+org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:183)
+org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:133)
+org.eclipse.swt.widgets.Display.syncExec(Display.java:4853)
+org.eclipse.e4.ui.workbench.swt.DisplayUISynchronize.syncExec(DisplayUISynchronize.java:34)
+org.eclipse.e4.ui.services.internal.events.UIEventHandler.handleEvent(UIEventHandler.java:38)
+org.eclipse.equinox.internal.event.EventHandlerWrapper.handleEvent(EventHandlerWrapper.java:206)
+org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:201)
+org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:1)
+org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:151)
+org.eclipse.equinox.internal.event.EventAdminImpl.dispatchEvent(EventAdminImpl.java:131)
+org.eclipse.equinox.internal.event.EventAdminImpl.sendEvent(EventAdminImpl.java:73)
+org.eclipse.equinox.internal.event.EventComponent.sendEvent(EventComponent.java:44)
+org.eclipse.e4.ui.services.internal.events.EventBroker.send(EventBroker.java:55)
+org.eclipse.e4.ui.internal.workbench.UIEventPublisher.notifyChanged(UIEventPublisher.java:60)
+org.eclipse.emf.common.notify.impl.BasicNotifierImpl.eNotify(BasicNotifierImpl.java:424)
+org.eclipse.e4.ui.model.application.ui.impl.ElementContainerImpl.setSelectedElementGen(ElementContainerImpl.java:168)
+org.eclipse.e4.ui.model.application.ui.impl.ElementContainerImpl.setSelectedElement(ElementContainerImpl.java:187)
+org.eclipse.e4.ui.internal.workbench.ModelServiceImpl.showElementInWindow(ModelServiceImpl.java:661)
+org.eclipse.e4.ui.internal.workbench.ModelServiceImpl.bringToTop(ModelServiceImpl.java:625)
+org.eclipse.e4.ui.internal.workbench.PartServiceImpl.delegateBringToTop(PartServiceImpl.java:796)
+org.eclipse.e4.ui.internal.workbench.PartServiceImpl.bringToTop(PartServiceImpl.java:401)
+org.eclipse.e4.ui.internal.workbench.PartServiceImpl.showPart(PartServiceImpl.java:1271)
+org.eclipse.ui.internal.WorkbenchPage.busyOpenEditor(WorkbenchPage.java:3228)
+org.eclipse.ui.internal.WorkbenchPage.lambda$11(WorkbenchPage.java:3118)
+org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:67)
+org.eclipse.ui.internal.WorkbenchPage.openEditor(WorkbenchPage.java:3116)
+org.eclipse.ui.internal.WorkbenchPage.openEditor(WorkbenchPage.java:3086)
+org.eclipse.ui.internal.WorkbenchPage.openEditor(WorkbenchPage.java:3069)
+fr.univamu.ism.docometre.actions.OpenEditorAction.openEditor(OpenEditorAction.java:237)
+fr.univamu.ism.docometre.actions.OpenEditorAction.run(OpenEditorAction.java:195)
+fr.univamu.ism.docometre.views.ExperimentsView$3$1$1.run(ExperimentsView.java:434)
+org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:132)
+org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4094)
+org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3710)
+org.eclipse.jface.operation.ModalContext$ModalContextThread.block(ModalContext.java:168)
+org.eclipse.jface.operation.ModalContext.run(ModalContext.java:370)
+org.eclipse.jface.dialogs.ProgressMonitorDialog.run(ProgressMonitorDialog.java:470)
+org.eclipse.ui.internal.progress.ProgressMonitorJobsDialog.run(ProgressMonitorJobsDialog.java:230)
+org.eclipse.ui.internal.progress.ProgressManager.lambda$26(ProgressManager.java:819)
+org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:67)
+org.eclipse.ui.internal.progress.ProgressManager.busyCursorWhile(ProgressManager.java:849)
+org.eclipse.ui.internal.progress.ProgressManager.busyCursorWhile(ProgressManager.java:828)
+fr.univamu.ism.docometre.views.ExperimentsView$3.doubleClick(ExperimentsView.java:426)
+org.eclipse.jface.viewers.StructuredViewer$1.run(StructuredViewer.java:779)
+org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+org.eclipse.jface.util.SafeRunnable.run(SafeRunnable.java:174)
+org.eclipse.jface.viewers.StructuredViewer.fireDoubleClick(StructuredViewer.java:776)
+org.eclipse.jface.viewers.AbstractTreeViewer.handleDoubleSelect(AbstractTreeViewer.java:1579)
+org.eclipse.jface.viewers.StructuredViewer$4.widgetDefaultSelected(StructuredViewer.java:1205)
+org.eclipse.jface.util.OpenStrategy.fireDefaultSelectionEvent(OpenStrategy.java:271)
+org.eclipse.jface.util.OpenStrategy$1.handleEvent(OpenStrategy.java:328)
+org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:91)
+org.eclipse.swt.widgets.Display.sendEvent(Display.java:4321)
+org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1208)
+org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4119)
+org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3707)
+org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1151)
+org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
+org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
+org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:668)
+org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:576)
+org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+fr.univamu.ism.docometre.DocometreApplication.start(DocometreApplication.java:222)
+org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:149)
+org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:115)
+org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:467)
+org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:298)
+java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+java.base/java.lang.reflect.Method.invoke(Method.java:580)
+org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:670)
+org.eclipse.equinox.launcher.Main.basicRun(Main.java:607)
+org.eclipse.equinox.launcher.Main.run(Main.java:1492)
+
+
+!ENTRY ADWinProcess - 14:45:57.110 1 0 2026-11-23 14:45:57.111
+!MESSAGE 
+
+!ENTRY ADWinProcess - 14:45:57.111 1 0 2026-11-23 14:45:57.111
+!MESSAGE C:\Users\buloup\Desktop\Docometre>"C:\ADwin\ADbasic\ADbasicCompiler.exe" /M "C:\Users\buloup\Documents\GIT\Interface_IAI\DOCO_W\\IAI\BinSource\proc.BAS" /A"C:\Users\buloup\Documents\GIT\Interface_IAI\DOCO_W\\IAI\BinSource\proc" /SGII /P11  2>proc.err 
+
+!ENTRY ADWinProcess - 14:45:57.125 1 0 2026-11-23 14:45:57.125
+!MESSAGE ADbasicCompiler Version 5.00.56 11.12.2024
+
+!ENTRY ADWinProcess - 14:45:57.125 1 0 2026-11-23 14:45:57.126
+!MESSAGE 0%
+
+!ENTRY ADWinProcess - 14:45:57.156 1 0 2026-11-23 14:45:57.157
+!MESSAGE 9%
+
+!ENTRY ADWinProcess - 14:45:57.196 1 0 2026-11-23 14:45:57.196
+!MESSAGE 35%
+
+!ENTRY ADWinProcess - 14:45:57.200 1 0 2026-11-23 14:45:57.201
+!MESSAGE 42%
+
+!ENTRY ADWinProcess - 14:45:57.211 1 0 2026-11-23 14:45:57.212
+!MESSAGE 45%
+
+!ENTRY ADWinProcess - 14:45:57.215 1 0 2026-11-23 14:45:57.215
+!MESSAGE 92%
+
+!ENTRY ADWinProcess - 14:45:57.243 1 0 2026-11-23 14:45:57.243
+!MESSAGE 96%
+
+!ENTRY ADWinProcess - 14:45:57.245 1 0 2026-11-23 14:45:57.245
+!MESSAGE Process compiled. Codesize: 5104 Workspacesize: 448 Stacksize: 112 Byte 
+
+!ENTRY ADWinProcess - 14:45:57.250 1 0 2026-11-23 14:45:57.251
+!MESSAGE Version courante des librairies : 1.0.0.202611221618
+
+!ENTRY ADWinProcess - 14:45:57.251 1 0 2026-11-23 14:45:57.251
+!MESSAGE Version des librairies utilisée par la configuration d'acquisition : 1.0.0.202611221618
+
+!ENTRY CompileProcessAction - 14:45:57.255 1 0 2026-11-23 14:45:57.256
+!MESSAGE La compilation du processus "proc" a réussi
+
+!ENTRY ADWinProcess - 14:47:18.868 1 0 2026-11-23 14:47:18.868
+!MESSAGE 
+
+!ENTRY ADWinProcess - 14:47:18.869 1 0 2026-11-23 14:47:18.869
+!MESSAGE C:\Users\buloup\Desktop\Docometre>"C:\ADwin\ADbasic\ADbasicCompiler.exe" /M "C:\Users\buloup\Documents\GIT\Interface_IAI\DOCO_W\\IAI\BinSource\proc.BAS" /A"C:\Users\buloup\Documents\GIT\Interface_IAI\DOCO_W\\IAI\BinSource\proc" /SGII /P11  2>proc.err 
+
+!ENTRY ADWinProcess - 14:47:18.881 1 0 2026-11-23 14:47:18.882
+!MESSAGE ADbasicCompiler Version 5.00.56 11.12.2024
+
+!ENTRY ADWinProcess - 14:47:18.882 1 0 2026-11-23 14:47:18.882
+!MESSAGE 0%
+
+!ENTRY ADWinProcess - 14:47:18.913 1 0 2026-11-23 14:47:18.913
+!MESSAGE 9%
+
+!ENTRY ADWinProcess - 14:47:18.954 1 0 2026-11-23 14:47:18.954
+!MESSAGE 35%
+
+!ENTRY ADWinProcess - 14:47:18.958 1 0 2026-11-23 14:47:18.958
+!MESSAGE 42%
+
+!ENTRY ADWinProcess - 14:47:18.969 1 0 2026-11-23 14:47:18.970
+!MESSAGE 45%
+
+!ENTRY ADWinProcess - 14:47:18.973 1 0 2026-11-23 14:47:18.973
+!MESSAGE 92%
+
+!ENTRY ADWinProcess - 14:47:19.000 1 0 2026-11-23 14:47:19.000
+!MESSAGE 96%
+
+!ENTRY ADWinProcess - 14:47:19.005 1 0 2026-11-23 14:47:19.006
+!MESSAGE Process compiled. Codesize: 5168 Workspacesize: 448 Stacksize: 112 Byte 
+
+!ENTRY ADWinProcess - 14:47:19.009 1 0 2026-11-23 14:47:19.010
+!MESSAGE Version courante des librairies : 1.0.0.202611221618
+
+!ENTRY ADWinProcess - 14:47:19.010 1 0 2026-11-23 14:47:19.010
+!MESSAGE Version des librairies utilisée par la configuration d'acquisition : 1.0.0.202611221618
+
+!ENTRY CompileProcessAction - 14:47:19.013 1 0 2026-11-23 14:47:19.013
+!MESSAGE La compilation du processus "proc" a réussi
+
+!ENTRY GLDataEditor - 14:48:12.405 1 0 2026-11-23 14:48:12.405
+!MESSAGE 1002 échantillons lus (DIO_PP)
+
+!ENTRY ADWinProcess - 14:48:38.405 1 0 2026-11-23 14:48:38.405
+!MESSAGE 
+
+!ENTRY ADWinProcess - 14:48:38.406 1 0 2026-11-23 14:48:38.406
+!MESSAGE C:\Users\buloup\Desktop\Docometre>"C:\ADwin\ADbasic\ADbasicCompiler.exe" /M "C:\Users\buloup\Documents\GIT\Interface_IAI\DOCO_W\\IAI\BinSource\proc.BAS" /A"C:\Users\buloup\Documents\GIT\Interface_IAI\DOCO_W\\IAI\BinSource\proc" /SGII /P11  2>proc.err 
+
+!ENTRY ADWinProcess - 14:48:38.419 1 0 2026-11-23 14:48:38.419
+!MESSAGE ADbasicCompiler Version 5.00.56 11.12.2024
+
+!ENTRY ADWinProcess - 14:48:38.420 1 0 2026-11-23 14:48:38.420
+!MESSAGE 0%
+
+!ENTRY ADWinProcess - 14:48:38.451 1 0 2026-11-23 14:48:38.451
+!MESSAGE 9%
+
+!ENTRY ADWinProcess - 14:48:38.491 1 0 2026-11-23 14:48:38.491
+!MESSAGE 35%
+
+!ENTRY ADWinProcess - 14:48:38.495 1 0 2026-11-23 14:48:38.495
+!MESSAGE 42%
+
+!ENTRY ADWinProcess - 14:48:38.506 1 0 2026-11-23 14:48:38.506
+!MESSAGE 45%
+
+!ENTRY ADWinProcess - 14:48:38.510 1 0 2026-11-23 14:48:38.510
+!MESSAGE 92%
+
+!ENTRY ADWinProcess - 14:48:38.537 1 0 2026-11-23 14:48:38.537
+!MESSAGE 96%
+
+!ENTRY ADWinProcess - 14:48:38.543 1 0 2026-11-23 14:48:38.543
+!MESSAGE Process compiled. Codesize: 5168 Workspacesize: 448 Stacksize: 112 Byte 
+
+!ENTRY ADWinProcess - 14:48:38.548 1 0 2026-11-23 14:48:38.548
+!MESSAGE Version courante des librairies : 1.0.0.202611221618
+
+!ENTRY ADWinProcess - 14:48:38.548 1 0 2026-11-23 14:48:38.548
+!MESSAGE Version des librairies utilisée par la configuration d'acquisition : 1.0.0.202611221618
+
+!ENTRY CompileProcessAction - 14:48:38.559 1 0 2026-11-23 14:48:38.559
+!MESSAGE La compilation du processus "proc" a réussi
+
+!ENTRY ADWinProcess - 14:52:40.379 1 0 2026-11-23 14:52:40.379
+!MESSAGE 
+
+!ENTRY ADWinProcess - 14:52:40.379 1 0 2026-11-23 14:52:40.380
+!MESSAGE C:\Users\buloup\Desktop\Docometre>"C:\ADwin\ADbasic\ADbasicCompiler.exe" /M "C:\Users\buloup\Documents\GIT\Interface_IAI\DOCO_W\\IAI\BinSource\proc.BAS" /A"C:\Users\buloup\Documents\GIT\Interface_IAI\DOCO_W\\IAI\BinSource\proc" /SGII /P11  2>proc.err 
+
+!ENTRY ADWinProcess - 14:52:40.392 1 0 2026-11-23 14:52:40.392
+!MESSAGE ADbasicCompiler Version 5.00.56 11.12.2024
+
+!ENTRY ADWinProcess - 14:52:40.392 1 0 2026-11-23 14:52:40.392
+!MESSAGE 0%
+
+!ENTRY ADWinProcess - 14:52:40.423 1 0 2026-11-23 14:52:40.423
+!MESSAGE 9%
+
+!ENTRY ADWinProcess - 14:52:40.461 1 0 2026-11-23 14:52:40.462
+!MESSAGE 35%
+
+!ENTRY ADWinProcess - 14:52:40.466 1 0 2026-11-23 14:52:40.466
+!MESSAGE 42%
+
+!ENTRY ADWinProcess - 14:52:40.477 1 0 2026-11-23 14:52:40.477
+!MESSAGE 45%
+
+!ENTRY ADWinProcess - 14:52:40.480 1 0 2026-11-23 14:52:40.481
+!MESSAGE 92%
+
+!ENTRY ADWinProcess - 14:52:40.508 1 0 2026-11-23 14:52:40.509
+!MESSAGE 96%
+
+!ENTRY ADWinProcess - 14:52:40.511 1 0 2026-11-23 14:52:40.511
+!MESSAGE Process compiled. Codesize: 5168 Workspacesize: 448 Stacksize: 112 Byte 
+
+!ENTRY ADWinProcess - 14:52:40.515 1 0 2026-11-23 14:52:40.516
+!MESSAGE Version courante des librairies : 1.0.0.202611221618
+
+!ENTRY ADWinProcess - 14:52:40.516 1 0 2026-11-23 14:52:40.516
+!MESSAGE Version des librairies utilisée par la configuration d'acquisition : 1.0.0.202611221618
+
+!ENTRY CompileProcessAction - 14:52:40.520 1 0 2026-11-23 14:52:40.521
+!MESSAGE La compilation du processus "proc" a réussi
+
+!ENTRY ADWinProcess - 14:54:16.611 1 0 2026-11-23 14:54:16.612
+!MESSAGE 
+
+!ENTRY ADWinProcess - 14:54:16.612 1 0 2026-11-23 14:54:16.612
+!MESSAGE C:\Users\buloup\Desktop\Docometre>"C:\ADwin\ADbasic\ADbasicCompiler.exe" /M "C:\Users\buloup\Documents\GIT\Interface_IAI\DOCO_W\\IAI\BinSource\proc.BAS" /A"C:\Users\buloup\Documents\GIT\Interface_IAI\DOCO_W\\IAI\BinSource\proc" /SGII /P11  2>proc.err 
+
+!ENTRY ADWinProcess - 14:54:16.625 1 0 2026-11-23 14:54:16.626
+!MESSAGE ADbasicCompiler Version 5.00.56 11.12.2024
+
+!ENTRY ADWinProcess - 14:54:16.626 1 0 2026-11-23 14:54:16.626
+!MESSAGE 0%
+
+!ENTRY ADWinProcess - 14:54:16.656 1 0 2026-11-23 14:54:16.657
+!MESSAGE 9%
+
+!ENTRY ADWinProcess - 14:54:16.695 1 0 2026-11-23 14:54:16.696
+!MESSAGE 35%
+
+!ENTRY ADWinProcess - 14:54:16.700 1 0 2026-11-23 14:54:16.700
+!MESSAGE 42%
+
+!ENTRY ADWinProcess - 14:54:16.711 1 0 2026-11-23 14:54:16.712
+!MESSAGE 45%
+
+!ENTRY ADWinProcess - 14:54:16.715 1 0 2026-11-23 14:54:16.715
+!MESSAGE 92%
+
+!ENTRY ADWinProcess - 14:54:16.744 1 0 2026-11-23 14:54:16.744
+!MESSAGE 96%
+
+!ENTRY ADWinProcess - 14:54:16.749 1 0 2026-11-23 14:54:16.750
+!MESSAGE Process compiled. Codesize: 5184 Workspacesize: 448 Stacksize: 112 Byte 
+
+!ENTRY ADWinProcess - 14:54:16.754 1 0 2026-11-23 14:54:16.755
+!MESSAGE Version courante des librairies : 1.0.0.202611221618
+
+!ENTRY ADWinProcess - 14:54:16.755 1 0 2026-11-23 14:54:16.755
+!MESSAGE Version des librairies utilisée par la configuration d'acquisition : 1.0.0.202611221618
+
+!ENTRY CompileProcessAction - 14:54:16.765 1 0 2026-11-23 14:54:16.766
+!MESSAGE La compilation du processus "proc" a réussi
+
+!ENTRY ADWinProcess - 14:55:43.998 1 0 2026-11-23 14:55:43.998
+!MESSAGE 
+
+!ENTRY ADWinProcess - 14:55:43.998 1 0 2026-11-23 14:55:43.998
+!MESSAGE C:\Users\buloup\Desktop\Docometre>"C:\ADwin\ADbasic\ADbasicCompiler.exe" /M "C:\Users\buloup\Documents\GIT\Interface_IAI\DOCO_W\\IAI\BinSource\proc.BAS" /A"C:\Users\buloup\Documents\GIT\Interface_IAI\DOCO_W\\IAI\BinSource\proc" /SGII /P11  2>proc.err 
+
+!ENTRY ADWinProcess - 14:55:44.011 1 0 2026-11-23 14:55:44.012
+!MESSAGE ADbasicCompiler Version 5.00.56 11.12.2024
+
+!ENTRY ADWinProcess - 14:55:44.012 1 0 2026-11-23 14:55:44.012
+!MESSAGE 0%
+
+!ENTRY ADWinProcess - 14:55:44.041 1 0 2026-11-23 14:55:44.042
+!MESSAGE 9%
+
+!ENTRY ADWinProcess - 14:55:44.080 1 0 2026-11-23 14:55:44.080
+!MESSAGE 35%
+
+!ENTRY ADWinProcess - 14:55:44.084 1 0 2026-11-23 14:55:44.085
+!MESSAGE 42%
+
+!ENTRY ADWinProcess - 14:55:44.095 1 0 2026-11-23 14:55:44.096
+!MESSAGE 45%
+
+!ENTRY ADWinProcess - 14:55:44.099 1 0 2026-11-23 14:55:44.099
+!MESSAGE 92%
+
+!ENTRY ADWinProcess - 14:55:44.127 1 0 2026-11-23 14:55:44.127
+!MESSAGE 96%
+
+!ENTRY ADWinProcess - 14:55:44.133 1 0 2026-11-23 14:55:44.133
+!MESSAGE Process compiled. Codesize: 5184 Workspacesize: 448 Stacksize: 112 Byte 
+
+!ENTRY ADWinProcess - 14:55:44.137 1 0 2026-11-23 14:55:44.137
+!MESSAGE Version courante des librairies : 1.0.0.202611221618
+
+!ENTRY ADWinProcess - 14:55:44.138 1 0 2026-11-23 14:55:44.138
+!MESSAGE Version des librairies utilisée par la configuration d'acquisition : 1.0.0.202611221618
+
+!ENTRY CompileProcessAction - 14:55:44.147 1 0 2026-11-23 14:55:44.147
+!MESSAGE La compilation du processus "proc" a réussi
+
+!ENTRY ADWinProcess - 15:27:38.196 1 0 2026-11-23 15:27:38.197
+!MESSAGE 
+
+!ENTRY ADWinProcess - 15:27:38.197 1 0 2026-11-23 15:27:38.197
+!MESSAGE C:\Users\buloup\Desktop\Docometre>"C:\ADwin\ADbasic\ADbasicCompiler.exe" /M "C:\Users\buloup\Documents\GIT\Interface_IAI\DOCO_W\\IAI\BinSource\proc.BAS" /A"C:\Users\buloup\Documents\GIT\Interface_IAI\DOCO_W\\IAI\BinSource\proc" /SGII /P11  2>proc.err 
+
+!ENTRY ADWinProcess - 15:27:38.210 1 0 2026-11-23 15:27:38.211
+!MESSAGE ADbasicCompiler Version 5.00.56 11.12.2024
+
+!ENTRY ADWinProcess - 15:27:38.211 1 0 2026-11-23 15:27:38.211
+!MESSAGE 0%
+
+!ENTRY ADWinProcess - 15:27:38.242 1 0 2026-11-23 15:27:38.243
+!MESSAGE 9%
+
+!ENTRY ADWinProcess - 15:27:38.282 1 0 2026-11-23 15:27:38.282
+!MESSAGE 35%
+
+!ENTRY ADWinProcess - 15:27:38.287 1 0 2026-11-23 15:27:38.287
+!MESSAGE 42%
+
+!ENTRY ADWinProcess - 15:27:38.299 1 0 2026-11-23 15:27:38.299
+!MESSAGE 45%
+
+!ENTRY ADWinProcess - 15:27:38.302 1 0 2026-11-23 15:27:38.303
+!MESSAGE 92%
+
+!ENTRY ADWinProcess - 15:27:38.330 1 0 2026-11-23 15:27:38.330
+!MESSAGE 96%
+
+!ENTRY ADWinProcess - 15:27:38.336 1 0 2026-11-23 15:27:38.336
+!MESSAGE Process compiled. Codesize: 5168 Workspacesize: 448 Stacksize: 112 Byte 
+
+!ENTRY ADWinProcess - 15:27:38.341 1 0 2026-11-23 15:27:38.341
+!MESSAGE Version courante des librairies : 1.0.0.202611221618
+
+!ENTRY ADWinProcess - 15:27:38.341 1 0 2026-11-23 15:27:38.341
+!MESSAGE Version des librairies utilisée par la configuration d'acquisition : 1.0.0.202611221618
+
+!ENTRY CompileProcessAction - 15:27:38.350 1 0 2026-11-23 15:27:38.351
+!MESSAGE La compilation du processus "proc" a réussi
+
+!ENTRY DocometreApplication - 15:33:09.493 1 0 2026-11-23 15:33:09.494
+!MESSAGE createAndRunWorkbench return code : 0
+!SESSION 2026-11-25 13:38:58.146 -----------------------------------------------
+eclipse.buildId=4.35v20250228-0140 - 2025-03
+java.version=21.0.6
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=fr_FR
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY DocometreApplication - 13:40:32.864 1 0 2026-11-25 13:40:32.866
+!MESSAGE Répertoire de travail : C:\Users\buloup\Documents\GIT\Interface_IAI\DOCO_W
+
+!ENTRY ApplicationWorkbenchWindowAdvisor - 13:40:32.878 1 0 2026-11-25 13:40:32.879
+!MESSAGE Locale : fr_FR
+
+!ENTRY ApplicationWorkbenchWindowAdvisor - 13:40:32.879 1 0 2026-11-25 13:40:32.880
+!MESSAGE Répertoire d'exécution : C:\Users\buloup\Desktop\Docometre
+
+!ENTRY org.eclipse.ui 2 2 2026-11-25 13:40:34.211
+!MESSAGE Invalid preference category path: org.eclipse.debug.ui.ConsolePreferencePage (bundle: org.eclipse.ui.console, page: org.eclipse.ui.internal.console.ansi.preferences.AnsiConsolePreferencePage)
+
+!ENTRY org.eclipse.ui 2 2 2026-11-25 13:40:34.211
+!MESSAGE Invalid preference category path: org.eclipse.ui.preferencePages.Workbench (bundle: org.eclipse.equinox.security.ui, page: org.eclipse.equinox.security.ui.category)
+
+!ENTRY Error 4 0 2026-11-25 13:51:34.356
+!MESSAGE java.lang.Exception: Le fichier binaire ADBasic "C:\Users\buloup\Desktop\Docometre\plugins\Libraries_1.0.0.202611221618\includes\ADwinCalibrationFiles\CalibrationGold2.tB1" n'a pas été trouvé
+Stack trace :
+fr.univamu.ism.docometre.dacqsystems.adwin.LoadProcessDelegate.loadProcess(LoadProcessDelegate.java:70)
+fr.univamu.ism.docometre.dacqsystems.adwin.LoadProcessDelegate.loadCalibrationProcess(LoadProcessDelegate.java:88)
+fr.univamu.ism.docometre.dacqsystems.adwin.calibration.ADWinTimerTask.<init>(ADWinTimerTask.java:79)
+fr.univamu.ism.docometre.dacqsystems.adwin.calibration.ADWinCalibration.runCalibrationTask(ADWinCalibration.java:136)
+fr.univamu.ism.docometre.calibration.CalibrationFactory.runCalibrationProcess(CalibrationFactory.java:85)
+fr.univamu.ism.docometre.calibration.AbstractCalibrateMonitorDialog.startCalibrationProcess(AbstractCalibrateMonitorDialog.java:250)
+fr.univamu.ism.docometre.calibration.AbstractCalibrateMonitorDialog$4.widgetSelected(AbstractCalibrateMonitorDialog.java:261)
+org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:286)
+org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:91)
+org.eclipse.swt.widgets.Display.sendEvent(Display.java:4321)
+org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1208)
+org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4119)
+org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3707)
+org.eclipse.jface.window.Window.runEventLoop(Window.java:823)
+org.eclipse.jface.window.Window.open(Window.java:799)
+fr.univamu.ism.docometre.dacqsystems.adwin.ui.dacqconfigurationeditor.ADwinDACQGeneralConfigurationPage$CalibrateMonitorAction.run(ADwinDACQGeneralConfigurationPage.java:168)
+org.eclipse.jface.action.Action.runWithEvent(Action.java:474)
+org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:581)
+org.eclipse.jface.action.ActionContributionItem.lambda$5(ActionContributionItem.java:454)
+org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:91)
+org.eclipse.swt.widgets.Display.sendEvent(Display.java:4321)
+org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1208)
+org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4119)
+org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3707)
+org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1151)
+org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
+org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
+org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:668)
+org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:576)
+org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+fr.univamu.ism.docometre.DocometreApplication.start(DocometreApplication.java:222)
+org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:149)
+org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:115)
+org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:467)
+org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:298)
+java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+java.base/java.lang.reflect.Method.invoke(Method.java:580)
+org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:670)
+org.eclipse.equinox.launcher.Main.basicRun(Main.java:607)
+org.eclipse.equinox.launcher.Main.run(Main.java:1492)
+
+
+!ENTRY ADWinProcess - 13:55:17.123 1 0 2026-11-25 13:55:17.123
+!MESSAGE 
+
+!ENTRY ADWinProcess - 13:55:17.124 1 0 2026-11-25 13:55:17.124
+!MESSAGE C:\Users\buloup\Desktop\Docometre>"C:\ADwin\ADbasic\ADbasicCompiler.exe" /M "C:\Users\buloup\Documents\GIT\Interface_IAI\DOCO_W\\IAI\BinSource\proc.BAS" /A"C:\Users\buloup\Documents\GIT\Interface_IAI\DOCO_W\\IAI\BinSource\proc" /SGII /P11  2>proc.err 
+
+!ENTRY ADWinProcess - 13:55:17.286 1 0 2026-11-25 13:55:17.287
+!MESSAGE ADbasicCompiler Version 5.00.56 11.12.2024
+
+!ENTRY ADWinProcess - 13:55:17.287 1 0 2026-11-25 13:55:17.287
+!MESSAGE 0%
+
+!ENTRY ADWinProcess - 13:55:17.349 1 0 2026-11-25 13:55:17.349
+!MESSAGE 9%
+
+!ENTRY ADWinProcess - 13:55:17.387 1 0 2026-11-25 13:55:17.387
+!MESSAGE 35%
+
+!ENTRY ADWinProcess - 13:55:17.409 1 0 2026-11-25 13:55:17.409
+!MESSAGE 42%
+
+!ENTRY ADWinProcess - 13:55:17.425 1 0 2026-11-25 13:55:17.425
+!MESSAGE 45%
+
+!ENTRY ADWinProcess - 13:55:17.429 1 0 2026-11-25 13:55:17.429
+!MESSAGE 92%
+
+!ENTRY ADWinProcess - 13:55:17.457 1 0 2026-11-25 13:55:17.457
+!MESSAGE 96%
+
+!ENTRY ADWinProcess - 13:55:17.464 1 0 2026-11-25 13:55:17.464
+!MESSAGE Process compiled. Codesize: 5168 Workspacesize: 448 Stacksize: 112 Byte 
+
+!ENTRY ADWinProcess - 13:55:17.469 1 0 2026-11-25 13:55:17.469
+!MESSAGE Version courante des librairies : 1.0.0.202611250858
+
+!ENTRY ADWinProcess - 13:55:17.470 1 0 2026-11-25 13:55:17.470
+!MESSAGE Version des librairies utilisée par la configuration d'acquisition : 1.0.0.202611250858
+
+!ENTRY CompileProcessAction - 13:55:17.475 1 0 2026-11-25 13:55:17.475
+!MESSAGE La compilation du processus "proc" a réussi
+
+!ENTRY Chart1DRenderer - 13:55:25.914 1 0 2026-11-25 13:55:25.914
+!MESSAGE OpenGL : NVIDIA GeForce RTX 3070/PCIe/SSE2 (NVIDIA Corporation) - 4.6 (Compat profile, arb, compat[ES2, ES3, ES31, ES32], FBO, hardware) - 4.6.0 NVIDIA 610.60 - swap interval 0
+
+!ENTRY GLDataEditor - 13:57:23.445 1 0 2026-11-25 13:57:23.445
+!MESSAGE 2002 échantillons lus (DIO_PP)
+
+!ENTRY GLDataEditor - 13:58:52.859 1 0 2026-11-25 13:58:52.859
+!MESSAGE 2002 échantillons lus (DIO_NP)
+
+!ENTRY ADWinProcess - 13:59:25.140 1 0 2026-11-25 13:59:25.140
+!MESSAGE 
+
+!ENTRY ADWinProcess - 13:59:25.140 1 0 2026-11-25 13:59:25.140
+!MESSAGE C:\Users\buloup\Desktop\Docometre>"C:\ADwin\ADbasic\ADbasicCompiler.exe" /M "C:\Users\buloup\Documents\GIT\Interface_IAI\DOCO_W\\IAI\BinSource\proc.BAS" /A"C:\Users\buloup\Documents\GIT\Interface_IAI\DOCO_W\\IAI\BinSource\proc" /SGII /P11  2>proc.err 
+
+!ENTRY ADWinProcess - 13:59:25.154 1 0 2026-11-25 13:59:25.154
+!MESSAGE ADbasicCompiler Version 5.00.56 11.12.2024
+
+!ENTRY ADWinProcess - 13:59:25.154 1 0 2026-11-25 13:59:25.154
+!MESSAGE 0%
+
+!ENTRY ADWinProcess - 13:59:25.185 1 0 2026-11-25 13:59:25.185
+!MESSAGE 9%
+
+!ENTRY ADWinProcess - 13:59:25.224 1 0 2026-11-25 13:59:25.224
+!MESSAGE 35%
+
+!ENTRY ADWinProcess - 13:59:25.228 1 0 2026-11-25 13:59:25.228
+!MESSAGE 42%
+
+!ENTRY ADWinProcess - 13:59:25.239 1 0 2026-11-25 13:59:25.240
+!MESSAGE 45%
+
+!ENTRY ADWinProcess - 13:59:25.243 1 0 2026-11-25 13:59:25.243
+!MESSAGE 92%
+
+!ENTRY ADWinProcess - 13:59:25.271 1 0 2026-11-25 13:59:25.271
+!MESSAGE 96%
+
+!ENTRY ADWinProcess - 13:59:25.277 1 0 2026-11-25 13:59:25.277
+!MESSAGE Process compiled. Codesize: 5232 Workspacesize: 448 Stacksize: 112 Byte 
+
+!ENTRY ADWinProcess - 13:59:25.282 1 0 2026-11-25 13:59:25.282
+!MESSAGE Version courante des librairies : 1.0.0.202611250858
+
+!ENTRY ADWinProcess - 13:59:25.282 1 0 2026-11-25 13:59:25.283
+!MESSAGE Version des librairies utilisée par la configuration d'acquisition : 1.0.0.202611250858
+
+!ENTRY CompileProcessAction - 13:59:25.293 1 0 2026-11-25 13:59:25.293
+!MESSAGE La compilation du processus "proc" a réussi
+
+!ENTRY ADWinProcess - 13:59:30.656 1 0 2026-11-25 13:59:30.657
+!MESSAGE 
+
+!ENTRY ADWinProcess - 13:59:30.657 1 0 2026-11-25 13:59:30.657
+!MESSAGE C:\Users\buloup\Desktop\Docometre>"C:\ADwin\ADbasic\ADbasicCompiler.exe" /M "C:\Users\buloup\Documents\GIT\Interface_IAI\DOCO_W\\IAI\BinSource\proc.BAS" /A"C:\Users\buloup\Documents\GIT\Interface_IAI\DOCO_W\\IAI\BinSource\proc" /SGII /P11  2>proc.err 
+
+!ENTRY ADWinProcess - 13:59:30.670 1 0 2026-11-25 13:59:30.670
+!MESSAGE ADbasicCompiler Version 5.00.56 11.12.2024
+
+!ENTRY ADWinProcess - 13:59:30.676 1 0 2026-11-25 13:59:30.677
+!MESSAGE 0%
+
+!ENTRY ADWinProcess - 13:59:30.701 1 0 2026-11-25 13:59:30.701
+!MESSAGE 9%
+
+!ENTRY ADWinProcess - 13:59:30.740 1 0 2026-11-25 13:59:30.740
+!MESSAGE 35%
+
+!ENTRY ADWinProcess - 13:59:30.744 1 0 2026-11-25 13:59:30.744
+!MESSAGE 42%
+
+!ENTRY ADWinProcess - 13:59:30.756 1 0 2026-11-25 13:59:30.756
+!MESSAGE 45%
+
+!ENTRY ADWinProcess - 13:59:30.759 1 0 2026-11-25 13:59:30.760
+!MESSAGE 92%
+
+!ENTRY ADWinProcess - 13:59:30.788 1 0 2026-11-25 13:59:30.788
+!MESSAGE 96%
+
+!ENTRY ADWinProcess - 13:59:30.790 1 0 2026-11-25 13:59:30.790
+!MESSAGE Process compiled. Codesize: 5232 Workspacesize: 448 Stacksize: 112 Byte 
+
+!ENTRY ADWinProcess - 13:59:30.795 1 0 2026-11-25 13:59:30.795
+!MESSAGE Version courante des librairies : 1.0.0.202611250858
+
+!ENTRY ADWinProcess - 13:59:30.796 1 0 2026-11-25 13:59:30.796
+!MESSAGE Version des librairies utilisée par la configuration d'acquisition : 1.0.0.202611250858
+
+!ENTRY CompileProcessAction - 13:59:30.799 1 0 2026-11-25 13:59:30.799
+!MESSAGE La compilation du processus "proc" a réussi
+
+!ENTRY ADWinProcess - 14:02:18.514 1 0 2026-11-25 14:02:18.514
+!MESSAGE 
+
+!ENTRY ADWinProcess - 14:02:18.514 1 0 2026-11-25 14:02:18.514
+!MESSAGE C:\Users\buloup\Desktop\Docometre>"C:\ADwin\ADbasic\ADbasicCompiler.exe" /M "C:\Users\buloup\Documents\GIT\Interface_IAI\DOCO_W\\IAI\BinSource\proc.BAS" /A"C:\Users\buloup\Documents\GIT\Interface_IAI\DOCO_W\\IAI\BinSource\proc" /SGII /P11  2>proc.err 
+
+!ENTRY ADWinProcess - 14:02:18.526 1 0 2026-11-25 14:02:18.526
+!MESSAGE ADbasicCompiler Version 5.00.56 11.12.2024
+
+!ENTRY ADWinProcess - 14:02:18.527 1 0 2026-11-25 14:02:18.527
+!MESSAGE 0%
+
+!ENTRY ADWinProcess - 14:02:18.557 1 0 2026-11-25 14:02:18.558
+!MESSAGE 9%
+
+!ENTRY ADWinProcess - 14:02:18.596 1 0 2026-11-25 14:02:18.597
+!MESSAGE 35%
+
+!ENTRY ADWinProcess - 14:02:18.601 1 0 2026-11-25 14:02:18.601
+!MESSAGE 42%
+
+!ENTRY ADWinProcess - 14:02:18.612 1 0 2026-11-25 14:02:18.612
+!MESSAGE 45%
+
+!ENTRY ADWinProcess - 14:02:18.616 1 0 2026-11-25 14:02:18.616
+!MESSAGE 92%
+
+!ENTRY ADWinProcess - 14:02:18.644 1 0 2026-11-25 14:02:18.644
+!MESSAGE 96%
+
+!ENTRY ADWinProcess - 14:02:18.646 1 0 2026-11-25 14:02:18.646
+!MESSAGE Process compiled. Codesize: 5232 Workspacesize: 448 Stacksize: 112 Byte 
+
+!ENTRY ADWinProcess - 14:02:18.650 1 0 2026-11-25 14:02:18.651
+!MESSAGE Version courante des librairies : 1.0.0.202611250858
+
+!ENTRY ADWinProcess - 14:02:18.651 1 0 2026-11-25 14:02:18.651
+!MESSAGE Version des librairies utilisée par la configuration d'acquisition : 1.0.0.202611250858
+
+!ENTRY CompileProcessAction - 14:02:18.656 1 0 2026-11-25 14:02:18.656
+!MESSAGE La compilation du processus "proc" a réussi
+
+!ENTRY ADWinProcess - 14:03:15.818 1 0 2026-11-25 14:03:15.818
+!MESSAGE 
+
+!ENTRY ADWinProcess - 14:03:15.818 1 0 2026-11-25 14:03:15.819
+!MESSAGE C:\Users\buloup\Desktop\Docometre>"C:\ADwin\ADbasic\ADbasicCompiler.exe" /M "C:\Users\buloup\Documents\GIT\Interface_IAI\DOCO_W\\IAI\BinSource\proc.BAS" /A"C:\Users\buloup\Documents\GIT\Interface_IAI\DOCO_W\\IAI\BinSource\proc" /SGII /P11  2>proc.err 
+
+!ENTRY ADWinProcess - 14:03:15.831 1 0 2026-11-25 14:03:15.831
+!MESSAGE ADbasicCompiler Version 5.00.56 11.12.2024
+
+!ENTRY ADWinProcess - 14:03:15.831 1 0 2026-11-25 14:03:15.832
+!MESSAGE 0%
+
+!ENTRY ADWinProcess - 14:03:15.862 1 0 2026-11-25 14:03:15.862
+!MESSAGE 9%
+
+!ENTRY ADWinProcess - 14:03:15.901 1 0 2026-11-25 14:03:15.901
+!MESSAGE 35%
+
+!ENTRY ADWinProcess - 14:03:15.905 1 0 2026-11-25 14:03:15.905
+!MESSAGE 42%
+
+!ENTRY ADWinProcess - 14:03:15.916 1 0 2026-11-25 14:03:15.916
+!MESSAGE 45%
+
+!ENTRY ADWinProcess - 14:03:15.920 1 0 2026-11-25 14:03:15.920
+!MESSAGE 92%
+
+!ENTRY ADWinProcess - 14:03:15.948 1 0 2026-11-25 14:03:15.949
+!MESSAGE 96%
+
+!ENTRY ADWinProcess - 14:03:15.955 1 0 2026-11-25 14:03:15.955
+!MESSAGE Process compiled. Codesize: 5232 Workspacesize: 448 Stacksize: 112 Byte 
+
+!ENTRY ADWinProcess - 14:03:15.960 1 0 2026-11-25 14:03:15.960
+!MESSAGE Version courante des librairies : 1.0.0.202611250858
+
+!ENTRY ADWinProcess - 14:03:15.961 1 0 2026-11-25 14:03:15.961
+!MESSAGE Version des librairies utilisée par la configuration d'acquisition : 1.0.0.202611250858
+
+!ENTRY CompileProcessAction - 14:03:15.968 1 0 2026-11-25 14:03:15.968
+!MESSAGE La compilation du processus "proc" a réussi
+
+!ENTRY ADWinProcess - 14:04:36.183 1 0 2026-11-25 14:04:36.183
+!MESSAGE 
+
+!ENTRY ADWinProcess - 14:04:36.184 1 0 2026-11-25 14:04:36.184
+!MESSAGE C:\Users\buloup\Desktop\Docometre>"C:\ADwin\ADbasic\ADbasicCompiler.exe" /M "C:\Users\buloup\Documents\GIT\Interface_IAI\DOCO_W\\IAI\BinSource\proc.BAS" /A"C:\Users\buloup\Documents\GIT\Interface_IAI\DOCO_W\\IAI\BinSource\proc" /SGII /P11  2>proc.err 
+
+!ENTRY ADWinProcess - 14:04:36.197 1 0 2026-11-25 14:04:36.197
+!MESSAGE ADbasicCompiler Version 5.00.56 11.12.2024
+
+!ENTRY ADWinProcess - 14:04:36.198 1 0 2026-11-25 14:04:36.198
+!MESSAGE 0%
+
+!ENTRY ADWinProcess - 14:04:36.228 1 0 2026-11-25 14:04:36.228
+!MESSAGE 9%
+
+!ENTRY ADWinProcess - 14:04:36.268 1 0 2026-11-25 14:04:36.268
+!MESSAGE 35%
+
+!ENTRY ADWinProcess - 14:04:36.272 1 0 2026-11-25 14:04:36.272
+!MESSAGE 42%
+
+!ENTRY ADWinProcess - 14:04:36.283 1 0 2026-11-25 14:04:36.283
+!MESSAGE 45%
+
+!ENTRY ADWinProcess - 14:04:36.287 1 0 2026-11-25 14:04:36.287
+!MESSAGE 92%
+
+!ENTRY ADWinProcess - 14:04:36.315 1 0 2026-11-25 14:04:36.315
+!MESSAGE 96%
+
+!ENTRY ADWinProcess - 14:04:36.322 1 0 2026-11-25 14:04:36.322
+!MESSAGE Process compiled. Codesize: 5232 Workspacesize: 448 Stacksize: 112 Byte 
+
+!ENTRY ADWinProcess - 14:04:36.327 1 0 2026-11-25 14:04:36.327
+!MESSAGE Version courante des librairies : 1.0.0.202611250858
+
+!ENTRY ADWinProcess - 14:04:36.327 1 0 2026-11-25 14:04:36.327
+!MESSAGE Version des librairies utilisée par la configuration d'acquisition : 1.0.0.202611250858
+
+!ENTRY CompileProcessAction - 14:04:36.333 1 0 2026-11-25 14:04:36.333
+!MESSAGE La compilation du processus "proc" a réussi
+
+!ENTRY ADWinProcess - 15:58:41.757 1 0 2026-11-25 15:58:41.757
+!MESSAGE 
+
+!ENTRY ADWinProcess - 15:58:41.757 1 0 2026-11-25 15:58:41.757
+!MESSAGE C:\Users\buloup\Desktop\Docometre>"C:\ADwin\ADbasic\ADbasicCompiler.exe" /M "C:\Users\buloup\Documents\GIT\Interface_IAI\DOCO_W\\IAI\BinSource\move.BAS" /A"C:\Users\buloup\Documents\GIT\Interface_IAI\DOCO_W\\IAI\BinSource\move" /SGII /P11  2>move.err 
+
+!ENTRY ADWinProcess - 15:58:41.913 1 0 2026-11-25 15:58:41.913
+!MESSAGE ADbasicCompiler Version 5.00.56 11.12.2024
+
+!ENTRY ADWinProcess - 15:58:41.914 1 0 2026-11-25 15:58:41.914
+!MESSAGE 0%
+
+!ENTRY ADWinProcess - 15:58:41.981 1 0 2026-11-25 15:58:41.981
+!MESSAGE 9%
+
+!ENTRY ADWinProcess - 15:58:42.031 1 0 2026-11-25 15:58:42.031
+!MESSAGE 35%
+
+!ENTRY ADWinProcess - 15:58:42.046 1 0 2026-11-25 15:58:42.046
+!MESSAGE 42%
+
+!ENTRY ADWinProcess - 15:58:42.068 1 0 2026-11-25 15:58:42.068
+!MESSAGE 45%
+
+!ENTRY ADWinProcess - 15:58:42.076 1 0 2026-11-25 15:58:42.076
+!MESSAGE 92%
+
+!ENTRY ADWinProcess - 15:58:42.122 1 0 2026-11-25 15:58:42.122
+!MESSAGE 96%
+
+!ENTRY ADWinProcess - 15:58:42.129 1 0 2026-11-25 15:58:42.129
+!MESSAGE Process compiled. Codesize: 8384 Workspacesize: 976 Stacksize: 112 Byte 
+
+!ENTRY ADWinProcess - 15:58:42.134 1 0 2026-11-25 15:58:42.134
+!MESSAGE Version courante des librairies : 1.0.0.202611250858
+
+!ENTRY ADWinProcess - 15:58:42.134 1 0 2026-11-25 15:58:42.134
+!MESSAGE Version des librairies utilisée par la configuration d'acquisition : 1.0.0.202611250858
+
+!ENTRY CompileProcessAction - 15:58:42.141 1 0 2026-11-25 15:58:42.141
+!MESSAGE La compilation du processus "move" a réussi
+
+!ENTRY ADWinProcess - 16:01:33.131 1 0 2026-11-25 16:01:33.131
+!MESSAGE 
+
+!ENTRY ADWinProcess - 16:01:33.131 1 0 2026-11-25 16:01:33.132
+!MESSAGE C:\Users\buloup\Desktop\Docometre>"C:\ADwin\ADbasic\ADbasicCompiler.exe" /M "C:\Users\buloup\Documents\GIT\Interface_IAI\DOCO_W\\IAI\BinSource\move.BAS" /A"C:\Users\buloup\Documents\GIT\Interface_IAI\DOCO_W\\IAI\BinSource\move" /SGII /P11  2>move.err 
+
+!ENTRY ADWinProcess - 16:01:33.144 1 0 2026-11-25 16:01:33.144
+!MESSAGE ADbasicCompiler Version 5.00.56 11.12.2024
+
+!ENTRY ADWinProcess - 16:01:33.144 1 0 2026-11-25 16:01:33.144
+!MESSAGE 0%
+
+!ENTRY ADWinProcess - 16:01:33.176 1 0 2026-11-25 16:01:33.176
+!MESSAGE 9%
+
+!ENTRY ADWinProcess - 16:01:33.226 1 0 2026-11-25 16:01:33.226
+!MESSAGE 35%
+
+!ENTRY ADWinProcess - 16:01:33.231 1 0 2026-11-25 16:01:33.231
+!MESSAGE 42%
+
+!ENTRY ADWinProcess - 16:01:33.252 1 0 2026-11-25 16:01:33.252
+!MESSAGE 45%
+
+!ENTRY ADWinProcess - 16:01:33.260 1 0 2026-11-25 16:01:33.260
+!MESSAGE 92%
+
+!ENTRY ADWinProcess - 16:01:33.306 1 0 2026-11-25 16:01:33.306
+!MESSAGE 96%
+
+!ENTRY ADWinProcess - 16:01:33.311 1 0 2026-11-25 16:01:33.312
+!MESSAGE Process compiled. Codesize: 8384 Workspacesize: 976 Stacksize: 112 Byte 
+
+!ENTRY ADWinProcess - 16:01:33.317 1 0 2026-11-25 16:01:33.317
+!MESSAGE Version courante des librairies : 1.0.0.202611250858
+
+!ENTRY ADWinProcess - 16:01:33.317 1 0 2026-11-25 16:01:33.317
+!MESSAGE Version des librairies utilisée par la configuration d'acquisition : 1.0.0.202611250858
+
+!ENTRY CompileProcessAction - 16:01:33.320 1 0 2026-11-25 16:01:33.321
+!MESSAGE La compilation du processus "move" a réussi
+
+!ENTRY ADWinProcess - 16:01:36.356 1 0 2026-11-25 16:01:36.356
+!MESSAGE 
+
+!ENTRY ADWinProcess - 16:01:36.356 1 0 2026-11-25 16:01:36.356
+!MESSAGE C:\Users\buloup\Desktop\Docometre>"C:\ADwin\ADbasic\ADbasicCompiler.exe" /M "C:\Users\buloup\Documents\GIT\Interface_IAI\DOCO_W\\IAI\BinSource\home.BAS" /A"C:\Users\buloup\Documents\GIT\Interface_IAI\DOCO_W\\IAI\BinSource\home" /SGII /P11  2>home.err 
+
+!ENTRY ADWinProcess - 16:01:36.369 1 0 2026-11-25 16:01:36.369
+!MESSAGE ADbasicCompiler Version 5.00.56 11.12.2024
+
+!ENTRY ADWinProcess - 16:01:36.369 1 0 2026-11-25 16:01:36.370
+!MESSAGE 0%
+
+!ENTRY ADWinProcess - 16:01:36.402 1 0 2026-11-25 16:01:36.402
+!MESSAGE 9%
+
+!ENTRY ADWinProcess - 16:01:36.450 1 0 2026-11-25 16:01:36.450
+!MESSAGE 35%
+
+!ENTRY ADWinProcess - 16:01:36.455 1 0 2026-11-25 16:01:36.455
+!MESSAGE 42%
+
+!ENTRY ADWinProcess - 16:01:36.475 1 0 2026-11-25 16:01:36.475
+!MESSAGE 45%
+
+!ENTRY ADWinProcess - 16:01:36.482 1 0 2026-11-25 16:01:36.482
+!MESSAGE 92%
+
+!ENTRY ADWinProcess - 16:01:36.527 1 0 2026-11-25 16:01:36.527
+!MESSAGE 96%
+
+!ENTRY ADWinProcess - 16:01:36.533 1 0 2026-11-25 16:01:36.534
+!MESSAGE Process compiled. Codesize: 7472 Workspacesize: 976 Stacksize: 80 Byte 
+
+!ENTRY ADWinProcess - 16:01:36.539 1 0 2026-11-25 16:01:36.539
+!MESSAGE Version courante des librairies : 1.0.0.202611250858
+
+!ENTRY ADWinProcess - 16:01:36.540 1 0 2026-11-25 16:01:36.540
+!MESSAGE Version des librairies utilisée par la configuration d'acquisition : 1.0.0.202611250858
+
+!ENTRY CompileProcessAction - 16:01:36.547 1 0 2026-11-25 16:01:36.547
+!MESSAGE La compilation du processus "home" a réussi
+
+!ENTRY ADWinProcess - 16:02:12.098 1 0 2026-11-25 16:02:12.098
+!MESSAGE 
+
+!ENTRY ADWinProcess - 16:02:12.098 1 0 2026-11-25 16:02:12.098
+!MESSAGE C:\Users\buloup\Desktop\Docometre>"C:\ADwin\ADbasic\ADbasicCompiler.exe" /M "C:\Users\buloup\Documents\GIT\Interface_IAI\DOCO_W\\IAI\BinSource\home.BAS" /A"C:\Users\buloup\Documents\GIT\Interface_IAI\DOCO_W\\IAI\BinSource\home" /SGII /P11  2>home.err 
+
+!ENTRY ADWinProcess - 16:02:12.111 1 0 2026-11-25 16:02:12.111
+!MESSAGE ADbasicCompiler Version 5.00.56 11.12.2024
+
+!ENTRY ADWinProcess - 16:02:12.111 1 0 2026-11-25 16:02:12.111
+!MESSAGE 0%
+
+!ENTRY ADWinProcess - 16:02:12.144 1 0 2026-11-25 16:02:12.144
+!MESSAGE 9%
+
+!ENTRY ADWinProcess - 16:02:12.194 1 0 2026-11-25 16:02:12.194
+!MESSAGE 35%
+
+!ENTRY ADWinProcess - 16:02:12.198 1 0 2026-11-25 16:02:12.199
+!MESSAGE 42%
+
+!ENTRY ADWinProcess - 16:02:12.219 1 0 2026-11-25 16:02:12.219
+!MESSAGE 45%
+
+!ENTRY ADWinProcess - 16:02:12.226 1 0 2026-11-25 16:02:12.226
+!MESSAGE 92%
+
+!ENTRY ADWinProcess - 16:02:12.271 1 0 2026-11-25 16:02:12.271
+!MESSAGE 96%
+
+!ENTRY ADWinProcess - 16:02:12.274 1 0 2026-11-25 16:02:12.274
+!MESSAGE Process compiled. Codesize: 7472 Workspacesize: 976 Stacksize: 80 Byte 
+
+!ENTRY ADWinProcess - 16:02:12.279 1 0 2026-11-25 16:02:12.279
+!MESSAGE Version courante des librairies : 1.0.0.202611250858
+
+!ENTRY ADWinProcess - 16:02:12.279 1 0 2026-11-25 16:02:12.280
+!MESSAGE Version des librairies utilisée par la configuration d'acquisition : 1.0.0.202611250858
+
+!ENTRY CompileProcessAction - 16:02:12.282 1 0 2026-11-25 16:02:12.282
+!MESSAGE La compilation du processus "home" a réussi
+
+!ENTRY ADWinProcess - 16:02:12.312 1 0 2026-11-25 16:02:12.312
+!MESSAGE 
+
+!ENTRY ADWinProcess - 16:02:12.312 1 0 2026-11-25 16:02:12.312
+!MESSAGE C:\Users\buloup\Desktop\Docometre>"C:\ADwin\ADbasic\ADbasicCompiler.exe" /M "C:\Users\buloup\Documents\GIT\Interface_IAI\DOCO_W\\IAI\BinSource\move.BAS" /A"C:\Users\buloup\Documents\GIT\Interface_IAI\DOCO_W\\IAI\BinSource\move" /SGII /P11  2>move.err 
+
+!ENTRY ADWinProcess - 16:02:12.325 1 0 2026-11-25 16:02:12.325
+!MESSAGE ADbasicCompiler Version 5.00.56 11.12.2024
+
+!ENTRY ADWinProcess - 16:02:12.325 1 0 2026-11-25 16:02:12.325
+!MESSAGE 0%
+
+!ENTRY ADWinProcess - 16:02:12.357 1 0 2026-11-25 16:02:12.357
+!MESSAGE 9%
+
+!ENTRY ADWinProcess - 16:02:12.406 1 0 2026-11-25 16:02:12.406
+!MESSAGE 35%
+
+!ENTRY ADWinProcess - 16:02:12.411 1 0 2026-11-25 16:02:12.411
+!MESSAGE 42%
+
+!ENTRY ADWinProcess - 16:02:12.432 1 0 2026-11-25 16:02:12.432
+!MESSAGE 45%
+
+!ENTRY ADWinProcess - 16:02:12.439 1 0 2026-11-25 16:02:12.439
+!MESSAGE 92%
+
+!ENTRY ADWinProcess - 16:02:12.485 1 0 2026-11-25 16:02:12.486
+!MESSAGE 96%
+
+!ENTRY ADWinProcess - 16:02:12.492 1 0 2026-11-25 16:02:12.492
+!MESSAGE Process compiled. Codesize: 8384 Workspacesize: 976 Stacksize: 112 Byte 
+
+!ENTRY ADWinProcess - 16:02:12.497 1 0 2026-11-25 16:02:12.497
+!MESSAGE Version courante des librairies : 1.0.0.202611250858
+
+!ENTRY ADWinProcess - 16:02:12.498 1 0 2026-11-25 16:02:12.498
+!MESSAGE Version des librairies utilisée par la configuration d'acquisition : 1.0.0.202611250858
+
+!ENTRY CompileProcessAction - 16:02:12.500 1 0 2026-11-25 16:02:12.500
+!MESSAGE La compilation du processus "move" a réussi
+
+!ENTRY ADWinProcess - 16:07:34.154 1 0 2026-11-25 16:07:34.154
+!MESSAGE 
+
+!ENTRY ADWinProcess - 16:07:34.155 1 0 2026-11-25 16:07:34.155
+!MESSAGE C:\Users\buloup\Desktop\Docometre>"C:\ADwin\ADbasic\ADbasicCompiler.exe" /M "C:\Users\buloup\Documents\GIT\Interface_IAI\DOCO_W\\IAI\BinSource\move.BAS" /A"C:\Users\buloup\Documents\GIT\Interface_IAI\DOCO_W\\IAI\BinSource\move" /SGII /P11  2>move.err 
+
+!ENTRY ADWinProcess - 16:07:34.168 1 0 2026-11-25 16:07:34.168
+!MESSAGE ADbasicCompiler Version 5.00.56 11.12.2024
+
+!ENTRY ADWinProcess - 16:07:34.169 1 0 2026-11-25 16:07:34.169
+!MESSAGE 0%
+
+!ENTRY ADWinProcess - 16:07:34.201 1 0 2026-11-25 16:07:34.201
+!MESSAGE 9%
+
+!ENTRY ADWinProcess - 16:07:34.250 1 0 2026-11-25 16:07:34.251
+!MESSAGE 35%
+
+!ENTRY ADWinProcess - 16:07:34.256 1 0 2026-11-25 16:07:34.256
+!MESSAGE 42%
+
+!ENTRY ADWinProcess - 16:07:34.277 1 0 2026-11-25 16:07:34.277
+!MESSAGE 45%
+
+!ENTRY ADWinProcess - 16:07:34.284 1 0 2026-11-25 16:07:34.284
+!MESSAGE 92%
+
+!ENTRY ADWinProcess - 16:07:34.330 1 0 2026-11-25 16:07:34.330
+!MESSAGE 96%
+
+!ENTRY ADWinProcess - 16:07:34.336 1 0 2026-11-25 16:07:34.336
+!MESSAGE Process compiled. Codesize: 8384 Workspacesize: 976 Stacksize: 112 Byte 
+
+!ENTRY ADWinProcess - 16:07:34.341 1 0 2026-11-25 16:07:34.341
+!MESSAGE Version courante des librairies : 1.0.0.202611250858
+
+!ENTRY ADWinProcess - 16:07:34.341 1 0 2026-11-25 16:07:34.342
+!MESSAGE Version des librairies utilisée par la configuration d'acquisition : 1.0.0.202611250858
+
+!ENTRY CompileProcessAction - 16:07:34.344 1 0 2026-11-25 16:07:34.344
+!MESSAGE La compilation du processus "move" a réussi
+
+!ENTRY GLDataEditor - 16:07:37.909 1 0 2026-11-25 16:07:37.909
+!MESSAGE 2002 échantillons lus (HEND)
+
+!ENTRY GLDataEditor - 16:07:45.370 1 0 2026-11-25 16:07:45.371
+!MESSAGE 2002 échantillons lus (DIO_SON)
+
+!ENTRY GLDataEditor - 16:07:48.412 1 0 2026-11-25 16:07:48.412
+!MESSAGE 2002 échantillons lus (DIO_PP)
+
+!ENTRY GLDataEditor - 16:07:52.619 1 0 2026-11-25 16:07:52.620
+!MESSAGE 2002 échantillons lus (DIO_HOME)
+
+!ENTRY GLDataEditor - 16:08:00.212 1 0 2026-11-25 16:08:00.213
+!MESSAGE 2002 échantillons lus (EMGS)
+
+!ENTRY GLDataEditor - 16:08:03.281 1 0 2026-11-25 16:08:03.282
+!MESSAGE 2002 échantillons lus (REND)
+
+!ENTRY GLDataEditor - 16:08:08.172 1 0 2026-11-25 16:08:08.172
+!MESSAGE 2002 échantillons lus (SV)
+
+!ENTRY ADWinProcess - 16:09:03.121 1 0 2026-11-25 16:09:03.121
+!MESSAGE 
+
+!ENTRY ADWinProcess - 16:09:03.121 1 0 2026-11-25 16:09:03.121
+!MESSAGE C:\Users\buloup\Desktop\Docometre>"C:\ADwin\ADbasic\ADbasicCompiler.exe" /M "C:\Users\buloup\Documents\GIT\Interface_IAI\DOCO_W\\IAI\BinSource\home.BAS" /A"C:\Users\buloup\Documents\GIT\Interface_IAI\DOCO_W\\IAI\BinSource\home" /SGII /P11  2>home.err 
+
+!ENTRY ADWinProcess - 16:09:03.134 1 0 2026-11-25 16:09:03.134
+!MESSAGE ADbasicCompiler Version 5.00.56 11.12.2024
+
+!ENTRY ADWinProcess - 16:09:03.134 1 0 2026-11-25 16:09:03.134
+!MESSAGE 0%
+
+!ENTRY ADWinProcess - 16:09:03.166 1 0 2026-11-25 16:09:03.166
+!MESSAGE 9%
+
+!ENTRY ADWinProcess - 16:09:03.216 1 0 2026-11-25 16:09:03.216
+!MESSAGE 35%
+
+!ENTRY ADWinProcess - 16:09:03.221 1 0 2026-11-25 16:09:03.221
+!MESSAGE 42%
+
+!ENTRY ADWinProcess - 16:09:03.240 1 0 2026-11-25 16:09:03.241
+!MESSAGE 45%
+
+!ENTRY ADWinProcess - 16:09:03.247 1 0 2026-11-25 16:09:03.247
+!MESSAGE 92%
+
+!ENTRY ADWinProcess - 16:09:03.292 1 0 2026-11-25 16:09:03.292
+!MESSAGE 96%
+
+!ENTRY ADWinProcess - 16:09:03.294 1 0 2026-11-25 16:09:03.295
+!MESSAGE Process compiled. Codesize: 7472 Workspacesize: 976 Stacksize: 80 Byte 
+
+!ENTRY ADWinProcess - 16:09:03.299 1 0 2026-11-25 16:09:03.299
+!MESSAGE Version courante des librairies : 1.0.0.202611250858
+
+!ENTRY ADWinProcess - 16:09:03.300 1 0 2026-11-25 16:09:03.300
+!MESSAGE Version des librairies utilisée par la configuration d'acquisition : 1.0.0.202611250858
+
+!ENTRY CompileProcessAction - 16:09:03.302 1 0 2026-11-25 16:09:03.302
+!MESSAGE La compilation du processus "home" a réussi
+
+!ENTRY ADWinProcess - 16:09:03.332 1 0 2026-11-25 16:09:03.332
+!MESSAGE 
+
+!ENTRY ADWinProcess - 16:09:03.333 1 0 2026-11-25 16:09:03.333
+!MESSAGE C:\Users\buloup\Desktop\Docometre>"C:\ADwin\ADbasic\ADbasicCompiler.exe" /M "C:\Users\buloup\Documents\GIT\Interface_IAI\DOCO_W\\IAI\BinSource\move.BAS" /A"C:\Users\buloup\Documents\GIT\Interface_IAI\DOCO_W\\IAI\BinSource\move" /SGII /P11  2>move.err 
+
+!ENTRY ADWinProcess - 16:09:03.346 1 0 2026-11-25 16:09:03.346
+!MESSAGE ADbasicCompiler Version 5.00.56 11.12.2024
+
+!ENTRY ADWinProcess - 16:09:03.346 1 0 2026-11-25 16:09:03.346
+!MESSAGE 0%
+
+!ENTRY ADWinProcess - 16:09:03.378 1 0 2026-11-25 16:09:03.378
+!MESSAGE 9%
+
+!ENTRY ADWinProcess - 16:09:03.428 1 0 2026-11-25 16:09:03.429
+!MESSAGE 35%
+
+!ENTRY ADWinProcess - 16:09:03.433 1 0 2026-11-25 16:09:03.433
+!MESSAGE 42%
+
+!ENTRY ADWinProcess - 16:09:03.453 1 0 2026-11-25 16:09:03.454
+!MESSAGE 45%
+
+!ENTRY ADWinProcess - 16:09:03.461 1 0 2026-11-25 16:09:03.461
+!MESSAGE 92%
+
+!ENTRY ADWinProcess - 16:09:03.508 1 0 2026-11-25 16:09:03.508
+!MESSAGE 96%
+
+!ENTRY ADWinProcess - 16:09:03.514 1 0 2026-11-25 16:09:03.514
+!MESSAGE Process compiled. Codesize: 8384 Workspacesize: 976 Stacksize: 112 Byte 
+
+!ENTRY ADWinProcess - 16:09:03.519 1 0 2026-11-25 16:09:03.520
+!MESSAGE Version courante des librairies : 1.0.0.202611250858
+
+!ENTRY ADWinProcess - 16:09:03.520 1 0 2026-11-25 16:09:03.520
+!MESSAGE Version des librairies utilisée par la configuration d'acquisition : 1.0.0.202611250858
+
+!ENTRY CompileProcessAction - 16:09:03.523 1 0 2026-11-25 16:09:03.523
+!MESSAGE La compilation du processus "move" a réussi
+
+!ENTRY ADWinProcess - 16:12:54.044 1 0 2026-11-25 16:12:54.044
+!MESSAGE 
+
+!ENTRY ADWinProcess - 16:12:54.044 1 0 2026-11-25 16:12:54.044
+!MESSAGE C:\Users\buloup\Desktop\Docometre>"C:\ADwin\ADbasic\ADbasicCompiler.exe" /M "C:\Users\buloup\Documents\GIT\Interface_IAI\DOCO_W\\IAI\BinSource\move.BAS" /A"C:\Users\buloup\Documents\GIT\Interface_IAI\DOCO_W\\IAI\BinSource\move" /SGII /P11  2>move.err 
+
+!ENTRY ADWinProcess - 16:12:54.057 1 0 2026-11-25 16:12:54.057
+!MESSAGE ADbasicCompiler Version 5.00.56 11.12.2024
+
+!ENTRY ADWinProcess - 16:12:54.058 1 0 2026-11-25 16:12:54.058
+!MESSAGE 0%
+
+!ENTRY ADWinProcess - 16:12:54.090 1 0 2026-11-25 16:12:54.090
+!MESSAGE 9%
+
+!ENTRY ADWinProcess - 16:12:54.140 1 0 2026-11-25 16:12:54.140
+!MESSAGE 35%
+
+!ENTRY ADWinProcess - 16:12:54.145 1 0 2026-11-25 16:12:54.145
+!MESSAGE 42%
+
+!ENTRY ADWinProcess - 16:12:54.167 1 0 2026-11-25 16:12:54.167
+!MESSAGE 45%
+
+!ENTRY ADWinProcess - 16:12:54.174 1 0 2026-11-25 16:12:54.174
+!MESSAGE 92%
+
+!ENTRY ADWinProcess - 16:12:54.221 1 0 2026-11-25 16:12:54.221
+!MESSAGE 96%
+
+!ENTRY ADWinProcess - 16:12:54.227 1 0 2026-11-25 16:12:54.227
+!MESSAGE Process compiled. Codesize: 8416 Workspacesize: 976 Stacksize: 112 Byte 
+
+!ENTRY ADWinProcess - 16:12:54.231 1 0 2026-11-25 16:12:54.232
+!MESSAGE Version courante des librairies : 1.0.0.202611250858
+
+!ENTRY ADWinProcess - 16:12:54.232 1 0 2026-11-25 16:12:54.232
+!MESSAGE Version des librairies utilisée par la configuration d'acquisition : 1.0.0.202611250858
+
+!ENTRY CompileProcessAction - 16:12:54.239 1 0 2026-11-25 16:12:54.239
+!MESSAGE La compilation du processus "move" a réussi
+
+!ENTRY ADWinProcess - 16:19:01.873 1 0 2026-11-25 16:19:01.873
+!MESSAGE 
+
+!ENTRY ADWinProcess - 16:19:01.873 1 0 2026-11-25 16:19:01.874
+!MESSAGE C:\Users\buloup\Desktop\Docometre>"C:\ADwin\ADbasic\ADbasicCompiler.exe" /M "C:\Users\buloup\Documents\GIT\Interface_IAI\DOCO_W\\IAI\BinSource\home.BAS" /A"C:\Users\buloup\Documents\GIT\Interface_IAI\DOCO_W\\IAI\BinSource\home" /SGII /P11  2>home.err 
+
+!ENTRY ADWinProcess - 16:19:01.887 1 0 2026-11-25 16:19:01.888
+!MESSAGE ADbasicCompiler Version 5.00.56 11.12.2024
+
+!ENTRY ADWinProcess - 16:19:01.888 1 0 2026-11-25 16:19:01.888
+!MESSAGE 0%
+
+!ENTRY ADWinProcess - 16:19:01.921 1 0 2026-11-25 16:19:01.921
+!MESSAGE 9%
+
+!ENTRY ADWinProcess - 16:19:01.974 1 0 2026-11-25 16:19:01.974
+!MESSAGE 35%
+
+!ENTRY ADWinProcess - 16:19:01.980 1 0 2026-11-25 16:19:01.980
+!MESSAGE 42%
+
+!ENTRY ADWinProcess - 16:19:02.001 1 0 2026-11-25 16:19:02.001
+!MESSAGE 45%
+
+!ENTRY ADWinProcess - 16:19:02.008 1 0 2026-11-25 16:19:02.008
+!MESSAGE 92%
+
+!ENTRY ADWinProcess - 16:19:02.053 1 0 2026-11-25 16:19:02.053
+!MESSAGE 96%
+
+!ENTRY ADWinProcess - 16:19:02.061 1 0 2026-11-25 16:19:02.062
+!MESSAGE Process compiled. Codesize: 7680 Workspacesize: 976 Stacksize: 80 Byte 
+
+!ENTRY ADWinProcess - 16:19:02.066 1 0 2026-11-25 16:19:02.067
+!MESSAGE Version courante des librairies : 1.0.0.202611250858
+
+!ENTRY ADWinProcess - 16:19:02.067 1 0 2026-11-25 16:19:02.067
+!MESSAGE Version des librairies utilisée par la configuration d'acquisition : 1.0.0.202611250858
+
+!ENTRY CompileProcessAction - 16:19:02.070 1 0 2026-11-25 16:19:02.070
+!MESSAGE La compilation du processus "home" a réussi
+
+!ENTRY ADWinProcess - 16:20:04.217 1 0 2026-11-25 16:20:04.218
+!MESSAGE 
+
+!ENTRY ADWinProcess - 16:20:04.218 1 0 2026-11-25 16:20:04.218
+!MESSAGE C:\Users\buloup\Desktop\Docometre>"C:\ADwin\ADbasic\ADbasicCompiler.exe" /M "C:\Users\buloup\Documents\GIT\Interface_IAI\DOCO_W\\IAI\BinSource\home.BAS" /A"C:\Users\buloup\Documents\GIT\Interface_IAI\DOCO_W\\IAI\BinSource\home" /SGII /P11  2>home.err 
+
+!ENTRY ADWinProcess - 16:20:04.231 1 0 2026-11-25 16:20:04.231
+!MESSAGE ADbasicCompiler Version 5.00.56 11.12.2024
+
+!ENTRY ADWinProcess - 16:20:04.231 1 0 2026-11-25 16:20:04.231
+!MESSAGE 0%
+
+!ENTRY ADWinProcess - 16:20:04.263 1 0 2026-11-25 16:20:04.263
+!MESSAGE 9%
+
+!ENTRY ADWinProcess - 16:20:04.314 1 0 2026-11-25 16:20:04.314
+!MESSAGE 35%
+
+!ENTRY ADWinProcess - 16:20:04.319 1 0 2026-11-25 16:20:04.319
+!MESSAGE 42%
+
+!ENTRY ADWinProcess - 16:20:04.341 1 0 2026-11-25 16:20:04.341
+!MESSAGE 45%
+
+!ENTRY ADWinProcess - 16:20:04.348 1 0 2026-11-25 16:20:04.348
+!MESSAGE 92%
+
+!ENTRY ADWinProcess - 16:20:04.393 1 0 2026-11-25 16:20:04.393
+!MESSAGE 96%
+
+!ENTRY ADWinProcess - 16:20:04.400 1 0 2026-11-25 16:20:04.400
+!MESSAGE Process compiled. Codesize: 7712 Workspacesize: 976 Stacksize: 80 Byte 
+
+!ENTRY ADWinProcess - 16:20:04.405 1 0 2026-11-25 16:20:04.405
+!MESSAGE Version courante des librairies : 1.0.0.202611250858
+
+!ENTRY ADWinProcess - 16:20:04.405 1 0 2026-11-25 16:20:04.405
+!MESSAGE Version des librairies utilisée par la configuration d'acquisition : 1.0.0.202611250858
+
+!ENTRY Warning 2 0 2026-11-25 16:20:04.408
+!MESSAGE Dans le segment LOOP => IF Block sans branche "false" : "IF (time >= 0.1) THEN"
+
+!ENTRY CompileProcessAction - 16:20:04.417 1 0 2026-11-25 16:20:04.418
+!MESSAGE La compilation du processus "home" a réussi
+
+!ENTRY ADWinProcess - 16:22:06.603 1 0 2026-11-25 16:22:06.603
+!MESSAGE 
+
+!ENTRY ADWinProcess - 16:22:06.604 1 0 2026-11-25 16:22:06.604
+!MESSAGE C:\Users\buloup\Desktop\Docometre>"C:\ADwin\ADbasic\ADbasicCompiler.exe" /M "C:\Users\buloup\Documents\GIT\Interface_IAI\DOCO_W\\IAI\BinSource\home.BAS" /A"C:\Users\buloup\Documents\GIT\Interface_IAI\DOCO_W\\IAI\BinSource\home" /SGII /P11  2>home.err 
+
+!ENTRY ADWinProcess - 16:22:06.617 1 0 2026-11-25 16:22:06.617
+!MESSAGE ADbasicCompiler Version 5.00.56 11.12.2024
+
+!ENTRY ADWinProcess - 16:22:06.618 1 0 2026-11-25 16:22:06.618
+!MESSAGE 0%
+
+!ENTRY ADWinProcess - 16:22:06.651 1 0 2026-11-25 16:22:06.651
+!MESSAGE 9%
+
+!ENTRY ADWinProcess - 16:22:06.703 1 0 2026-11-25 16:22:06.703
+!MESSAGE 35%
+
+!ENTRY ADWinProcess - 16:22:06.708 1 0 2026-11-25 16:22:06.708
+!MESSAGE 42%
+
+!ENTRY ADWinProcess - 16:22:06.729 1 0 2026-11-25 16:22:06.730
+!MESSAGE 45%
+
+!ENTRY ADWinProcess - 16:22:06.736 1 0 2026-11-25 16:22:06.737
+!MESSAGE 92%
+
+!ENTRY ADWinProcess - 16:22:06.782 1 0 2026-11-25 16:22:06.783
+!MESSAGE 96%
+
+!ENTRY ADWinProcess - 16:22:06.789 1 0 2026-11-25 16:22:06.789
+!MESSAGE Process compiled. Codesize: 7696 Workspacesize: 976 Stacksize: 80 Byte 
+
+!ENTRY ADWinProcess - 16:22:06.794 1 0 2026-11-25 16:22:06.794
+!MESSAGE Version courante des librairies : 1.0.0.202611250858
+
+!ENTRY ADWinProcess - 16:22:06.794 1 0 2026-11-25 16:22:06.794
+!MESSAGE Version des librairies utilisée par la configuration d'acquisition : 1.0.0.202611250858
+
+!ENTRY Warning 2 0 2026-11-25 16:22:06.795
+!MESSAGE Dans le segment LOOP => IF Block sans branche "false" : "IF (time >= 1) THEN"
+
+!ENTRY CompileProcessAction - 16:22:06.806 1 0 2026-11-25 16:22:06.806
+!MESSAGE La compilation du processus "home" a réussi
+
+!ENTRY Docometre 4 0 2026-11-25 16:22:14.497
+!MESSAGE org.eclipse.core.runtime.OperationCanceledException: Operation annulée par l'utilisateur
+Stack trace :
+fr.univamu.ism.docometre.dacqsystems.Process.preExecute(Process.java:266)
+fr.univamu.ism.docometre.dacqsystems.ExperimentScheduler$RunProcessJob.run(ExperimentScheduler.java:191)
+org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+
+!ENTRY GLDataEditor - 16:24:23.877 1 0 2026-11-25 16:24:23.878
+!MESSAGE 1001 échantillons lus (HEND)
+
+!ENTRY ADWinProcess - 16:27:06.945 1 0 2026-11-25 16:27:06.946
+!MESSAGE 
+
+!ENTRY ADWinProcess - 16:27:06.946 1 0 2026-11-25 16:27:06.946
+!MESSAGE C:\Users\buloup\Desktop\Docometre>"C:\ADwin\ADbasic\ADbasicCompiler.exe" /M "C:\Users\buloup\Documents\GIT\Interface_IAI\DOCO_W\\IAI\BinSource\move.BAS" /A"C:\Users\buloup\Documents\GIT\Interface_IAI\DOCO_W\\IAI\BinSource\move" /SGII /P11  2>move.err 
+
+!ENTRY ADWinProcess - 16:27:06.958 1 0 2026-11-25 16:27:06.959
+!MESSAGE ADbasicCompiler Version 5.00.56 11.12.2024
+
+!ENTRY ADWinProcess - 16:27:06.959 1 0 2026-11-25 16:27:06.959
+!MESSAGE 0%
+
+!ENTRY ADWinProcess - 16:27:06.991 1 0 2026-11-25 16:27:06.991
+!MESSAGE 9%
+
+!ENTRY ADWinProcess - 16:27:07.041 1 0 2026-11-25 16:27:07.042
+!MESSAGE 35%
+
+!ENTRY ADWinProcess - 16:27:07.046 1 0 2026-11-25 16:27:07.046
+!MESSAGE 42%
+
+!ENTRY ADWinProcess - 16:27:07.067 1 0 2026-11-25 16:27:07.067
+!MESSAGE 45%
+
+!ENTRY ADWinProcess - 16:27:07.074 1 0 2026-11-25 16:27:07.074
+!MESSAGE 92%
+
+!ENTRY ADWinProcess - 16:27:07.121 1 0 2026-11-25 16:27:07.121
+!MESSAGE 96%
+
+!ENTRY ADWinProcess - 16:27:07.128 1 0 2026-11-25 16:27:07.128
+!MESSAGE Process compiled. Codesize: 8416 Workspacesize: 976 Stacksize: 112 Byte 
+
+!ENTRY ADWinProcess - 16:27:07.133 1 0 2026-11-25 16:27:07.133
+!MESSAGE Version courante des librairies : 1.0.0.202611250858
+
+!ENTRY ADWinProcess - 16:27:07.133 1 0 2026-11-25 16:27:07.133
+!MESSAGE Version des librairies utilisée par la configuration d'acquisition : 1.0.0.202611250858
+
+!ENTRY CompileProcessAction - 16:27:07.139 1 0 2026-11-25 16:27:07.139
+!MESSAGE La compilation du processus "move" a réussi
+
+!ENTRY GLDataEditor - 16:28:16.602 1 0 2026-11-25 16:28:16.602
+!MESSAGE 2002 échantillons lus (DIO_PP)
+
+!ENTRY GLDataEditor - 16:29:33.872 1 0 2026-11-25 16:29:33.872
+!MESSAGE 2002 échantillons lus (DIO_NP)
+
+!ENTRY ADWinProcess - 16:30:54.827 1 0 2026-11-25 16:30:54.828
+!MESSAGE 
+
+!ENTRY ADWinProcess - 16:30:54.828 1 0 2026-11-25 16:30:54.828
+!MESSAGE C:\Users\buloup\Desktop\Docometre>"C:\ADwin\ADbasic\ADbasicCompiler.exe" /M "C:\Users\buloup\Documents\GIT\Interface_IAI\DOCO_W\\IAI\BinSource\home.BAS" /A"C:\Users\buloup\Documents\GIT\Interface_IAI\DOCO_W\\IAI\BinSource\home" /SGII /P11  2>home.err 
+
+!ENTRY ADWinProcess - 16:30:54.841 1 0 2026-11-25 16:30:54.841
+!MESSAGE ADbasicCompiler Version 5.00.56 11.12.2024
+
+!ENTRY ADWinProcess - 16:30:54.842 1 0 2026-11-25 16:30:54.842
+!MESSAGE 0%
+
+!ENTRY ADWinProcess - 16:30:54.875 1 0 2026-11-25 16:30:54.875
+!MESSAGE 9%
+
+!ENTRY ADWinProcess - 16:30:54.926 1 0 2026-11-25 16:30:54.926
+!MESSAGE 35%
+
+!ENTRY ADWinProcess - 16:30:54.931 1 0 2026-11-25 16:30:54.931
+!MESSAGE 42%
+
+!ENTRY ADWinProcess - 16:30:54.952 1 0 2026-11-25 16:30:54.952
+!MESSAGE 45%
+
+!ENTRY ADWinProcess - 16:30:54.959 1 0 2026-11-25 16:30:54.959
+!MESSAGE 92%
+
+!ENTRY ADWinProcess - 16:30:55.006 1 0 2026-11-25 16:30:55.007
+!MESSAGE 96%
+
+!ENTRY ADWinProcess - 16:30:55.014 1 0 2026-11-25 16:30:55.014
+!MESSAGE Process compiled. Codesize: 7696 Workspacesize: 976 Stacksize: 80 Byte 
+
+!ENTRY ADWinProcess - 16:30:55.021 1 0 2026-11-25 16:30:55.021
+!MESSAGE Version courante des librairies : 1.0.0.202611250858
+
+!ENTRY ADWinProcess - 16:30:55.021 1 0 2026-11-25 16:30:55.021
+!MESSAGE Version des librairies utilisée par la configuration d'acquisition : 1.0.0.202611250858
+
+!ENTRY Warning 2 0 2026-11-25 16:30:55.022
+!MESSAGE Dans le segment LOOP => IF Block sans branche "false" : "IF (time >= 1) THEN"
+
+!ENTRY CompileProcessAction - 16:30:55.030 1 0 2026-11-25 16:30:55.031
+!MESSAGE La compilation du processus "home" a réussi
+
+!ENTRY ADWinProcess - 16:30:55.064 1 0 2026-11-25 16:30:55.064
+!MESSAGE 
+
+!ENTRY ADWinProcess - 16:30:55.064 1 0 2026-11-25 16:30:55.064
+!MESSAGE C:\Users\buloup\Desktop\Docometre>"C:\ADwin\ADbasic\ADbasicCompiler.exe" /M "C:\Users\buloup\Documents\GIT\Interface_IAI\DOCO_W\\IAI\BinSource\move.BAS" /A"C:\Users\buloup\Documents\GIT\Interface_IAI\DOCO_W\\IAI\BinSource\move" /SGII /P11  2>move.err 
+
+!ENTRY ADWinProcess - 16:30:55.076 1 0 2026-11-25 16:30:55.076
+!MESSAGE ADbasicCompiler Version 5.00.56 11.12.2024
+
+!ENTRY ADWinProcess - 16:30:55.077 1 0 2026-11-25 16:30:55.077
+!MESSAGE 0%
+
+!ENTRY ADWinProcess - 16:30:55.109 1 0 2026-11-25 16:30:55.109
+!MESSAGE 9%
+
+!ENTRY ADWinProcess - 16:30:55.161 1 0 2026-11-25 16:30:55.161
+!MESSAGE 35%
+
+!ENTRY ADWinProcess - 16:30:55.165 1 0 2026-11-25 16:30:55.166
+!MESSAGE 42%
+
+!ENTRY ADWinProcess - 16:30:55.187 1 0 2026-11-25 16:30:55.187
+!MESSAGE 45%
+
+!ENTRY ADWinProcess - 16:30:55.194 1 0 2026-11-25 16:30:55.194
+!MESSAGE 92%
+
+!ENTRY ADWinProcess - 16:30:55.241 1 0 2026-11-25 16:30:55.241
+!MESSAGE 96%
+
+!ENTRY ADWinProcess - 16:30:55.248 1 0 2026-11-25 16:30:55.248
+!MESSAGE Process compiled. Codesize: 8416 Workspacesize: 976 Stacksize: 112 Byte 
+
+!ENTRY ADWinProcess - 16:30:55.252 1 0 2026-11-25 16:30:55.252
+!MESSAGE Version courante des librairies : 1.0.0.202611250858
+
+!ENTRY ADWinProcess - 16:30:55.252 1 0 2026-11-25 16:30:55.252
+!MESSAGE Version des librairies utilisée par la configuration d'acquisition : 1.0.0.202611250858
+
+!ENTRY CompileProcessAction - 16:30:55.257 1 0 2026-11-25 16:30:55.258
+!MESSAGE La compilation du processus "move" a réussi
+
+!ENTRY GLDataEditor - 16:31:39.796 1 0 2026-11-25 16:31:39.796
+!MESSAGE 47019 échantillons lus (DIO_PP)
+
+!ENTRY ADWinProcess - 16:32:38.658 1 0 2026-11-25 16:32:38.658
+!MESSAGE 
+
+!ENTRY ADWinProcess - 16:32:38.658 1 0 2026-11-25 16:32:38.658
+!MESSAGE C:\Users\buloup\Desktop\Docometre>"C:\ADwin\ADbasic\ADbasicCompiler.exe" /M "C:\Users\buloup\Documents\GIT\Interface_IAI\DOCO_W\\IAI\BinSource\move.BAS" /A"C:\Users\buloup\Documents\GIT\Interface_IAI\DOCO_W\\IAI\BinSource\move" /SGII /P11  2>move.err 
+
+!ENTRY ADWinProcess - 16:32:38.670 1 0 2026-11-25 16:32:38.670
+!MESSAGE ADbasicCompiler Version 5.00.56 11.12.2024
+
+!ENTRY ADWinProcess - 16:32:38.670 1 0 2026-11-25 16:32:38.670
+!MESSAGE 0%
+
+!ENTRY ADWinProcess - 16:32:38.703 1 0 2026-11-25 16:32:38.703
+!MESSAGE 9%
+
+!ENTRY ADWinProcess - 16:32:38.753 1 0 2026-11-25 16:32:38.753
+!MESSAGE 35%
+
+!ENTRY ADWinProcess - 16:32:38.758 1 0 2026-11-25 16:32:38.758
+!MESSAGE 42%
+
+!ENTRY ADWinProcess - 16:32:38.778 1 0 2026-11-25 16:32:38.779
+!MESSAGE 45%
+
+!ENTRY ADWinProcess - 16:32:38.785 1 0 2026-11-25 16:32:38.786
+!MESSAGE 92%
+
+!ENTRY ADWinProcess - 16:32:38.831 1 0 2026-11-25 16:32:38.831
+!MESSAGE 96%
+
+!ENTRY ADWinProcess - 16:32:38.838 1 0 2026-11-25 16:32:38.838
+!MESSAGE Process compiled. Codesize: 8416 Workspacesize: 976 Stacksize: 112 Byte 
+
+!ENTRY ADWinProcess - 16:32:38.842 1 0 2026-11-25 16:32:38.842
+!MESSAGE Version courante des librairies : 1.0.0.202611250858
+
+!ENTRY ADWinProcess - 16:32:38.843 1 0 2026-11-25 16:32:38.843
+!MESSAGE Version des librairies utilisée par la configuration d'acquisition : 1.0.0.202611250858
+
+!ENTRY CompileProcessAction - 16:32:38.847 1 0 2026-11-25 16:32:38.847
+!MESSAGE La compilation du processus "move" a réussi
+
+!ENTRY GLDataEditor - 16:33:34.764 1 0 2026-11-25 16:33:34.765
+!MESSAGE 48002 échantillons lus (DIO_PP)
+
+!ENTRY GLDataEditor - 16:36:14.140 1 0 2026-11-25 16:36:14.140
+!MESSAGE 48002 échantillons lus (DIO_CSTP)
+
+!ENTRY GLDataEditor - 16:36:17.337 1 0 2026-11-25 16:36:17.337
+!MESSAGE 48002 échantillons lus (DIO_HOME)
+
+!ENTRY GLDataEditor - 16:36:21.195 1 0 2026-11-25 16:36:21.195
+!MESSAGE 48002 échantillons lus (DIO_NP)
+
+!ENTRY GLDataEditor - 16:36:23.739 1 0 2026-11-25 16:36:23.740
+!MESSAGE 48002 échantillons lus (DIO_PP)
+
+!ENTRY GLDataEditor - 16:36:26.479 1 0 2026-11-25 16:36:26.479
+!MESSAGE 48002 échantillons lus (DIO_RES)
+
+!ENTRY GLDataEditor - 16:36:29.019 1 0 2026-11-25 16:36:29.019
+!MESSAGE 48002 échantillons lus (DIO_RSTR)
+
+!ENTRY GLDataEditor - 16:36:31.526 1 0 2026-11-25 16:36:31.526
+!MESSAGE 48002 échantillons lus (DIO_SON)
+
+!ENTRY GLDataEditor - 16:36:37.827 1 0 2026-11-25 16:36:37.828
+!MESSAGE 48002 échantillons lus (EMGS)
+
+!ENTRY GLDataEditor - 16:36:48.624 1 0 2026-11-25 16:36:48.624
+!MESSAGE 48002 échantillons lus (HEND)
+
+!ENTRY ADWinProcess - 16:46:15.707 1 0 2026-11-25 16:46:15.707
+!MESSAGE 
+
+!ENTRY ADWinProcess - 16:46:15.707 1 0 2026-11-25 16:46:15.707
+!MESSAGE C:\Users\buloup\Desktop\Docometre>"C:\ADwin\ADbasic\ADbasicCompiler.exe" /M "C:\Users\buloup\Documents\GIT\Interface_IAI\DOCO_W\\IAI\BinSource\move.BAS" /A"C:\Users\buloup\Documents\GIT\Interface_IAI\DOCO_W\\IAI\BinSource\move" /SGII /P11  2>move.err 
+
+!ENTRY ADWinProcess - 16:46:15.719 1 0 2026-11-25 16:46:15.720
+!MESSAGE ADbasicCompiler Version 5.00.56 11.12.2024
+
+!ENTRY ADWinProcess - 16:46:15.720 1 0 2026-11-25 16:46:15.720
+!MESSAGE 0%
+
+!ENTRY ADWinProcess - 16:46:15.752 1 0 2026-11-25 16:46:15.752
+!MESSAGE 9%
+
+!ENTRY ADWinProcess - 16:46:15.803 1 0 2026-11-25 16:46:15.803
+!MESSAGE 35%
+
+!ENTRY ADWinProcess - 16:46:15.808 1 0 2026-11-25 16:46:15.809
+!MESSAGE 42%
+
+!ENTRY ADWinProcess - 16:46:15.830 1 0 2026-11-25 16:46:15.830
+!MESSAGE 45%
+
+!ENTRY ADWinProcess - 16:46:15.838 1 0 2026-11-25 16:46:15.838
+!MESSAGE 92%
+
+!ENTRY ADWinProcess - 16:46:15.884 1 0 2026-11-25 16:46:15.884
+!MESSAGE 96%
+
+!ENTRY ADWinProcess - 16:46:15.891 1 0 2026-11-25 16:46:15.891
+!MESSAGE Process compiled. Codesize: 8400 Workspacesize: 976 Stacksize: 112 Byte 
+
+!ENTRY ADWinProcess - 16:46:15.896 1 0 2026-11-25 16:46:15.896
+!MESSAGE Version courante des librairies : 1.0.0.202611250858
+
+!ENTRY ADWinProcess - 16:46:15.897 1 0 2026-11-25 16:46:15.897
+!MESSAGE Version des librairies utilisée par la configuration d'acquisition : 1.0.0.202611250858
+
+!ENTRY CompileProcessAction - 16:46:15.902 1 0 2026-11-25 16:46:15.903
+!MESSAGE La compilation du processus "move" a réussi
+
+!ENTRY ADWinProcess - 16:46:44.378 1 0 2026-11-25 16:46:44.378
+!MESSAGE 
+
+!ENTRY ADWinProcess - 16:46:44.379 1 0 2026-11-25 16:46:44.379
+!MESSAGE C:\Users\buloup\Desktop\Docometre>"C:\ADwin\ADbasic\ADbasicCompiler.exe" /M "C:\Users\buloup\Documents\GIT\Interface_IAI\DOCO_W\\IAI\BinSource\move.BAS" /A"C:\Users\buloup\Documents\GIT\Interface_IAI\DOCO_W\\IAI\BinSource\move" /SGII /P11  2>move.err 
+
+!ENTRY ADWinProcess - 16:46:44.391 1 0 2026-11-25 16:46:44.391
+!MESSAGE ADbasicCompiler Version 5.00.56 11.12.2024
+
+!ENTRY ADWinProcess - 16:46:44.391 1 0 2026-11-25 16:46:44.392
+!MESSAGE 0%
+
+!ENTRY ADWinProcess - 16:46:44.424 1 0 2026-11-25 16:46:44.424
+!MESSAGE 9%
+
+!ENTRY ADWinProcess - 16:46:44.473 1 0 2026-11-25 16:46:44.473
+!MESSAGE 35%
+
+!ENTRY ADWinProcess - 16:46:44.478 1 0 2026-11-25 16:46:44.478
+!MESSAGE 42%
+
+!ENTRY ADWinProcess - 16:46:44.500 1 0 2026-11-25 16:46:44.500
+!MESSAGE 45%
+
+!ENTRY ADWinProcess - 16:46:44.507 1 0 2026-11-25 16:46:44.507
+!MESSAGE 92%
+
+!ENTRY ADWinProcess - 16:46:44.553 1 0 2026-11-25 16:46:44.553
+!MESSAGE 96%
+
+!ENTRY ADWinProcess - 16:46:44.559 1 0 2026-11-25 16:46:44.560
+!MESSAGE Process compiled. Codesize: 8400 Workspacesize: 976 Stacksize: 112 Byte 
+
+!ENTRY ADWinProcess - 16:46:44.564 1 0 2026-11-25 16:46:44.565
+!MESSAGE Version courante des librairies : 1.0.0.202611250858
+
+!ENTRY ADWinProcess - 16:46:44.565 1 0 2026-11-25 16:46:44.565
+!MESSAGE Version des librairies utilisée par la configuration d'acquisition : 1.0.0.202611250858
+
+!ENTRY CompileProcessAction - 16:46:44.567 1 0 2026-11-25 16:46:44.567
+!MESSAGE La compilation du processus "move" a réussi
+
+!ENTRY GLDataEditor - 16:47:02.078 1 0 2026-11-25 16:47:02.078
+!MESSAGE 2001 échantillons lus (DIO_ALM)
+
+!ENTRY GLDataEditor - 16:47:05.419 1 0 2026-11-25 16:47:05.420
+!MESSAGE 2001 échantillons lus (DIO_CSTP)
+
+!ENTRY GLDataEditor - 16:47:13.497 1 0 2026-11-25 16:47:13.498
+!MESSAGE 2001 échantillons lus (DIO_HOME)
+
+!ENTRY GLDataEditor - 16:47:20.839 1 0 2026-11-25 16:47:20.839
+!MESSAGE 2001 échantillons lus (DIO_HEND)
+
+!ENTRY ADWinProcess - 16:50:58.554 1 0 2026-11-25 16:50:58.554
+!MESSAGE 
+
+!ENTRY ADWinProcess - 16:50:58.554 1 0 2026-11-25 16:50:58.554
+!MESSAGE C:\Users\buloup\Desktop\Docometre>"C:\ADwin\ADbasic\ADbasicCompiler.exe" /M "C:\Users\buloup\Documents\GIT\Interface_IAI\DOCO_W\\IAI\BinSource\home.BAS" /A"C:\Users\buloup\Documents\GIT\Interface_IAI\DOCO_W\\IAI\BinSource\home" /SGII /P11  2>home.err 
+
+!ENTRY ADWinProcess - 16:50:58.566 1 0 2026-11-25 16:50:58.566
+!MESSAGE ADbasicCompiler Version 5.00.56 11.12.2024
+
+!ENTRY ADWinProcess - 16:50:58.567 1 0 2026-11-25 16:50:58.567
+!MESSAGE 0%
+
+!ENTRY ADWinProcess - 16:50:58.599 1 0 2026-11-25 16:50:58.599
+!MESSAGE 9%
+
+!ENTRY ADWinProcess - 16:50:58.650 1 0 2026-11-25 16:50:58.650
+!MESSAGE 35%
+
+!ENTRY ADWinProcess - 16:50:58.655 1 0 2026-11-25 16:50:58.655
+!MESSAGE 42%
+
+!ENTRY ADWinProcess - 16:50:58.680 1 0 2026-11-25 16:50:58.680
+!MESSAGE 45%
+
+!ENTRY Error 4 0 2026-11-25 16:50:58.686
+!MESSAGE Error: No: 10 Variable is not defined or a hexadecimal value must begin with a numeral. Please prefix a 0 to the hexadecimal value. line: IF (HEND  =  1) THEN file: C:\Users\buloup\Documents\GIT\Interface_IAI\DOCO_W\\IAI\BinSource\home.BAS line no.: 289 
+
+!ENTRY Error 4 0 2026-11-25 16:50:58.687
+!MESSAGE Compilation aborted !
+
+!ENTRY Error 4 0 2026-11-25 16:50:58.687
+!MESSAGE 1 error(s), 0 warning(s)
+
+!ENTRY ADWinProcess - 16:50:58.688 1 0 2026-11-25 16:50:58.688
+!MESSAGE Version courante des librairies : 1.0.0.202611250858
+
+!ENTRY ADWinProcess - 16:50:58.688 1 0 2026-11-25 16:50:58.688
+!MESSAGE Version des librairies utilisée par la configuration d'acquisition : 1.0.0.202611250858
+
+!ENTRY Error 4 0 2026-11-25 16:50:58.702
+!MESSAGE java.lang.Exception: Erreurs de compilation ADBasic
+Stack trace :
+fr.univamu.ism.docometre.dacqsystems.adwin.ADWinProcess.compile(ADWinProcess.java:517)
+fr.univamu.ism.docometre.actions.CompileProcessAction$CompileJob.run(CompileProcessAction.java:98)
+org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+
+!ENTRY Docometre 4 0 2026-11-25 16:50:58.703
+!MESSAGE Erreur de compilation pour le processus "home"
+!STACK 0
+java.lang.Exception: Erreurs de compilation ADBasic
+	at fr.univamu.ism.docometre.dacqsystems.adwin.ADWinProcess.compile(ADWinProcess.java:517)
+	at fr.univamu.ism.docometre.actions.CompileProcessAction$CompileJob.run(CompileProcessAction.java:98)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY ADWinProcess - 16:51:36.003 1 0 2026-11-25 16:51:36.003
+!MESSAGE 
+
+!ENTRY ADWinProcess - 16:51:36.004 1 0 2026-11-25 16:51:36.004
+!MESSAGE C:\Users\buloup\Desktop\Docometre>"C:\ADwin\ADbasic\ADbasicCompiler.exe" /M "C:\Users\buloup\Documents\GIT\Interface_IAI\DOCO_W\\IAI\BinSource\move.BAS" /A"C:\Users\buloup\Documents\GIT\Interface_IAI\DOCO_W\\IAI\BinSource\move" /SGII /P11  2>move.err 
+
+!ENTRY ADWinProcess - 16:51:36.016 1 0 2026-11-25 16:51:36.017
+!MESSAGE ADbasicCompiler Version 5.00.56 11.12.2024
+
+!ENTRY ADWinProcess - 16:51:36.017 1 0 2026-11-25 16:51:36.017
+!MESSAGE 0%
+
+!ENTRY ADWinProcess - 16:51:36.049 1 0 2026-11-25 16:51:36.049
+!MESSAGE 9%
+
+!ENTRY ADWinProcess - 16:51:36.101 1 0 2026-11-25 16:51:36.101
+!MESSAGE 35%
+
+!ENTRY ADWinProcess - 16:51:36.106 1 0 2026-11-25 16:51:36.106
+!MESSAGE 42%
+
+!ENTRY ADWinProcess - 16:51:36.129 1 0 2026-11-25 16:51:36.129
+!MESSAGE 45%
+
+!ENTRY ADWinProcess - 16:51:36.137 1 0 2026-11-25 16:51:36.137
+!MESSAGE 92%
+
+!ENTRY ADWinProcess - 16:51:36.187 1 0 2026-11-25 16:51:36.188
+!MESSAGE 96%
+
+!ENTRY ADWinProcess - 16:51:36.195 1 0 2026-11-25 16:51:36.195
+!MESSAGE Process compiled. Codesize: 10464 Workspacesize: 1072 Stacksize: 208 Byte 
+
+!ENTRY ADWinProcess - 16:51:36.199 1 0 2026-11-25 16:51:36.199
+!MESSAGE Version courante des librairies : 1.0.0.202611250858
+
+!ENTRY ADWinProcess - 16:51:36.199 1 0 2026-11-25 16:51:36.200
+!MESSAGE Version des librairies utilisée par la configuration d'acquisition : 1.0.0.202611250858
+
+!ENTRY CompileProcessAction - 16:51:36.205 1 0 2026-11-25 16:51:36.205
+!MESSAGE La compilation du processus "move" a réussi
+
+!ENTRY GLDataEditor - 16:52:00.524 1 0 2026-11-25 16:52:00.524
+!MESSAGE 2001 échantillons lus (medianDIO_HEND)
+
+!ENTRY GLDataEditor - 16:52:05.697 1 0 2026-11-25 16:52:05.697
+!MESSAGE 2001 échantillons lus (DIO_HEND)
+
+!ENTRY ADWinProcess - 16:52:21.050 1 0 2026-11-25 16:52:21.050
+!MESSAGE 
+
+!ENTRY ADWinProcess - 16:52:21.050 1 0 2026-11-25 16:52:21.050
+!MESSAGE C:\Users\buloup\Desktop\Docometre>"C:\ADwin\ADbasic\ADbasicCompiler.exe" /M "C:\Users\buloup\Documents\GIT\Interface_IAI\DOCO_W\\IAI\BinSource\move.BAS" /A"C:\Users\buloup\Documents\GIT\Interface_IAI\DOCO_W\\IAI\BinSource\move" /SGII /P11  2>move.err 
+
+!ENTRY ADWinProcess - 16:52:21.062 1 0 2026-11-25 16:52:21.063
+!MESSAGE ADbasicCompiler Version 5.00.56 11.12.2024
+
+!ENTRY ADWinProcess - 16:52:21.063 1 0 2026-11-25 16:52:21.063
+!MESSAGE 0%
+
+!ENTRY ADWinProcess - 16:52:21.095 1 0 2026-11-25 16:52:21.095
+!MESSAGE 9%
+
+!ENTRY ADWinProcess - 16:52:21.146 1 0 2026-11-25 16:52:21.146
+!MESSAGE 35%
+
+!ENTRY ADWinProcess - 16:52:21.151 1 0 2026-11-25 16:52:21.151
+!MESSAGE 42%
+
+!ENTRY ADWinProcess - 16:52:21.174 1 0 2026-11-25 16:52:21.174
+!MESSAGE 45%
+
+!ENTRY ADWinProcess - 16:52:21.182 1 0 2026-11-25 16:52:21.182
+!MESSAGE 92%
+
+!ENTRY ADWinProcess - 16:52:21.232 1 0 2026-11-25 16:52:21.232
+!MESSAGE 96%
+
+!ENTRY ADWinProcess - 16:52:21.239 1 0 2026-11-25 16:52:21.240
+!MESSAGE Process compiled. Codesize: 10464 Workspacesize: 1072 Stacksize: 208 Byte 
+
+!ENTRY ADWinProcess - 16:52:21.244 1 0 2026-11-25 16:52:21.244
+!MESSAGE Version courante des librairies : 1.0.0.202611250858
+
+!ENTRY ADWinProcess - 16:52:21.244 1 0 2026-11-25 16:52:21.244
+!MESSAGE Version des librairies utilisée par la configuration d'acquisition : 1.0.0.202611250858
+
+!ENTRY CompileProcessAction - 16:52:21.250 1 0 2026-11-25 16:52:21.250
+!MESSAGE La compilation du processus "move" a réussi
+
+!ENTRY GLDataEditor - 16:52:32.213 1 0 2026-11-25 16:52:32.213
+!MESSAGE 2001 échantillons lus (medianDIO_HEND)
+
+!ENTRY GLDataEditor - 16:52:38.185 1 0 2026-11-25 16:52:38.185
+!MESSAGE 2001 échantillons lus (DIO_HEND)
+
+!ENTRY ADWinProcess - 16:53:25.144 1 0 2026-11-25 16:53:25.145
+!MESSAGE 
+
+!ENTRY ADWinProcess - 16:53:25.145 1 0 2026-11-25 16:53:25.145
+!MESSAGE C:\Users\buloup\Desktop\Docometre>"C:\ADwin\ADbasic\ADbasicCompiler.exe" /M "C:\Users\buloup\Documents\GIT\Interface_IAI\DOCO_W\\IAI\BinSource\home.BAS" /A"C:\Users\buloup\Documents\GIT\Interface_IAI\DOCO_W\\IAI\BinSource\home" /SGII /P11  2>home.err 
+
+!ENTRY ADWinProcess - 16:53:25.158 1 0 2026-11-25 16:53:25.158
+!MESSAGE ADbasicCompiler Version 5.00.56 11.12.2024
+
+!ENTRY ADWinProcess - 16:53:25.158 1 0 2026-11-25 16:53:25.158
+!MESSAGE 0%
+
+!ENTRY ADWinProcess - 16:53:25.191 1 0 2026-11-25 16:53:25.191
+!MESSAGE 9%
+
+!ENTRY ADWinProcess - 16:53:25.242 1 0 2026-11-25 16:53:25.243
+!MESSAGE 35%
+
+!ENTRY ADWinProcess - 16:53:25.248 1 0 2026-11-25 16:53:25.248
+!MESSAGE 42%
+
+!ENTRY ADWinProcess - 16:53:25.271 1 0 2026-11-25 16:53:25.271
+!MESSAGE 45%
+
+!ENTRY Error 4 0 2026-11-25 16:53:25.277
+!MESSAGE Error: No: 10 Variable is not defined or a hexadecimal value must begin with a numeral. Please prefix a 0 to the hexadecimal value. line: IF (HEND  =  1) THEN file: C:\Users\buloup\Documents\GIT\Interface_IAI\DOCO_W\\IAI\BinSource\home.BAS line no.: 293 
+
+!ENTRY Error 4 0 2026-11-25 16:53:25.278
+!MESSAGE Compilation aborted !
+
+!ENTRY Error 4 0 2026-11-25 16:53:25.279
+!MESSAGE 1 error(s), 0 warning(s)
+
+!ENTRY ADWinProcess - 16:53:25.279 1 0 2026-11-25 16:53:25.279
+!MESSAGE Version courante des librairies : 1.0.0.202611250858
+
+!ENTRY ADWinProcess - 16:53:25.279 1 0 2026-11-25 16:53:25.279
+!MESSAGE Version des librairies utilisée par la configuration d'acquisition : 1.0.0.202611250858
+
+!ENTRY Error 4 0 2026-11-25 16:53:25.285
+!MESSAGE java.lang.Exception: Erreurs de compilation ADBasic
+Stack trace :
+fr.univamu.ism.docometre.dacqsystems.adwin.ADWinProcess.compile(ADWinProcess.java:517)
+fr.univamu.ism.docometre.actions.CompileProcessAction$CompileJob.run(CompileProcessAction.java:98)
+org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+
+!ENTRY Docometre 4 0 2026-11-25 16:53:25.286
+!MESSAGE Erreur de compilation pour le processus "home"
+!STACK 0
+java.lang.Exception: Erreurs de compilation ADBasic
+	at fr.univamu.ism.docometre.dacqsystems.adwin.ADWinProcess.compile(ADWinProcess.java:517)
+	at fr.univamu.ism.docometre.actions.CompileProcessAction$CompileJob.run(CompileProcessAction.java:98)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY ADWinProcess - 16:53:43.170 1 0 2026-11-25 16:53:43.170
+!MESSAGE 
+
+!ENTRY ADWinProcess - 16:53:43.170 1 0 2026-11-25 16:53:43.170
+!MESSAGE C:\Users\buloup\Desktop\Docometre>"C:\ADwin\ADbasic\ADbasicCompiler.exe" /M "C:\Users\buloup\Documents\GIT\Interface_IAI\DOCO_W\\IAI\BinSource\home.BAS" /A"C:\Users\buloup\Documents\GIT\Interface_IAI\DOCO_W\\IAI\BinSource\home" /SGII /P11  2>home.err 
+
+!ENTRY ADWinProcess - 16:53:43.183 1 0 2026-11-25 16:53:43.183
+!MESSAGE ADbasicCompiler Version 5.00.56 11.12.2024
+
+!ENTRY ADWinProcess - 16:53:43.183 1 0 2026-11-25 16:53:43.184
+!MESSAGE 0%
+
+!ENTRY ADWinProcess - 16:53:43.216 1 0 2026-11-25 16:53:43.216
+!MESSAGE 9%
+
+!ENTRY ADWinProcess - 16:53:43.268 1 0 2026-11-25 16:53:43.268
+!MESSAGE 35%
+
+!ENTRY ADWinProcess - 16:53:43.273 1 0 2026-11-25 16:53:43.273
+!MESSAGE 42%
+
+!ENTRY ADWinProcess - 16:53:43.296 1 0 2026-11-25 16:53:43.296
+!MESSAGE 45%
+
+!ENTRY ADWinProcess - 16:53:43.304 1 0 2026-11-25 16:53:43.305
+!MESSAGE 92%
+
+!ENTRY ADWinProcess - 16:53:43.356 1 0 2026-11-25 16:53:43.356
+!MESSAGE 96%
+
+!ENTRY ADWinProcess - 16:53:43.363 1 0 2026-11-25 16:53:43.363
+!MESSAGE Process compiled. Codesize: 9728 Workspacesize: 1072 Stacksize: 208 Byte 
+
+!ENTRY ADWinProcess - 16:53:43.368 1 0 2026-11-25 16:53:43.368
+!MESSAGE Version courante des librairies : 1.0.0.202611250858
+
+!ENTRY ADWinProcess - 16:53:43.368 1 0 2026-11-25 16:53:43.368
+!MESSAGE Version des librairies utilisée par la configuration d'acquisition : 1.0.0.202611250858
+
+!ENTRY CompileProcessAction - 16:53:43.371 1 0 2026-11-25 16:53:43.371
+!MESSAGE La compilation du processus "home" a réussi
+
+!ENTRY Error 4 0 2026-11-25 16:54:10.319
+!MESSAGE java.lang.IllegalArgumentException: A static curve must have at least two samples.
+Stack trace :
+fr.univamu.ism.docometre.chartxyz.CurveData.durationOf(CurveData.java:112)
+fr.univamu.ism.docometre.chartxyz.Curve1DData.<init>(Curve1DData.java:43)
+fr.univamu.ism.docometre.chartxyz.editors.GLDataEditor.loadData(GLDataEditor.java:309)
+fr.univamu.ism.docometre.chartxyz.editors.GLDataEditor.init(GLDataEditor.java:87)
+org.eclipse.ui.internal.EditorReference.initialize(EditorReference.java:353)
+org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.create(CompatibilityPart.java:344)
+java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+java.base/java.lang.reflect.Method.invoke(Method.java:580)
+org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:56)
+org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:977)
+org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:939)
+org.eclipse.e4.core.internal.di.InjectorImpl.internalInject(InjectorImpl.java:139)
+org.eclipse.e4.core.internal.di.InjectorImpl.internalMake(InjectorImpl.java:386)
+org.eclipse.e4.core.internal.di.InjectorImpl.make(InjectorImpl.java:312)
+org.eclipse.e4.core.contexts.ContextInjectionFactory.make(ContextInjectionFactory.java:203)
+org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.createFromBundle(ReflectionContributionFactory.java:90)
+org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.doCreate(ReflectionContributionFactory.java:59)
+org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.create(ReflectionContributionFactory.java:42)
+org.eclipse.ui.internal.WorkbenchContributionFactory.create(WorkbenchContributionFactory.java:46)
+org.eclipse.e4.ui.workbench.renderers.swt.ContributedPartRenderer.createWidget(ContributedPartRenderer.java:134)
+org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createWidget(PartRenderingEngine.java:991)
+org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:658)
+org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:762)
+org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:727)
+org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:711)
+org.eclipse.e4.ui.internal.workbench.PartServiceImpl.lambda$0(PartServiceImpl.java:105)
+org.eclipse.e4.ui.services.internal.events.UIEventHandler.lambda$0(UIEventHandler.java:38)
+org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:183)
+org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:133)
+org.eclipse.swt.widgets.Display.syncExec(Display.java:4853)
+org.eclipse.e4.ui.workbench.swt.DisplayUISynchronize.syncExec(DisplayUISynchronize.java:34)
+org.eclipse.e4.ui.services.internal.events.UIEventHandler.handleEvent(UIEventHandler.java:38)
+org.eclipse.equinox.internal.event.EventHandlerWrapper.handleEvent(EventHandlerWrapper.java:206)
+org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:201)
+org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:1)
+org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:151)
+org.eclipse.equinox.internal.event.EventAdminImpl.dispatchEvent(EventAdminImpl.java:131)
+org.eclipse.equinox.internal.event.EventAdminImpl.sendEvent(EventAdminImpl.java:73)
+org.eclipse.equinox.internal.event.EventComponent.sendEvent(EventComponent.java:44)
+org.eclipse.e4.ui.services.internal.events.EventBroker.send(EventBroker.java:55)
+org.eclipse.e4.ui.internal.workbench.UIEventPublisher.notifyChanged(UIEventPublisher.java:60)
+org.eclipse.emf.common.notify.impl.BasicNotifierImpl.eNotify(BasicNotifierImpl.java:424)
+org.eclipse.e4.ui.model.application.ui.impl.ElementContainerImpl.setSelectedElementGen(ElementContainerImpl.java:168)
+org.eclipse.e4.ui.model.application.ui.impl.ElementContainerImpl.setSelectedElement(ElementContainerImpl.java:187)
+org.eclipse.e4.ui.internal.workbench.ModelServiceImpl.showElementInWindow(ModelServiceImpl.java:661)
+org.eclipse.e4.ui.internal.workbench.ModelServiceImpl.bringToTop(ModelServiceImpl.java:625)
+org.eclipse.e4.ui.internal.workbench.PartServiceImpl.delegateBringToTop(PartServiceImpl.java:796)
+org.eclipse.e4.ui.internal.workbench.PartServiceImpl.bringToTop(PartServiceImpl.java:401)
+org.eclipse.e4.ui.internal.workbench.PartServiceImpl.showPart(PartServiceImpl.java:1271)
+org.eclipse.ui.internal.WorkbenchPage.busyOpenEditor(WorkbenchPage.java:3228)
+org.eclipse.ui.internal.WorkbenchPage.lambda$11(WorkbenchPage.java:3118)
+org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:67)
+org.eclipse.ui.internal.WorkbenchPage.openEditor(WorkbenchPage.java:3116)
+org.eclipse.ui.internal.WorkbenchPage.openEditor(WorkbenchPage.java:3086)
+org.eclipse.ui.internal.WorkbenchPage.openEditor(WorkbenchPage.java:3069)
+fr.univamu.ism.docometre.actions.OpenEditorAction.openEditor(OpenEditorAction.java:237)
+fr.univamu.ism.docometre.actions.OpenEditorAction.run(OpenEditorAction.java:195)
+fr.univamu.ism.docometre.views.ExperimentsView$3$1$1.run(ExperimentsView.java:434)
+org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:132)
+org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4094)
+org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3710)
+org.eclipse.jface.operation.ModalContext$ModalContextThread.block(ModalContext.java:168)
+org.eclipse.jface.operation.ModalContext.run(ModalContext.java:370)
+org.eclipse.jface.dialogs.ProgressMonitorDialog.run(ProgressMonitorDialog.java:470)
+org.eclipse.ui.internal.progress.ProgressMonitorJobsDialog.run(ProgressMonitorJobsDialog.java:230)
+org.eclipse.ui.internal.progress.ProgressManager.lambda$26(ProgressManager.java:819)
+org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:67)
+org.eclipse.ui.internal.progress.ProgressManager.busyCursorWhile(ProgressManager.java:849)
+org.eclipse.ui.internal.progress.ProgressManager.busyCursorWhile(ProgressManager.java:828)
+fr.univamu.ism.docometre.views.ExperimentsView$3.doubleClick(ExperimentsView.java:426)
+org.eclipse.jface.viewers.StructuredViewer$1.run(StructuredViewer.java:779)
+org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+org.eclipse.jface.util.SafeRunnable.run(SafeRunnable.java:174)
+org.eclipse.jface.viewers.StructuredViewer.fireDoubleClick(StructuredViewer.java:776)
+org.eclipse.jface.viewers.AbstractTreeViewer.handleDoubleSelect(AbstractTreeViewer.java:1579)
+org.eclipse.jface.viewers.StructuredViewer$4.widgetDefaultSelected(StructuredViewer.java:1205)
+org.eclipse.jface.util.OpenStrategy.fireDefaultSelectionEvent(OpenStrategy.java:271)
+org.eclipse.jface.util.OpenStrategy$1.handleEvent(OpenStrategy.java:328)
+org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:91)
+org.eclipse.swt.widgets.Display.sendEvent(Display.java:4321)
+org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1208)
+org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4119)
+org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3707)
+org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1151)
+org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
+org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
+org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:668)
+org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:576)
+org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+fr.univamu.ism.docometre.DocometreApplication.start(DocometreApplication.java:222)
+org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:149)
+org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:115)
+org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:467)
+org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:298)
+java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+java.base/java.lang.reflect.Method.invoke(Method.java:580)
+org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:670)
+org.eclipse.equinox.launcher.Main.basicRun(Main.java:607)
+org.eclipse.equinox.launcher.Main.run(Main.java:1492)
+
+
+!ENTRY ADWinProcess - 16:54:45.697 1 0 2026-11-25 16:54:45.698
+!MESSAGE 
+
+!ENTRY ADWinProcess - 16:54:45.698 1 0 2026-11-25 16:54:45.698
+!MESSAGE C:\Users\buloup\Desktop\Docometre>"C:\ADwin\ADbasic\ADbasicCompiler.exe" /M "C:\Users\buloup\Documents\GIT\Interface_IAI\DOCO_W\\IAI\BinSource\home.BAS" /A"C:\Users\buloup\Documents\GIT\Interface_IAI\DOCO_W\\IAI\BinSource\home" /SGII /P11  2>home.err 
+
+!ENTRY ADWinProcess - 16:54:45.711 1 0 2026-11-25 16:54:45.711
+!MESSAGE ADbasicCompiler Version 5.00.56 11.12.2024
+
+!ENTRY ADWinProcess - 16:54:45.711 1 0 2026-11-25 16:54:45.711
+!MESSAGE 0%
+
+!ENTRY ADWinProcess - 16:54:45.744 1 0 2026-11-25 16:54:45.744
+!MESSAGE 9%
+
+!ENTRY ADWinProcess - 16:54:45.796 1 0 2026-11-25 16:54:45.797
+!MESSAGE 35%
+
+!ENTRY ADWinProcess - 16:54:45.802 1 0 2026-11-25 16:54:45.802
+!MESSAGE 42%
+
+!ENTRY ADWinProcess - 16:54:45.826 1 0 2026-11-25 16:54:45.826
+!MESSAGE 45%
+
+!ENTRY ADWinProcess - 16:54:45.833 1 0 2026-11-25 16:54:45.834
+!MESSAGE 92%
+
+!ENTRY ADWinProcess - 16:54:45.884 1 0 2026-11-25 16:54:45.885
+!MESSAGE 96%
+
+!ENTRY ADWinProcess - 16:54:45.891 1 0 2026-11-25 16:54:45.891
+!MESSAGE Process compiled. Codesize: 9776 Workspacesize: 1072 Stacksize: 208 Byte 
+
+!ENTRY ADWinProcess - 16:54:45.895 1 0 2026-11-25 16:54:45.896
+!MESSAGE Version courante des librairies : 1.0.0.202611250858
+
+!ENTRY ADWinProcess - 16:54:45.896 1 0 2026-11-25 16:54:45.896
+!MESSAGE Version des librairies utilisée par la configuration d'acquisition : 1.0.0.202611250858
+
+!ENTRY Warning 2 0 2026-11-25 16:54:45.897
+!MESSAGE Dans le segment LOOP => IF Block sans branche "false" : "IF (time >= 0.1) THEN"
+
+!ENTRY CompileProcessAction - 16:54:45.905 1 0 2026-11-25 16:54:45.905
+!MESSAGE La compilation du processus "home" a réussi
+
+!ENTRY GLDataEditor - 16:55:10.780 1 0 2026-11-25 16:55:10.780
+!MESSAGE 101 échantillons lus (medianDIO_HEND)
+
+!ENTRY ADWinProcess - 16:55:32.330 1 0 2026-11-25 16:55:32.330
+!MESSAGE 
+
+!ENTRY ADWinProcess - 16:55:32.330 1 0 2026-11-25 16:55:32.330
+!MESSAGE C:\Users\buloup\Desktop\Docometre>"C:\ADwin\ADbasic\ADbasicCompiler.exe" /M "C:\Users\buloup\Documents\GIT\Interface_IAI\DOCO_W\\IAI\BinSource\home.BAS" /A"C:\Users\buloup\Documents\GIT\Interface_IAI\DOCO_W\\IAI\BinSource\home" /SGII /P11  2>home.err 
+
+!ENTRY ADWinProcess - 16:55:32.343 1 0 2026-11-25 16:55:32.343
+!MESSAGE ADbasicCompiler Version 5.00.56 11.12.2024
+
+!ENTRY ADWinProcess - 16:55:32.343 1 0 2026-11-25 16:55:32.344
+!MESSAGE 0%
+
+!ENTRY ADWinProcess - 16:55:32.377 1 0 2026-11-25 16:55:32.377
+!MESSAGE 9%
+
+!ENTRY ADWinProcess - 16:55:32.430 1 0 2026-11-25 16:55:32.430
+!MESSAGE 35%
+
+!ENTRY ADWinProcess - 16:55:32.435 1 0 2026-11-25 16:55:32.435
+!MESSAGE 42%
+
+!ENTRY ADWinProcess - 16:55:32.459 1 0 2026-11-25 16:55:32.459
+!MESSAGE 45%
+
+!ENTRY ADWinProcess - 16:55:32.467 1 0 2026-11-25 16:55:32.467
+!MESSAGE 92%
+
+!ENTRY ADWinProcess - 16:55:32.517 1 0 2026-11-25 16:55:32.517
+!MESSAGE 96%
+
+!ENTRY ADWinProcess - 16:55:32.525 1 0 2026-11-25 16:55:32.525
+!MESSAGE Process compiled. Codesize: 9776 Workspacesize: 1072 Stacksize: 208 Byte 
+
+!ENTRY ADWinProcess - 16:55:32.531 1 0 2026-11-25 16:55:32.531
+!MESSAGE Version courante des librairies : 1.0.0.202611250858
+
+!ENTRY ADWinProcess - 16:55:32.531 1 0 2026-11-25 16:55:32.531
+!MESSAGE Version des librairies utilisée par la configuration d'acquisition : 1.0.0.202611250858
+
+!ENTRY Warning 2 0 2026-11-25 16:55:32.532
+!MESSAGE Dans le segment LOOP => IF Block sans branche "false" : "IF (time >= 0.2) THEN"
+
+!ENTRY CompileProcessAction - 16:55:32.541 1 0 2026-11-25 16:55:32.541
+!MESSAGE La compilation du processus "home" a réussi
+
+!ENTRY ADWinProcess - 16:56:20.756 1 0 2026-11-25 16:56:20.756
+!MESSAGE 
+
+!ENTRY ADWinProcess - 16:56:20.757 1 0 2026-11-25 16:56:20.757
+!MESSAGE C:\Users\buloup\Desktop\Docometre>"C:\ADwin\ADbasic\ADbasicCompiler.exe" /M "C:\Users\buloup\Documents\GIT\Interface_IAI\DOCO_W\\IAI\BinSource\home.BAS" /A"C:\Users\buloup\Documents\GIT\Interface_IAI\DOCO_W\\IAI\BinSource\home" /SGII /P11  2>home.err 
+
+!ENTRY ADWinProcess - 16:56:20.770 1 0 2026-11-25 16:56:20.770
+!MESSAGE ADbasicCompiler Version 5.00.56 11.12.2024
+
+!ENTRY ADWinProcess - 16:56:20.770 1 0 2026-11-25 16:56:20.770
+!MESSAGE 0%
+
+!ENTRY ADWinProcess - 16:56:20.803 1 0 2026-11-25 16:56:20.803
+!MESSAGE 9%
+
+!ENTRY ADWinProcess - 16:56:20.856 1 0 2026-11-25 16:56:20.856
+!MESSAGE 35%
+
+!ENTRY ADWinProcess - 16:56:20.861 1 0 2026-11-25 16:56:20.861
+!MESSAGE 42%
+
+!ENTRY ADWinProcess - 16:56:20.884 1 0 2026-11-25 16:56:20.884
+!MESSAGE 45%
+
+!ENTRY ADWinProcess - 16:56:20.892 1 0 2026-11-25 16:56:20.892
+!MESSAGE 92%
+
+!ENTRY ADWinProcess - 16:56:20.942 1 0 2026-11-25 16:56:20.942
+!MESSAGE 96%
+
+!ENTRY ADWinProcess - 16:56:20.948 1 0 2026-11-25 16:56:20.948
+!MESSAGE Process compiled. Codesize: 9776 Workspacesize: 1072 Stacksize: 208 Byte 
+
+!ENTRY ADWinProcess - 16:56:20.953 1 0 2026-11-25 16:56:20.953
+!MESSAGE Version courante des librairies : 1.0.0.202611250858
+
+!ENTRY ADWinProcess - 16:56:20.954 1 0 2026-11-25 16:56:20.954
+!MESSAGE Version des librairies utilisée par la configuration d'acquisition : 1.0.0.202611250858
+
+!ENTRY Warning 2 0 2026-11-25 16:56:20.955
+!MESSAGE Dans le segment LOOP => IF Block sans branche "false" : "IF (time >= 1) THEN"
+
+!ENTRY CompileProcessAction - 16:56:20.964 1 0 2026-11-25 16:56:20.964
+!MESSAGE La compilation du processus "home" a réussi
+
+!ENTRY ADWinProcess - 16:57:18.705 1 0 2026-11-25 16:57:18.706
+!MESSAGE 
+
+!ENTRY ADWinProcess - 16:57:18.706 1 0 2026-11-25 16:57:18.706
+!MESSAGE C:\Users\buloup\Desktop\Docometre>"C:\ADwin\ADbasic\ADbasicCompiler.exe" /M "C:\Users\buloup\Documents\GIT\Interface_IAI\DOCO_W\\IAI\BinSource\home.BAS" /A"C:\Users\buloup\Documents\GIT\Interface_IAI\DOCO_W\\IAI\BinSource\home" /SGII /P11  2>home.err 
+
+!ENTRY ADWinProcess - 16:57:18.718 1 0 2026-11-25 16:57:18.719
+!MESSAGE ADbasicCompiler Version 5.00.56 11.12.2024
+
+!ENTRY ADWinProcess - 16:57:18.719 1 0 2026-11-25 16:57:18.719
+!MESSAGE 0%
+
+!ENTRY ADWinProcess - 16:57:18.751 1 0 2026-11-25 16:57:18.752
+!MESSAGE 9%
+
+!ENTRY ADWinProcess - 16:57:18.805 1 0 2026-11-25 16:57:18.806
+!MESSAGE 35%
+
+!ENTRY ADWinProcess - 16:57:18.810 1 0 2026-11-25 16:57:18.811
+!MESSAGE 42%
+
+!ENTRY ADWinProcess - 16:57:18.834 1 0 2026-11-25 16:57:18.834
+!MESSAGE 45%
+
+!ENTRY ADWinProcess - 16:57:18.842 1 0 2026-11-25 16:57:18.842
+!MESSAGE 92%
+
+!ENTRY ADWinProcess - 16:57:18.896 1 0 2026-11-25 16:57:18.897
+!MESSAGE 96%
+
+!ENTRY ADWinProcess - 16:57:18.903 1 0 2026-11-25 16:57:18.904
+!MESSAGE Process compiled. Codesize: 9760 Workspacesize: 1072 Stacksize: 208 Byte 
+
+!ENTRY ADWinProcess - 16:57:18.909 1 0 2026-11-25 16:57:18.909
+!MESSAGE Version courante des librairies : 1.0.0.202611250858
+
+!ENTRY ADWinProcess - 16:57:18.909 1 0 2026-11-25 16:57:18.909
+!MESSAGE Version des librairies utilisée par la configuration d'acquisition : 1.0.0.202611250858
+
+!ENTRY Warning 2 0 2026-11-25 16:57:18.910
+!MESSAGE Dans le segment LOOP => IF Block sans branche "false" : "IF (time >= 5) THEN"
+
+!ENTRY CompileProcessAction - 16:57:18.919 1 0 2026-11-25 16:57:18.920
+!MESSAGE La compilation du processus "home" a réussi
+
+!ENTRY ADWinProcess - 17:00:51.613 1 0 2026-11-25 17:00:51.614
+!MESSAGE 
+
+!ENTRY ADWinProcess - 17:00:51.614 1 0 2026-11-25 17:00:51.614
+!MESSAGE C:\Users\buloup\Desktop\Docometre>"C:\ADwin\ADbasic\ADbasicCompiler.exe" /M "C:\Users\buloup\Documents\GIT\Interface_IAI\DOCO_W\\IAI\BinSource\home.BAS" /A"C:\Users\buloup\Documents\GIT\Interface_IAI\DOCO_W\\IAI\BinSource\home" /SGII /P11  2>home.err 
+
+!ENTRY ADWinProcess - 17:00:51.627 1 0 2026-11-25 17:00:51.627
+!MESSAGE ADbasicCompiler Version 5.00.56 11.12.2024
+
+!ENTRY ADWinProcess - 17:00:51.628 1 0 2026-11-25 17:00:51.628
+!MESSAGE 0%
+
+!ENTRY ADWinProcess - 17:00:51.661 1 0 2026-11-25 17:00:51.661
+!MESSAGE 9%
+
+!ENTRY ADWinProcess - 17:00:51.712 1 0 2026-11-25 17:00:51.712
+!MESSAGE 35%
+
+!ENTRY ADWinProcess - 17:00:51.717 1 0 2026-11-25 17:00:51.717
+!MESSAGE 42%
+
+!ENTRY ADWinProcess - 17:00:51.741 1 0 2026-11-25 17:00:51.741
+!MESSAGE 45%
+
+!ENTRY ADWinProcess - 17:00:51.749 1 0 2026-11-25 17:00:51.750
+!MESSAGE 92%
+
+!ENTRY ADWinProcess - 17:00:51.799 1 0 2026-11-25 17:00:51.800
+!MESSAGE 96%
+
+!ENTRY ADWinProcess - 17:00:51.807 1 0 2026-11-25 17:00:51.807
+!MESSAGE Process compiled. Codesize: 9808 Workspacesize: 1072 Stacksize: 208 Byte 
+
+!ENTRY ADWinProcess - 17:00:51.813 1 0 2026-11-25 17:00:51.813
+!MESSAGE Version courante des librairies : 1.0.0.202611250858
+
+!ENTRY ADWinProcess - 17:00:51.814 1 0 2026-11-25 17:00:51.814
+!MESSAGE Version des librairies utilisée par la configuration d'acquisition : 1.0.0.202611250858
+
+!ENTRY Warning 2 0 2026-11-25 17:00:51.815
+!MESSAGE Dans le segment LOOP => IF Block sans branche "false" : "IF (time >= 0.4) THEN"
+
+!ENTRY CompileProcessAction - 17:00:51.824 1 0 2026-11-25 17:00:51.824
+!MESSAGE La compilation du processus "home" a réussi
+
+!ENTRY ADWinProcess - 17:11:54.690 1 0 2026-11-25 17:11:54.691
+!MESSAGE 
+
+!ENTRY ADWinProcess - 17:11:54.691 1 0 2026-11-25 17:11:54.691
+!MESSAGE C:\Users\buloup\Desktop\Docometre>"C:\ADwin\ADbasic\ADbasicCompiler.exe" /M "C:\Users\buloup\Documents\GIT\Interface_IAI\DOCO_W\\IAI\BinSource\move.BAS" /A"C:\Users\buloup\Documents\GIT\Interface_IAI\DOCO_W\\IAI\BinSource\move" /SGII /P11  2>move.err 
+
+!ENTRY ADWinProcess - 17:11:54.704 1 0 2026-11-25 17:11:54.704
+!MESSAGE ADbasicCompiler Version 5.00.56 11.12.2024
+
+!ENTRY ADWinProcess - 17:11:54.704 1 0 2026-11-25 17:11:54.705
+!MESSAGE 0%
+
+!ENTRY ADWinProcess - 17:11:54.737 1 0 2026-11-25 17:11:54.738
+!MESSAGE 9%
+
+!ENTRY ADWinProcess - 17:11:54.789 1 0 2026-11-25 17:11:54.790
+!MESSAGE 35%
+
+!ENTRY ADWinProcess - 17:11:54.795 1 0 2026-11-25 17:11:54.795
+!MESSAGE 42%
+
+!ENTRY ADWinProcess - 17:11:54.819 1 0 2026-11-25 17:11:54.819
+!MESSAGE 45%
+
+!ENTRY ADWinProcess - 17:11:54.827 1 0 2026-11-25 17:11:54.827
+!MESSAGE 92%
+
+!ENTRY ADWinProcess - 17:11:54.880 1 0 2026-11-25 17:11:54.880
+!MESSAGE 96%
+
+!ENTRY ADWinProcess - 17:11:54.887 1 0 2026-11-25 17:11:54.887
+!MESSAGE Process compiled. Codesize: 10848 Workspacesize: 1104 Stacksize: 208 Byte 
+
+!ENTRY ADWinProcess - 17:11:54.891 1 0 2026-11-25 17:11:54.892
+!MESSAGE Version courante des librairies : 1.0.0.202611250858
+
+!ENTRY ADWinProcess - 17:11:54.892 1 0 2026-11-25 17:11:54.892
+!MESSAGE Version des librairies utilisée par la configuration d'acquisition : 1.0.0.202611250858
+
+!ENTRY CompileProcessAction - 17:11:54.898 1 0 2026-11-25 17:11:54.898
+!MESSAGE La compilation du processus "move" a réussi
+
+!ENTRY GLDataEditor - 17:12:31.726 1 0 2026-11-25 17:12:31.727
+!MESSAGE 2017 échantillons lus (medianDIO_INP)
+
+!ENTRY GLDataEditor - 17:12:59.617 1 0 2026-11-25 17:12:59.617
+!MESSAGE 2017 échantillons lus (DIO_INP)
+
+!ENTRY ADWinProcess - 17:51:11.491 1 0 2026-11-25 17:51:11.491
+!MESSAGE 
+
+!ENTRY ADWinProcess - 17:51:11.491 1 0 2026-11-25 17:51:11.491
+!MESSAGE C:\Users\buloup\Desktop\Docometre>"C:\ADwin\ADbasic\ADbasicCompiler.exe" /M "C:\Users\buloup\Documents\GIT\Interface_IAI\DOCO_W\\IAI\BinSource\move.BAS" /A"C:\Users\buloup\Documents\GIT\Interface_IAI\DOCO_W\\IAI\BinSource\move" /SGII /P11  2>move.err 
+
+!ENTRY ADWinProcess - 17:51:11.504 1 0 2026-11-25 17:51:11.504
+!MESSAGE ADbasicCompiler Version 5.00.56 11.12.2024
+
+!ENTRY ADWinProcess - 17:51:11.504 1 0 2026-11-25 17:51:11.505
+!MESSAGE 0%
+
+!ENTRY ADWinProcess - 17:51:11.538 1 0 2026-11-25 17:51:11.539
+!MESSAGE 9%
+
+!ENTRY ADWinProcess - 17:51:11.594 1 0 2026-11-25 17:51:11.594
+!MESSAGE 35%
+
+!ENTRY ADWinProcess - 17:51:11.600 1 0 2026-11-25 17:51:11.600
+!MESSAGE 42%
+
+!ENTRY ADWinProcess - 17:51:11.627 1 0 2026-11-25 17:51:11.627
+!MESSAGE 45%
+
+!ENTRY ADWinProcess - 17:51:11.637 1 0 2026-11-25 17:51:11.637
+!MESSAGE 92%
+
+!ENTRY ADWinProcess - 17:51:11.693 1 0 2026-11-25 17:51:11.693
+!MESSAGE 96%
+
+!ENTRY ADWinProcess - 17:51:11.701 1 0 2026-11-25 17:51:11.701
+!MESSAGE Process compiled. Codesize: 11456 Workspacesize: 1168 Stacksize: 208 Byte 
+
+!ENTRY ADWinProcess - 17:51:11.707 1 0 2026-11-25 17:51:11.707
+!MESSAGE Version courante des librairies : 1.0.0.202611250858
+
+!ENTRY ADWinProcess - 17:51:11.707 1 0 2026-11-25 17:51:11.707
+!MESSAGE Version des librairies utilisée par la configuration d'acquisition : 1.0.0.202611250858
+
+!ENTRY Warning 2 0 2026-11-25 17:51:11.708
+!MESSAGE Dans le segment LOOP => IF Block sans branche "false" : "IF (firstTime_INP_isOne > 0) THEN"
+
+!ENTRY CompileProcessAction - 17:51:11.713 1 0 2026-11-25 17:51:11.713
+!MESSAGE La compilation du processus "move" a réussi
+
+!ENTRY GLDataEditor - 17:51:49.737 1 0 2026-11-25 17:51:49.737
+!MESSAGE 101 échantillons lus (medianDIO_INP)
+
+!ENTRY GLDataEditor - 17:52:10.659 1 0 2026-11-25 17:52:10.659
+!MESSAGE 101 échantillons lus (medianDIO_HEND)
+
+!ENTRY GLDataEditor - 17:52:46.236 1 0 2026-11-25 17:52:46.236
+!MESSAGE 101 échantillons lus (firstTime_INP_isOne)
+
+!ENTRY ADWinProcess - 17:54:23.040 1 0 2026-11-25 17:54:23.040
+!MESSAGE 
+
+!ENTRY ADWinProcess - 17:54:23.041 1 0 2026-11-25 17:54:23.041
+!MESSAGE C:\Users\buloup\Desktop\Docometre>"C:\ADwin\ADbasic\ADbasicCompiler.exe" /M "C:\Users\buloup\Documents\GIT\Interface_IAI\DOCO_W\\IAI\BinSource\move.BAS" /A"C:\Users\buloup\Documents\GIT\Interface_IAI\DOCO_W\\IAI\BinSource\move" /SGII /P11  2>move.err 
+
+!ENTRY ADWinProcess - 17:54:23.054 1 0 2026-11-25 17:54:23.054
+!MESSAGE ADbasicCompiler Version 5.00.56 11.12.2024
+
+!ENTRY ADWinProcess - 17:54:23.054 1 0 2026-11-25 17:54:23.055
+!MESSAGE 0%
+
+!ENTRY ADWinProcess - 17:54:23.089 1 0 2026-11-25 17:54:23.089
+!MESSAGE 9%
+
+!ENTRY ADWinProcess - 17:54:23.146 1 0 2026-11-25 17:54:23.146
+!MESSAGE 35%
+
+!ENTRY ADWinProcess - 17:54:23.151 1 0 2026-11-25 17:54:23.152
+!MESSAGE 42%
+
+!ENTRY ADWinProcess - 17:54:23.178 1 0 2026-11-25 17:54:23.179
+!MESSAGE 45%
+
+!ENTRY ADWinProcess - 17:54:23.190 1 0 2026-11-25 17:54:23.190
+!MESSAGE 92%
+
+!ENTRY ADWinProcess - 17:54:23.248 1 0 2026-11-25 17:54:23.248
+!MESSAGE 96%
+
+!ENTRY ADWinProcess - 17:54:23.255 1 0 2026-11-25 17:54:23.255
+!MESSAGE Process compiled. Codesize: 11536 Workspacesize: 1168 Stacksize: 208 Byte 
+
+!ENTRY ADWinProcess - 17:54:23.260 1 0 2026-11-25 17:54:23.260
+!MESSAGE Version courante des librairies : 1.0.0.202611250858
+
+!ENTRY ADWinProcess - 17:54:23.261 1 0 2026-11-25 17:54:23.261
+!MESSAGE Version des librairies utilisée par la configuration d'acquisition : 1.0.0.202611250858
+
+!ENTRY Warning 2 0 2026-11-25 17:54:23.261
+!MESSAGE Dans le segment LOOP => IF Block sans branche "false" : "IF (time > 0.05) THEN"
+
+!ENTRY Warning 2 0 2026-11-25 17:54:23.262
+!MESSAGE Dans le segment LOOP => IF Block sans branche "false" : "IF (firstTime_INP_isOne > 0) THEN"
+
+!ENTRY CompileProcessAction - 17:54:23.266 1 0 2026-11-25 17:54:23.266
+!MESSAGE La compilation du processus "move" a réussi
+
+!ENTRY GLDataEditor - 17:54:41.615 1 0 2026-11-25 17:54:41.616
+!MESSAGE 151 échantillons lus (DIO_INP)
+
+!ENTRY ADWinProcess - 17:55:08.736 1 0 2026-11-25 17:55:08.737
+!MESSAGE 
+
+!ENTRY ADWinProcess - 17:55:08.737 1 0 2026-11-25 17:55:08.737
+!MESSAGE C:\Users\buloup\Desktop\Docometre>"C:\ADwin\ADbasic\ADbasicCompiler.exe" /M "C:\Users\buloup\Documents\GIT\Interface_IAI\DOCO_W\\IAI\BinSource\move.BAS" /A"C:\Users\buloup\Documents\GIT\Interface_IAI\DOCO_W\\IAI\BinSource\move" /SGII /P11  2>move.err 
+
+!ENTRY ADWinProcess - 17:55:08.750 1 0 2026-11-25 17:55:08.750
+!MESSAGE ADbasicCompiler Version 5.00.56 11.12.2024
+
+!ENTRY ADWinProcess - 17:55:08.750 1 0 2026-11-25 17:55:08.750
+!MESSAGE 0%
+
+!ENTRY ADWinProcess - 17:55:08.784 1 0 2026-11-25 17:55:08.784
+!MESSAGE 9%
+
+!ENTRY ADWinProcess - 17:55:08.837 1 0 2026-11-25 17:55:08.837
+!MESSAGE 35%
+
+!ENTRY ADWinProcess - 17:55:08.843 1 0 2026-11-25 17:55:08.843
+!MESSAGE 42%
+
+!ENTRY ADWinProcess - 17:55:08.868 1 0 2026-11-25 17:55:08.868
+!MESSAGE 45%
+
+!ENTRY ADWinProcess - 17:55:08.878 1 0 2026-11-25 17:55:08.878
+!MESSAGE 92%
+
+!ENTRY ADWinProcess - 17:55:08.935 1 0 2026-11-25 17:55:08.935
+!MESSAGE 96%
+
+!ENTRY ADWinProcess - 17:55:08.942 1 0 2026-11-25 17:55:08.942
+!MESSAGE Process compiled. Codesize: 11536 Workspacesize: 1168 Stacksize: 208 Byte 
+
+!ENTRY ADWinProcess - 17:55:08.946 1 0 2026-11-25 17:55:08.947
+!MESSAGE Version courante des librairies : 1.0.0.202611250858
+
+!ENTRY ADWinProcess - 17:55:08.947 1 0 2026-11-25 17:55:08.947
+!MESSAGE Version des librairies utilisée par la configuration d'acquisition : 1.0.0.202611250858
+
+!ENTRY Warning 2 0 2026-11-25 17:55:08.948
+!MESSAGE Dans le segment LOOP => IF Block sans branche "false" : "IF (time > 0.1) THEN"
+
+!ENTRY Warning 2 0 2026-11-25 17:55:08.948
+!MESSAGE Dans le segment LOOP => IF Block sans branche "false" : "IF (firstTime_INP_isOne > 0) THEN"
+
+!ENTRY CompileProcessAction - 17:55:08.962 1 0 2026-11-25 17:55:08.962
+!MESSAGE La compilation du processus "move" a réussi
+
+!ENTRY GLDataEditor - 17:55:55.576 1 0 2026-11-25 17:55:55.576
+!MESSAGE 201 échantillons lus (medianDIO_INP)
+
+!ENTRY GLDataEditor - 17:56:01.097 1 0 2026-11-25 17:56:01.097
+!MESSAGE 201 échantillons lus (DIO_INP)
+
+!ENTRY GLDataEditor - 17:57:13.810 1 0 2026-11-25 17:57:13.810
+!MESSAGE 201 échantillons lus (firstTime_INP_isOne)
+
+!ENTRY GLDataEditor - 17:57:19.131 1 0 2026-11-25 17:57:19.131
+!MESSAGE 201 échantillons lus (medianDIO_INP)
+
+!ENTRY ADWinProcess - 17:58:27.030 1 0 2026-11-25 17:58:27.030
+!MESSAGE 
+
+!ENTRY ADWinProcess - 17:58:27.031 1 0 2026-11-25 17:58:27.031
+!MESSAGE C:\Users\buloup\Desktop\Docometre>"C:\ADwin\ADbasic\ADbasicCompiler.exe" /M "C:\Users\buloup\Documents\GIT\Interface_IAI\DOCO_W\\IAI\BinSource\move.BAS" /A"C:\Users\buloup\Documents\GIT\Interface_IAI\DOCO_W\\IAI\BinSource\move" /SGII /P11  2>move.err 
+
+!ENTRY ADWinProcess - 17:58:27.044 1 0 2026-11-25 17:58:27.044
+!MESSAGE ADbasicCompiler Version 5.00.56 11.12.2024
+
+!ENTRY ADWinProcess - 17:58:27.045 1 0 2026-11-25 17:58:27.045
+!MESSAGE 0%
+
+!ENTRY ADWinProcess - 17:58:27.079 1 0 2026-11-25 17:58:27.079
+!MESSAGE 9%
+
+!ENTRY ADWinProcess - 17:58:27.134 1 0 2026-11-25 17:58:27.134
+!MESSAGE 35%
+
+!ENTRY ADWinProcess - 17:58:27.140 1 0 2026-11-25 17:58:27.140
+!MESSAGE 42%
+
+!ENTRY ADWinProcess - 17:58:27.167 1 0 2026-11-25 17:58:27.167
+!MESSAGE 45%
+
+!ENTRY ADWinProcess - 17:58:27.177 1 0 2026-11-25 17:58:27.178
+!MESSAGE 92%
+
+!ENTRY ADWinProcess - 17:58:27.238 1 0 2026-11-25 17:58:27.238
+!MESSAGE 96%
+
+!ENTRY ADWinProcess - 17:58:27.245 1 0 2026-11-25 17:58:27.245
+!MESSAGE Process compiled. Codesize: 11536 Workspacesize: 1168 Stacksize: 208 Byte 
+
+!ENTRY ADWinProcess - 17:58:27.250 1 0 2026-11-25 17:58:27.250
+!MESSAGE Version courante des librairies : 1.0.0.202611250858
+
+!ENTRY ADWinProcess - 17:58:27.250 1 0 2026-11-25 17:58:27.250
+!MESSAGE Version des librairies utilisée par la configuration d'acquisition : 1.0.0.202611250858
+
+!ENTRY Warning 2 0 2026-11-25 17:58:27.251
+!MESSAGE Dans le segment LOOP => IF Block sans branche "false" : "IF (time > 0.5) THEN"
+
+!ENTRY Warning 2 0 2026-11-25 17:58:27.251
+!MESSAGE Dans le segment LOOP => IF Block sans branche "false" : "IF (firstTime_INP_isOne > 0) THEN"
+
+!ENTRY CompileProcessAction - 17:58:27.267 1 0 2026-11-25 17:58:27.268
+!MESSAGE La compilation du processus "move" a réussi
+
+!ENTRY GLDataEditor - 17:58:59.418 1 0 2026-11-25 17:58:59.418
+!MESSAGE 601 échantillons lus (medianDIO_INP)
+
+!ENTRY GLDataEditor - 17:59:07.490 1 0 2026-11-25 17:59:07.490
+!MESSAGE 14402 échantillons lus (DIO_PP)
+
+!ENTRY ADWinProcess - 18:02:46.279 1 0 2026-11-25 18:02:46.279
+!MESSAGE 
+
+!ENTRY ADWinProcess - 18:02:46.279 1 0 2026-11-25 18:02:46.279
+!MESSAGE C:\Users\buloup\Desktop\Docometre>"C:\ADwin\ADbasic\ADbasicCompiler.exe" /M "C:\Users\buloup\Documents\GIT\Interface_IAI\DOCO_W\\IAI\BinSource\move.BAS" /A"C:\Users\buloup\Documents\GIT\Interface_IAI\DOCO_W\\IAI\BinSource\move" /SGII /P11  2>move.err 
+
+!ENTRY ADWinProcess - 18:02:46.294 1 0 2026-11-25 18:02:46.294
+!MESSAGE ADbasicCompiler Version 5.00.56 11.12.2024
+
+!ENTRY ADWinProcess - 18:02:46.295 1 0 2026-11-25 18:02:46.295
+!MESSAGE 0%
+
+!ENTRY ADWinProcess - 18:02:46.330 1 0 2026-11-25 18:02:46.330
+!MESSAGE 9%
+
+!ENTRY ADWinProcess - 18:02:46.385 1 0 2026-11-25 18:02:46.385
+!MESSAGE 35%
+
+!ENTRY ADWinProcess - 18:02:46.391 1 0 2026-11-25 18:02:46.391
+!MESSAGE 42%
+
+!ENTRY ADWinProcess - 18:02:46.418 1 0 2026-11-25 18:02:46.418
+!MESSAGE 45%
+
+!ENTRY ADWinProcess - 18:02:46.428 1 0 2026-11-25 18:02:46.429
+!MESSAGE 92%
+
+!ENTRY ADWinProcess - 18:02:46.486 1 0 2026-11-25 18:02:46.486
+!MESSAGE 96%
+
+!ENTRY ADWinProcess - 18:02:46.493 1 0 2026-11-25 18:02:46.493
+!MESSAGE Process compiled. Codesize: 11552 Workspacesize: 1168 Stacksize: 208 Byte 
+
+!ENTRY ADWinProcess - 18:02:46.498 1 0 2026-11-25 18:02:46.498
+!MESSAGE Version courante des librairies : 1.0.0.202611250858
+
+!ENTRY ADWinProcess - 18:02:46.498 1 0 2026-11-25 18:02:46.498
+!MESSAGE Version des librairies utilisée par la configuration d'acquisition : 1.0.0.202611250858
+
+!ENTRY Warning 2 0 2026-11-25 18:02:46.499
+!MESSAGE Dans le segment LOOP => IF Block sans branche "false" : "IF (time >= 0.1) THEN"
+
+!ENTRY Warning 2 0 2026-11-25 18:02:46.500
+!MESSAGE Dans le segment LOOP => IF Block sans branche "false" : "IF (time > 0.2) THEN"
+
+!ENTRY Warning 2 0 2026-11-25 18:02:46.500
+!MESSAGE Dans le segment LOOP => IF Block sans branche "false" : "IF (firstTime_INP_isOne > 0) THEN"
+
+!ENTRY CompileProcessAction - 18:02:46.537 1 0 2026-11-25 18:02:46.537
+!MESSAGE La compilation du processus "move" a réussi
+
+!ENTRY ADWinProcess - 18:04:07.044 1 0 2026-11-25 18:04:07.044
+!MESSAGE 
+
+!ENTRY ADWinProcess - 18:04:07.045 1 0 2026-11-25 18:04:07.045
+!MESSAGE C:\Users\buloup\Desktop\Docometre>"C:\ADwin\ADbasic\ADbasicCompiler.exe" /M "C:\Users\buloup\Documents\GIT\Interface_IAI\DOCO_W\\IAI\BinSource\move.BAS" /A"C:\Users\buloup\Documents\GIT\Interface_IAI\DOCO_W\\IAI\BinSource\move" /SGII /P11  2>move.err 
+
+!ENTRY ADWinProcess - 18:04:07.057 1 0 2026-11-25 18:04:07.057
+!MESSAGE ADbasicCompiler Version 5.00.56 11.12.2024
+
+!ENTRY ADWinProcess - 18:04:07.057 1 0 2026-11-25 18:04:07.057
+!MESSAGE 0%
+
+!ENTRY ADWinProcess - 18:04:07.091 1 0 2026-11-25 18:04:07.091
+!MESSAGE 9%
+
+!ENTRY ADWinProcess - 18:04:07.146 1 0 2026-11-25 18:04:07.146
+!MESSAGE 35%
+
+!ENTRY ADWinProcess - 18:04:07.151 1 0 2026-11-25 18:04:07.152
+!MESSAGE 42%
+
+!ENTRY ADWinProcess - 18:04:07.178 1 0 2026-11-25 18:04:07.179
+!MESSAGE 45%
+
+!ENTRY ADWinProcess - 18:04:07.189 1 0 2026-11-25 18:04:07.189
+!MESSAGE 92%
+
+!ENTRY ADWinProcess - 18:04:07.245 1 0 2026-11-25 18:04:07.245
+!MESSAGE 96%
+
+!ENTRY ADWinProcess - 18:04:07.253 1 0 2026-11-25 18:04:07.253
+!MESSAGE Process compiled. Codesize: 11552 Workspacesize: 1168 Stacksize: 208 Byte 
+
+!ENTRY ADWinProcess - 18:04:07.258 1 0 2026-11-25 18:04:07.258
+!MESSAGE Version courante des librairies : 1.0.0.202611250858
+
+!ENTRY ADWinProcess - 18:04:07.258 1 0 2026-11-25 18:04:07.258
+!MESSAGE Version des librairies utilisée par la configuration d'acquisition : 1.0.0.202611250858
+
+!ENTRY Warning 2 0 2026-11-25 18:04:07.259
+!MESSAGE Dans le segment LOOP => IF Block sans branche "false" : "IF (time >= 0.1) THEN"
+
+!ENTRY Warning 2 0 2026-11-25 18:04:07.260
+!MESSAGE Dans le segment LOOP => IF Block sans branche "false" : "IF (time > 0.2) THEN"
+
+!ENTRY Warning 2 0 2026-11-25 18:04:07.260
+!MESSAGE Dans le segment LOOP => IF Block sans branche "false" : "IF (firstTime_INP_isOne > 0) THEN"
+
+!ENTRY CompileProcessAction - 18:04:07.263 1 0 2026-11-25 18:04:07.263
+!MESSAGE La compilation du processus "move" a réussi
+
+!ENTRY GLDataEditor - 18:06:08.488 1 0 2026-11-25 18:06:08.488
+!MESSAGE 1674 échantillons lus (DIO_INP)
+
+!ENTRY ADWinProcess - 18:06:22.117 1 0 2026-11-25 18:06:22.117
+!MESSAGE 
+
+!ENTRY ADWinProcess - 18:06:22.117 1 0 2026-11-25 18:06:22.118
+!MESSAGE C:\Users\buloup\Desktop\Docometre>"C:\ADwin\ADbasic\ADbasicCompiler.exe" /M "C:\Users\buloup\Documents\GIT\Interface_IAI\DOCO_W\\IAI\BinSource\home.BAS" /A"C:\Users\buloup\Documents\GIT\Interface_IAI\DOCO_W\\IAI\BinSource\home" /SGII /P11  2>home.err 
+
+!ENTRY ADWinProcess - 18:06:22.130 1 0 2026-11-25 18:06:22.131
+!MESSAGE ADbasicCompiler Version 5.00.56 11.12.2024
+
+!ENTRY ADWinProcess - 18:06:22.131 1 0 2026-11-25 18:06:22.131
+!MESSAGE 0%
+
+!ENTRY ADWinProcess - 18:06:22.164 1 0 2026-11-25 18:06:22.165
+!MESSAGE 9%
+
+!ENTRY ADWinProcess - 18:06:22.218 1 0 2026-11-25 18:06:22.218
+!MESSAGE 35%
+
+!ENTRY ADWinProcess - 18:06:22.224 1 0 2026-11-25 18:06:22.224
+!MESSAGE 42%
+
+!ENTRY ADWinProcess - 18:06:22.251 1 0 2026-11-25 18:06:22.251
+!MESSAGE 45%
+
+!ENTRY ADWinProcess - 18:06:22.260 1 0 2026-11-25 18:06:22.261
+!MESSAGE 92%
+
+!ENTRY ADWinProcess - 18:06:22.316 1 0 2026-11-25 18:06:22.316
+!MESSAGE 96%
+
+!ENTRY ADWinProcess - 18:06:22.322 1 0 2026-11-25 18:06:22.322
+!MESSAGE Process compiled. Codesize: 10512 Workspacesize: 1136 Stacksize: 208 Byte 
+
+!ENTRY ADWinProcess - 18:06:22.326 1 0 2026-11-25 18:06:22.327
+!MESSAGE Version courante des librairies : 1.0.0.202611250858
+
+!ENTRY ADWinProcess - 18:06:22.327 1 0 2026-11-25 18:06:22.327
+!MESSAGE Version des librairies utilisée par la configuration d'acquisition : 1.0.0.202611250858
+
+!ENTRY Warning 2 0 2026-11-25 18:06:22.328
+!MESSAGE Dans le segment LOOP => IF Block sans branche "false" : "IF (time >= 0.4) THEN"
+
+!ENTRY CompileProcessAction - 18:06:22.337 1 0 2026-11-25 18:06:22.338
+!MESSAGE La compilation du processus "home" a réussi
+
+!ENTRY GLDataEditor - 18:06:39.734 1 0 2026-11-25 18:06:39.734
+!MESSAGE 2201 échantillons lus (DIO_INP)
+
+!ENTRY ADWinProcess - 18:15:12.298 1 0 2026-11-25 18:15:12.298
+!MESSAGE 
+
+!ENTRY ADWinProcess - 18:15:12.298 1 0 2026-11-25 18:15:12.299
+!MESSAGE C:\Users\buloup\Desktop\Docometre>"C:\ADwin\ADbasic\ADbasicCompiler.exe" /M "C:\Users\buloup\Documents\GIT\Interface_IAI\DOCO_W\\IAI\BinSource\move.BAS" /A"C:\Users\buloup\Documents\GIT\Interface_IAI\DOCO_W\\IAI\BinSource\move" /SGII /P11  2>move.err 
+
+!ENTRY ADWinProcess - 18:15:12.312 1 0 2026-11-25 18:15:12.312
+!MESSAGE ADbasicCompiler Version 5.00.56 11.12.2024
+
+!ENTRY ADWinProcess - 18:15:12.312 1 0 2026-11-25 18:15:12.312
+!MESSAGE 0%
+
+!ENTRY ADWinProcess - 18:15:12.348 1 0 2026-11-25 18:15:12.348
+!MESSAGE 9%
+
+!ENTRY ADWinProcess - 18:15:12.405 1 0 2026-11-25 18:15:12.405
+!MESSAGE 35%
+
+!ENTRY ADWinProcess - 18:15:12.411 1 0 2026-11-25 18:15:12.411
+!MESSAGE 42%
+
+!ENTRY ADWinProcess - 18:15:12.439 1 0 2026-11-25 18:15:12.440
+!MESSAGE 45%
+
+!ENTRY ADWinProcess - 18:15:12.450 1 0 2026-11-25 18:15:12.450
+!MESSAGE 92%
+
+!ENTRY ADWinProcess - 18:15:12.511 1 0 2026-11-25 18:15:12.512
+!MESSAGE 96%
+
+!ENTRY ADWinProcess - 18:15:12.519 1 0 2026-11-25 18:15:12.519
+!MESSAGE Process compiled. Codesize: 11952 Workspacesize: 1200 Stacksize: 208 Byte 
+
+!ENTRY ADWinProcess - 18:15:12.524 1 0 2026-11-25 18:15:12.524
+!MESSAGE Version courante des librairies : 1.0.0.202611250858
+
+!ENTRY ADWinProcess - 18:15:12.525 1 0 2026-11-25 18:15:12.525
+!MESSAGE Version des librairies utilisée par la configuration d'acquisition : 1.0.0.202611250858
+
+!ENTRY Warning 2 0 2026-11-25 18:15:12.525
+!MESSAGE Dans le segment LOOP => IF Block sans branche "false" : "IF (time >= 0.1) THEN"
+
+!ENTRY Warning 2 0 2026-11-25 18:15:12.525
+!MESSAGE Dans le segment LOOP => IF Block sans branche "false" : "IF (time > 0.2) THEN"
+
+!ENTRY Warning 2 0 2026-11-25 18:15:12.527
+!MESSAGE Dans le segment LOOP => IF Block sans branche "false" : "IF (time_INP_isOne > 0) THEN"
+
+!ENTRY CompileProcessAction - 18:15:12.539 1 0 2026-11-25 18:15:12.540
+!MESSAGE La compilation du processus "move" a réussi
+
+!ENTRY ADWinProcess - 18:19:59.654 1 0 2026-11-25 18:19:59.654
+!MESSAGE 
+
+!ENTRY ADWinProcess - 18:19:59.654 1 0 2026-11-25 18:19:59.654
+!MESSAGE C:\Users\buloup\Desktop\Docometre>"C:\ADwin\ADbasic\ADbasicCompiler.exe" /M "C:\Users\buloup\Documents\GIT\Interface_IAI\DOCO_W\\IAI\BinSource\home.BAS" /A"C:\Users\buloup\Documents\GIT\Interface_IAI\DOCO_W\\IAI\BinSource\home" /SGII /P11  2>home.err 
+
+!ENTRY ADWinProcess - 18:19:59.666 1 0 2026-11-25 18:19:59.667
+!MESSAGE ADbasicCompiler Version 5.00.56 11.12.2024
+
+!ENTRY ADWinProcess - 18:19:59.667 1 0 2026-11-25 18:19:59.667
+!MESSAGE 0%
+
+!ENTRY ADWinProcess - 18:19:59.700 1 0 2026-11-25 18:19:59.700
+!MESSAGE 9%
+
+!ENTRY ADWinProcess - 18:19:59.756 1 0 2026-11-25 18:19:59.756
+!MESSAGE 35%
+
+!ENTRY ADWinProcess - 18:19:59.761 1 0 2026-11-25 18:19:59.761
+!MESSAGE 42%
+
+!ENTRY ADWinProcess - 18:19:59.788 1 0 2026-11-25 18:19:59.789
+!MESSAGE 45%
+
+!ENTRY ADWinProcess - 18:19:59.799 1 0 2026-11-25 18:19:59.799
+!MESSAGE 92%
+
+!ENTRY ADWinProcess - 18:19:59.858 1 0 2026-11-25 18:19:59.858
+!MESSAGE 96%
+
+!ENTRY ADWinProcess - 18:19:59.865 1 0 2026-11-25 18:19:59.865
+!MESSAGE Process compiled. Codesize: 11168 Workspacesize: 1200 Stacksize: 224 Byte 
+
+!ENTRY ADWinProcess - 18:19:59.870 1 0 2026-11-25 18:19:59.871
+!MESSAGE Version courante des librairies : 1.0.0.202611250858
+
+!ENTRY ADWinProcess - 18:19:59.871 1 0 2026-11-25 18:19:59.871
+!MESSAGE Version des librairies utilisée par la configuration d'acquisition : 1.0.0.202611250858
+
+!ENTRY Warning 2 0 2026-11-25 18:19:59.872
+!MESSAGE Dans le segment LOOP => IF Block sans branche "false" : "IF (time > 0.1) THEN"
+
+!ENTRY Warning 2 0 2026-11-25 18:19:59.872
+!MESSAGE Dans le segment LOOP => IF Block sans branche "false" : "IF (time_HEND_isOne > 0) THEN"
+
+!ENTRY CompileProcessAction - 18:19:59.883 1 0 2026-11-25 18:19:59.883
+!MESSAGE La compilation du processus "home" a réussi
+
+!ENTRY ADWinProcess - 18:20:03.541 1 0 2026-11-25 18:20:03.541
+!MESSAGE 
+
+!ENTRY ADWinProcess - 18:20:03.542 1 0 2026-11-25 18:20:03.542
+!MESSAGE C:\Users\buloup\Desktop\Docometre>"C:\ADwin\ADbasic\ADbasicCompiler.exe" /M "C:\Users\buloup\Documents\GIT\Interface_IAI\DOCO_W\\IAI\BinSource\home.BAS" /A"C:\Users\buloup\Documents\GIT\Interface_IAI\DOCO_W\\IAI\BinSource\home" /SGII /P11  2>home.err 
+
+!ENTRY ADWinProcess - 18:20:03.555 1 0 2026-11-25 18:20:03.556
+!MESSAGE ADbasicCompiler Version 5.00.56 11.12.2024
+
+!ENTRY ADWinProcess - 18:20:03.556 1 0 2026-11-25 18:20:03.556
+!MESSAGE 0%
+
+!ENTRY ADWinProcess - 18:20:03.591 1 0 2026-11-25 18:20:03.591
+!MESSAGE 9%
+
+!ENTRY ADWinProcess - 18:20:03.649 1 0 2026-11-25 18:20:03.650
+!MESSAGE 35%
+
+!ENTRY ADWinProcess - 18:20:03.655 1 0 2026-11-25 18:20:03.655
+!MESSAGE 42%
+
+!ENTRY ADWinProcess - 18:20:03.684 1 0 2026-11-25 18:20:03.684
+!MESSAGE 45%
+
+!ENTRY ADWinProcess - 18:20:03.695 1 0 2026-11-25 18:20:03.695
+!MESSAGE 92%
+
+!ENTRY ADWinProcess - 18:20:03.755 1 0 2026-11-25 18:20:03.755
+!MESSAGE 96%
+
+!ENTRY ADWinProcess - 18:20:03.762 1 0 2026-11-25 18:20:03.763
+!MESSAGE Process compiled. Codesize: 11168 Workspacesize: 1200 Stacksize: 224 Byte 
+
+!ENTRY ADWinProcess - 18:20:03.767 1 0 2026-11-25 18:20:03.767
+!MESSAGE Version courante des librairies : 1.0.0.202611250858
+
+!ENTRY ADWinProcess - 18:20:03.767 1 0 2026-11-25 18:20:03.767
+!MESSAGE Version des librairies utilisée par la configuration d'acquisition : 1.0.0.202611250858
+
+!ENTRY Warning 2 0 2026-11-25 18:20:03.768
+!MESSAGE Dans le segment LOOP => IF Block sans branche "false" : "IF (time > 0.1) THEN"
+
+!ENTRY Warning 2 0 2026-11-25 18:20:03.769
+!MESSAGE Dans le segment LOOP => IF Block sans branche "false" : "IF (time_HEND_isOne > 0) THEN"
+
+!ENTRY CompileProcessAction - 18:20:03.775 1 0 2026-11-25 18:20:03.776
+!MESSAGE La compilation du processus "home" a réussi
+
+!ENTRY ADWinProcess - 18:20:03.806 1 0 2026-11-25 18:20:03.806
+!MESSAGE 
+
+!ENTRY ADWinProcess - 18:20:03.807 1 0 2026-11-25 18:20:03.807
+!MESSAGE C:\Users\buloup\Desktop\Docometre>"C:\ADwin\ADbasic\ADbasicCompiler.exe" /M "C:\Users\buloup\Documents\GIT\Interface_IAI\DOCO_W\\IAI\BinSource\move.BAS" /A"C:\Users\buloup\Documents\GIT\Interface_IAI\DOCO_W\\IAI\BinSource\move" /SGII /P11  2>move.err 
+
+!ENTRY ADWinProcess - 18:20:03.819 1 0 2026-11-25 18:20:03.820
+!MESSAGE ADbasicCompiler Version 5.00.56 11.12.2024
+
+!ENTRY ADWinProcess - 18:20:03.820 1 0 2026-11-25 18:20:03.820
+!MESSAGE 0%
+
+!ENTRY ADWinProcess - 18:20:03.854 1 0 2026-11-25 18:20:03.854
+!MESSAGE 9%
+
+!ENTRY ADWinProcess - 18:20:03.909 1 0 2026-11-25 18:20:03.909
+!MESSAGE 35%
+
+!ENTRY ADWinProcess - 18:20:03.915 1 0 2026-11-25 18:20:03.915
+!MESSAGE 42%
+
+!ENTRY ADWinProcess - 18:20:03.943 1 0 2026-11-25 18:20:03.943
+!MESSAGE 45%
+
+!ENTRY ADWinProcess - 18:20:03.953 1 0 2026-11-25 18:20:03.954
+!MESSAGE 92%
+
+!ENTRY ADWinProcess - 18:20:04.013 1 0 2026-11-25 18:20:04.013
+!MESSAGE 96%
+
+!ENTRY ADWinProcess - 18:20:04.019 1 0 2026-11-25 18:20:04.020
+!MESSAGE Process compiled. Codesize: 11952 Workspacesize: 1200 Stacksize: 208 Byte 
+
+!ENTRY ADWinProcess - 18:20:04.026 1 0 2026-11-25 18:20:04.026
+!MESSAGE Version courante des librairies : 1.0.0.202611250858
+
+!ENTRY ADWinProcess - 18:20:04.026 1 0 2026-11-25 18:20:04.026
+!MESSAGE Version des librairies utilisée par la configuration d'acquisition : 1.0.0.202611250858
+
+!ENTRY Warning 2 0 2026-11-25 18:20:04.027
+!MESSAGE Dans le segment LOOP => IF Block sans branche "false" : "IF (time >= 0.1) THEN"
+
+!ENTRY Warning 2 0 2026-11-25 18:20:04.027
+!MESSAGE Dans le segment LOOP => IF Block sans branche "false" : "IF (time > 0.2) THEN"
+
+!ENTRY Warning 2 0 2026-11-25 18:20:04.028
+!MESSAGE Dans le segment LOOP => IF Block sans branche "false" : "IF (time_INP_isOne > 0) THEN"
+
+!ENTRY CompileProcessAction - 18:20:04.034 1 0 2026-11-25 18:20:04.034
+!MESSAGE La compilation du processus "move" a réussi
+
+!ENTRY ADWinProcess - 18:27:12.999 1 0 2026-11-25 18:27:12.999
+!MESSAGE 
+
+!ENTRY ADWinProcess - 18:27:13.000 1 0 2026-11-25 18:27:13.000
+!MESSAGE C:\Users\buloup\Desktop\Docometre>"C:\ADwin\ADbasic\ADbasicCompiler.exe" /M "C:\Users\buloup\Documents\GIT\Interface_IAI\DOCO_W\\IAI\BinSource\home.BAS" /A"C:\Users\buloup\Documents\GIT\Interface_IAI\DOCO_W\\IAI\BinSource\home" /SGII /P11  2>home.err 
+
+!ENTRY ADWinProcess - 18:27:13.014 1 0 2026-11-25 18:27:13.014
+!MESSAGE ADbasicCompiler Version 5.00.56 11.12.2024
+
+!ENTRY ADWinProcess - 18:27:13.014 1 0 2026-11-25 18:27:13.014
+!MESSAGE 0%
+
+!ENTRY ADWinProcess - 18:27:13.049 1 0 2026-11-25 18:27:13.049
+!MESSAGE 9%
+
+!ENTRY ADWinProcess - 18:27:13.105 1 0 2026-11-25 18:27:13.105
+!MESSAGE 35%
+
+!ENTRY ADWinProcess - 18:27:13.110 1 0 2026-11-25 18:27:13.110
+!MESSAGE 42%
+
+!ENTRY ADWinProcess - 18:27:13.138 1 0 2026-11-25 18:27:13.138
+!MESSAGE 45%
+
+!ENTRY ADWinProcess - 18:27:13.149 1 0 2026-11-25 18:27:13.149
+!MESSAGE 92%
+
+!ENTRY ADWinProcess - 18:27:13.208 1 0 2026-11-25 18:27:13.209
+!MESSAGE 96%
+
+!ENTRY ADWinProcess - 18:27:13.215 1 0 2026-11-25 18:27:13.216
+!MESSAGE Process compiled. Codesize: 11168 Workspacesize: 1200 Stacksize: 224 Byte 
+
+!ENTRY ADWinProcess - 18:27:13.221 1 0 2026-11-25 18:27:13.221
+!MESSAGE Version courante des librairies : 1.0.0.202611250858
+
+!ENTRY ADWinProcess - 18:27:13.222 1 0 2026-11-25 18:27:13.222
+!MESSAGE Version des librairies utilisée par la configuration d'acquisition : 1.0.0.202611250858
+
+!ENTRY Warning 2 0 2026-11-25 18:27:13.223
+!MESSAGE Dans le segment LOOP => IF Block sans branche "false" : "IF (time > 0.1) THEN"
+
+!ENTRY Warning 2 0 2026-11-25 18:27:13.223
+!MESSAGE Dans le segment LOOP => IF Block sans branche "false" : "IF (time_HEND_isOne > 0) THEN"
+
+!ENTRY CompileProcessAction - 18:27:13.230 1 0 2026-11-25 18:27:13.230
+!MESSAGE La compilation du processus "home" a réussi
+
+!ENTRY ADWinProcess - 18:27:16.805 1 0 2026-11-25 18:27:16.805
+!MESSAGE 
+
+!ENTRY ADWinProcess - 18:27:16.805 1 0 2026-11-25 18:27:16.806
+!MESSAGE C:\Users\buloup\Desktop\Docometre>"C:\ADwin\ADbasic\ADbasicCompiler.exe" /M "C:\Users\buloup\Documents\GIT\Interface_IAI\DOCO_W\\IAI\BinSource\move.BAS" /A"C:\Users\buloup\Documents\GIT\Interface_IAI\DOCO_W\\IAI\BinSource\move" /SGII /P11  2>move.err 
+
+!ENTRY ADWinProcess - 18:27:16.819 1 0 2026-11-25 18:27:16.819
+!MESSAGE ADbasicCompiler Version 5.00.56 11.12.2024
+
+!ENTRY ADWinProcess - 18:27:16.819 1 0 2026-11-25 18:27:16.819
+!MESSAGE 0%
+
+!ENTRY ADWinProcess - 18:27:16.854 1 0 2026-11-25 18:27:16.854
+!MESSAGE 9%
+
+!ENTRY ADWinProcess - 18:27:16.909 1 0 2026-11-25 18:27:16.909
+!MESSAGE 35%
+
+!ENTRY ADWinProcess - 18:27:16.915 1 0 2026-11-25 18:27:16.915
+!MESSAGE 42%
+
+!ENTRY ADWinProcess - 18:27:16.943 1 0 2026-11-25 18:27:16.943
+!MESSAGE 45%
+
+!ENTRY ADWinProcess - 18:27:16.954 1 0 2026-11-25 18:27:16.954
+!MESSAGE 92%
+
+!ENTRY ADWinProcess - 18:27:17.013 1 0 2026-11-25 18:27:17.013
+!MESSAGE 96%
+
+!ENTRY ADWinProcess - 18:27:17.020 1 0 2026-11-25 18:27:17.020
+!MESSAGE Process compiled. Codesize: 11952 Workspacesize: 1200 Stacksize: 208 Byte 
+
+!ENTRY ADWinProcess - 18:27:17.025 1 0 2026-11-25 18:27:17.025
+!MESSAGE Version courante des librairies : 1.0.0.202611250858
+
+!ENTRY ADWinProcess - 18:27:17.025 1 0 2026-11-25 18:27:17.025
+!MESSAGE Version des librairies utilisée par la configuration d'acquisition : 1.0.0.202611250858
+
+!ENTRY Warning 2 0 2026-11-25 18:27:17.026
+!MESSAGE Dans le segment LOOP => IF Block sans branche "false" : "IF (time >= 0.1) THEN"
+
+!ENTRY Warning 2 0 2026-11-25 18:27:17.026
+!MESSAGE Dans le segment LOOP => IF Block sans branche "false" : "IF (time > 0.2) THEN"
+
+!ENTRY Warning 2 0 2026-11-25 18:27:17.027
+!MESSAGE Dans le segment LOOP => IF Block sans branche "false" : "IF (time_INP_isOne > 0) THEN"
+
+!ENTRY CompileProcessAction - 18:27:17.040 1 0 2026-11-25 18:27:17.040
+!MESSAGE La compilation du processus "move" a réussi
+
+!ENTRY ADWinProcess - 18:28:28.679 1 0 2026-11-25 18:28:28.680
+!MESSAGE 
+
+!ENTRY ADWinProcess - 18:28:28.680 1 0 2026-11-25 18:28:28.680
+!MESSAGE C:\Users\buloup\Desktop\Docometre>"C:\ADwin\ADbasic\ADbasicCompiler.exe" /M "C:\Users\buloup\Documents\GIT\Interface_IAI\DOCO_W\\IAI\BinSource\move.BAS" /A"C:\Users\buloup\Documents\GIT\Interface_IAI\DOCO_W\\IAI\BinSource\move" /SGII /P11  2>move.err 
+
+!ENTRY ADWinProcess - 18:28:28.694 1 0 2026-11-25 18:28:28.694
+!MESSAGE ADbasicCompiler Version 5.00.56 11.12.2024
+
+!ENTRY ADWinProcess - 18:28:28.694 1 0 2026-11-25 18:28:28.694
+!MESSAGE 0%
+
+!ENTRY ADWinProcess - 18:28:28.730 1 0 2026-11-25 18:28:28.730
+!MESSAGE 9%
+
+!ENTRY ADWinProcess - 18:28:28.786 1 0 2026-11-25 18:28:28.787
+!MESSAGE 35%
+
+!ENTRY ADWinProcess - 18:28:28.792 1 0 2026-11-25 18:28:28.792
+!MESSAGE 42%
+
+!ENTRY ADWinProcess - 18:28:28.822 1 0 2026-11-25 18:28:28.822
+!MESSAGE 45%
+
+!ENTRY ADWinProcess - 18:28:28.833 1 0 2026-11-25 18:28:28.833
+!MESSAGE 92%
+
+!ENTRY ADWinProcess - 18:28:28.893 1 0 2026-11-25 18:28:28.893
+!MESSAGE 96%
+
+!ENTRY ADWinProcess - 18:28:28.900 1 0 2026-11-25 18:28:28.900
+!MESSAGE Process compiled. Codesize: 11952 Workspacesize: 1200 Stacksize: 208 Byte 
+
+!ENTRY ADWinProcess - 18:28:28.905 1 0 2026-11-25 18:28:28.905
+!MESSAGE Version courante des librairies : 1.0.0.202611250858
+
+!ENTRY ADWinProcess - 18:28:28.905 1 0 2026-11-25 18:28:28.905
+!MESSAGE Version des librairies utilisée par la configuration d'acquisition : 1.0.0.202611250858
+
+!ENTRY Warning 2 0 2026-11-25 18:28:28.906
+!MESSAGE Dans le segment LOOP => IF Block sans branche "false" : "IF (time >= 0.1) THEN"
+
+!ENTRY Warning 2 0 2026-11-25 18:28:28.906
+!MESSAGE Dans le segment LOOP => IF Block sans branche "false" : "IF (time > 0.2) THEN"
+
+!ENTRY Warning 2 0 2026-11-25 18:28:28.907
+!MESSAGE Dans le segment LOOP => IF Block sans branche "false" : "IF (time_INP_isOne > 0) THEN"
+
+!ENTRY CompileProcessAction - 18:28:28.921 1 0 2026-11-25 18:28:28.921
+!MESSAGE La compilation du processus "move" a réussi
+
+!ENTRY ADWinProcess - 18:30:23.413 1 0 2026-11-25 18:30:23.413
+!MESSAGE 
+
+!ENTRY ADWinProcess - 18:30:23.414 1 0 2026-11-25 18:30:23.414
+!MESSAGE C:\Users\buloup\Desktop\Docometre>"C:\ADwin\ADbasic\ADbasicCompiler.exe" /M "C:\Users\buloup\Documents\GIT\Interface_IAI\DOCO_W\\IAI\BinSource\move.BAS" /A"C:\Users\buloup\Documents\GIT\Interface_IAI\DOCO_W\\IAI\BinSource\move" /SGII /P11  2>move.err 
+
+!ENTRY ADWinProcess - 18:30:23.428 1 0 2026-11-25 18:30:23.428
+!MESSAGE ADbasicCompiler Version 5.00.56 11.12.2024
+
+!ENTRY ADWinProcess - 18:30:23.428 1 0 2026-11-25 18:30:23.428
+!MESSAGE 0%
+
+!ENTRY ADWinProcess - 18:30:23.462 1 0 2026-11-25 18:30:23.462
+!MESSAGE 9%
+
+!ENTRY ADWinProcess - 18:30:23.519 1 0 2026-11-25 18:30:23.520
+!MESSAGE 35%
+
+!ENTRY ADWinProcess - 18:30:23.525 1 0 2026-11-25 18:30:23.525
+!MESSAGE 42%
+
+!ENTRY ADWinProcess - 18:30:23.554 1 0 2026-11-25 18:30:23.554
+!MESSAGE 45%
+
+!ENTRY ADWinProcess - 18:30:23.565 1 0 2026-11-25 18:30:23.565
+!MESSAGE 92%
+
+!ENTRY ADWinProcess - 18:30:23.624 1 0 2026-11-25 18:30:23.624
+!MESSAGE 96%
+
+!ENTRY ADWinProcess - 18:30:23.631 1 0 2026-11-25 18:30:23.631
+!MESSAGE Process compiled. Codesize: 11952 Workspacesize: 1200 Stacksize: 208 Byte 
+
+!ENTRY ADWinProcess - 18:30:23.636 1 0 2026-11-25 18:30:23.636
+!MESSAGE Version courante des librairies : 1.0.0.202611250858
+
+!ENTRY ADWinProcess - 18:30:23.636 1 0 2026-11-25 18:30:23.636
+!MESSAGE Version des librairies utilisée par la configuration d'acquisition : 1.0.0.202611250858
+
+!ENTRY Warning 2 0 2026-11-25 18:30:23.637
+!MESSAGE Dans le segment LOOP => IF Block sans branche "false" : "IF (time >= 0.1) THEN"
+
+!ENTRY Warning 2 0 2026-11-25 18:30:23.637
+!MESSAGE Dans le segment LOOP => IF Block sans branche "false" : "IF (time > 0.2) THEN"
+
+!ENTRY Warning 2 0 2026-11-25 18:30:23.638
+!MESSAGE Dans le segment LOOP => IF Block sans branche "false" : "IF (time_INP_isOne > 0) THEN"
+
+!ENTRY CompileProcessAction - 18:30:23.652 1 0 2026-11-25 18:30:23.652
+!MESSAGE La compilation du processus "move" a réussi
+
+!ENTRY DocometreApplication - 18:42:21.722 1 0 2026-11-25 18:42:21.723
+!MESSAGE createAndRunWorkbench return code : 0

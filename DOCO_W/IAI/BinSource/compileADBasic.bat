@@ -1,0 +1,1 @@
+"C:\ADwin\ADbasic\ADbasicCompiler.exe" /M "C:\Users\buloup\Documents\GIT\Interface_IAI\DOCO_W\\IAI\BinSource\move.BAS" /A"C:\Users\buloup\Documents\GIT\Interface_IAI\DOCO_W\\IAI\BinSource\move" /SGII /P11 2>move.err
